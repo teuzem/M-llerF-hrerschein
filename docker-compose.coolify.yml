@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  permiscode:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=production
+        - VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+        - VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
+        - VITE_STRIPE_PUBLISHABLE_KEY=${VITE_STRIPE_PUBLISHABLE_KEY}
+        - VITE_STRIPE_SECRET_KEY=${VITE_STRIPE_SECRET_KEY}
+        - VITE_PAYPAL_CLIENT_ID=${VITE_PAYPAL_CLIENT_ID}
+        - VITE_PAYPAL_CLIENT_SECRET=${VITE_PAYPAL_CLIENT_SECRET}
+        - VITE_EMAILJS_SERVICE_ID=${VITE_EMAILJS_SERVICE_ID}
+        - VITE_EMAILJS_TEMPLATE_ID_ADMIN=${VITE_EMAILJS_TEMPLATE_ID_ADMIN}
+        - VITE_EMAILJS_TEMPLATE_ID_CLIENT=${VITE_EMAILJS_TEMPLATE_ID_CLIENT}
+        - VITE_EMAILJS_PUBLIC_KEY=${VITE_EMAILJS_PUBLIC_KEY}
+        - VITE_GIPHY_API_KEY=${VITE_GIPHY_API_KEY}
+        - VITE_ADMIN_USER_ID=${VITE_ADMIN_USER_ID}
+        - VITE_APP_NAME=${VITE_APP_NAME:-PermisCode}
+        - VITE_APP_URL=${VITE_APP_URL:-https://permiscode.fr}
+        - PORT=80
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped

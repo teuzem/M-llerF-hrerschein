@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Demande de Permis</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0; padding: 0; background-color: #f4f4f7; }
+        .container { max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #e2e8f0; }
+        .header { background: linear-gradient(to right, #0055A4, #EF4135); color: white; padding: 24px; text-align: center; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .content { padding: 24px; color: #334155; }
+        .content h2 { color: #0055A4; font-size: 18px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-top: 24px; margin-bottom: 16px; }
+        .info-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 8px 16px; }
+        .info-grid dt { font-weight: 600; color: #475569; }
+        .info-grid dd { margin: 0; color: #1e293b; }
+        .button { display: inline-block; background-color: #0055A4; color: white !important; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 24px; }
+        .footer { background-color: #f1f5f9; padding: 16px; text-align: center; font-size: 12px; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nouvelle Demande Reçue</h1>
+        </div>
+        <div class="content">
+            <p>Une nouvelle demande de permis a été soumise sur PermisCode.</p>
+            
+            <h2>Informations du Client</h2>
+            <dl class="info-grid">
+                <dt>Nom:</dt>
+                <dd>{{user_name}}</dd>
+                <dt>Email:</dt>
+                <dd>{{user_email}}</dd>
+                <dt>N° de demande:</dt>
+                <dd>{{application_number}}</dd>
+            </dl>
+
+            <h2>Détails de la Demande</h2>
+            <dl class="info-grid">
+                <dt>Type de Permis:</dt>
+                <dd>{{license_name}}</dd>
+                <dt>Montant Total:</dt>
+                <dd>{{total_amount}} €</dd>
+            </dl>
+
+            <h2>Documents Fournis</h2>
+            <p>Les liens ci-dessous sont valides pour 7 jours.</p>
+            <ul>
+                <li><a href="{{cni_url}}">Pièce d'identité</a></li>
+                <li><a href="{{photo_url}}">Photo d'identité</a></li>
+                <li><a href="{{signature_url}}">Signature</a></li>
+            </ul>
+
+            <a href="{{status_url}}" class="button">Voir la demande</a>
+        </div>
+        <div class="footer">
+            PermisCode - Système de Notification
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+═══════════════════════════════════════════════════════════════
+    VARIABLES À AJOUTER DANS COOLIFY - COPIER-COLLER
+═══════════════════════════════════════════════════════════════
+
+📝 Instructions:
+1. Allez dans: Coolify → Votre Projet → Settings → Environment Variables
+2. Pour chaque variable ci-dessous, cliquez sur "Add Variable"
+3. Copiez-collez le NOM et la VALEUR
+4. Cochez les DEUX cases: ☑ Buildtime ☑ Runtime
+5. Cliquez sur "Add" ou "Update"
+
+───────────────────────────────────────────────────────────────
+                    VARIABLES MANQUANTES (5)
+───────────────────────────────────────────────────────────────
+
+1️⃣  VITE_APP_NAME
+────────────────────────────────────────────────────────
+NOM:    VITE_APP_NAME
+VALEUR: PermisCode
+☑ Available at Buildtime
+☑ Available at Runtime
+────────────────────────────────────────────────────────
+
+2️⃣  VITE_APP_URL
+────────────────────────────────────────────────────────
+NOM:    VITE_APP_URL
+VALEUR: https://permiscode.fr
+☑ Available at Buildtime
+☑ Available at Runtime
+────────────────────────────────────────────────────────
+
+3️⃣  VITE_PAYPAL_CLIENT_ID
+────────────────────────────────────────────────────────
+NOM:    VITE_PAYPAL_CLIENT_ID
+VALEUR: BAAMSFAShrDkNpTHLT8-wM7CE2IcpH7mDuFxhoSuTlr0Hwde_UTtBSB96RW3XHUcY-CQV7wiGi7rKwv4dw
+☑ Available at Buildtime
+☑ Available at Runtime
+────────────────────────────────────────────────────────
+
+4️⃣  VITE_PAYPAL_CLIENT_SECRET
+────────────────────────────────────────────────────────
+NOM:    VITE_PAYPAL_CLIENT_SECRET
+VALEUR: EIK4hFNRUBY3h5dZXXQXKOAgo5AkJeRRKHMzVN634VTSNb6JojgEV2hwq_xn3suGE5WxbTkRyNf2dBfE
+☑ Available at Buildtime
+☑ Available at Runtime
+────────────────────────────────────────────────────────
+
+5️⃣  VITE_ADMIN_USER_ID
+────────────────────────────────────────────────────────
+NOM:    VITE_ADMIN_USER_ID
+VALEUR: 1dc2b234-942f-4ab8-9ae8-7fd4113d0359
+☑ Available at Buildtime
+☑ Available at Runtime
+────────────────────────────────────────────────────────
+
+───────────────────────────────────────────────────────────────
+              VÉRIFIER CES 4 VARIABLES EXISTANTES
+───────────────────────────────────────────────────────────────
+
+Ces variables sont DÉJÀ dans Coolify (d'après le screenshot).
+Vérifiez que les DEUX cases sont cochées pour chacune:
+
+✓ VITE_STRIPE_PUBLISHABLE_KEY
+  ☑ Available at Buildtime
+  ☑ Available at Runtime
+
+✓ VITE_STRIPE_SECRET_KEY
+  ☑ Available at Buildtime
+  ☑ Available at Runtime
+
+✓ VITE_SUPABASE_ANON_KEY
+  ☑ Available at Buildtime
+  ☑ Available at Runtime
+
+✓ VITE_SUPABASE_URL
+  ☑ Available at Buildtime
+  ☑ Available at Runtime
+
+───────────────────────────────────────────────────────────────
+              OPTIONNEL - SI VOUS AVEZ LES CLÉS
+───────────────────────────────────────────────────────────────
+
+Ces variables sont optionnelles. Ne les ajoutez que si vous
+avez les vraies valeurs (remplacez Y************):
+
+VITE_EMAILJS_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID_ADMIN
+VITE_EMAILJS_TEMPLATE_ID_CLIENT
+VITE_EMAILJS_PUBLIC_KEY
+VITE_GIPHY_API_KEY
+
+───────────────────────────────────────────────────────────────
+                       APRÈS L'AJOUT
+───────────────────────────────────────────────────────────────
+
+1. Vérifier que Port = 80 (Settings → Port Configuration)
+2. Aller dans Deployments
+3. Cliquer sur "Deploy"
+4. Attendre 3-5 minutes
+5. Surveiller les logs pour voir "BUILD ENVIRONMENT VARIABLES"
+6. Tester https://permiscode.fr
+
+═══════════════════════════════════════════════════════════════

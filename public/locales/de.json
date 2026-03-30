@@ -1,0 +1,3158 @@
+{
+  "nav.home": "Startseite",
+  "nav.services": "Dienstleistungen",
+  "nav.pricing": "Preise",
+  "nav.testimonials": "Kundenbewertungen",
+  "nav.clients": "Unsere Kunden",
+  "nav.gallery": "Galerie",
+  "nav.contact": "Kontakt",
+  "nav.dashboard": "Dashboard",
+  "nav.login": "Anmelden",
+  "nav.register": "Registrieren",
+  "nav.logout": "Abmelden",
+  "nav.language": "Sprache",
+  "header.user_menu.profile_completion": "Profil vollständig",
+  "greetings.morning": "Guten Morgen",
+  "greetings.afternoon": "Guten Tag",
+  "greetings.evening": "Guten Abend",
+  "messages.title": "Nachrichten",
+  "messages.search_placeholder": "Konversation suchen...",
+  "messages.welcome.title": "Willkommen in Ihrem Postfach",
+  "messages.welcome.subtitle": "Wählen Sie eine Konversation zum Chatten oder starten Sie eine neue Unterhaltung.",
+  "messages.new.title": "Neue Konversation",
+  "messages.new.search_placeholder": "Benutzer suchen...",
+  "dashboard.nav.messages": "Nachrichten",
+  "gallery.title": "Mediengalerie",
+  "gallery.subtitle": "Entdecken Sie Fotos und Videos unserer Community.",
+  "gallery.add_media": "Zur Galerie hinzufügen",
+  "gallery.images_title": "Bilder",
+  "gallery.videos_title": "Videos",
+  "gallery.no_images": "Noch keine Bilder in der Galerie.",
+  "gallery.no_videos": "Noch keine Videos in der Galerie.",
+  "gallery.uploader.title": "Medien hinzufügen",
+  "gallery.uploader.description": "Teilen Sie ein Bild oder Video mit der Community.",
+  "gallery.uploader.dropzone": "Datei hierher ziehen oder klicken zum Auswählen.",
+  "gallery.uploader.url_placeholder": "Oder URL einfügen (Bild, YouTube, TikTok...)",
+  "gallery.uploader.add_url": "URL hinzufügen",
+  "gallery.uploader.submit": "Medien übermitteln",
+  "gallery.uploader.success": "Medien erfolgreich hinzugefügt! Sie warten auf Moderation.",
+  "gallery.uploader.error": "Fehler beim Hinzufügen der Medien.",
+  "gallery.viewer.close": "Schließen",
+  "gallery.comments.title": "Kommentare",
+  "gallery.comments.placeholder": "Kommentar hinzufügen...",
+  "gallery.comments.submit": "Senden",
+  "gallery.comments.empty": "Noch keine Kommentare.",
+  "gallery.comments.login_prompt": "Melden Sie sich an zum Kommentieren.",
+  "gallery.like_prompt": "Melden Sie sich an, um dieses Video zu liken.",
+  "gallery.favorite_prompt": "Melden Sie sich an, um dieses Video zu speichern.",
+  "gallery.favorite_success": "Zu Favoriten hinzugefügt!",
+  "gallery.video.share_text": "Entdecken Sie dieses Video auf MüllerFührerschein!",
+  "gallery.video.title": "Video von {{name}}",
+  "gallery.video.description": "Beschreibung",
+  "gallery.uploader.login_required": "Sie müssen angemeldet sein, um Medien hinzuzufügen.",
+  "gallery.uploader.file_or_url_required": "Bitte wählen Sie eine Datei aus oder geben Sie eine URL an.",
+  "gallery.main_title": "Galerie",
+  "gallery.subtitle": "Erfolgsgeschichten unserer Kunden",
+  "gallery.add_media_button": "Medien hinzufügen",
+  "gallery.uploader.modal_title": "Medien hinzufügen",
+  "gallery.picker_modal_title": "Aus meiner Galerie wählen",
+  "gallery.image_editor.crop_preview": "Vorschau",
+  "gallery.edit.video_preview": "Video-Vorschau",
+  "gallery.comments.error_fetching_likes": "Fehler beim Abrufen der Kommentar-Likes",
+  "gallery.picker_modal_loading": "Medien werden geladen...",
+  "video.description_placeholder": "Beschreibung hinzufügen...",
+  "common.anonymous": "Anonym",
+  "common.select_prompt": "Auswählen...",
+  "payment.crypto.info": "Zahlungsinformationen",
+  "payment.crypto.address": "Zahlungsadresse",
+  "payment.crypto.copy": "Adresse kopieren",
+  "payment.card.info": "Karteninformationen",
+  "payment.error.message": "Ein Fehler ist aufgetreten",
+  "common.details": "Details",
+  "common.details_for": "Details für",
+  "services.processing_time": "Express Bearbeitung",
+  "services.days": "Werktage",
+  "services.requirement1": "Gültiger Personalausweis (Personalausweis, Reisepass, Aufenthaltstitel)",
+  "services.requirement2": "Digitales Passfoto (biometrisch)",
+  "services.requirement3": "Unterschrift auf weißem Hintergrund",
+  "services.requirement4": "Gültige E-Mail-Adresse und Telefonnummer",
+  "pricing.included.title": "Was ist in unseren Preisen enthalten?",
+  "pricing.included.item1.title": "Vollständige administrative Verwaltung",
+  "pricing.included.item1.desc": "Wir kümmern uns um alle administrativen Verfahren.",
+  "pricing.included.item2.title": "Aktenerstellung und Nachverfolgung",
+  "pricing.included.item2.desc": "Von der Erstellung bis zur Validierung kümmern wir uns um alles.",
+  "pricing.included.item3.title": "Engagierter Kundensupport",
+  "pricing.included.item3.desc": "Ein Team, das Sie während des gesamten Prozesses begleitet.",
+  "pricing.included.item4.title": "Sichere Dokumentenübertragung",
+  "pricing.included.item4.desc": "Verschlüsselte Plattform zum Schutz Ihrer persönlichen Daten.",
+  "testimonials.filters.title": "Bewertungen filtern",
+  "testimonials.filters.rating": "Mindestbewertung",
+  "testimonials.filters.license": "Führerscheinklasse",
+  "testimonials.filters.city": "Stadt",
+  "testimonials.filters.region": "Bundesland",
+  "filter.all": "Alle",
+  "filter.all_regions": "Alle Regionen",
+  "form.city_placeholder": "z.B. Berlin",
+  "form.select_placeholder": "Auswählen...",
+  "share_modal.title": "Teilen",
+  "share_modal.copy_link": "Link kopieren",
+  "share_modal.copied": "Link kopiert!",
+  "share_modal.caption": "Schauen Sie sich diese großartige Bewertung auf MüllerFührerschein an!",
+  "share_modal.instagram_note": "Für Instagram kopieren Sie den Link und fügen ihn in Ihre Story oder Nachricht ein.",
+  "nav.uber_eats": "Uber Eats",
+  "status.step_draft": "Entwurf",
+  "status.step_pending_payment": "Zahlung ausstehend",
+  "status.step_submitted": "Eingereicht",
+  "status.step_in_review": "In Überprüfung",
+  "status.step_approved": "Genehmigt",
+  "status.step_completed": "Abgeschlossen",
+  "status.step_rejected": "Abgelehnt",
+  "dashboard.home.activity_chart.title": "Aktivitätsdiagramm",
+  "dashboard.applications.status_chart.title": "Antragsstatus-Diagramm",
+  "dashboard.profile.avatar.change": "Avatar ändern",
+  "dashboard.profile.completion.title": "Profil vervollständigen",
+  "dashboard.profile.completion.desc": "Vervollständigen Sie Ihr Profil für eine bessere Erfahrung",
+  "dashboard.home.profile_summary.title": "Profilsumme",
+  "dashboard.home.recent_apps.title": "Letzte Anträge",
+  "dashboard.home.recent_apps.empty": "Noch keine Anträge",
+  "dashboard.home.recent_apps.view_all": "Alle anzeigen",
+  "dashboard.profile.social.placeholder": "Soziales Netzwerk",
+  "dashboard.profile.social.add": "Hinzufügen",
+  "dashboard.media.edit": "Bearbeiten",
+  "dashboard.media.delete": "Löschen",
+  "dashboard.media.interaction_chart_title": "Interaktionsdiagramm",
+  "dashboard.media.share_chart_title": "Teilen-Statistiken",
+  "dashboard.media.stats.total_media": "Gesamtmedien",
+  "dashboard.media.stats.total_likes": "Gesamtlikes",
+  "dashboard.media.stats.total_comments": "Gesamtkommentare",
+  "dashboard.media.stats.total_shares": "Gesamt-Shares",
+  "dashboard.media.status.published": "Veröffentlicht",
+  "dashboard.media.status.pending": "Ausstehend",
+  "dashboard.media.status.rejected": "Abgelehnt",
+  "dashboard.nav.menu": "Menü",
+  "dashboard.testimonials.comments.title": "Kommentare",
+  "dashboard.testimonials.comments.no_comments": "Keine Kommentare",
+  "dashboard.testimonials.edit_modal_title": "Bewertung bearbeiten",
+  "dashboard.testimonials.reactions_chart.title": "Reaktionen-Diagramm",
+  "dashboard.testimonials.shares_chart.title": "Teilen-Statistiken",
+  "dashboard.testimonials.shares_chart.no_data": "Keine Daten",
+  "dashboard.testimonials.shares_chart.no_data_hint": "Teilen Sie Ihre Bewertung, um Statistiken zu sehen",
+  "dashboard.testimonials.stats.total_reviews": "Gesamtbewertungen",
+  "dashboard.testimonials.stats.total_reactions": "Gesamtreaktionen",
+  "dashboard.testimonials.stats.avg_rating": "Ø Bewertung",
+  "dashboard.testimonials.rating_dist_chart.title": "Bewertungsverteilung",
+  "common.loading_button": "Wird geladen...",
+  "create_account.success": "Konto erstellt!",
+  "create_account.error": "Fehler bei der Kontoerstellung",
+  "create_account.steps.documents": "Dokumente hochladen",
+  "create_account.steps.documents_desc": "Laden Sie Ihre Führerscheindokumente hoch",
+  "create_account.steps.verification": "Identitätsprüfung",
+  "create_account.steps.verification_desc": "Ihre Identität wird verifiziert",
+  "create_account.steps.approval": "Genehmigung",
+  "create_account.steps.approval_desc": "Ihr Antrag wird geprüft",
+  "create_account.title": "Uber Eats Partner werden",
+  "create_account.subtitle": "Starten Sie noch heute mit der Lieferung",
+  "create_account.form.full_name": "Vollständiger Name",
+  "create_account.form.full_name_placeholder": "Ihr vollständiger Name",
+  "create_account.form.email": "E-Mail",
+  "create_account.form.phone": "Telefonnummer",
+  "create_account.form.license_type": "Führerscheintyp",
+  "create_account.form.password": "Passwort",
+  "create_account.form.confirm_password": "Passwort bestätigen",
+  "create_account.form.license_number": "Führerscheinnummer",
+  "create_account.form.license_number_placeholder": "Ihre Führerscheinnummer",
+  "create_account.form.submit": "Konto erstellen",
+  "create_account.disclaimer": "Mit der Erstellung stimmen Sie unseren AGB zu",
+  "activation.status.pending": "Ausstehend",
+  "activation.status.pending_desc": "Ihr Antrag wird bearbeitet",
+  "activation.status.in_progress": "In Bearbeitung",
+  "activation.status.in_progress_desc": "Dokumente werden geprüft",
+  "activation.status.approved": "Genehmigt",
+  "activation.status.approved_desc": "Ihr Konto ist aktiv",
+  "activation.status.rejected": "Abgelehnt",
+  "activation.status.rejected_desc": "Ihr Antrag wurde abgelehnt",
+  "activation.requirements.documents": "Dokumente",
+  "activation.requirements.documents_desc": "Alle erforderlichen Dokumente hochladen",
+  "activation.requirements.background_check": "Hintergrundprüfung",
+  "activation.requirements.background_check_desc": "Führungszeugnis einreichen",
+  "activation.requirements.bank_info": "Bankdaten",
+  "activation.requirements.bank_info_desc": "IBAN für Auszahlungen",
+  "activation.requirements.training": "Schulung",
+  "activation.requirements.training_desc": "Pflichtschulung abschließen",
+  "activation.title": "Aktivierung",
+  "activation.subtitle": "Status Ihres Kontos verfolgen",
+  "activation.progress.title": "Fortschritt",
+  "activation.contact_support": "Support kontaktieren",
+  "activation.send_documents": "Dokumente senden",
+  "unlock.success": "Entsperrt!",
+  "unlock.error": "Entsperrungsfehler",
+  "unlock.requirements.license": "Führerschein",
+  "unlock.requirements.license_desc": "Gültigen Führerschein vorlegen",
+  "unlock.requirements.insurance": "Versicherung",
+  "unlock.requirements.insurance_desc": "Fahrzeugversicherung nachweisen",
+  "unlock.requirements.background_check": "Hintergrundprüfung",
+  "unlock.requirements.background_check_desc": "Führungszeugnis einreichen",
+  "unlock.requirements.app_download": "App herunterladen",
+  "unlock.requirements.app_download_desc": "Uber Eats Fahrer-App installieren",
+  "unlock.requirements.bank_details": "Bankdaten",
+  "unlock.requirements.bank_details_desc": "IBAN für Auszahlungen eingeben",
+  "unlock.process.step1": "Anmeldung",
+  "unlock.process.step1_desc": "Account erstellen und verifizieren",
+  "unlock.process.step2": "Dokumente",
+  "unlock.process.step2_desc": "Alle erforderlichen Dokumente einreichen",
+  "unlock.process.step3": "Aktivierung",
+  "unlock.process.step3_desc": "Kontoaktivierung abwarten",
+  "unlock.process.step4": "Beginn",
+  "unlock.process.step4_desc": "Erste Lieferung starten",
+  "unlock.title": "Entsperrung",
+  "unlock.subtitle": "Vollständig entsperren",
+  "unlock.requirements.title": "Anforderungen",
+  "unlock.process.title": "Prozess",
+  "unlock.ready_title": "Bereit zum Entsperren",
+  "unlock.ready_description": "Sie haben alle Anforderungen erfüllt",
+  "unlock.cta": "Jetzt entsperren",
+  "common.completed": "Abgeschlossen",
+  "common.in_progress": "In Bearbeitung",
+  "common.pending": "Ausstehend",
+  "gallery.edit.video_editing_unavailable": "Die Videobearbeitung ist noch nicht verfügbar.",
+  "gallery.image_editor.title": "Bildbearbeitung",
+  "gallery.image_editor.zoom": "Zoom",
+  "gallery.image_editor.rotation": "Drehung",
+  "gallery.image_editor.tools": "Werkzeuge",
+  "gallery.image_editor.flip_horizontal": "Horizontal spiegeln",
+  "gallery.image_editor.aspect_ratio_16_9": "Seitenverhältnis 16:9",
+  "gallery.image_editor.aspect_ratio_4_3": "Seitenverhältnis 4:3",
+  "gallery.image_editor.aspect_ratio_square": "Quadratisch",
+  "gallery.image_editor.aspect_ratio_free": "Frei",
+  "gallery.image_editor.cancel": "Abbrechen",
+  "gallery.image_editor.save": "Speichern",
+  "gallery.edit.modal_title": "{{action}}",
+  "gallery.edit.video_preview": "Video-Vorschau",
+  "gallery.edit.video_editing_unavailable": "Die Videobearbeitung ist noch nicht verfügbar.",
+  "gallery.uploader.preview": "Vorschau",
+  "clients.title": "Unsere Community",
+  "clients.subtitle": "Entdecken Sie die Profile unserer Kunden, die ihre Erfahrungen teilen möchten.",
+  "clients.search_placeholder": "Kunde suchen...",
+  "clients.no_results": "Keine öffentlichen Profile entsprechen Ihrer Suche.",
+  "clients.view_profile": "Profil ansehen",
+  "public_profile.title": "Profil von {{name}}",
+  "public_profile.member_since": "Mitglied seit",
+  "public_profile.bio": "Biografie",
+  "public_profile.social_links": "Soziale Netzwerke",
+  "public_profile.testimonials": "Veröffentlichte Bewertungen",
+  "public_profile.no_bio": "Dieser Benutzer hat noch keine Biografie verfasst.",
+  "public_profile.no_testimonials": "Dieser Benutzer hat noch keine Bewertungen veröffentlicht.",
+  "public_profile.private": "Dieses Profil ist privat.",
+  "public_profile.not_found": "Profil nicht gefunden.",
+  "public_profile.location": "Standort",
+  "testimonials.title": "Was unsere Kunden sagen",
+  "testimonials.subtitle": "Entdecken Sie die Erfahrungsberichte derer, die uns vertraut haben.",
+  "testimonials.leave_review": "Bewertung hinterlassen",
+  "testimonials.form.title": "Teilen Sie Ihre Erfahrung",
+  "testimonials.form.name": "Ihr Name",
+  "testimonials.form.email": "Ihre E-Mail (privat)",
+  "testimonials.form.rating": "Ihre Bewertung",
+  "testimonials.form.review": "Ihre Erfahrung",
+  "testimonials.form.media": "Bis zu 5 Bilder oder Videos hinzufügen",
+  "testimonials.form.licenses": "Betroffene Führerschein(e)",
+  "testimonials.form.submit": "Bewertung absenden",
+  "testimonials.form.success": "Vielen Dank! Ihre Bewertung wurde eingereicht und wartet auf Moderation.",
+  "testimonials.view_mode.grid": "Gitter",
+  "testimonials.view_mode.list": "Liste",
+  "testimonials.empty": "Noch keine Bewertungen. Seien Sie der Erste, der seine Erfahrung teilt!",
+  "testimonials.media_uploader.dropzone": "Medien hierher ziehen oder klicken zum Auswählen.",
+  "testimonials.media_uploader.edit_media": "Medien bearbeiten",
+  "testimonials.media_uploader.edit_image": "Bild bearbeiten",
+  "testimonials.media_uploader.edit_video": "Videovorschau",
+  "testimonials.media_uploader.rename_file": "Datei umbenennen",
+  "testimonials.media_uploader.image_editor.title": "Bildbearbeitung",
+  "testimonials.media_uploader.image_editor.zoom": "Zoom",
+  "testimonials.media_uploader.image_editor.rotation": "Drehung",
+  "testimonials.media_uploader.image_editor.save": "Änderungen speichern",
+  "testimonials.media_uploader.video_editor.title": "Videovorschau",
+  "testimonials.rating_summary.average": "Gesamtbewertung",
+  "testimonials.rating_summary.based_on": "Basierend auf {{count}} Bewertungen",
+  "testimonials.rating_summary.stars": "{{count}} Sterne",
+  "testimonials.carousels.images": "Bildergalerie",
+  "testimonials.carousels.videos": "Video-Erfahrungsberichte",
+  "testimonials.media_uploader.mode_upload": "Hochladen",
+  "testimonials.media_uploader.mode_url": "URL-Link",
+  "testimonials.media_uploader.url_placeholder": "Bild- oder Video-URL einfügen (YouTube, TikTok...)",
+  "testimonials.social.like": "Gefällt mir",
+  "testimonials.social.comment": "Kommentieren",
+  "testimonials.social.share": "Teilen",
+  "testimonials.social.copied": "Bewertungslink kopiert!",
+  "testimonials.social.login_required_react": "Sie müssen angemeldet sein, um zu reagieren.",
+  "testimonials.social.login_required_comment": "Sie müssen angemeldet sein, um zu kommentieren.",
+  "testimonials.social.reaction_error": "Fehler beim Hinzufügen der Reaktion.",
+  "testimonials.form.rating_required": "Bitte wählen Sie eine Bewertung aus.",
+  "testimonials.form.submit_error": "Fehler beim Absenden der Bewertung.",
+  "testimonials.comments.loading": "Kommentare werden geladen...",
+  "testimonials.comments.submit": "Senden",
+  "testimonials.media_uploader.add": "Hinzufügen",
+  "testimonials.media_uploader.video_preview": "Video-Vorschau",
+  "testimonials.media_uploader.remove": "Entfernen",
+  "testimonials.media_uploader.file_types": "PNG, JPG, MP4, WEBM bis zu 25MB",
+  "testimonials.share.title": "Bewertung von {{name}} auf MüllerFührerschein",
+  "testimonials.faq.title": "Häufig gestellte Fragen zu Bewertungen",
+  "testimonials.faq.q1": "Wer kann eine Bewertung hinterlassen?",
+  "testimonials.faq.a1": "Jeder! Ob Sie ein Kunde oder nur ein Besucher sind, wir interessieren uns für Ihre Meinung. Angemeldete Benutzer werden ihr Profil angezeigt bekommen.",
+  "testimonials.faq.q2": "Wird meine Bewertung sofort veröffentlicht?",
+  "testimonials.faq.a2": "Nein, um die Qualität und Relevanz der Erfahrungsberichte zu gewährleisten, werden alle Bewertungen vor der Veröffentlichung moderiert. Dies dauert normalerweise weniger als 24 Stunden.",
+  "testimonials.faq.q3": "Kann ich meine Bewertung nach dem Absenden bearbeiten?",
+  "testimonials.faq.a3": "Ja, Sie können Ihre Bewertungen über Ihr Dashboard bearbeiten. Jede Bearbeitung wird die Bewertung erneut zur Moderation einreichen.",
+  "testimonials.cta.title": "Bereit zum Handeln?",
+  "testimonials.cta.subtitle": "Entdecken Sie unsere Dienstleistungen und finden Sie den richtigen Führerschein für Sie.",
+  "testimonials.cta.services": "Unsere Dienstleistungen ansehen",
+  "testimonials.cta.pricing": "Preise ansehen",
+  "verified_testimonials.title": "Verifizierte Kundenbewertungen",
+  "verified_testimonials.subtitle": "Echte Erfahrungen von echten Kunden aus ganz Deutschland. Alle Bewertungen sind authentisch und verifiziert.",
+  "verified_testimonials.verified": "Verifiziert",
+  "verified_testimonials.trust_stats": "Vertrauensstatistiken",
+  "verified_testimonials.verified_reviews": "Verifizierte Bewertungen",
+  "verified_testimonials.average_rating": "Ø Bewertung",
+  "verified_testimonials.regions": "Bundesländer",
+  "verified_testimonials.license_types": "Führerscheinklassen",
+  "verified_testimonials.filters.title": "Bewertungen filtern",
+  "verified_testimonials.filters.rating": "Mindestbewertung",
+  "verified_testimonials.filters.region": "Bundesland",
+  "verified_testimonials.filters.license": "Führerscheinklasse",
+  "verified_testimonials.filters.all_regions": "Alle Bundesländer",
+  "verified_testimonials.filters.all_licenses": "Alle Klassen",
+  "verified_testimonials.filters.clear": "Filter zurücksetzen",
+  "verified_testimonials.geographic_distribution": "Geografische Verteilung",
+  "verified_testimonials.identity_verified": "Identität verifiziert",
+  "verified_testimonials.no_results": "Keine Bewertungen gefunden. Versuchen Sie andere Filter.",
+  "verified_testimonials.trust_title": "Warum diese Bewertungen vertrauenswürdig sind",
+  "verified_testimonials.trust_message": "Jede Bewertung wird durch unsere strenge Verifizierungsprüfung geleitet. Wir bestätigen die Identität des Verfassers, verifizieren die Gültigkeit des Führerscheins und überprüfen die Authentizität der Erfahrung. So stellen wir sicher, dass Sie nur echte, vertrauenswürdige Bewertungen lesen.",
+  "share_modal.title": "Teilen",
+  "share_modal.copy_link": "Link kopieren",
+  "share_modal.copied": "Link kopiert!",
+  "share_modal.caption": "Schauen Sie sich diese großartige Bewertung auf MüllerFührerschein an!",
+  "share_modal.instagram_note": "Für Instagram kopieren Sie den Link und fügen ihn in Ihre Story oder Nachricht ein.",
+  "home.hero.title": "Führerschein kaufen - Legal, Schnell und Einfach",
+  "home.hero.subtitle": "Der führende deutsche Führerschein Dienstleistung-Anbieter für alle Klassen. Beantragen Sie Ihren authentischen deutschen Führerschein online - ohne Prüfungen, ohne Wartezeit, 100% legal.",
+  "home.hero.cta": "Deutschen Führerschein jetzt beantragen",
+  "home.hero.learn_more": "Führerschein Beantragung erfahren",
+  "home.stats.delivered": "Ausgestellte Führerscheine",
+  "home.stats.delay": "Durchschnittliche Bearbeitungszeit",
+  "home.stats.rate": "Erfolgsquote",
+  "home.stats.support": "Kundensupport",
+  "home.features.title": "Deutschen Führerschein kaufen - Unsere Vorteile",
+  "home.features.fast.title": "Express Führerschein Service",
+  "home.features.fast.desc": "Erhalten Sie Ihren deutschen Führerschein in nur 3-7 Werktagen. Schneller als jede Behörde. Keine Wartezeiten, keine Bürokratie-Hürden. Führerschein kaufen war noch nie so einfach.",
+  "home.features.secure.title": "100% Legitimer Deutscher Führerschein",
+  "home.features.secure.desc": "Alle unsere Führerscheine sind vollständig legal und authentisch registriert. Sie erhalten einen echten, legitim Führerschein Deutschland, der allen gesetzlichen Anforderungen entspricht.",
+  "home.features.support.title": "24/7 Deutsche Führerschein Beratung",
+  "home.features.support.desc": "Deutschsprachiger Kundensupport durch Führerschein-Experten. Beratung in allen Fragen rund um die Führerschein Beantragung, Typberatung und rechtliche Unterstützung.",
+  "home.process.title": "Wie funktioniert es?",
+  "home.process.subtitle": "Ein einfacher und effektiver 4-Schritte-Prozess für Ihren deutschen Führerschein",
+  "home.process.step1.title": "Registrierung",
+  "home.process.step1.desc": "Erstellen Sie Ihr Konto und wählen Sie Ihren Führerscheintyp",
+  "home.process.step2.title": "Dokumente",
+  "home.process.step2.desc": "Laden Sie Ihre offiziellen Dokumente sicher hoch",
+  "home.process.step3.title": "Bearbeitung",
+  "home.process.step3.desc": "Unser Team bearbeitet Ihren Antrag schnell",
+  "home.process.step4.title": "Empfang",
+  "home.process.step4.desc": "Erhalten Sie Ihren authentischen deutschen Führerschein",
+  "home.guarantees.title": "Warum MüllerFührerschein wählen?",
+  "home.guarantees.subtitle": "Ihr vertrauensvoller Partner für alle Arten der deutschen Führerschein Beantragung - schnell, sicher und legal",
+  "home.guarantees.legal.title": "100% Legitimer Deutscher Führerschein",
+  "home.guarantees.legal.desc": "Alle unsere deutschen Führerscheine sind vollständig legal und authentisch registriert. Sie erhalten einen legitim Führerschein Deutschland, der allen gesetzlichen Anforderungen entspricht und bundesweit anerkannt wird. Jeder Führerschein durchläuft strenge Qualitätskontrollen.",
+  "home.guarantees.fast.title": "Express Führerschein Service",
+  "home.guarantees.fast.desc": "Schnellste Führerschein Ausstellung in Deutschland: 3-7 Werktage garantiert. Unser optimierter Führerschein Dienstleistung-Prozess ermöglicht es Ihnen, Ihren deutschen Führerschein kaufen und erhalten Sie ihn schneller als bei传统的 Behördenverfahren.",
+  "home.guarantees.satisfaction.title": "Kostenlose Nachbesserung Garantie",
+  "home.guarantees.satisfaction.title": "Kostenlose Nachbesserung Garantie",
+  "home.guarantees.satisfaction.desc": "Falls Ihr Antrag abgelehnt wird (aus nicht von Ihnen verschuldeten Gründen), korrigieren wir alle Probleme kostenlos oder erstatten Ihnen 100% des Betrags zurück. Zufriedenheit oder Geld zurück bei unserem Führerschein kaufen Service.",
+  "home.guarantees.expert.title": "Deutsche Führerschein Experten",
+  "home.guarantees.expert.desc": "Über 10 Jahre Erfahrung in der deutschen Führerschein Beantragung. Unser Team kennt alle regionalen Besonderheiten und kann Ihnen bei jedem Führerschein-Typ helfen, von Klasse B bis hin zu spezialisierten gewerblichen Lizenzen.",
+  "home.guarantees.secure.title": "Sichere Datenverarbeitung",
+  "home.guarantees.secure.desc": "Ihre persönlichen Daten sind bei uns sicher. SSL-Verschlüsselung, DSGVO-konforme Datenverarbeitung und strikte Datenschutzrichtlinien. Sie können beruhigt Ihren deutschen Führerschein bei uns beantragen.",
+  "home.gallery.title": "Führerschein-Galerie",
+  "home.gallery.subtitle": "Entdecken Sie einige der Führerscheine, die wir Ihnen helfen zu erhalten.",
+  "home.gallery.license_a": "Motorradführerschein (A)",
+  "home.gallery.license_b": "Autoführerschein (B)",
+  "home.gallery.license_c": "LKW-Führerschein (C)",
+  "home.gallery.button": "Alle Dienstleistungen ansehen",
+  "home.faq.title": "Häufig gestellte Fragen zum deutschen Führerschein",
+  "home.faq.subtitle": "Alle Antworten zu Führerschein kaufen, Beantragung und rechtlichen Aspekten",
+  "home.faq.q1.title": "Ist es legal, einen deutschen Führerschein online zu beantragen?",
+  "home.faq.q1.desc": "Ja, unser Führerschein Dienstleistung ist vollständig legal und entspricht der deutschen Gesetzgebung. MüllerFührerschein ist ein autorisierter Vermittler, der Ihnen bei der rechtlichen Führerschein Beantragung hilft. Alle deutschen Führerscheine, die wir ausstellen, sind authentisch und in den offiziellen Datenbanken registriert. Sie erhalten einen legitim Führerschein Deutschland, der bundesweit anerkannt ist.",
+  "home.faq.q2.title": "Muss ich Fahrstunden nehmen oder Prüfungen ablegen?",
+  "home.faq.q2.desc": "Unser Service ist speziell für Personen entwickelt, die bereits über ausreichende Fahrkenntnisse verfügen, aber bei der administrativen Führerschein Beantragung Unterstützung benötigen. Wenn Sie bereits fahren können, aber Probleme mit der Bürokratie haben, helfen wir Ihnen, Ihren deutschen Führerschein ohne zusätzliche Fahrstunden oder Prüfungen zu erhalten.",
+  "home.faq.q3.title": "Welche Dokumente benötige ich für die Führerschein Beantragung?",
+  "home.faq.q3.desc": "Für die Führerschein Beantragung benötigen Sie: gültigen Personalausweis oder Reisepass, biometrisches Passfoto, Unterschrift auf weißem Hintergrund, ärztliches Attest (je nach Führerscheinklasse), Sehtest-Zertifikat. Bei speziellen Führerschein-Kategorien können weitere Dokumente erforderlich sein. Unser Team führt Sie durch den gesamten Prozess der deutschen Führerschein Beantragung.",
+  "home.faq.q4.title": "Wie lange dauert die Führerschein Ausstellung?",
+  "home.faq.q4.desc": "Die durchschnittliche Bearbeitungszeit für Ihren deutschen Führerschein beträgt 3-7 Werktage nach vollständiger Dokumenten-Validierung. Bei einfachen Fällen sogar innerhalb von 48 Stunden. Wir optimieren jeden Schritt der Führerschein Beantragung, um Ihnen schnellstmöglich Ihren legitim Führerschein Deutschland zu liefern.",
+  "home.faq.q5.title": "Kann ich alle Führerschein-Klassen beantragen?",
+  "home.faq.q5.desc": "Ja, wir bieten die komplette Palette deutscher Führerscheine an: Klasse B (PKW), Klasse A (Motorrad), Klasse C (LKW), Klasse D (Bus), Klasse AM (Moped) und alle Erweiterungen. Unser Führerschein Dienstleistung umfasst auch internationale Führerschein-Konvertierungen und Wiederherstellung entzogener Lizenzen.",
+  "home.faq.q6.title": "Ist mein deutscher Führerschein international gültig?",
+  "home.faq.q6.desc": "Ja, alle über MüllerFührerschein ausgestellten deutschen Führerscheine sind international gültig und werden von über 150 Ländern anerkannt. Sie erhalten einen vollständig legalen, legitim Führerschein Deutschland mit allen erforderlichen Sicherheitsmerkmalen und Registrierungsnummern.",
+  "home.cta.title": "Bereit, Ihren Führerschein zu erhalten?",
+  "home.cta.subtitle": "Schließen Sie sich Tausenden von Fahrern an, die uns für ihre administrativen Verfahren vertrauen",
+  "home.cta.button": "Jetzt starten",
+  "contact.title": "Kontaktieren Sie uns",
+  "contact.subtitle": "Eine Frage? Eine spezielle Anfrage? Unser Team ist für Sie da.",
+  "contact.form.title": "Senden Sie uns eine Nachricht",
+  "contact.form.name": "Ihr Name",
+  "contact.form.email": "Ihre E-Mail",
+  "contact.form.phone": "Ihre Telefonnummer",
+  "contact.form.subject": "Betreff",
+  "contact.form.message": "Ihre Nachricht",
+  "contact.form.send": "Nachricht senden",
+  "contact.form.success": "Nachricht erfolgreich gesendet! Wir werden uns so bald wie möglich bei Ihnen melden.",
+  "contact.form.error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+  "contact.info.title": "Unsere Kontaktinformationen",
+  "contact.info.support": "Kundensupport",
+  "contact.info.applications": "Anträge & Verkauf",
+  "contact.info.address": "Adresse",
+  "contact.info.address_value": "Alexanderstraße 40, 10179 Berlin, Deutschland",
+  "contact.info.phone": "Telefon",
+  "contact.hours.title": "Öffnungszeiten",
+  "contact.hours.days": "Montag - Freitag",
+  "contact.hours.time": "9:00 - 18:00 Uhr",
+  "contact.hours.support": "24/7 E-Mail-Support",
+  "services.title": "Deutschen Führerschein kaufen - Alle Klassen verfügbar",
+  "services.subtitle": "Ihr professioneller Führerschein Dienstleistung-Anbieter in Deutschland. Alle Führerschein-Klassen kaufen: PKW, Motorrad, LKW, Bus und mehr. Legitimer Service für deutsche Führerschein Beantragung.",
+  "services.from": "Jetzt ab",
+  "services.select": "Deutschen Führerschein beantragen",
+  "services.processing_time": "Express Bearbeitung",
+  "services.days": "Werktage",
+  "services.search_placeholder": "Führerschein kaufen: Klasse B, A, C, D, AM... (z.B. Autoführerschein, Motorradführerschein)",
+  "services.requirements_title": "Allgemeine Anforderungen",
+  "services.requirements_desc": "Einige wichtige Informationen, bevor Sie Ihren Antrag starten.",
+  "services.requirement1": "Gültiger Personalausweis (Personalausweis, Reisepass, Aufenthaltstitel)",
+  "services.requirement2": "Digitales Passfoto (biometrisch)",
+  "services.requirement3": "Unterschrift auf weißem Hintergrund",
+  "services.requirement4": "Gültige E-Mail-Adresse und Telefonnummer",
+  "services.cta.title": "Benötigen Sie Hilfe bei der Auswahl?",
+  "services.cta.subtitle": "Unser Expertenteam ist hier, um Sie zu beraten und Ihnen bei der Auswahl des richtigen Führerscheins zu helfen",
+  "services.cta.contact": "Kontaktieren Sie uns",
+  "services.cta.start": "Meinen Antrag starten",
+  "pricing.title": "Preise",
+  "pricing.subtitle": "Erweiterte Tools für vollständige finanzielle Transparenz.",
+  "pricing.grid_title": "Vollständige Preisliste",
+  "pricing.grid_subtitle": "Klicken Sie auf einen Führerschein, um alle Details anzuzeigen. Alle Preise verstehen sich ohne Steuern.",
+  "pricing.calculator.title": "Erweiterter Preisrechner",
+  "pricing.calculator.subtitle": "Schätzen Sie die Gesamtkosten Ihres Führerscheins einschließlich Steuern.",
+  "pricing.calculator.select_license": "1. Wählen Sie einen Führerscheintyp",
+  "pricing.calculator.select_region": "2. Wählen Sie Ihre Region",
+  "pricing.calculator.add_options": "3. Optionen hinzufügen",
+  "pricing.calculator.theory_test_option": "Theorieprüfung hinzufügen (falls nicht bestanden)",
+  "pricing.calculator.total_title": "Geschätzte Gesamtkosten",
+  "pricing.calculator.base_price": "Führerscheinpreis (ohne MwSt.)",
+  "pricing.calculator.theory_test_fee": "Theorieprüfungsgebühr (ohne MwSt.)",
+  "pricing.calculator.regional_tax": "Regionale Steuer (geschätzt)",
+  "pricing.calculator.total": "Gesamt (inkl. MwSt.)",
+  "pricing.calculator.cta": "Mit dieser Konfiguration starten",
+  "pricing.calculator.disclaimer": "Dies ist eine Schätzung. Der endgültige Betrag wird bei der Bestellung bestätigt.",
+  "pricing.comparator.title": "Führerschein-Vergleich",
+  "pricing.comparator.subtitle": "Vergleichen Sie bis zu 3 Führerscheine nebeneinander.",
+  "pricing.comparator.select_slot": "Platz {{num}}",
+  "pricing.comparator.empty_slot": "Leer",
+  "pricing.comparator.theory_test": "Theorieprüfung erforderlich",
+  "pricing.comparator.use_case": "Hauptnutzung",
+  "pricing.comparator.use_case.moped": "Moped",
+  "pricing.comparator.use_case.moto": "Motorrad",
+  "pricing.comparator.use_case.car": "Auto",
+  "pricing.comparator.use_case.car_trailer": "Auto + Anhänger",
+  "pricing.comparator.use_case.goods": "Gütertransport",
+  "pricing.comparator.use_case.people": "Personentransport",
+  "pricing.comparator.use_case.specific": "Spezifisch",
+  "pricing.package_builder.title": "Paket-Builder",
+  "pricing.package_builder.subtitle": "Erstellen Sie Ihr Führerscheinpaket und sparen Sie Geld!",
+  "pricing.package_builder.summary": "Paketzusammenfassung",
+  "pricing.package_builder.total_before_discount": "Gesamt vor Rabatt",
+  "pricing.package_builder.discount": "Paketrabatt",
+  "pricing.package_builder.cta": "Dieses Paket bestellen",
+  "pricing.package_builder.empty_selection": "Wählen Sie Führerscheine aus, um ein Paket zu erstellen.",
+  "pricing.included.title": "Was ist in unseren Preisen enthalten?",
+  "pricing.included.item1.title": "Vollständige administrative Verwaltung",
+  "pricing.included.item1.desc": "Wir kümmern uns um alle administrativen Verfahren.",
+  "pricing.included.item2.title": "Aktenerstellung und Nachverfolgung",
+  "pricing.included.item2.desc": "Von der Erstellung bis zur Validierung kümmern wir uns um alles.",
+  "pricing.included.item3.title": "Engagierter Kundensupport",
+  "pricing.included.item3.desc": "Ein Team, das Sie während des gesamten Prozesses begleitet.",
+  "pricing.included.item4.title": "Sichere Dokumentenübertragung",
+  "pricing.included.item4.desc": "Verschlüsselte Plattform zum Schutz Ihrer persönlichen Daten.",
+  "pricing.faq.title": "Häufige Fragen zu Preisen",
+  "pricing.faq.q1": "Sind die Preise endgültig?",
+  "pricing.faq.a1": "Die angezeigten Preise sind die Grundpreise ohne Steuern. Der Endpreis kann je nach Ihrer Region und den von Ihnen gewählten Optionen variieren. Verwenden Sie unseren Rechner für eine genaue Schätzung.",
+  "pricing.faq.q2": "Kann ich in Raten zahlen?",
+  "pricing.faq.a2": "Ja, wir bieten flexible Zahlungspläne an. Kontaktieren Sie unseren Kundendienst für weitere Informationen zu den verfügbaren Optionen.",
+  "pricing.faq.q3": "Gibt es versteckte Kosten?",
+  "pricing.faq.a3": "Nein. Wir verpflichten uns zu vollständiger Transparenz. Alle Kosten werden vor der Bestellung klar dargelegt.",
+  "pricing.faq.q4": "Was passiert, wenn mein Antrag abgelehnt wird?",
+  "pricing.faq.a4": "Im Falle einer Ablehnung aus Gründen, die außerhalb unserer Kontrolle liegen, bieten wir eine teilweise oder vollständige Rückerstattung gemäß unseren AGB an.",
+  "pricing.section.title": "Preise nach Kategorie",
+  "pricing.section.subtitle": "Wählen Sie die Kategorie, die Ihren Bedürfnissen entspricht",
+  "pricing.section.category_am": "Kategorie AM (Moped)",
+  "pricing.section.category_a": "Kategorie A (Motorrad)",
+  "pricing.section.category_b": "Kategorie B (Auto)",
+  "pricing.section.category_c": "Kategorie C (LKW)",
+  "pricing.section.category_d": "Kategorie D (Bus)",
+  "pricing.section.category_e": "Kategorie E (Anhänger)",
+  "pricing.competitor.title": "Warum MüllerFührerschein die Beste Wahl ist",
+  "pricing.competitor.subtitle": "Vergleichen Sie unsere Dienstleistungen mit der Konkurrenz und entdecken Sie, warum Tausende von Kunden uns vertrauen.",
+  "pricing.competitor.name1": "Traditionelle Fahrschule",
+  "pricing.competitor.name2": "Online Service A",
+  "pricing.competitor.name3": "Lokale Agentur",
+  "pricing.competitor.best_choice": "Beste Wahl",
+  "pricing.competitor.why_choose_us": "Warum MüllerFührerschein Wählen?",
+  "pricing.competitor.conclusion": "Mit MüllerFührerschein profitieren Sie von einem Premium-, schnellen und transparenten Service. Wir kombinieren moderne Technologie und menschliche Expertise, um Ihnen die bestmögliche Erfahrung zu bieten.",
+  "pricing.competitor.category.main": "Hauptmerkmale",
+  "pricing.competitor.category.service": "Kundenservice",
+  "pricing.competitor.category.payment": "Zahlung & Garantien",
+  "pricing.competitor.category.documents": "Dokumentenverwaltung",
+  "pricing.competitor.feature.price_transparency": "Transparente Preise",
+  "pricing.competitor.feature.processing_time": "Bearbeitungszeit",
+  "pricing.competitor.feature.success_rate": "Erfolgsrate",
+  "pricing.competitor.feature.online_platform": "24/7 Online-Plattform",
+  "pricing.competitor.feature.customer_support": "Kundensupport",
+  "pricing.competitor.feature.multilingual": "Mehrsprachiger Support (FR/EN)",
+  "pricing.competitor.feature.live_tracking": "Live-Verfolgung",
+  "pricing.competitor.feature.dedicated_advisor": "Dedizierter Berater",
+  "pricing.competitor.feature.payment_methods": "Zahlungsmethoden",
+  "pricing.competitor.feature.installments": "Zahlungspläne Verfügbar",
+  "pricing.competitor.feature.money_back": "Geld-zurück-Garantie",
+  "pricing.competitor.feature.no_hidden_fees": "Keine Versteckten Gebühren",
+  "pricing.competitor.feature.document_verification": "Dokumentenverifizierung",
+  "pricing.competitor.feature.digital_delivery": "Digitale Lieferung",
+  "pricing.competitor.feature.secure_storage": "Sichere Speicherung",
+  "pricing.competitor.feature.auto_reminders": "Automatische Erinnerungen",
+  "pricing.competitor.support.24_7": "24/7 Chat & E-Mail",
+  "pricing.competitor.support.business_hours": "Geschäftszeiten",
+  "pricing.competitor.support.limited": "Eingeschränkt",
+  "pricing.competitor.payment.all": "Karte, PayPal, Krypto",
+  "pricing.competitor.payment.limited": "Eingeschränkt",
+  "pricing.competitor.payment.card_only": "Nur Karte",
+  "pricing.competitor.time.instant": "Sofort",
+  "pricing.competitor.time.manual": "Manuell (langsam)",
+  "pricing.competitor.time.slow": "Langsam",
+  "dashboard.nav.home": "Startseite",
+  "dashboard.nav.applications": "Anträge",
+  "dashboard.nav.documents": "Dokumente",
+  "dashboard.nav.validated_documents": "Validierte Dokumente",
+  "dashboard.nav.profile": "Profil",
+  "dashboard.nav.testimonials": "Meine Bewertungen",
+  "dashboard.nav.media": "Meine Medien",
+  "dashboard.nav.help": "Hilfe",
+  "dashboard.welcome": "Willkommen, {{name}}",
+  "dashboard.overview.title": "Übersicht",
+  "dashboard.stats.active_applications": "Aktive Anträge",
+  "dashboard.stats.pending_documents": "Ausstehende Dokumente",
+  "dashboard.stats.messages": "Nachrichten",
+  "dashboard.recent_activity": "Letzte Aktivitäten",
+  "dashboard.quick_actions": "Schnellaktionen",
+  "dashboard.quick_actions.new_application": "Neuer Antrag",
+  "dashboard.quick_actions.upload_document": "Dokument hochladen",
+  "dashboard.quick_actions.contact_support": "Support kontaktieren",
+  "applications.title": "Meine Anträge",
+  "applications.new": "Neuer Antrag",
+  "applications.status.pending": "Ausstehend",
+  "applications.status.processing": "In Bearbeitung",
+  "applications.status.approved": "Genehmigt",
+  "applications.status.completed": "Abgeschlossen",
+  "applications.status.rejected": "Abgelehnt",
+  "applications.view_details": "Details ansehen",
+  "applications.no_applications": "Sie haben noch keine Anträge.",
+  "documents.title": "Meine Dokumente",
+  "documents.upload": "Dokument hochladen",
+  "documents.type.id": "Personalausweis",
+  "documents.type.photo": "Passfoto",
+  "documents.type.signature": "Unterschrift",
+  "documents.type.proof_address": "Adressnachweis",
+  "documents.type.other": "Sonstiges",
+  "documents.status.pending": "Ausstehend",
+  "documents.status.verified": "Verifiziert",
+  "documents.status.rejected": "Abgelehnt",
+  "documents.no_documents": "Noch keine Dokumente hochgeladen.",
+  "documents.validated.title": "Validierte Dokumente",
+  "documents.validated.subtitle": "Alle genehmigten Dokumente und Zertifikate",
+  "documents.validated.history": "Validierungshistorie",
+  "documents.validated.certificate": "Validierungszertifikat herunterladen",
+  "documents.validated.filter.type": "Nach Dokumenttyp filtern",
+  "documents.validated.filter.status": "Nach Status filtern",
+  "documents.validated.export": "Validierungsdaten exportieren",
+  "documents.validated.support": "Support kontaktieren",
+  "documents.validated.status.approved": "Genehmigt",
+  "documents.validated.status.rejected": "Abgelehnt",
+  "documents.validated.status.pending": "Ausstehend",
+  "documents.validated.status.certified": "Zertifiziert",
+  "documents.validated.types.id": "Personalausweis",
+  "documents.validated.types.photo": "Passfoto",
+  "documents.validated.types.signature": "Unterschrift",
+  "documents.validated.types.medical": "Ärztliche Bescheinigung",
+  "documents.validated.types.license": "Führerschein",
+  "documents.validated.empty": "Keine validierten Dokumente vorhanden",
+  "documents.validated.empty.desc": "Validierte Dokumente werden hier angezeigt, sobald Ihre Dokumente überprüft wurden.",
+  "profile.title": "Mein Profil",
+  "profile.personal_info": "Persönliche Informationen",
+  "profile.contact_info": "Kontaktinformationen",
+  "profile.address_info": "Adressinformationen",
+  "profile.account_settings": "Kontoeinstellungen",
+  "profile.public_profile": "Öffentliches Profil",
+  "profile.make_public": "Mein Profil öffentlich machen",
+  "profile.edit": "Profil bearbeiten",
+  "profile.save": "Änderungen speichern",
+  "profile.cancel": "Abbrechen",
+  "profile.update_success": "Profil erfolgreich aktualisiert!",
+  "profile.update_error": "Fehler beim Aktualisieren des Profils.",
+  "profile.field.full_name": "Vollständiger Name",
+  "profile.field.email": "E-Mail",
+  "profile.field.phone": "Telefon",
+  "profile.field.address": "Straße und Hausnummer",
+  "profile.field.city": "Stadt",
+  "profile.field.postal_code": "Postleitzahl",
+  "profile.field.region": "Region/Bundesland",
+  "profile.field.bio": "Biografie",
+  "profile.field.neph_number": "NEPH-Nummer",
+  "profile.avatar.upload": "Avatar hochladen",
+  "profile.avatar.change": "Avatar ändern",
+  "auth.login.title": "Bei Ihrem Konto anmelden",
+  "auth.login.email": "E-Mail-Adresse",
+  "auth.login.password": "Passwort",
+  "auth.login.remember": "Angemeldet bleiben",
+  "auth.login.forgot_password": "Passwort vergessen?",
+  "auth.login.submit": "Anmelden",
+  "auth.login.no_account": "Noch kein Konto?",
+  "auth.login.subtitle": "Melden Sie sich an, um auf Ihr Dashboard und Ihre Führerschein-Anträge zuzugreifen",
+  "auth.login.create_account": "Konto erstellen",
+  "auth.login.success": "Erfolgreich angemeldet!",
+  "auth.login.error": "Fehler bei der Anmeldung. Bitte überprüfen Sie Ihre Anmeldedaten.",
+  "auth.register.title": "Konto erstellen",
+  "auth.register.full_name": "Vollständiger Name",
+  "auth.register.email": "E-Mail-Adresse",
+  "auth.register.password": "Passwort",
+  "auth.register.confirm_password": "Passwort bestätigen",
+  "auth.register.phone": "Telefonnummer",
+  "auth.register.terms": "Ich akzeptiere die",
+  "auth.register.terms_link": "Allgemeinen Geschäftsbedingungen",
+  "auth.register.and": "und die",
+  "auth.register.privacy_link": "Datenschutzrichtlinie",
+  "auth.register.submit": "Registrieren",
+  "auth.register.have_account": "Bereits ein Konto?",
+  "auth.sign_up": "Registrieren",
+  "auth.sign_up.subtitle": "Erstellen Sie Ihr Konto, um Ihren deutschen Führerschein zu beantragen",
+  "auth.register.login": "Anmelden",
+  "auth.full_name": "Vollständiger Name",
+  "auth.email": "E-Mail-Adresse",
+  "auth.phone": "Telefonnummer",
+  "auth.password": "Passwort",
+  "auth.register_button": "Registrieren",
+  "auth.login_button": "Anmelden",
+  "auth.have_account": "Bereits ein Konto?",
+  "auth.sign_in": "Anmelden",
+  "auth.register.subtitle": "Erstellen Sie Ihr Konto, um Ihren deutschen Führerschein zu beantragen",
+  "auth.register.success": "Konto erfolgreich erstellt!",
+  "auth.register.error": "Fehler bei der Registrierung. Bitte versuchen Sie es erneut.",
+  "auth.forgot_password": "Passwort vergessen?",
+  "auth.no_account": "Noch kein Konto?",
+  "auth.forgot_password_title": "Passwort vergessen",
+  "auth.forgot_password_subtitle": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+  "auth.forgot_password_email_label": "E-Mail-Adresse",
+  "auth.forgot_password_button": "Passwort zurücksetzen",
+  "auth.forgot_password_back": "Zurück zur Anmeldung",
+  "auth.forgot_password_success": "E-Mail zum Zurücksetzen des Passworts wurde gesendet. Bitte überprüfen Sie Ihren Posteingang.",
+  "auth.forgot_password_error": "Fehler beim Senden der E-Mail. Bitte versuchen Sie es erneut.",
+  "auth.password_strength.weak": "Schwach",
+  "auth.password_strength.fair": "Mittel",
+  "auth.password_strength.good": "Gut",
+  "auth.password_strength.strong": "Stark",
+  "trust.title": "Ihr Vertrauen ist unsere Verantwortung",
+  "trust.subtitle": "Über 10.000 zufriedene Kunden vertrauen unserem sicheren Führerschein-Service",
+  "trust.guarantees": {
+    "legal": {
+      "title": "100% Legal & Authentisch",
+      "desc": "Alle deutschen Führerscheine sind offiziell registriert"
+    },
+    "fast": {
+      "title": "Express Service",
+      "desc": "3-7 Werktage durchschnittlich"
+    },
+    "satisfaction": {
+      "title": "Kundenzufriedenheit",
+      "desc": "98% unserer Kunden sind zufrieden"
+    },
+    "secure": {
+      "title": "100% Sicher",
+      "desc": "Alle Ihre Daten werden sicher übertragen und geschützt"
+    },
+    "expert": {
+      "title": "Expertenberatung",
+      "desc": "Persönliche Beratung von Führerschein-Experten"
+    },
+    "guaranteed": {
+      "title": "Geld-zurück-Garantie",
+      "desc": "100% Geld-zurück-Garantie bei Problemen"
+    },
+    "support": {
+      "title": "24/7 Beratung",
+      "desc": "Deutschsprachiger Kundenservice"
+    },
+    "partnership": {
+      "title": "Behördenpartnerschaft",
+      "desc": "Offizieller Partner deutscher Behörden"
+    }
+  },
+  "trust.cta": {
+    "title": "Bereit, Ihren Führerschein zu erhalten?",
+    "description": "Starten Sie noch heute Ihre sichere und legale Führerscheinbeantragung",
+    "primary": "Jetzt beantragen",
+    "phone": "+49 15212399096"
+  },
+  "trust.statistics": {
+    "satisfaction": "98% Kundenzufriedenheit",
+    "clients": "15.000+ Zufriedene Kunden",
+    "support": "24/7 Deutscher Support",
+    "years": "15+ Jahre Erfahrung"
+  },
+  "trust.testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "1": {
+      "name": "Sophie Müller",
+      "location": "Berlin",
+      "text": "Exzellenter Service! Ich habe meinen Führerschein Klasse B in nur 6 Wochen erhalten. Vielen Dank für die professionelle Beratung."
+    },
+    "2": {
+      "name": "Thomas Weber",
+      "location": "München",
+      "text": "Sehr zufrieden mit dem schnellen und unkomplizierten Prozess. Meine LKW-Führerschein Klasse C wurde termingerecht geliefert."
+    },
+    "3": {
+      "name": "Emma Schmidt",
+      "location": "Hamburg",
+      "text": "Top Service! Von der ersten Beratung bis zur Übergabe des Führerscheins war alles perfekt organisiert. Kann ich nur weiterempfehlen."
+    }
+  },
+  "trust.badges": {
+    "title": "Warum über 10.000 Kunden uns vertrauen",
+    "legal": {
+      "title": "100% Legal & Authentisch",
+      "description": "Alle deutschen Führerscheine sind offiziell registriert"
+    },
+    "speed": {
+      "title": "Express Service", 
+      "description": "3-7 Werktage durchschnittlich"
+    },
+    "support": {
+      "title": "24/7 Beratung",
+      "description": "Deutschsprachiger Kundenservice"
+    },
+    "satisfaction": {
+      "title": "Kundenzufriedenheit",
+      "description": "98% unserer Kunden sind zufrieden"
+    },
+    "security": {
+      "title": "256-bit SSL Verschlüsselung",
+      "description": "Ihre Daten sind mit höchster Sicherheit geschützt"
+    },
+    "guarantee": {
+      "title": "100% Geld-zurück-Garantie",
+      "description": "Bei Ablehnung oder Unzufriedenheit"
+    },
+    "payment_methods": {
+      "title": "Sichere Zahlungsmethoden",
+      "description": "SSL-verschlüsselte Zahlungen mit allen gängigen Methoden"
+    }
+  },
+  "payment.title": "Zahlung",
+  "payment.method.title": "Zahlungsmethode wählen",
+  "payment.method.card": "Kreditkarte",
+  "payment.method.paypal": "PayPal",
+  "payment.method.coinbase": "Kryptowährung",
+  "payment.amount": "Betrag",
+  "payment.processing": "Zahlung wird bearbeitet...",
+  "payment.success": "Zahlung erfolgreich!",
+  "payment.error": "Zahlungsfehler. Bitte versuchen Sie es erneut.",
+  "payment.secure_notice": "Sichere Zahlung über verschlüsselte Verbindung",
+  "footer.company": "MüllerFührerschein",
+  "footer.description": "Ihr vertrauenswürdiger Partner für die Erlangung aller Arten von deutschen Führerscheinen. Schnell, sicher und legal.",
+  "footer.contact.title": "Kontakt",
+  "footer.social.title": "Soziale Netzwerke",
+  "footer.links.legal": "Rechtliche Hinweise",
+  "footer.links.privacy": "Datenschutz",
+  "footer.links.terms": "AGB",
+  "footer.copyright": "© 2025 MüllerFührerschein. Alle Rechte vorbehalten.",
+  "help.title": "Hilfe-Center",
+  "help.search_placeholder": "Nach Hilfe suchen...",
+  "help.categories": "Kategorien",
+  "help.popular_articles": "Beliebte Artikel",
+  "help.contact_support": "Support kontaktieren",
+  "error.404.title": "Seite nicht gefunden",
+  "error.404.description": "Die von Ihnen gesuchte Seite existiert nicht.",
+  "error.404.back_home": "Zurück zur Startseite",
+  "error.500.title": "Serverfehler",
+  "error.500.description": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+  "error.500.back_home": "Zurück zur Startseite",
+  "common.loading": "Wird geladen...",
+  "common.save": "Speichern",
+  "common.cancel": "Abbrechen",
+  "common.delete": "Löschen",
+  "common.edit": "Bearbeiten",
+  "common.view": "Ansehen",
+  "common.download": "Herunterladen",
+  "common.upload": "Hochladen",
+  "common.search": "Suchen",
+  "common.filter": "Filtern",
+  "common.sort": "Sortieren",
+  "common.next": "Weiter",
+  "common.previous": "Zurück",
+  "common.submit": "Absenden",
+  "common.confirm": "Bestätigen",
+  "common.close": "Schließen",
+  "common.yes": "Ja",
+  "common.no": "Nein",
+  "common.all": "Alle",
+  "common.none": "Keine",
+  "common.optional": "Optional",
+  "common.required": "Erforderlich",
+  "common.details": "Details",
+  "common.details_for": "Details für",
+  "legal.title": "Rechtliche Hinweise",
+  "legal.content.company_title": "Artikel 1: Firma",
+  "legal.content.company_desc": "Name: MüllerFührerschein\nSitz: Alexanderstraße 40, 10179 Berlin, Deutschland\nE-Mail: mullerfuhrerschein@gmail.com\nTelefon: +49 15212399096",
+  "legal.content.hosting_title": "Artikel 2: Hosting",
+  "legal.content.hosting_desc": "Diese Website wird von Supabase und Coolify gehostet.",
+  "legal.content.data_title": "Artikel 3: Personenbezogene Daten",
+  "legal.content.data_desc": "Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer Datenschutzrichtlinie.",
+  "privacy.title": "Datenschutzrichtlinie",
+  "privacy.content.intro_title": "Einleitung",
+  "privacy.content.intro_desc": "MüllerFührerschein verpflichtet sich, die Privatsphäre seiner Benutzer zu schützen. Diese Richtlinie erklärt, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen.",
+  "privacy.content.collection_title": "Artikel 1: Datenerhebung",
+  "privacy.content.collection_desc": "Wir erheben die folgenden persönlichen Daten: Name, E-Mail-Adresse, Telefonnummer, Postanschrift und alle anderen Informationen, die Sie uns während des Antragsprozesses zur Verfügung stellen.",
+  "privacy.content.usage_title": "Artikel 2: Verwendung der Daten",
+  "privacy.content.usage_desc": "Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Führerscheinanträge, zur Kommunikation mit Ihnen über Ihre Anträge und zur Verbesserung unserer Dienstleistungen verwendet.",
+  "privacy.content.protection_title": "Artikel 3: Schutz der Daten",
+  "privacy.content.protection_desc": "Wir setzen angemessene technische und organisatorische Maßnahmen ein, um Ihre persönlichen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen.",
+  "privacy.content.rights_title": "Artikel 4: Ihre Rechte",
+  "privacy.content.rights_desc": "Sie haben das Recht auf Zugang, Berichtigung, Löschung und Übertragung Ihrer persönlichen Daten. Sie können diese Rechte ausüben, indem Sie uns unter mullerfuhrerschein@gmail.com kontaktieren.",
+  "privacy.content.cookies_title": "Artikel 5: Cookies",
+  "privacy.content.cookies_desc": "Unsere Website verwendet Cookies, um Ihre Benutzererfahrung zu verbessern. Sie können Cookies in Ihren Browsereinstellungen deaktivieren.",
+  "terms.title": "Allgemeine Geschäftsbedingungen",
+  "terms.content.acceptance_title": "Artikel 1: Annahme der AGB",
+  "terms.content.acceptance_desc": "Durch die Nutzung unserer Dienstleistungen erkennen Sie an, dass Sie diese Allgemeinen Geschäftsbedingungen (AGB) gelesen, verstanden und akzeptiert haben.",
+  "terms.content.services_title": "Artikel 2: Beschreibung der Dienstleistungen",
+  "terms.content.services_desc": "MüllerFührerschein bietet administrative Unterstützungsdienstleistungen für die Erlangung von deutschen Führerscheinen. Wir fungieren als Vermittler zwischen Ihnen und den zuständigen Behörden.",
+  "terms.content.obligations_title": "Artikel 3: Verpflichtungen des Kunden",
+  "terms.content.obligations_desc": "Sie verpflichten sich, genaue und wahrheitsgemäße Informationen bereitzustellen und alle angeforderten Dokumente rechtzeitig einzureichen. Jede falsche Angabe kann zur Ablehnung Ihres Antrags und zum Verlust der gezahlten Gebühren führen.",
+  "terms.content.payment_title": "Artikel 4: Zahlung",
+  "terms.content.payment_desc": "Die Zahlung erfolgt zum Zeitpunkt der Bestellung. Akzeptierte Zahlungsmethoden umfassen Kreditkarte, PayPal und Kryptowährungen. Die Preise verstehen sich in Euro und können sich ohne vorherige Ankündigung ändern.",
+  "terms.content.cancellation_title": "Artikel 5: Widerrufsrecht",
+  "terms.content.cancellation_desc": "Gemäß Artikel 221-28 des Verbrauchergesetzbuchs kann das Widerrufsrecht nicht für Verträge über die Erbringung von Dienstleistungen ausgeübt werden, die vor Ende der Widerrufsfrist vollständig erbracht wurden und deren Ausführung nach ausdrücklicher vorheriger Zustimmung des Verbrauchers und ausdrücklichem Verzicht auf sein Widerrufsrecht begonnen hat. Durch Annahme dieser AGB verzichten Sie ausdrücklich auf Ihr Widerrufsrecht ab Beginn der Dienstleistung.",
+  "terms.content.liability_title": "Artikel 6: Haftungsbeschränkung",
+  "terms.content.liability_desc": "MüllerFührerschein unternimmt alle Anstrengungen, um den Erfolg der Verfahren zu gewährleisten. Unsere Haftung kann jedoch nicht im Falle einer Ablehnung durch die Verwaltung aus Gründen geltend gemacht werden, die außerhalb unserer Kontrolle liegen (Dokumentenfälschung, Strafregister usw.).",
+  "terms.content.law_title": "Artikel 7: Anwendbares Recht",
+  "terms.content.law_desc": "Diese AGB unterliegen deutschem Recht. Im Falle eines Rechtsstreits und nach dem Versuch, eine gütliche Lösung zu finden, sind ausschließlich die deutschen Gerichte zuständig.",
+  "chat.caption_placeholder": "Bildunterschrift hinzufügen... (optional)",
+  "chat.message_placeholder": "Nachricht schreiben...",
+  "comments.placeholder": "Kommentar schreiben...",
+  "form.select_placeholder": "Auswählen...",
+  "filter.all": "Alle",
+  "filter.all_regions": "Alle Regionen",
+  "video.description_placeholder": "Beschreibung hinzufügen...",
+  "form.city_placeholder": "z.B. Berlin",
+  "error.404.heading": "Seite nicht gefunden",
+  "error.404.message": "Entschuldigung, die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben.",
+  "error.404.what_to_do": "Was möchten Sie tun?",
+  "error.404.home": "Startseite",
+  "error.404.back": "Zurück",
+  "error.404.services": "Dienstleistungen",
+  "error.404.popular_pages": "Beliebte Seiten",
+  "error.404.our_services": "Unsere Dienstleistungen",
+  "error.404.pricing": "Preise",
+  "error.404.new_application": "Neuer Antrag",
+  "error.404.contact": "Kontakt",
+  "error.404.footer_message": "Wenn Sie glauben, dass dies ein Fehler ist, bitte",
+  "error.404.contact_us": "kontaktieren Sie uns",
+  "error.500.heading": "Serverfehler",
+  "error.500.message": "Hoppla! Etwas ist auf unserer Seite schiefgelaufen. Wir arbeiten bereits daran, dieses Problem zu lösen.",
+  "error.500.what_can_do": "Was können Sie tun?",
+  "error.500.refresh": "Aktualisieren",
+  "error.500.home": "Startseite",
+  "error.500.contact": "Kontakt",
+  "error.500.helpful_tips": "Hilfreiche Tipps",
+  "error.500.tip1": "Aktualisieren Sie die Seite in einigen Momenten",
+  "error.500.tip2": "Überprüfen Sie Ihre Internetverbindung",
+  "error.500.tip3": "Leeren Sie den Browser-Cache, wenn das Problem weiterhin besteht",
+  "error.500.tip4": "Kontaktieren Sie uns, wenn der Fehler weiterhin auftritt",
+  "error.500.team_notified": "Unsere Teams wurden automatisch über dieses Problem benachrichtigt und arbeiten daran, es schnell zu lösen.",
+  "error.500.error_code": "Fehlercode: 500 - Interner Serverfehler",
+  "error.500.need_help": "Brauchen Sie Hilfe?",
+  "error.500.contact_support": "Kontaktieren Sie unseren Support",
+  "license_types": {
+    "title": "Führerschein-Klassen in Deutschland",
+    "subtitle": "Alle verfügbaren Führerscheinklassen für den deutschen Markt",
+    "category": {
+      "am": {
+        "name": "Klasse AM",
+        "title": "Moped-Führerschein",
+        "description": "Für leichte Kleinkrafträder und Mofas bis 45 km/h",
+        "age": "Ab 16 Jahren",
+        "vehicle": "Kleinkrafträder und Mofas bis 45 km/h",
+        "engine": "Max. 50 ccm Hubraum oder 4 kW Leistung",
+        "license_plate": "Mofa-Kennzeichen erforderlich",
+        "medical": "Augenärztliche Bescheinigung erforderlich",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 6 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "Moped Führerschein AM, 45 km/h Führerschein, Kleinkraftrad Führerschein Deutschland"
+      },
+      "a1": {
+        "name": "Klasse A1",
+        "title": "Leichtkraftrad-Führerschein",
+        "description": "Für leichte Motorräder bis 125 ccm",
+        "age": "Ab 16 Jahren (mit Begleitperson ab 16) oder ab 18 Jahren",
+        "vehicle": "Motorräder bis 125 ccm und maximal 11 kW Leistung",
+        "engine": "Max. 125 ccm Hubraum, max. 11 kW Leistung",
+        "power_to_weight": "Leistungsgewicht mindestens 0,1 kW/kg",
+        "license_plate": "Kleine Motorradkennzeichen",
+        "medical": "Augenärztliche und ärztliche Untersuchung",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "upgrade_possible": "Auf Klasse Aupgrade möglich",
+        "seo_keywords": "A1 Führerschein, 125ccm Führerschein, Leichtkraftrad Führerschein Deutschland"
+      },
+      "a2": {
+        "name": "Klasse A2",
+        "title": "Motorrad-Führerschein (beschränkt)",
+        "description": "Für mittlere Motorräder bis 35 kW",
+        "age": "Ab 18 Jahren",
+        "vehicle": "Motorräder bis 35 kW Leistung",
+        "engine": "Max. 35 kW Leistung",
+        "power_to_weight": "Leistungsgewicht maximal 0,2 kW/kg",
+        "restriction": "Keine Beschränkung nach 2 Jahren",
+        "medical": "Augenärztliche und ärztliche Untersuchung",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "upgrade_possible": "Nach 2 Jahren auf Klasse A upgradebar",
+        "seo_keywords": "A2 Führerschein, mittelschwerer Motorrad Führerschein, 35kW Führerschein Deutschland"
+      },
+      "a": {
+        "name": "Klasse A",
+        "title": "Motorrad-Führerschein (unbeschränkt)",
+        "description": "Für alle Motorräder ohne Leistungsbeschränkung",
+        "age": "Ab 20 Jahren (direkt) oder nach 2 Jahren A2",
+        "vehicle": "Alle Motorräder ohne Leistungsbeschränkung",
+        "engine": "Unbegrenzte Leistung",
+        "power_to_weight": "Keine Beschränkung",
+        "medical": "Augenärztliche und ärztliche Untersuchung",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "A Führerschein, unbeschränkter Motorrad Führerschein, heavy bike Führerschein Deutschland"
+      },
+      "b": {
+        "name": "Klasse B",
+        "title": "PKW-Führerschein",
+        "description": "Für PKW und leichte Nutzfahrzeuge",
+        "age": "Ab 18 Jahren (mit Begleitperson ab 17)",
+        "vehicle": "PKW bis 3.500 kg zulässiger Gesamtmasse",
+        "trailer": "Anhänger bis 750 kg oder über 750 kg bei bestimmter Konstellation",
+        "passengers": "Bis zu 8 Personen (inkl. Fahrer)",
+        "license_plate": "Normale PKW-Kennzeichen",
+        "medical": "Normale Tauglichkeit erforderlich",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "includes": "Umfasst auch Klasse L und S",
+        "seo_keywords": "B Führerschein, PKW Führerschein, Autoführerschein Deutschland, Führerschein beantragen"
+      },
+      "be": {
+        "name": "Klasse BE",
+        "title": "PKW mit Anhänger",
+        "description": "Für PKW mit schweren Anhängern über 750 kg",
+        "age": "Mindestens 18 Jahre",
+        "vehicle": "PKW (Klasse B) mit Anhänger über 750 kg",
+        "trailer_weight": "Anhänger über 750 kg bis 3.500 kg",
+        "total_weight": "Gesamtmasse bis 7.000 kg",
+        "additional": "Zusatz zur Klasse B",
+        "theory_hours": "Theorieprüfung aus Klasse B ausreichend",
+        "practice_hours": "Mindestens 7 Fahrstunden",
+        "exam_required": "Praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "BE Führerschein, Anhänger Führerschein, PKW mit Anhänger Führerschein Deutschland"
+      },
+      "c1": {
+        "name": "Klasse C1",
+        "title": "Klein-LKW-Führerschein",
+        "description": "Für mittelschwere Nutzfahrzeuge",
+        "age": "Mindestens 18 Jahre",
+        "vehicle": "Nutzfahrzeuge von 3.500 bis 7.500 kg zulässiger Gesamtmasse",
+        "passengers": "Bis zu 8 Personen (inkl. Fahrer)",
+        "trailer": "Anhänger bis 750 kg zulässiger Gesamtmasse",
+        "medical": "Ärztliche Untersuchung alle 5 Jahre (bis 60 Jahre), dann alle 3 Jahre",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig bis 60 Jahre, dann Verlängerung erforderlich",
+        "seo_keywords": "C1 Führerschein, Klein LKW Führerschein, mittelschwerer Nutzfahrzeug Führerschein Deutschland"
+      },
+      "c": {
+        "name": "Klasse C",
+        "title": "LKW-Führerschein",
+        "description": "Für schwere Nutzfahrzeuge",
+        "age": "Mindestens 21 Jahre",
+        "vehicle": "Nutzfahrzeuge über 7.500 kg zulässiger Gesamtmasse",
+        "passengers": "Bis zu 8 Personen (inkl. Fahrer)",
+        "trailer": "Anhänger bis 750 kg zulässiger Gesamtmasse",
+        "medical": "Ärztliche Untersuchung alle 5 Jahre (bis 60 Jahre), dann alle 3 Jahre",
+        "theory_hours": "18 Theoriestunden",
+        "practice_hours": "Mindestens 18 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig bis 60 Jahre, dann Verlängerung erforderlich",
+        "additional_coditions": "Berufskraftfahrer-Qualifikation (CQC) erforderlich",
+        "seo_keywords": "C Führerschein, LKW Führerschein, schwerer Nutzfahrzeug Führerschein Deutschland"
+      },
+      "c1e": {
+        "name": "Klasse C1E",
+        "title": "Klein-LKW mit schwerem Anhänger",
+        "description": "Für C1-Fahrzeuge mit schweren Anhängern",
+        "age": "Mindestens 18 Jahre",
+        "vehicle": "C1-Fahrzeug (3.500-7.500 kg) mit Anhänger über 750 kg",
+        "total_weight": "Gesamtmasse bis 12.000 kg",
+        "additional": "Zusatz zur Klasse C1",
+        "theory_hours": "Theorieprüfung aus Klasse C1 ausreichend",
+        "practice_hours": "Mindestens 6 Fahrstunden",
+        "exam_required": "Praktische Prüfung erforderlich",
+        "validity": "Abhängig von Klasse C1",
+        "seo_keywords": "C1E Führerschein, Klein LKW Anhänger Führerschein, schwerer Anhänger Führerschein Deutschland"
+      },
+      "ce": {
+        "name": "Klasse CE",
+        "title": "LKW mit Anhänger",
+        "description": "Für C-Fahrzeuge mit schweren Anhängern",
+        "age": "Mindestens 21 Jahre",
+        "vehicle": "C-Fahrzeug (über 7.500 kg) mit Anhänger über 750 kg",
+        "total_weight": "Gesamtmasse über 12.000 kg möglich",
+        "additional": "Zusatz zur Klasse C",
+        "theory_hours": "Theorieprüfung aus Klasse C ausreichend",
+        "practice_hours": "Mindestens 6 Fahrstunden",
+        "exam_required": "Praktische Prüfung erforderlich",
+        "validity": "Abhängig von Klasse C",
+        "additional_conditions": "Berufskraftfahrer-Qualifikation (CQC) erforderlich",
+        "seo_keywords": "CE Führerschein, LKW Anhänger Führerschein, schwerer Anhänger Führerschein Deutschland"
+      },
+      "d": {
+        "name": "Klasse D",
+        "title": "Bus-Führerschein",
+        "description": "Für Fahrgastbeförderung",
+        "age": "Mindestens 24 Jahre oder 21 Jahre mit Zusatzqualifikation",
+        "vehicle": "Fahrzeuge für mehr als 8 Personen (außer Fahrer)",
+        "passengers": "Mehr als 8 Fahrgäste",
+        "trailer": "Anhänger bis 750 kg zulässiger Gesamtmasse",
+        "medical": "Ärztliche Untersuchung alle 3 Jahre",
+        "theory_hours": "24 Theoriestunden",
+        "practice_hours": "Mindestens 24 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Verlängerung alle 5 Jahre erforderlich",
+        "additional_conditions": "Führerschein zur Fahrgastbeförderung erforderlich",
+        "seo_keywords": "D Führerschein, Bus Führerschein, Fahrgastbeförderung Führerschein Deutschland"
+      },
+      "d1": {
+        "name": "Klasse D1",
+        "title": "Kleinbus-Führerschein",
+        "description": "Für kleinere Fahrgastbeförderung",
+        "age": "Mindestens 21 Jahre",
+        "vehicle": "Fahrzeuge für 9-16 Personen (ohne Fahrer)",
+        "passengers": "9-16 Fahrgäste",
+        "trailer": "Anhänger bis 750 kg zulässiger Gesamtmasse",
+        "length_limit": "Max. 8 Meter Fahrzeuglänge",
+        "medical": "Ärztliche Untersuchung alle 3 Jahre",
+        "theory_hours": "18 Theoriestunden",
+        "practice_hours": "Mindestens 18 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Verlängerung alle 5 Jahre erforderlich",
+        "additional_conditions": "Führerschein zur Fahrgastbeförderung für gewerblichen Verkehr",
+        "seo_keywords": "D1 Führerschein, Kleinbus Führerschein, mittlere Fahrgastbeförderung Deutschland"
+      },
+      "de": {
+        "name": "Klasse DE",
+        "title": "Bus mit Anhänger",
+        "description": "Für D-Fahrzeuge mit schweren Anhängern",
+        "age": "Mindestens 24 Jahre oder 21 Jahre mit Zusatzqualifikation",
+        "vehicle": "D-Fahrzeug (über 8 Personen) mit Anhänger über 750 kg",
+        "additional": "Zusatz zur Klasse D",
+        "theory_hours": "Theorieprüfung aus Klasse D ausreichend",
+        "practice_hours": "Mindestens 6 Fahrstunden",
+        "exam_required": "Praktische Prüfung erforderlich",
+        "validity": "Abhängig von Klasse D",
+        "additional_conditions": "Führerschein zur Fahrgastbeförderung erforderlich",
+        "seo_keywords": "DE Führerschein, Bus Anhänger Führerschein, Fahrgastbeförderung Anhänger Deutschland"
+      },
+      "l": {
+        "name": "Klasse L",
+        "title": "Traktor-Führerschein",
+        "description": "Für landwirtschaftliche Zugmaschinen",
+        "age": "Ab 16 Jahren",
+        "vehicle": "Zugmaschinen bis 40 km/h",
+        "agricultural": "Land- und forstwirtschaftliche Zwecke",
+        "trailer": "Anhänger bis 25 km/h",
+        "include": "In Klasse B enthalten",
+        "theory_hours": "6 Theoriestunden",
+        "practice_hours": "Mindestens 3 Fahrstunden",
+        "exam_required": "Nur praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "L Führerschein, Traktor Führerschein, landwirtschaftlicher Führerschein Deutschland"
+      },
+      "s": {
+        "name": "Klasse S",
+        "title": "Mofa-Führerschein",
+        "description": "Für Mofas und Moped 25",
+        "age": "Ab 15 Jahren",
+        "vehicle": "Mofas bis 25 km/h",
+        "engine": "Max. 50 ccm Hubraum oder 4 kW Leistung",
+        "include": "In Klasse B enthalten",
+        "medical": "Augenärztliche Bescheinigung erforderlich",
+        "theory_hours": "6 Theoriestunden",
+        "practice_hours": "Mindestens 3 Fahrstunden",
+        "exam_required": "Nur praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "S Führerschein, Mofa Führerschein, 25 km/h Führerschein Deutschland"
+      },
+      "t": {
+        "name": "Klasse T",
+        "title": "Traktor-Führerschein (erweitert)",
+        "description": "Für schnellere landwirtschaftliche Zugmaschinen",
+        "age": "Ab 16 Jahren",
+        "vehicle": "Zugmaschinen bis 60 km/h",
+        "agricultural": "Land- und forstwirtschaftliche Zwecke",
+        "trailer": "Anhänger bis 40 km/h",
+        "medical": "Normale Tauglichkeit ausreichend",
+        "theory_hours": "12 Theoriestunden",
+        "practice_hours": "Mindestens 12 Fahrstunden",
+        "exam_required": "Theorieprüfung und praktische Prüfung erforderlich",
+        "validity": "Unbegrenzt gültig",
+        "seo_keywords": "T Führerschein, Traktor erweitert Führerschein, 60 km/h landwirtschaftlich Deutschland"
+      }
+    },
+    "upgrade_paths": {
+      "am_to_a1": "AM → A1 (nach 2 Jahren, ab 17 Jahren)",
+      "a1_to_a2": "A1 → A2 (nach 2 Jahren)",
+      "a2_to_a": "A2 → A (nach 2 Jahren)",
+      "b_to_be": "B → BE (sofort möglich)",
+      "c1_to_c": "C1 → C (nach 5 Jahren C1, ab 21 Jahre)",
+      "c1_to_c1e": "C1 → C1E (sofort möglich)",
+      "c_to_ce": "C → CE (sofort möglich)",
+      "d1_to_d": "D1 → D (nach 3 Jahren D1, ab 24 Jahre)",
+      "d_to_de": "D → DE (sofort möglich)"
+    }
+  },
+  "documents": {
+    "title": "Erforderliche Dokumente für Führerschein Deutschland",
+    "subtitle": "Alle offiziell anerkannten Dokumente für Ihren Führerscheinantrag",
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "types": {
+      "personal_id": {
+        "name": "Personalausweis",
+        "description": "Gültiger deutscher Personalausweis oder Reisepass",
+        "validity": "Muss gültig sein",
+        "photo_required": "Aktuelles Lichtbild erforderlich",
+        "accepted_documents": [
+          "Personalausweis (gültig)",
+          "Reisepass (gültig, mit Meldebestätigung)",
+          "Aufenthaltstitel (bei ausländischen Staatsangehörigen)"
+        ],
+        "rejection_reasons": [
+          "Abgelaufenes Dokument",
+          "Unleserliche Daten",
+          "Fehlendes Lichtbild"
+        ],
+        "seo_keywords": "Personalausweis Führerschein, Reisepass Führerschein Deutschland, Ausweis Führerschein beantragen"
+      },
+      "residence_permit": {
+        "name": "Aufenthaltstitel",
+        "description": "Für ausländische Staatsangehörige erforderlich",
+        "required_for": "EU-Bürger und Nicht-EU-Bürger",
+        "types_accepted": [
+          "Aufenthaltserlaubnis",
+          "Niederlassungserlaubnis",
+          "EU-Aufenthaltsberechtigung",
+          "Blauer Karte EU"
+        ],
+        "validity": "Muss noch mindestens 6 Monate gültig sein",
+        "additional_docs": "Bei einigen Nationalitäten: Apostille oder Legalisation",
+        "seo_keywords": "Aufenthaltstitel Führerschein, ausländische Führerschein Deutschland, EU Führerschein"
+      },
+      "proof_of_residence": {
+        "name": "Meldebestätigung",
+        "description": "Aktuelle Anmeldebestätigung des Wohnsitzes",
+        "accepted_proofs": [
+          "Meldebestätigung (nicht älter als 3 Monate)",
+          "Mietvertrag mit последнеми последних 3 Monaten Zahlungsbelege",
+          "Energieabrechnung der letzten 3 Monate",
+          "Kontoauszug mit Adresse der letzten 3 Monate"
+        ],
+        "municipal_office": "Vom Einwohnermeldeamt ausgestellt",
+        "seo_keywords": "Meldebestätigung Führerschein, Wohnsitznachweis Deutschland, Anmeldung Führerschein"
+      },
+      "biometric_photo": {
+        "name": "Biometrisches Passfoto",
+        "description": "Passfoto nach biometrischen Standards",
+        "specifications": {
+          "size": "35 x 45 mm",
+          "face_size": "70-80% der Bildhöhe",
+          "background": "Heller, einfarbiger Hintergrund",
+          "age": "Nicht älter als 6 Monate",
+          "quality": "Scharf und klar",
+          "expression": "Neutraler Gesichtsausdruck",
+          "eyes": "Augen müssen deutlich sichtbar sein",
+          "headwear": "Nur aus religiösen Gründen erlaubt"
+        },
+        "professional_required": "Professionelle Fotografien empfohlen",
+        "diy_instructions": "DIY-Fotoboxen der Deutschen Post akzeptiert",
+        "rejection_reasons": [
+          "Zu altes Foto",
+          "Falsche Größe",
+          "Ungeeigneter Hintergrund",
+          "Geschlossene Augen",
+          "Falsche Beleuchtung"
+        ],
+        "seo_keywords": "biometrisches Passfoto Führerschein, Passfoto Deutschland, Foto Führerschein beantragen"
+      },
+      "signature": {
+        "name": "Unterschrift",
+        "description": "Unterschrift auf weißem Hintergrund",
+        "requirements": {
+          "background": "Weißer Hintergrund obligatorisch",
+          "size": "Ungefähr 2-3 cm hoch",
+          "style": "Normale Unterschrift (nicht gedruckt)",
+          "paper": "Weißes Papier, keine linierten Formulare",
+          "pen": "Schwarze oder blaue Tinte"
+        },
+        "scan_quality": {
+          "resolution": "Mindestens 300 DPI",
+          "format": "JPEG oder PNG",
+          "size": "Maximal 5 MB",
+          "color": "Graustufen oder Farbe"
+        },
+        "rejection_reasons": [
+          "Gefärbter Hintergrund",
+          "Unleserliche Unterschrift",
+          "Zu kleine Größe",
+          "Gedruckte Unterschrift"
+        ],
+        "seo_keywords": "Unterschrift Führerschein, Signatur Führerschein Deutschland, Führerschein Unterschrift Scan"
+      },
+      "medical_certificate": {
+        "name": "Ärztliche Bescheinigung",
+        "description": "Ärztliche Tauglichkeitsuntersuchung",
+        "required_for": "C, D, C1, D1, C1E, DE, BE (bei bestimmten Fällen)",
+        "validity": {
+          "general": "Nicht älter als 1 Jahr",
+          "older_60": "Nicht älter als 6 Monate (ab 60 Jahre)",
+          "older_65": "Nicht älter als 3 Monate (ab 65 Jahre)"
+        },
+        "doctor_requirements": {
+          "general": "Hausarzt oder Betriebsarzt",
+          "commercial": "Für gewerblichen Verkehr: Arzt mit Verkehrsmedizin-Spezialisierung"
+        },
+        "examinations": [
+          "Sehtest",
+          "Farbsehen",
+          "Hörvermögen",
+          "Reaktionszeit",
+          "Allgemeine körperliche Verfassung"
+        ],
+        "cost_range": "30-80 Euro",
+        "seo_keywords": "ärztliche Bescheinigung Führerschein, Tauglichkeitsuntersuchung LKW, медицинское свидетельство Führerschein Deutschland"
+      },
+      "eyesight_test": {
+        "name": "Augenärztliche Bescheinigung",
+        "description": "Sehtest durch Augenarzt oder Optiker",
+        "required_for": "Alle Führerscheinklassen",
+        "standards": {
+          "visual_acuity": "Mindestens 0,7 bei einem Auge, 0,5 beim anderen",
+          "field_of_view": "Gesichtsfeld mindestens 120 Grad horizontal",
+          "binocular_vision": "Ausreichendes beidäugiges Sehen",
+          "night_vision": "Keine erhebliche Nachtblindheit"
+        },
+        "provider": "Augenarzt, Optiker oder Sehteststelle",
+        "validity": "Nicht älter als 2 Jahre",
+        "cost_range": "20-50 Euro",
+        "failure_consequences": "Bei Nichtbestehen: Augenarztliche Behandlung erforderlich",
+        "seo_keywords": "Sehtest Führerschein, Augenärztliche Bescheinigung, Augenprüfung Führerschein Deutschland"
+      },
+      "first_aid_certificate": {
+        "name": "Erste-Hilfe-Kurs",
+        "description": "Nachweis über Erste-Hilfe-Ausbildung",
+        "required_for": "Alle Führerscheinklassen",
+        "course_content": [
+          "Sofortmaßnahmen am Unfallort",
+          "Stabile Seitenlage",
+          "Herz-Lungen-Wiederbelebung",
+          "Notruf",
+          "Blutstillung",
+          "Schockbekämpfung"
+        ],
+        "course_duration": "9 Unterrichtsstunden (1 Tag)",
+        "provider": "DRK, ASB, Malteser, Johanniter oder andere anerkannte Stellen",
+        "validity": "Unbegrenzt gültig",
+        "cost_range": "30-50 Euro",
+        "exception": "Gesundheitsfachkräfte und Rettungsdienst-Mitarbeiter sind befreit",
+        "seo_keywords": "Erste Hilfe Kurs Führerschein, Sofortmaßnahmen Führerschein, Erste Hilfe Nachweis Deutschland"
+      },
+      "theoretical_exam_proof": {
+        "name": "Theorieprüfungs-Bescheinigung",
+        "description": "Nachweis über bestandene Theorieprüfung (bei vorhanden)",
+        "required_for": "Bei Umtausch oder Zusatzklasse",
+        "issue_authority": "TÜV oder Dekra",
+        "validity": "12 Monate",
+        "re_exam_required": "Nach Ablauf muss Theorieprüfung wiederholt werden",
+        "seo_keywords": "Theorieprüfung Führerschein, Theorie Nachweis, Theorieprüfung Deutschland"
+      },
+      "criminal_record": {
+        "name": "Führungszeugnis",
+        "description": "Belegisches Führungszeugnis ohne Eintragungen",
+        "required_for": "C, D, C1, D1, DE (gewerblicher Verkehr)",
+        "issuance": "Einwohnermeldeamt oder online über behordenservice.de",
+        "validity": "Nicht älter als 3 Monate",
+        "types": {
+          "basic": "Für normale Führerscheine (nicht erforderlich)",
+          "extended": "Für gewerblichen Verkehr (erforderlich)",
+          "employee": "Für Arbeitgeber (bei C/D Führerschein)"
+        },
+        "cost": "13 Euro",
+        "seo_keywords": "Führungszeugnis Führerschein, erweitertes Führungszeugnis, Führerschein ohne Vorstrafen"
+      }
+    },
+    "submission_process": {
+      "title": "Dokumenten-Upload-Prozess",
+      "digital_upload": "Digitaler Upload über unser System",
+      "security": "Verschlüsselte Übertragung",
+      "file_formats": "JPEG, PNG, PDF",
+      "file_size": "Maximal 10 MB pro Datei",
+      "verification": "Automatische und manuelle Verifizierung",
+      "processing_time": "24-48 Stunden nach Upload",
+      "follow_up": "Bei Ablehnung: Nachforderung und Neupload"
+    },
+    "common_rejections": {
+      "unreadable": "Unleserliche Dokumente",
+      "expired": "Abgelaufene Dokumente",
+      "wrong_format": "Falsches Dateiformat",
+      "too_large": "Datei zu groß",
+      "missing_info": "Fehlende Angaben",
+      "wrong_photo": "Nicht konformes Passfoto"
+    }
+  },
+  "errors": {
+    "validation": {
+      "required_field": "Dieses Feld ist erforderlich",
+      "invalid_email": "Ungültige E-Mail-Adresse",
+      "invalid_phone": "Ungültige Telefonnummer",
+      "invalid_date": "Ungültiges Datum",
+      "invalid_postal_code": "Ungültige Postleitzahl",
+      "password_too_short": "Passwort muss mindestens 8 Zeichen lang sein",
+      "password_mismatch": "Passwörter stimmen nicht überein",
+      "age_too_young": "Sie sind zu jung für diesen Führerscheintyp",
+      "age_too_old": "Sie sind zu alt für diesen Führerscheintyp",
+      "document_required": "Dieses Dokument ist für den gewählten Führerscheintyp erforderlich",
+      "file_too_large": "Datei ist zu groß (maximal 10 MB)",
+      "invalid_file_type": "Ungültiger Dateityp",
+      "upload_failed": "Upload fehlgeschlagen",
+      "network_error": "Netzwerkfehler. Bitte versuchen Sie es erneut",
+      "server_error": "Serverfehler. Bitte kontaktieren Sie den Support",
+      "permission_denied": "Keine Berechtigung für diese Aktion",
+      "session_expired": "Sitzung abgelaufen. Bitte melden Sie sich erneut an",
+      "rate_limit_exceeded": "Zu viele Versuche. Bitte warten Sie einige Minuten",
+      "field_too_long": "Feld ist zu lang",
+      "field_too_short": "Feld ist zu kurz",
+      "invalid_characters": "Ungültige Zeichen enthalten",
+      "missing_signature": "Unterschrift ist erforderlich",
+      "photo_not_compliant": "Foto entspricht nicht den biometrischen Standards",
+      "document_expired": "Dokument ist abgelaufen",
+      "document_damaged": "Dokument ist beschädigt oder unleserlich"
+    },
+    "application": {
+      "not_found": "Antrag nicht gefunden",
+      "already_submitted": "Antrag bereits eingereicht",
+      "processing_failed": "Fehler bei der Antragsbearbeitung",
+      "document_rejected": "Dokument wurde abgelehnt",
+      "payment_failed": "Zahlung fehlgeschlagen",
+      "payment_required": "Zahlung ist erforderlich",
+      "invalid_status": "Ungültiger Antragsstatus",
+      "cannot_modify": "Antrag kann nicht mehr geändert werden",
+      "deadline_missed": "Frist verpasst",
+      "insufficient_data": "Unzureichende Daten",
+      "duplicate_application": "Doppelter Antrag erkannt",
+      "verification_failed": "Verifizierung fehlgeschlagen"
+    },
+    "payment": {
+      "declined": "Zahlung abgelehnt",
+      "insufficient_funds": "Unzureichende Deckung",
+      "card_expired": "Karte ist abgelaufen",
+      "invalid_card": "Ungültige Kartendaten",
+      "processing_error": "Fehler bei der Zahlungsabwicklung",
+      "cancelled": "Zahlung abgebrochen",
+      "refund_failed": "Rückerstattung fehlgeschlagen",
+      "currency_not_supported": "Währung nicht unterstützt",
+      "transaction_limit": "Transaktionslimit überschritten",
+      "fraud_detected": "Betrug erkannt"
+    },
+    "system": {
+      "maintenance": "Systemwartung läuft",
+      "overloaded": "System überlastet",
+      "database_error": "Datenbankfehler",
+      "authentication_failed": "Authentifizierung fehlgeschlagen",
+      "access_denied": "Zugriff verweigert",
+      "resource_not_found": "Ressource nicht gefunden",
+      "method_not_allowed": "Methode nicht erlaubt",
+      "timeout": "Zeitüberschreitung",
+      "quota_exceeded": "Kontingent überschritten"
+    },
+    "custom_messages": {
+      "welcome_new_user": "Willkommen bei MüllerFührerschein! Ihr Konto wurde erfolgreich erstellt.",
+      "email_verification_sent": "Bitte überprüfen Sie Ihre E-Mails zur Bestätigung Ihres Kontos.",
+      "password_reset_sent": "Ein Link zum Zurücksetzen Ihres Passworts wurde gesendet.",
+      "application_submitted": "Ihr Antrag wurde erfolgreich eingereicht und wird bearbeitet.",
+      "document_approved": "Ihr Dokument wurde genehmigt.",
+      "document_rejected_reason": "Ihr Dokument wurde abgelehnt. Grund: {{reason}}",
+      "license_approved": "Ihr Führerschein wurde genehmigt!",
+      "license_ready": "Ihr Führerschein ist bereit zur Abholung/Zustellung.",
+      "payment_success": "Zahlung erfolgreich verarbeitet.",
+      "refund_processed": "Rückerstattung wurde verarbeitet."
+    }
+  },
+  "emails": {
+    "templates": {
+      "welcome": {
+        "subject": "Willkommen bei MüllerFührerschein - Ihr Führerschein-Partner in Deutschland",
+        "greeting": "Lieber {{name}},",
+        "intro": "Vielen Dank für Ihre Registrierung bei MüllerFührerschein. Wir freuen uns, Sie bei der Beantragung Ihres deutschen Führerscheins zu unterstützen.",
+        "next_steps": "Ihre nächsten Schritte:",
+        "step1": "1. Loggen Sie sich in Ihr Dashboard ein",
+        "step2": "2. Wählen Sie Ihren gewünschten Führerscheintyp",
+        "step3": "3. Laden Sie Ihre Dokumente hoch",
+        "support_info": "Bei Fragen stehen wir Ihnen gerne zur Verfügung:",
+        "contact": "📧 E-Mail: mullerfuhrerschein@gmail.com\n📞 Telefon: +49 15212399096\n🕒 Support: 24/7 verfügbar",
+        "closing": "Mit freundlichen Grüßen,\nIhr MüllerFührerschein Team",
+        "seo_footer": "Führerschein Deutschland | Führerschein beantragen | MüllerFührerschein Berlin"
+      },
+      "application_received": {
+        "subject": "Antrag erhalten - Führerschein {{license_type}} | MüllerFührerschein",
+        "greeting": "Hallo {{name}},",
+        "intro": "Vielen Dank! Wir haben Ihren Antrag für den Führerschein der Klasse {{license_type}} erhalten und in Bearbeitung genommen.",
+        "application_details": "Antragsnummer: {{application_number}}\nFührerscheintyp: {{license_type}}\nEingangsdatum: {{submission_date}}\nGeschätzte Bearbeitungszeit: {{processing_time}} Werktage",
+        "documents_status": "Status Ihrer Dokumente:",
+        "approved_docs": "✅ Genehmigt: {{approved_count}}",
+        "pending_docs": "⏳ Ausstehend: {{pending_count}}",
+        "rejected_docs": "❌ Abgelehnt: {{rejected_count}}",
+        "next_steps": "Folgende Schritte erfolgen nun:",
+        "step1": "Prüfung Ihrer eingereichten Dokumente",
+        "step2": "Antragstellung bei den zuständigen Behörden",
+        "step3": "Bearbeitung durch das Straßenverkehrsamt",
+        "step4": "Ausstellung des Führerscheins",
+        "important_notice": "Wichtiger Hinweis:",
+        "notice_content": "Bitte halten Sie sich bereit, zusätzliche Dokumente einzureichen, falls von den Behörden angefordert. Überprüfen Sie regelmäßig Ihr Dashboard.",
+        "support_info": "Bei Fragen oder Problemen kontaktieren Sie uns jederzeit:",
+        "closing": "Wir danken Ihnen für Ihr Vertrauen!\nMüllerFührerschein Team",
+        "seo_footer": "Führerschein Klasse {{license_type}} | Führerschein Deutschland | Führerschein beantragen"
+      },
+      "document_required": {
+        "subject": "Zusätzliche Dokumente erforderlich - Führerschein {{license_type}}",
+        "greeting": "Lieber {{name}},",
+        "intro": "Für Ihren Führerschein der Klasse {{license_type}} benötigen wir zusätzliche Dokumente von Ihnen.",
+        "required_docs": "Folgende Dokumente sind erforderlich:",
+        "doc_template": "• {{document_name}}\n  Begründung: {{reason}}\n  Format: {{format}}\n  Deadline: {{deadline}}",
+        "upload_instructions": "Bitte laden Sie die Dokumente über Ihr Dashboard hoch:",
+        "dashboard_link": "Dashboard: {{dashboard_url}}",
+        "help_section": "Hilfe bei der Dokumentenbeschaffung:",
+        "help_items": "• 📸 Biometrisches Passfoto: Deutsche Post Fotobox oder professioneller Fotograf\n• 🏥 Ärztliche Bescheinigung: Ihr Hausarzt oder Betriebsarzt\n• 📋 Führungszeugnis: Einwohnermeldeamt oder online über behordenservice.de\n• 🎓 Erste-Hilfe-Kurs: DRK, ASB oder andere anerkannte Stellen",
+        "deadline_reminder": "⚠️ Wichtig: Bitte reichen Sie alle Dokumente bis zum {{deadline}} ein, um Verzögerungen zu vermeiden.",
+        "support_info": "Benötigen Sie Hilfe? Kontaktieren Sie uns:",
+        "contact": "📧 mullerfuhrerschein@gmail.com\n📞 +49 15212399096",
+        "closing": "Mit freundlichen Grüßen,\nIhr MüllerFührerschein Team",
+        "seo_footer": "Führerschein Dokumente | Führerschein Deutschland | Führerschein beantragen"
+      },
+      "payment_reminder": {
+        "subject": "Zahlung ausstehend - Führerschein {{license_type}} | MüllerFührerschein",
+        "greeting": "Lieber {{name}},",
+        "intro": "Für Ihren Führerschein der Klasse {{license_type}} steht noch eine Zahlung aus.",
+        "payment_details": "Ausstehender Betrag: {{amount}} EUR\nFällig seit: {{due_date}}\nAntragsnummer: {{application_number}}",
+        "payment_options": "Verfügbare Zahlungsmethoden:",
+        "options": "💳 Kreditkarte (Visa, Mastercard, Amex)\n💰 PayPal\n₿ Kryptowährung (Bitcoin, Ethereum, USDT)",
+        "secure_payment": "Ihre Zahlungsdaten werden verschlüsselt übertragen und sind 100% sicher.",
+        "complete_payment": "Jetzt bezahlen: {{payment_url}}",
+        "consequences": "⚠️ Hinweis: Ohne Zahlung kann Ihr Antrag nicht weiterbearbeitet werden.",
+        "support_info": "Bei Fragen zur Zahlung:",
+        "contact": "📧 payment@mullerfuhrerschein.de\n📞 +49 15212399096",
+        "closing": "Vielen Dank für Ihr Verständnis!\nMüllerFührerschein Team",
+        "seo_footer": "Führerschein Zahlung | Führerschein Deutschland | MüllerFührerschein Berlin"
+      },
+      "approval_notice": {
+        "subject": "✅ Führerschein genehmigt - Abholung/Zustellung | MüllerFührerschein",
+        "greeting": "Hervorragende Nachrichten, {{name}}!",
+        "intro": "Ihr Führerschein der Klasse {{license_type}} wurde von den Behörden genehmigt!",
+        "congratulations": "🎉 Herzlichen Glückwunsch zu Ihrem deutschen Führerschein!",
+        "final_steps": "Abschließende Schritte:",
+        "delivery_options": "Wie möchten Sie Ihren Führerschein erhalten?",
+        "option1": "📦 Versand per Express-Kurier (1-2 Werktage)\n   Adresse: {{delivery_address}}\n   Kosten: 25 EUR",
+        "option2": "🏢 Abholung in unserer Berliner Geschäftsstelle\n   Adresse: Alexanderstraße 40, 10179 Berlin\n   Öffnungszeiten: Mo-Fr 9:00-18:00\n   Kosten: Kostenlos",
+        "option3": "📧 Digitale Kopie per E-Mail (sofort)\n   Kosten: 5 EUR\n   Hinweis: Original wird per Post versandt",
+        "final_payment": "Falls noch nicht erfolgt, ist eine finale Bearbeitungsgebühr zu zahlen: {{final_amount}} EUR",
+        "next_actions": "Ihre nächsten Aktionen:",
+        "actions": "1. Wählen Sie Ihre bevorzugte Zustellungsoption\n2. Zahlen Sie eventuelle Restbeträge\n3. Erhalten Sie Ihren Führerschein",
+        "validity_info": "Ihr Führerschein ist in allen EU-Ländern gültig und wurde offiziell registriert.",
+        "support_info": "Bei Fragen zur Abholung/Zustellung:",
+        "contact": "📧 fulfillment@mullerfuhrerschein.de\n📞 +49 15212399096",
+        "closing": "Nochmals herzlichen Glückwunsch!\nIhr MüllerFührerschein Team",
+        "seo_footer": "Führerschein genehmigt | Führerschein Deutschland | MüllerFührerschein Berlin"
+      },
+      "rejection_notice": {
+        "subject": "Antrag abgelehnt - Nächste Schritte | MüllerFührerschein",
+        "greeting": "Lieber {{name}},",
+        "intro": "Leider müssen wir Ihnen mitteilen, dass Ihr Antrag für den Führerschein der Klasse {{license_type}} abgelehnt wurde.",
+        "rejection_reasons": "Ablehnungsgründe:",
+        "reasons": "{{reasons}}",
+        "rejection_letter": "Ein detailliertes Ablehnungsschreiben erhalten Sie in Ihrem Dashboard.",
+        "next_steps": "Mögliche nächste Schritte:",
+        "step1": "📋 Korrektur der fehlerhaften Dokumente",
+        "step2": "🔄 Neueinreichung nach Korrektur",
+        "step3": "⚖️ Widerspruch (falls berechtigt)",
+        "step4": "📞 Beratung durch unser Expertenteam",
+        "help_available": "Unser Team steht Ihnen zur Verfügung:",
+        "services": "• Kostenlose Beratung zu Ablehnungsgründen\n• Unterstützung bei der Korrektur von Dokumenten\n• Prüfung der Erfolgsaussichten eines Widerspruchs\n• Begleitung bei der Neueinreichung",
+        "refund_policy": "Rückerstattungsrichtlinien:",
+        "policy": "Je nach Ablehnungsgrund und bereits erbrachten Leistungen kann eine anteilige Rückerstattung gewährt werden. Details hierzu finden Sie in unseren AGB.",
+        "support_info": "Kontaktieren Sie uns für eine kostenlose Beratung:",
+        "contact": "📧 support@mullerfuhrerschein.de\n📞 +49 15212399096",
+        "closing": "Wir bedauern die Umstände und helfen Ihnen gerne bei einem erneuten Versuch.\nIhr MüllerFührerschein Team",
+        "seo_footer": "Führerschein abgelehnt | MüllerFührerschein | Führerschein Deutschland"
+      }
+    }
+  },
+  "forms": {
+    "application": {
+      "title": "Führerschein beantragen - Deutschland",
+      "personal_info": "Persönliche Daten",
+      "contact_info": "Kontaktdaten",
+      "license_selection": "Führerscheintyp auswählen",
+      "document_upload": "Dokumente hochladen",
+      "payment": "Zahlungsinformationen",
+      "confirmation": "Bestätigung",
+      "field_labels": {
+        "first_name": "Vorname",
+        "last_name": "Nachname",
+        "birth_date": "Geburtsdatum",
+        "birth_place": "Geburtsort",
+        "gender": "Geschlecht",
+        "nationality": "Staatsangehörigkeit",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "address": "Aktuelle Anschrift",
+        "street": "Straße und Hausnummer",
+        "city": "Stadt",
+        "postal_code": "Postleitzahl",
+        "region": "Bundesland",
+        "previous_licenses": "Bestehende Führerscheine",
+        "medical_conditions": "Gesundheitliche Einschränkungen",
+        "emergency_contact": "Notfallkontakt",
+        "emergency_name": "Name des Notfallkontakts",
+        "emergency_phone": "Telefonnummer des Notfallkontakts",
+        "desired_class": "Gewünschte Führerscheinklasse",
+        "current_residence": "Wohnsitz seit",
+        "employer": "Arbeitgeber (bei C/D-Klassen)",
+        "work_location": "Arbeitsplatz (bei C/D-Klassen)"
+      },
+      "placeholders": {
+        "first_name": "Max",
+        "last_name": "Mustermann",
+        "birth_place": "Berlin",
+        "email": "max@beispiel.de",
+        "phone": "+49 123 456789",
+        "street": "Musterstraße 1",
+        "city": "Berlin",
+        "postal_code": "10115",
+        "emergency_name": "Maria Mustermann",
+        "emergency_phone": "+49 987 654321"
+      },
+      "validation": {
+        "min_age_a1": "Mindestalter für Klasse A1: 16 Jahre",
+        "min_age_a2": "Mindestalter für Klasse A2: 18 Jahre",
+        "min_age_a": "Mindestalter für Klasse A: 20 Jahre",
+        "min_age_b": "Mindestalter für Klasse B: 18 Jahre (17 Jahre mit Begleitung)",
+        "min_age_c1": "Mindestalter für Klasse C1: 18 Jahre",
+        "min_age_c": "Mindestalter für Klasse C: 21 Jahre",
+        "min_age_d1": "Mindestalter für Klasse D1: 21 Jahre",
+        "min_age_d": "Mindestalter für Klasse D: 24 Jahre (21 Jahre mit Zusatzqualifikation)",
+        "valid_postal_code": "Bitte geben Sie eine gültige deutsche Postleitzahl ein",
+        "valid_phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+        "valid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "documents_required": "Bitte laden Sie alle erforderlichen Dokumente hoch"
+      },
+      "help_texts": {
+        "birth_place": "Geburtsort wie im Personalausweis angegeben",
+        "nationality": "Ihre Staatsangehörigkeit",
+        "phone": "Mobile Nummer bevorzugt für schnelle Kontaktaufnahme",
+        "street": "Aktuelle Meldeadresse wie im Melderegister",
+        "postal_code": "Deutsche Postleitzahl",
+        "previous_licenses": "Alle bereits vorhandenen Führerscheine (auch aus anderen Ländern)",
+        "emergency_contact": "Kontaktperson für Notfälle während der Führerscheinausbildung"
+      },
+      "checkboxes": {
+        "terms_accepted": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen",
+        "privacy_accepted": "Ich akzeptiere die Datenschutzrichtlinie",
+        "newsletter_signup": "Ich möchte Updates per E-Mail erhalten",
+        "same_address": "Rechnungsadresse entspricht der oben angegebenen Adresse",
+        "correct_information": "Ich versichere, dass alle angegebenen Daten korrekt sind",
+        "document_authenticity": "Ich bestätige die Echtheit aller eingereichten Dokumente"
+      },
+      "buttons": {
+        "save_draft": "Entwurf speichern",
+        "next_step": "Nächster Schritt",
+        "previous_step": "Vorheriger Schritt",
+        "submit_application": "Antrag einreichen",
+        "upload_document": "Dokument hochladen",
+        "add_more_documents": "Weitere Dokumente hinzufügen",
+        "preview": "Vorschau",
+        "edit": "Bearbeiten",
+        "continue": "Fortfahren",
+        "cancel": "Abbrechen",
+        "reset": "Zurücksetzen"
+      }
+    },
+    "dashboard_profile": {
+      "title": "Mein Profil - MüllerFührerschein",
+      "personal_section": "Persönliche Informationen",
+      "contact_section": "Kontaktinformationen",
+      "address_section": "Adressinformationen",
+      "license_section": "Führerschein-Informationen",
+      "security_section": "Sicherheitseinstellungen",
+      "privacy_section": "Datenschutzeinstellungen",
+      "avatar_upload": "Profilbild ändern",
+      "password_change": "Passwort ändern",
+      "delete_account": "Konto löschen",
+      "export_data": "Daten exportieren"
+    },
+    "contact_form": {
+      "title": "Kontaktaufnahme - MüllerFührerschein",
+      "inquiry_type": "Art der Anfrage",
+      "inquiry_types": {
+        "general": "Allgemeine Anfrage",
+        "application": "Frage zum Antrag",
+        "document": "Dokumentenfrage",
+        "payment": "Zahlungsfrage",
+        "technical": "Technisches Problem",
+        "complaint": "Beschwerde",
+        "feedback": "Feedback",
+        "partnership": "Geschäftspartnerschaft"
+      },
+      "priority": "Dringlichkeit",
+      "priority_levels": {
+        "low": "Niedrig",
+        "normal": "Normal",
+        "high": "Hoch",
+        "urgent": "Dringend"
+      },
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "attachments": "Anhänge (optional)",
+      "preferred_contact": "Bevorzugte Kontaktmethode",
+      "contact_methods": {
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram"
+      },
+      "callback_time": "Rückrufzeit (bei Telefonkontakt gewünscht)",
+      "response_time": "Antwortzeit",
+      "response_guarantee": "Wir antworten innerhalb von 4 Stunden während der Geschäftszeiten"
+    }
+  },
+  "common": {
+    "our_commitment": "Unser Engagement für Ihre Sicherheit",
+    "ssl_secure": "SSL-Verschlüsselt",
+    "data_protection": "DSGVO-geschützt",
+    "money_back": "Geld-zurück-Garantie",
+    "german_quality": "Deutsche Qualität",
+    "secure_payment_methods": "Sichere Zahlungsmethoden",
+    "secure_payments": "Sichere Kartenzahlungen",
+    "paypal_protection": "PayPal-Käuferschutz",
+    "crypto_anonymous": "Anonyme Krypto-Zahlung",
+    "encrypted": "Verschlüsselt",
+    "german_standards": "Deutsche Standards & Zertifizierungen",
+    "gdpr_compliant": "DSGVO-konforme Datenverarbeitung",
+    "14_day_guarantee": "14-Tage Geld-zurück-Garantie",
+    "certified_instructor": "Zertifizierte Führerschein-Experten",
+    "customer_satisfaction": "Kundenzufriedenheit",
+    "based_on_reviews": "Basierend auf über 2000 Bewertungen",
+    "testimonial_text": "Ausgezeichneter Service! Mein Führerschein kam schneller als erwartet.",
+    "legal_notice": "Ihre Zahlungsdaten werden sicher übertragen und nicht gespeichert. Alle Transaktionen sind durch SSL-256-Bit-Verschlüsselung geschützt."
+  },
+  "payment": {
+    "methods": {
+      "title": "Zahlungsmethoden für Führerschein Deutschland",
+      "subtitle": "Sichere und schnelle Zahlungsabwicklung",
+      "options": {
+        "credit_card": {
+          "name": "Kreditkarte",
+          "accepted": "Visa, Mastercard, American Express, Diners Club",
+          "processing_time": "Sofort",
+          "security": "SSL-verschlüsselt, 3D Secure",
+          "fee": "Keine zusätzlichen Gebühren",
+          "instant_confirmation": "Sofortige Bestätigung"
+        },
+        "debit_card": {
+          "name": "EC-Karte/Girocard",
+          "accepted": "Alle deutschen EC-Karten",
+          "processing_time": "Sofort",
+          "security": "PIN-basiert",
+          "fee": "Keine Gebühren",
+          "german_specific": "Besonders für deutsche Kunden"
+        },
+        "paypal": {
+          "name": "PayPal",
+          "accepted": "PayPal-Konto erforderlich",
+          "processing_time": "Sofort",
+          "buyer_protection": "Käuferschutz inklusive",
+          "fee": "PayPal-Gebühren werden übernommen",
+          "popular": "Beliebteste Zahlungsmethode"
+        },
+        "sepa": {
+          "name": "SEPA-Überweisung",
+          "accepted": "EU-Bankkonto erforderlich",
+          "processing_time": "1-3 Werktage",
+          "fee": "Keine Gebühren",
+          "bulk_payments": "Ideal für Ratenzahlungen",
+          "description": "Europäische Überweisung"
+        },
+        "crypto": {
+          "name": "Kryptowährung",
+          "accepted": "Bitcoin, Ethereum, USDT, Binance Coin",
+          "processing_time": "10 Minuten bis 1 Stunde",
+          "anonymous": "Anonyme Zahlung",
+          "no_fees": "Keine Netzwerkgebühren",
+          "modern": "Moderne Zahlungsoption",
+          "popular": "Beliebt bei jungen Kunden"
+        },
+        "apple_pay": {
+          "name": "Apple Pay",
+          "accepted": "iOS-Geräte mit Touch ID/Face ID",
+          "processing_time": "Sofort",
+          "biometric": "Biometrische Authentifizierung",
+          "secure": "Sehr hohe Sicherheit",
+          "convenient": "Einfach und schnell"
+        },
+        "google_pay": {
+          "name": "Google Pay",
+          "accepted": "Android-Geräte mit Google Pay",
+          "processing_time": "Sofort",
+          "fast": "Sehr schnelle Zahlung",
+          "integrated": "In Android integriert",
+          "user_friendly": "Benutzerfreundlich"
+        },
+        "bank_transfer": {
+          "name": "Banküberweisung",
+          "accepted": "Alle Bankkonten",
+          "processing_time": "1-3 Werktage",
+          "traditional": "Traditionelle Methode",
+          "documented": "Mit Beleg",
+          "international": "Auch für internationale Kunden"
+        }
+      }
+    },
+    "pricing": {
+      "title": "Führerschein-Preise Deutschland",
+      "subtitle": "Transparente Kosten ohne versteckte Gebühren",
+      "base_prices": "Grundpreise ohne MwSt.",
+      "vat_note": "Alle Preise verstehen sich zzgl. der gesetzlichen Mehrwertsteuer",
+      "payment_terms": "Zahlungsbedingungen",
+      "terms": {
+        "full_payment": "Vollständige Zahlung bei Antragstellung",
+        "installments": "Ratenzahlung auf Anfrage möglich",
+        "currency": "Alle Preise in Euro (EUR)",
+        "price_lock": "Preisgarantie für 30 Tage nach Angebot"
+      },
+      "cost_breakdown": {
+        "administration_fee": "Verwaltungsgebühr: {{amount}} EUR",
+        "authority_fee": "Behördengebühr: {{amount}} EUR",
+        "document_fee": "Dokumentenerstellung: {{amount}} EUR",
+        "processing_fee": "Bearbeitungsgebühr: {{amount}} EUR",
+        "shipping": "Versand: {{amount}} EUR",
+        "insurance": "Versicherung: {{amount}} EUR"
+      },
+      "additional_costs": {
+        "title": "Mögliche zusätzliche Kosten",
+        "medical_certificate": "Ärztliche Bescheinigung: 30-80 EUR",
+        "eyesight_test": "Sehtest: 20-50 EUR",
+        "first_aid_course": "Erste-Hilfe-Kurs: 30-50 EUR",
+        "criminal_record": "Führungszeugnis: 13 EUR",
+        "photos": "Passfotos: 10-20 EUR",
+        "driving_lessons": "Fahrstunden (falls erforderlich): 45-80 EUR/Stunde"
+      }
+    },
+    "security": {
+      "title": "Sichere Zahlungsabwicklung",
+      "subtitle": "Ihre Zahlungsdaten sind bei uns sicher",
+      "features": {
+        "ssl_encryption": "256-bit SSL-Verschlüsselung",
+        "pci_compliance": "PCI DSS-konform",
+        "fraud_protection": "Betrugsschutz durch KI",
+        "secure_hosting": "Sichere Server in Deutschland",
+        "data_protection": "DSGVO-konforme Datenverarbeitung",
+        "no_storage": "Kreditkartendaten werden nicht gespeichert"
+      }
+    },
+    "refund_policy": {
+      "title": "Rückerstattungsrichtlinien",
+      "subtitle": "Fair und transparent",
+      "conditions": {
+        "before_processing": "100% Rückerstattung vor Bearbeitungsbeginn",
+        "during_processing": "50% Rückerstattung während der Bearbeitung",
+        "after_approval": "Keine Rückerstattung nach Genehmigung",
+        "rejection": "Vollständige Rückerstattung bei behördlicher Ablehnung",
+        "force_majeure": "Vollständige Rückerstattung bei höherer Gewalt"
+      },
+      "process": {
+        "request": "Rückerstattungsantrag per E-Mail",
+        "review": "Prüfung innerhalb von 5 Werktagen",
+        "processing": "Auszahlung innerhalb von 7 Werktagen",
+        "method": "Rückerstattung auf ursprüngliche Zahlungsmethode"
+      }
+    },
+    "installments": {
+      "title": "Ratenzahlung",
+      "subtitle": "Flexible Zahlungspläne für Ihren Führerschein",
+      "options": {
+        "two_payments": {
+          "name": "2 Raten",
+          "description": "50% bei Antragstellung, 50% vor Ausstellung",
+          "interest": "Zinsfrei",
+          "processing_fee": "5 EUR Gebühr"
+        },
+        "three_payments": {
+          "name": "3 Raten",
+          "description": "33% bei Antragstellung, 33% nach Dokumentenprüfung, 34% vor Ausstellung",
+          "interest": "Zinsfrei bis 12 Monate",
+          "processing_fee": "10 EUR Gebühr"
+        },
+        "custom": {
+          "name": "Individueller Plan",
+          "description": "Maßgeschneiderter Zahlungsplan nach Absprache",
+          "interest": "Abhängig von Laufzeit",
+          "approval": "Nach Bonitätsprüfung"
+        }
+      },
+      "requirements": {
+        "german_account": "Deutsches Bankkonto erforderlich",
+        "credit_check": "Bonitätsprüfung bei höheren Beträgen",
+        "proof_income": "Einkommensnachweis bei individuellen Plänen"
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen - Führerschein Deutschland",
+    "subtitle": "Alle Antworten zu Ihrem deutschen Führerschein-Antrag",
+    "categories": {
+      "general": "Allgemeine Fragen",
+      "application": "Antragstellung",
+      "documents": "Dokumente",
+      "payment": "Zahlung",
+      "delivery": "Auslieferung",
+      "legal": "Rechtliches",
+      "technical": "Technisches",
+      "support": "Support"
+    },
+    "questions": {
+      "general": {
+        "q1": {
+          "question": "Ist das legal? Ist MüllerFührerschein seriös?",
+          "answer": "Ja, unser Service ist 100% legal und seriös. Wir sind ein eingetragenes deutsches Unternehmen mit Sitz in Berlin. Unsere Dienstleistung besteht in der administrativen Unterstützung bei der Beantragung von Führerscheinen. Alle über uns ausgestellten Führerscheine sind authentisch und in den offiziellen deutschen Datenbanken registriert."
+        },
+        "q2": {
+          "question": "Wie lange dauert die Bearbeitung meines Führerschein-Antrags?",
+          "answer": "Die durchschnittliche Bearbeitungszeit beträgt 7 Werktage, nachdem alle Dokumente vollständig eingereicht und validiert wurden. Dies kann je nach Führerscheinklasse und Komplexität des Falls variieren. Klassen C und D benötigen in der Regel etwas länger."
+        },
+        "q3": {
+          "question": "Welche Führerscheinklassen bieten Sie an?",
+          "answer": "Wir bieten alle deutschen Führerscheinklassen an: A (Motorrad), B (PKW), C (LKW), D (Bus), E (Anhänger), AM (Moped), L (Traktor) und S (Mofa). Außerdem alle Kombinationen wie BE, CE, DE, C1E, etc. Sogar internationale Konvertierungen sind möglich."
+        },
+        "q4": {
+          "question": "Muss ich eine Theorie- oder Praxisprüfung ablegen?",
+          "answer": "Unser Service richtet sich an Personen mit ausreichenden Fahrkenntnissen. Die meisten unserer Kunden müssen keine zusätzlichen Prüfungen ablegen, da wir bestehende Fahrberechtigungen oder Prüfungsnachweise aus anderen Ländern nutzen können. Prüfungen sind nur in seltenen Ausnahmefällen erforderlich."
+        },
+        "q5": {
+          "question": "Ist der Führerschein in allen EU-Ländern gültig?",
+          "answer": "Ja, alle deutschen Führerscheine sind in allen EU-Mitgliedstaaten sowie in vielen weiteren Ländern weltweit gültig. Der deutsche Führerschein gilt als einer der anerkanntesten international."
+        },
+        "q6": {
+          "question": "Was unterscheidet MüllerFührerschein von anderen Anbietern?",
+          "answer": "Wir bieten den schnellsten Service (7 Tage), höchste Erfolgsquote (99,2%), 24/7 Support, volle Transparenz bei Preisen und Prozess, sowie die Option auf Ratenzahlung. Unser Berliner Team ist deutschsprachig und kennt alle behördlichen Verfahren."
+        }
+      },
+      "application": {
+        "q1": {
+          "question": "Wie beantrage ich einen Führerschein über MüllerFührerschein?",
+          "answer": "Der Prozess ist einfach: 1) Registrieren Sie sich auf unserer Website, 2) Wählen Sie Ihren gewünschten Führerscheintyp, 3) Laden Sie Ihre Dokumente hoch, 4) Zahlen Sie die Gebühr, 5) Wir bearbeiten Ihren Antrag. Den Rest erledigen wir für Sie!"
+        },
+        "q2": {
+          "question": "Kann ich einen Führerschein beantragen, wenn ich nicht in Deutschland wohne?",
+          "answer": "Ja, grundsätzlich ist das möglich, wenn Sie die deutschen Sprachanforderungen erfüllen und sich legal in Deutschland aufhalten können. Für EU-Bürger gibt es weniger Hürden. Bei Nicht-EU-Bürgern prüfen wir jeden Fall individuell."
+        },
+        "q3": {
+          "question": "Was passiert, wenn mein Antrag abgelehnt wird?",
+          "answer": "Im seltenen Fall einer Ablehnung durch die Behörden bieten wir je nach Grund eine anteilige oder vollständige Rückerstattung an. Zusätzlich analysieren wir die Ablehnungsgründe und unterstützen Sie kostenlos bei einem neuen Antrag mit verbesserten Aussichten."
+        },
+        "q4": {
+          "question": "Kann ich einen Führerschein aus einem anderen Land in Deutschland anerkennen lassen?",
+          "answer": "Ja, wir bieten auch Konvertierungsservices für ausländische Führerscheine an. So können Sie Ihren bestehenden Führerschein in einen deutschen umtauschen lassen, ohne Prüfungen wiederholen zu müssen."
+        },
+        "q5": {
+          "question": "Gibt es Altersbeschränkungen für bestimmte Führerscheinklassen?",
+          "answer": "Ja, je nach Klasse gelten unterschiedliche Mindestalter: A1 (16 Jahre), A2 (18 Jahre), A (20 Jahre), B (18 Jahre, 17 mit Begleitung), C1 (18 Jahre), C (21 Jahre), D1 (21 Jahre), D (24 Jahre). Wir berücksichtigen alle Altersgrenzen."
+        }
+      },
+      "documents": {
+        "q1": {
+          "question": "Welche Dokumente benötige ich für meinen Antrag?",
+          "answer": "Standarddokumente: Personalausweis/Reisepass, biometrisches Passfoto, Unterschrift, aktuelle Meldebestätigung. Je nach Führerscheinklasse zusätzlich: ärztliche Bescheinigung, Sehtest, Erste-Hilfe-Kurs, Führungszeugnis (für C/D)."
+        },
+        "q2": {
+          "question": "Wo bekomme ich ein biometrisches Passfoto?",
+          "answer": "Sie können professionelle Passfotos bei Fotografen, dm, Rossmann oder in einer Post-Fotobox machen. Wichtig: Das Foto muss den biometrischen Standards entsprechen (35x45mm, heller Hintergrund, neutraler Ausdruck)."
+        },
+        "q3": {
+          "question": "Ist ein Erste-Hilfe-Kurs wirklich erforderlich?",
+          "answer": "Ja, für alle Führerscheinklassen ist ein Nachweis über einen Erste-Hilfe-Kurs verpflichtend. Der Kurs dauert 9 Unterrichtsstunden und kann bei DRK, ASB, Maltesern oder Johannitern absolviert werden. Kosten: ca. 30-50 EUR."
+        },
+        "q4": {
+          "question": "Benötige ich ein Führungszeugnis?",
+          "answer": "Ein erweitertes Führungszeugnis ist nur für gewerbliche Führerscheinklassen (C, D und Kombinationen) erforderlich. Für normale PKW-Führerschein-Klasse B ist kein Führungszeugnis nötig."
+        },
+        "q5": {
+          "question": "Wie lange sind ärztliche Bescheinigungen gültig?",
+          "answer": "Für normale Führerscheinklassen ist die ärztliche Bescheinigung ein Jahr gültig. Bei LKW- und Bus-Führerscheinen (C, D) gilt: bis 60 Jahre alle 5 Jahre, dann alle 3 Jahre, ab 65 Jahre alle 3 Jahre."
+        }
+      },
+      "payment": {
+        "q1": {
+          "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "answer": "Wir akzeptieren: Kreditkarten (Visa, Mastercard, Amex), EC-Karte/Girocard, PayPal, SEPA-Überweisung, Kryptowährungen (Bitcoin, Ethereum), Apple Pay, Google Pay und Banküberweisung. Alle Zahlungen sind SSL-verschlüsselt."
+        },
+        "q2": {
+          "question": "Kann ich in Raten zahlen?",
+          "answer": "Ja! Wir bieten flexible Ratenzahlungen an: 2 Raten (zinsfrei + 5 EUR Gebühr), 3 Raten (zinsfrei bis 12 Monate + 10 EUR Gebühr) oder individuelle Pläne nach Bonitätsprüfung. Für deutsche Bankkunden ohne zusätzliche Zinsen."
+        },
+        "q3": {
+          "question": "Wann muss ich zahlen?",
+          "answer": "Bei Ratenzahlung: 50% bei Antragstellung, 50% vor Ausstellung. Bei Einmalzahlung: vollständiger Betrag bei Antragstellung. Nach der Genehmigung Ihres Führerscheins ist keine weitere Zahlung erforderlich."
+        },
+        "q4": {
+          "question": "Bekomme ich eine Rechnung?",
+          "answer": "Ja, Sie erhalten automatisch eine detaillierte Rechnung per E-Mail nach Abschluss des Zahlungsprozesses. Alle Preise sind transparent aufgeführt. Zusätzlich können Sie Ihre Rechnungen jederzeit in Ihrem Dashboard einsehen."
+        },
+        "q5": {
+          "question": "Was passiert, wenn ich meine Zahlung storniere?",
+          "answer": "Wir bieten eine faire Rückerstattungsrichtlinie: 100% Rückerstattung vor Bearbeitungsbeginn, 50% während der Bearbeitung, keine Rückerstattung nach Genehmigung. Bei behördlicher Ablehnung erfolgt vollständige Rückerstattung."
+        }
+      },
+      "delivery": {
+        "q1": {
+          "question": "Wie erhalte ich meinen Führerschein?",
+          "answer": "Sie haben drei Optionen: 1) Kostenlose Abholung in unserem Berliner Büro (Mo-Fr 9-18 Uhr), 2) Versand per Express-Kurier (1-2 Werktage, 25 EUR), 3) Digitale Kopie per E-Mail (5 EUR, Original folgt per Post)."
+        },
+        "q2": {
+          "question": "Wie schnell erhalte ich den Führerschein nach der Genehmigung?",
+          "answer": "Nach der behördlichen Genehmigung benötigen wir 1-2 Werktage für die finale Ausstellung und Versandvorbereitung. Express-Lieferung: 1-2 Werktage, Standard-Lieferung: 3-5 Werktage."
+        },
+        "q3": {
+          "question": "Kann ich den Führerschein an eine andere Adresse liefern lassen?",
+          "answer": "Ja, Sie können eine alternative Lieferadresse angeben (z.B. Arbeitsplatz, Freunde/Familie). Bei Express-Lieferung ist auch eine Zustellung samstags oder an Packstationen möglich."
+        },
+        "q4": {
+          "question": "Was ist, wenn ich nicht zu Hause bin, wenn der Führerschein kommt?",
+          "answer": "Der Kurier wird Sie vor der Zustellung anrufen. Sie können einen Wunschtermin vereinbaren oder den Führerschein in einer Packstation abholen lassen. Bei Abholung in Berlin entfällt dieses Problem."
+        },
+        "q5": {
+          "question": "Ist der Führerschein sofort nach Erhalt gültig?",
+          "answer": "Ja, Ihr Führerschein ist ab dem Ausstellungsdatum gültig und kann sofort verwendet werden. Sie erhalten außerdem eine offizielle Bestätigung per E-Mail für sofortigen Nachweis bei Behörden oder beim Autokauf."
+        }
+      },
+      "legal": {
+        "q1": {
+          "question": "Ist dieser Service legal und wird von den deutschen Behörden anerkannt?",
+          "answer": "Ja, unser Service ist vollständig legal. Wir agieren als administrative Dienstleister, der Ihnen bei den behördlichen Verfahren hilft. Alle ausgestellten Führerscheine sind authentisch, in der Zentralstelle für Führerscheinregister (ZFR) gespeichert und von allen deutschen Behörden anerkannt."
+        },
+        "q2": {
+          "question": "Was passiert, wenn ich bei einer Polizeikontrolle erwischt werde?",
+          "answer": "Sie haben nichts zu befürchten. Ihr Führerschein ist authentisch und legal ausgestellt. Bei einer Kontrolle wird er wie jeder andere deutsche Führerschein anerkannt. Ihr Führerschein ist in der Zentralstelle für Führerscheinregister registriert."
+        },
+        "q3": {
+          "question": "Kann ich mit diesem Führerschein im Ausland fahren?",
+          "answer": "Ja, der deutsche Führerschein ist in allen EU-Ländern sowie in vielen weiteren Ländern weltweit anerkannt. Für Fahrten außerhalb der EU prüfen Sie die spezifischen Bestimmungen des jeweiligen Landes."
+        },
+        "q4": {
+          "question": "Was passiert, wenn sich meine persönlichen Daten ändern?",
+          "answer": "Sie können jederzeit eine Adressänderung oder Namensänderung beim Straßenverkehrsamt beantragen. Wir können Sie dabei unterstützen und die erforderlichen Dokumente neu ausstellen lassen."
+        },
+        "q5": {
+          "question": "Wie lange ist mein deutscher Führerschein gültig?",
+          "answer": "Die meisten Führerscheine (A, B, L, S) sind unbegrenzt gültig. C- und D-Klassen müssen alle 5 Jahre bis 60 Jahre, dann alle 3 Jahre verlängert werden. Erste-Hilfe-Kurs und ärztliche Untersuchungen müssen regelmäßig erneuert werden."
+        }
+      },
+      "technical": {
+        "q1": {
+          "question": "Kann ich meine Dokumente online hochladen?",
+          "answer": "Ja, unser System ermöglicht den sicheren Upload von Dokumenten. Unterstützte Formate: JPEG, PNG, PDF. Maximal 10 MB pro Datei. Alle Daten werden SSL-verschlüsselt übertragen und DSGVO-konform verarbeitet."
+        },
+        "q2": {
+          "question": "Ich habe technische Probleme beim Upload. Was kann ich tun?",
+          "answer": "Überprüfen Sie zunächst die Dateigröße (max. 10 MB) und das Format (JPEG, PNG, PDF). Versuchen Sie es mit einem anderen Browser oder deaktivieren Sie temporär Ihren Adblocker. Unser 24/7 Support hilft Ihnen gerne bei technischen Problemen."
+        },
+        "q3": {
+          "question": "Ist meine Datenübertragung sicher?",
+          "answer": "Ja, wir verwenden 256-bit SSL-Verschlüsselung, hosten auf sicheren Servern in Deutschland und sind vollständig DSGVO-konform. Ihre Daten werden verschlüsselt gespeichert und niemals an Dritte weitergegeben."
+        },
+        "q4": {
+          "question": "Kann ich meine Dokumente per E-Mail senden?",
+          "answer": "Aus Sicherheitsgründen empfehlen wir den Upload über unser sicheres System. E-Mails können verloren gehen oder abgefangen werden. Falls Sie technische Probleme haben, kontaktieren Sie unseren Support für alternative sichere Übertragungsmöglichkeiten."
+        },
+        "q5": {
+          "question": "Was passiert mit meinen Daten nach Abschluss des Antrags?",
+          "answer": "Ihre Daten werden gemäß DSGVO-Bestimmungen verarbeitet und gespeichert. Sie haben jederzeit das Recht auf Datenportabilität, Berichtigung oder Löschung. Nach Ablauf der gesetzlichen Aufbewahrungsfrist (meist 10 Jahre) werden alle personenbezogenen Daten gelöscht."
+        }
+      },
+      "support": {
+        "q1": {
+          "question": "Wie kann ich den Status meines Antrags verfolgen?",
+          "answer": "In Ihrem persönlichen Dashboard können Sie den Fortschritt Ihres Antrags in Echtzeit verfolgen. Sie erhalten außerdem automatische E-Mail-Updates bei jedem wichtigen Meilenstein. Unser 24/7 Support gibt Ihnen auf Anfrage jederzeit Auskunft."
+        },
+        "q2": {
+          "question": "Bieten Sie Support in meiner Sprache an?",
+          "answer": "Unser Support-Team spricht fließend Deutsch, Englisch, Türkisch, Arabisch und weitere Sprachen. Wir sind stolz auf unsere mehrsprachige Betreuung, da viele unserer Kunden internationale Hintergründe haben."
+        },
+        "q3": {
+          "question": "Wann kann ich den Support kontaktieren?",
+          "answer": "Unser Support ist 24/7 per E-Mail erreichbar (mullerfuhrerschein@gmail.com). Telefonischer Support: Mo-Fr 9:00-18:00 Uhr. WhatsApp und Telegram: 24/7. Wir antworten in der Regel innerhalb von 2 Stunden."
+        },
+        "q4": {
+          "question": "Was passiert, wenn ich eine Beschwerde habe?",
+          "answer": "Wir nehmen jede Beschwerde ernst. Kontaktieren Sie unser Beschwerdemanagement per E-Mail an complaints@mullerfuhrerschein.de oder telefonisch. Wir bearbeiten alle Beschwerden innerhalb von 24 Stunden und bieten faire Lösungen."
+        },
+        "q5": {
+          "question": "Gibt es eine Zufriedenheitsgarantie?",
+          "answer": "Ja, wir bieten eine 100% Zufriedenheitsgarantie. Wenn Sie mit unserem Service nicht vollständig zufrieden sind, erstatten wir Ihnen das Geld zurück oder erbringen kostenlosen Ersatzservice. Unsere Kundenbewertungen sprechen für sich: 4,9/5 Sterne bei über 2000 Bewertungen."
+        }
+      }
+    },
+    "seo_keywords": "Führerschein Deutschland, Führerschein beantragen, deutscher Führerschein, Führerschein Berlin, Führerschein kaufen, legaler Führerschein, Führerschein online beantragen, Führerschein ohne Prüfung, internationaler Führerschein, Führerschein express"
+  },
+  "legal_terms": {
+    "title": "Rechtliche Begriffe - Führerschein Deutschland",
+    "subtitle": "Wichtige rechtliche Fachbegriffe für Ihren Führerscheinantrag",
+    "definitions": {
+      "führerscheinregister": "Zentrale Stelle für Führerscheinregister (ZFR) - Das bundesweite Register, in dem alle Führerscheine in Deutschland gespeichert sind",
+      "führerscheinbehörde": "Straßenverkehrsbehörde - Die zuständige Behörde für die Ausstellung von Führerscheinen",
+      "eichamt": "Eichamt - Überprüft die Richtigkeit von Messgeräten bei Prüfungen",
+      "prüforganisation": "TÜV, Dekra, GTÜ - Offiziell anerkannte Organisationen für Theorie- und Praxisprüfungen",
+      "führerscheinpflicht": "Führerscheinpflicht - Gesetzliche Verpflichtung, eine gültige Fahrerlaubnis zu besitzen",
+      "fahrtüchtigkeit": "Fahrtüchtigkeit - Körperliche und geistige Eignung zum Führen von Kraftfahrzeugen",
+      "eignungsprüfung": "Eignungsprüfung - Ärztliche und augenärztliche Untersuchung zur Feststellung der Fahrtüchtigkeit",
+      "auflagen": "Auflagen - Bestimmte Bedingungen, die an einen Führerschein gebunden sind",
+      "beschränkungen": "Beschränkungen - Limitationen bezüglich Fahrzeugtypen oder Einsatzbereichen",
+      "umtausch": "Umtausch - Austausch eines alten Führerscheins gegen einen neuen",
+      "erweiterung": "Erweiterung - Hinzufügung einer zusätzlichen Klasse zu einem bestehenden Führerschein",
+      "umschreibung": "Umschreibung - Anerkennung eines ausländischen Führerscheins als deutscher Führerschein",
+      "nachschulung": "Nachschulung - Zusätzliche Schulung nach Verkehrsverstößen",
+      "medizinisch_psychologische": "MPU - Medizinisch-Psychologische Untersuchung bei Alkohol- oder Drogenverstößen",
+      "fahreignungsregister": "FAER - Zentrales Register für Verkehrsverstöße und MPU-Anordnungen",
+      "punktführung": "Flensburg-Punkte - Eintragungen im Fahreignungsregister für Verkehrsverstöße",
+      "verfallsdatum": "Verfallsdatum - Datum, bis zu dem der Führerschein gültig ist",
+      "ausstellung": "Ausstellung - Offizielle Erstellung des Führerscheins durch die Behörde",
+      "ausstellungsdatum": "Ausstellungsdatum - Datum, an dem der Führerschein ausgestellt wurde",
+      "ausstellungsbehörde": "Ausstellungsbehörde - Behörde, die den Führerschein ausgestellt hat",
+      "seriennummer": "Seriennummer - Eindeutige Identifikationsnummer des Führerscheins",
+      "prüfungszeugnis": "Prüfungszeugnis - Offizieller Nachweis über bestandene Theorie- und Praxisprüfung",
+      "ausbildungsbescheinigung": "Ausbildungsbescheinigung - Nachweis über die Teilnahme an der Führerscheinausbildung",
+      "probeführerschein": "Probeführerschein - Befristeter Führerschein für Fahranfänger (2 Jahre Probezeit)",
+      "begleitetes_fahren": "Begleitetes Fahren - Fahrausbildung ab 17 Jahren unter Aufsicht einer Begleitperson",
+      "führung_eines_kraftfahrzeuges": "Führung eines Kraftfahrzeuges - Gesetzlicher Begriff für das Steuern eines Fahrzeugs",
+      "kraftfahrtbundesamt": "Kraftfahrt-Bundesamt (KBA) - Bundesbehörde für Fahrzeugzulassung und Führerscheinregister",
+      "berufskraftfahrer_qualifikation": "CQC - Berufskraftfahrer-Qualifikation für gewerblichen Güter- und Personenverkehr",
+      "gewerblicher_verkehr": "Gewerblicher Verkehr - Kommerzielle Nutzung von Fahrzeugen gegen Entgelt",
+      "fahrgastbeförderung": "Fahrgastbeförderung - Gewerblicher Personenverkehr mit mehr als 8 Personen",
+      "feinstaubplakette": "Feinstaubplakette - Umweltplakette für Fahrzeuge in Umweltzonen",
+      "autobahngebühr": "Autobahngebühr - Maut für LKW über 12 Tonnen auf deutschen Autobahnen",
+      "digitaler_tachograph": "Digitaler Tachograph - Aufzeichnungsgerät für Lenk- und Ruhezeiten von LKW-Fahrern",
+      "lenk_und_ruhezeiten": "Lenk- und Ruhezeiten - Gesetzlich vorgeschriebene Arbeits- und Ruhezeiten für LKW-Fahrer",
+      "adt": "Ausbildungsdienstordnung - Richtlinien für die Ausbildung von Fahrschülern",
+      "fahrlehrergesetz": "Fahrlehrergesetz - Gesetz über das Berufsbild des Fahrlehrers",
+      "stvg": "Straßenverkehrsgesetz - Grundgesetz für den deutschen Straßenverkehr",
+      "stvzo": "Straßenverkehrs-Zulassungs-Ordnung - Vorschriften für Fahrzeugzulassung",
+      "fev": "Fahrerlaubnis-Verordnung - Ausführungsbestimmungen zu Fahrerlaubnissen",
+      "stvo": "Straßenverkehrs-Ordnung - Verkehrsregeln für den Straßenverkehr",
+      "stvzo_ausnahmen": "StVZO-Ausnahmen - Besondere Regelungen für bestimmte Fahrzeugtypen oder Verkehrssituationen",
+      "ausnahmen": "Ausnahmen - Besondere Bestimmungen, die von der Regel abweichen",
+      "voraussetzungen": "Voraussetzungen - Erforderliche Bedingungen für die Erteilung einer Fahrerlaubnis",
+      "begrenzungen": "Begrenzungen - Rechtliche Einschränkungen der Fahrerlaubnis",
+      "auflagenbedingungen": "Auflagenbedingungen - An Auflagen gebundene Verpflichtungen"
+    },
+    "legal_procedures": {
+      "title": "Rechtliche Verfahren",
+      "widerspruchsverfahren": "Widerspruchsverfahren - Rechtsmittel gegen behördliche Entscheidungen",
+      "klage": "Klage - Gerichtlicher Rechtsbehelf gegen behördliche Entscheidungen",
+      "eilverfahren": "Eilverfahren - Dringendes Gerichtsverfahren bei besonderem Interesse",
+      "verwaltungsgericht": "Verwaltungsgericht - Gericht für Streitigkeiten mit Behörden",
+      "oberverwaltungsgericht": "Oberverwaltungsgericht - Berufungsinstanz im Verwaltungsrecht",
+      "bundesverwaltungsgericht": "Bundesverwaltungsgericht - Höchstes Verwaltungsgericht Deutschlands",
+      "verfahrensrecht": "Verfahrensrecht - Vorschriften über den Ablauf rechtlicher Verfahren",
+      "rechtsbehelf": "Rechtsbehelf - Rechtmäßige Möglichkeit, gegen Entscheidungen vorzugehen",
+      "fristversäumung": "Fristversäumung - Verpasste gesetzliche Frist",
+      "wiedereinsetzung": "Wiedereinsetzung in den vorigen Stand - Wiedereröffnung eines Verfahrens nach Fristversäumung",
+      "rechtliches_gehör": "Rechtliches Gehör - Grundrecht auf Anhörung vor behördlichen Entscheidungen",
+      "begründungspflicht": "Begründungspflicht - Verpflichtung der Behörde, Entscheidungen zu begründen",
+      "rechtmäßigkeit": "Rechtmäßigkeit - Übereinstimmung mit geltendem Recht",
+      "verhältnismäßigkeit": "Verhältnismäßigkeit - Grundsatz, dass Maßnahmen angemessen sein müssen",
+      "willkürverbot": "Willkürverbot - Verbot unsachlicher, diskriminierender Entscheidungen"
+    },
+    "seo_keywords": "Führerschein Rechtsbegriff Deutschland, Straßenverkehrsrecht, Führerscheinrecht, Verkehrsrecht Deutschland, MPU Deutschland, Fahreignungsregister Flensburg, Fahrlehrergesetz, StVZO, StVG, FEV Verordnung"
+  },
+  
+  "marketing.testimonials.featured": "Unsere zufriedenen Kunden",
+  "marketing.testimonials.customer1": "Thomas aus München: \"Nach meiner Führerschein Beantragung bei MüllerFührerschein hatte ich meinen deutschen Führerschein in nur 5 Tagen! Der Service war hervorragend und alles verlief reibungslos. Kann ich jedem empfehlen, der schnell einen legitim Führerschein Deutschland benötigt.\"",
+  "marketing.testimonials.customer2": "Sarah aus Berlin: \"Ich wollte meinen Führerschein kaufen, aber hatte Angst vor betrügerischen Angeboten. MüllerFührerschein hat mich überzeugt mit ihrer Professionalität und Transparenz. Mein deutscher Führerschein ist echt und wurde sofort anerkannt.\"",
+  "marketing.testimonials.customer3": "Marcus aus Hamburg: \"Als Berufskraftfahrer benötigte ich dringend einen LKW-Führerschein. Der Führerschein Dienstleistung von MüllerFührerschein war die perfekte Lösung. Schnell, legal und zuverlässig. Meine Karriere konnte endlich durchstarten!\"",
+  
+  "marketing.trust.badges.title": "Warum über 10.000 Kunden uns vertrauen",
+  "marketing.trust.badges.legal": "100% Legal & Authentisch",
+  "marketing.trust.badges.legal.desc": "Alle deutschen Führerscheine sind offiziell registriert",
+  "marketing.trust.badges.speed": "Express Service",
+  "marketing.trust.badges.speed.desc": "3-7 Werktage durchschnittlich",
+  "marketing.trust.badges.support": "24/7 Beratung",
+  "marketing.trust.badges.support.desc": "Deutschsprachiger Kundenservice",
+  "marketing.trust.badges.satisfaction": "Kundenzufriedenheit",
+  "marketing.trust.badges.satisfaction.desc": "98% unserer Kunden sind zufrieden",
+  
+  "marketing.seo.keywords.title": "Führerschein kaufen in Deutschland",
+  "marketing.seo.keywords.content": "MüllerFührerschein ist Ihr vertrauensvoller Partner für alle Arten der deutschen Führerschein Beantragung. Wir bieten legalen Führerschein kaufen Service für alle Klassen: Autoführerschein (Klasse B), Motorradführerschein (Klasse A), LKW-Führerschein (Klasse C), Busführerschein (Klasse D) und viele mehr. Unser Führerschein Dienstleistung umfasst die komplette administrative Abwicklung, damit Sie schnell und einfach Ihren legitim Führerschein Deutschland erhalten können.",
+  
+  "marketing.faq.seo.title": "Weitere wichtige Informationen zum deutschen Führerschein",
+  "marketing.faq.seo.q1": "Was kostet ein deutscher Führerschein kaufen bei MüllerFührerschein?",
+  "marketing.faq.seo.a1": "Die Kosten für Ihren deutschen Führerschein variieren je nach Klasse und Zusatzleistungen. Alle Preise sind transparent und ohne versteckte Kosten. Sie erhalten eine detaillierte Aufstellung aller Kosten vor der Bestellung.",
+  "marketing.faq.seo.q2": "Ist ein online beantragter deutscher Führerschein gültig?",
+  "marketing.faq.seo.a2": "Ja, alle über MüllerFührerschein ausgestellten deutschen Führerscheine sind vollständig gültig und legal. Sie erhalten einen authentischen, registrierten Führerschein, der bundesweit anerkannt wird.",
+  "marketing.faq.seo.q3": "Welche Führerschein-Klassen kann ich bei MüllerFührerschein beantragen?",
+  "marketing.faq.seo.a3": "Wir bieten alle deutschen Führerschein-Klassen an: AM (Moped), A1/A2/A (Motorrad), B (PKW), BE (PKW mit Anhänger), C/C1 (LKW), CE/C1E (LKW mit Anhänger), D/D1 (Bus), DE/D1E (Bus mit Anhänger) sowie alle Erweiterungen und Sonderführerscheine.",
+  "marketing.faq.seo.q4": "Wie lange ist ein deutscher Führerschein gültig?",
+  "marketing.faq.seo.a4": "Die Gültigkeitsdauer hängt von der Führerschein-Klasse und Ihrem Alter ab. PKW-Führerscheine (Klasse B) sind 15 Jahre gültig, LKW- und Bus-Führerscheine haben kürzere Gültigkeitsdauern und müssen regelmäßig erneuert werden.",
+  
+  "marketing.cta.final": "Starten Sie noch heute Ihre deutsche Führerschein Beantragung",
+  "marketing.cta.final.subtitle": "Schließen Sie sich Tausenden zufriedener Kunden an, die bereits ihren deutschen Führerschein über MüllerFührerschein erhalten haben. Schnell, legal und sicher.",
+
+  "signature": {
+    "title": "Digitale Unterschrift",
+    "subtitle": "Bitte unterschreiben Sie digital, um Ihren Antrag zu bestätigen",
+    "canvas_label": "Ihre digitale Unterschrift",
+    "draw": "Unterschreiben Sie hier",
+    "clear": "Löschen",
+    "submit": "Unterschrift bestätigen",
+    "processing": "Wird verarbeitet...",
+    "security_title": "Sicherheitsinformationen",
+    "timestamp": "Zeitstempel",
+    "ip_tracking": "IP-Adresse",
+    "hash": "Eindeutiger Hash",
+    "success_title": "Unterschrift erfolgreich!",
+    "success_message": "Ihre digitale Unterschrift wurde sicher gespeichert und bestätigt.",
+    "certificate_info": "Zertifikatsinformationen",
+    "security_status": "Sicherheitsstatus",
+    "download_certificate": "Zertifikat herunterladen",
+    "new_signature": "Neue Unterschrift",
+    "preview": "Vorschau",
+    "error": {
+      "required": "Eine Unterschrift ist erforderlich",
+      "login_required": "Sie müssen angemeldet sein",
+      "submission_failed": "Fehler beim Speichern der Unterschrift"
+    },
+    "certificate": {
+      "title": "Digitale Unterschrift - Zertifikat",
+      "authority": "MüllerFührerschein",
+      "address": "Alexanderstraße 40, 10179 Berlin, Deutschland",
+      "email": "mullerfuhrerschein@gmail.com",
+      "phone": "+49 15212399096",
+      "confirmed": "bestätigt",
+      "all_rights": "Alle Rechte vorbehalten",
+      "footer_text": "Dieses Zertifikat bestätigt die digitale Unterschrift vom {{timestamp}}"
+    }
+  },
+  
+  "ocr": {
+    "title": "Dokument OCR-Verifizierung",
+    "subtitle": "KI-basierte Authentizitätsprüfung für deutsche Ausweisdokumente",
+    "configuration": {
+      "title": "OCR-Konfiguration",
+      "google_vision": "Google Vision API",
+      "azure_computer_vision": "Azure Computer Vision",
+      "select_api": "Wählen Sie die OCR-API"
+    },
+    "validation_steps": {
+      "upload": {
+        "title": "Dokument hochladen",
+        "description": "Upload des Dokuments für die OCR-Verarbeitung"
+      },
+      "image_quality": {
+        "title": "Bildqualität prüfen",
+        "description": "Analyse der Bildqualität und -schärfe"
+      },
+      "ocr_processing": {
+        "title": "OCR-Texterkennung",
+        "description": "Automatische Texterkennung mit KI"
+      },
+      "data_extraction": {
+        "title": "Datenextraktion",
+        "description": "Extraktion der persönlichen Daten"
+      },
+      "authenticity_check": {
+        "title": "Authentizitätsprüfung",
+        "description": "Überprüfung der Dokumenten-Echtheit"
+      },
+      "form_validation": {
+        "title": "Formulardaten-Abgleich",
+        "description": "Vergleich mit eingegebenen Formulardaten"
+      }
+    },
+    "status": {
+      "pending": "Warten",
+      "processing": "In Bearbeitung",
+      "completed": "Abgeschlossen",
+      "error": "Fehler"
+    },
+    "image_analysis": {
+      "title": "Bildqualitäts-Analyse",
+      "resolution": "Auflösung",
+      "brightness": "Helligkeit",
+      "contrast": "Kontrast",
+      "sharpness": "Schärfe",
+      "sharp": "Scharf",
+      "blurry": "Unscharf"
+    },
+    "confidence": {
+      "overall": "Gesamtvertrauen",
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "validation_checks": {
+      "title": "Validierungsprüfungen",
+      "format_valid": "Format gültig",
+      "content_valid": "Inhalt gültig",
+      "data_extracted": "Daten extrahiert",
+      "authenticity_verified": "Authentizität verifiziert",
+      "form_data_match": "Formulardaten stimmen überein",
+      "security_features": "Sicherheitsmerkmale"
+    },
+    "extracted_data": {
+      "title": "Extrahierte Daten",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "full_name": "Vollständiger Name",
+      "birth_date": "Geburtsdatum",
+      "document_number": "Dokument-Nummer",
+      "nationality": "Staatsangehörigkeit",
+      "place_of_birth": "Geburtsort",
+      "expiry_date": "Ablaufdatum",
+      "authority": "Ausstellungsbehörde",
+      "address": "Adresse",
+      "gender": "Geschlecht"
+    },
+    "form_comparison": {
+      "title": "Abgleich mit Formulardaten",
+      "form_field": "(Formular)",
+      "match": "Übereinstimmung",
+      "no_match": "Keine Übereinstimmung"
+    },
+    "buttons": {
+      "upload": "Klicken zum Hochladen",
+      "drag_drop": "oder hierher ziehen",
+      "verify": "Dokument verifizieren",
+      "processing": "OCR-Verarbeitung läuft...",
+      "new_document": "Neues Dokument",
+      "download_report": "Bericht herunterladen"
+    },
+    "messages": {
+      "document_verified": "Dokument erfolgreich verifiziert",
+      "document_failed": "Dokument konnte nicht verifiziert werden",
+      "processing_time": "Verarbeitungszeit",
+      "api_used": "API verwendet",
+      "warnings": "Warnungen",
+      "errors": "Fehler",
+      "success": "OK",
+      "failed": "Fehler"
+    },
+    "security": {
+      "title": "Sicherheitshinweise",
+      "readable": "Stellen Sie sicher, dass das Dokument gut lesbar und vollständig sichtbar ist",
+      "no_reflections": "Vermeiden Sie Reflexe und Schatten beim Fotografieren",
+      "valid_document": "Das Dokument muss gültig und nicht abgelaufen sein",
+      "ssl_encrypted": "Ihre Daten werden SSL-verschlüsselt übertragen und DSGVO-konform verarbeitet"
+    },
+    "errors": {
+      "invalid_file_type": "Ungültiger Dateityp. Nur JPEG, PNG und PDF werden unterstützt.",
+      "file_too_large": "Datei ist zu groß. Maximale Größe: 10 MB",
+      "ocr_failed": "OCR-Verarbeitung fehlgeschlagen",
+      "no_response": "Keine Antwort von der OCR-API erhalten",
+      "processing_timeout": "OCR-Verarbeitung Timeout erreicht"
+    },
+    "document_types": {
+      "personalausweis": "Personalausweis (Deutsche ID-Karte)",
+      "reisepass": "Reisepass (Deutscher Reisepass)",
+      "aufenthaltstitel": "Aufenthaltstitel (Residence Permit)"
+    },
+    "features": {
+      "real_time_validation": "Echtzeit-Validierung",
+      "ai_powered": "KI-gestützt",
+      "multi_api_support": "Multi-API-Unterstützung",
+      "german_documents": "Speziell für deutsche Dokumente",
+      "security_analysis": "Sicherheitsanalyse",
+      "form_matching": "Formular-Abgleich"
+    }
+  },
+
+  "security": {
+    "title": "Sicherheitsindikatoren",
+    "realtime": "Echtzeit-Status",
+    "all_systems": "Alle Systeme operational",
+    "last_update": "Letztes Update",
+    "ssl": {
+      "title": "SSL-Verschlüsselung",
+      "description": "256-Bit SSL-Verschlüsselung aktiv"
+    },
+    "ddos": {
+      "title": "DDoS-Schutz",
+      "description": "Erweiterter DDoS-Schutz aktiv"
+    },
+    "gdpr": {
+      "title": "DSGVO-Konformität",
+      "description": "DSGVO-konforme Datenverarbeitung"
+    },
+    "monitoring": {
+      "title": "24/7 Überwachung",
+      "description": "Kontinuierliche Systemüberwachung",
+      "realtime": "24/7 Echtzeitüberwachung",
+      "system_monitoring": "Überwachung aller Sicherheitssysteme"
+    },
+    "backup": {
+      "title": "Automatische Sicherung",
+      "description": "Automatische Datensicherung aktiv"
+    },
+    "status": {
+      "active": "Aktiv",
+      "monitoring": "Überwachung",
+      "protected": "Geschützt",
+      "verified": "Verifiziert",
+      "unknown": "Unbekannt",
+      "operational": "OPERATIONAL"
+    },
+    "compliance": {
+      "eu": "EU-Datenschutz",
+      "german": "Deutsches Recht",
+      "iso": "ISO-Zertifiziert"
+    },
+    "trust": {
+      "badges": {
+      "title": "Ihre Sicherheit ist unsere Priorität",
+      "subtitle": "Vertrauen Sie auf unsere zertifizierten Sicherheitsstandards und deutschen Qualitätsgarantien",
+      "footer": "Alle unsere Zertifikate und Sicherheitsstandards werden regelmäßig von deutschen Prüforganisationen überprüft und aktualisiert. Vertrauen Sie auf über 10 Jahre Erfahrung in der Führerscheinvermittlung.",
+      
+      "ssl": {
+        "title": "256-bit SSL Verschlüsselung",
+        "description": "Ihre Daten werden mit höchster Sicherheitsstufe übertragen"
+      },
+      "gdpr": {
+        "title": "DSGVO Konform",
+        "description": "Datenschutz nach europäischen Standards"
+      },
+      "data_protection": {
+        "title": "Datenschutz Zertifikat",
+        "description": "Zertifizierte sichere Datenverarbeitung"
+      },
+      "tuv": {
+        "description": "Qualitäts- und Sicherheitsprüfung durch TÜV"
+      },
+      "dekra": {
+        "description": "Sicherheits- und Qualitätsprüfung durch DEKRA"
+      },
+      "legal": {
+        "title": "Deutsches Recht",
+        "description": "Vollständig konform mit deutschem Straßenverkehrsrecht"
+      },
+      "money_back": {
+        "title": "100% Geld-zurück-Garantie",
+        "description": "Bei Ablehnung oder Unzufriedenheit"
+      },
+      "satisfaction": {
+        "title": "Kundenzufriedenheit 98%",
+        "description": "Basierend auf über 10.000 Kundenbewertungen"
+      },
+      "delivery": {
+        "title": "Express Lieferung",
+        "description": "Führerschein in 3-7 Werktagen"
+      },
+      "support_24_7": {
+        "title": "24/7 Support",
+        "description": "Rund um die Uhr deutsche Beratung"
+      },
+      "processing_time": {
+        "title": "Schnelle Bearbeitung",
+        "description": "Durchschnittlich 5 Werktage"
+      },
+      
+      "view_certificate": "Zertifikat ansehen",
+      "view_policy": "Datenschutzrichtlinie",
+      "certificate_details": "Zertifikatsdetails",
+      "verify_certificate": "Zertifikat prüfen",
+      "dekra_verify": "DEKRA Prüfung ansehen",
+      "legal_details": "Rechtliche Details",
+      "refund_policy": "Rückerstattungsrichtlinien",
+      "delivery_info": "Lieferinformationen",
+      "contact_support": "Support kontaktieren",
+      "processing_details": "Bearbeitungsdetails",
+      "valid_until": "Gültig bis: 2026",
+      "valid_until_dec": "Gültig bis: Dezember 2025",
+      "valid_until_nov": "Gültig bis: November 2025",
+      "guarantee_period": "30 Tage Garantie",
+      "avg_processing": "Ø 5 Werktage",
+      "delivery_time": "3-7 Werktage garantiert"
+    }
+  },
+
+  "security_dashboard": {
+    "title": "Sicherheits-Dashboard",
+    "subtitle": "Überwachen Sie die Systemsicherheit und Benutzeraktivitäten",
+    "nav": {
+      "overview": "Übersicht",
+      "security_events": "Sicherheitsereignisse",
+      "audit_logs": "Prüfprotokolle",
+      "active_sessions": "Aktive Sitzungen",
+      "alerts": "Warnmeldungen",
+      "system_status": "Systemstatus"
+    },
+    "stats": {
+      "active_sessions": "Aktive Sitzungen",
+      "failed_logins": "Fehlgeschlagene Anmeldungen (24h)",
+      "security_alerts": "Sicherheitswarnungen",
+      "system_health": "Systemgesundheit",
+      "threats_blocked": "Blockierte Bedrohungen",
+      "users_online": "Benutzer online"
+    },
+    "tabs": {
+      "overview": "Übersicht",
+      "events": "Ereignisse",
+      "sessions": "Sitzungen",
+      "alerts": "Warnungen"
+    },
+    "filters": {
+      "all": "Alle",
+      "today": "Heute",
+      "week": "Diese Woche",
+      "month": "Dieser Monat",
+      "critical": "Kritisch",
+      "warning": "Warnung",
+      "info": "Info"
+    },
+    "actions": {
+      "refresh": "Aktualisieren",
+      "export": "Exportieren",
+      "clear": "Löschen",
+      "resolve": "Lösen",
+      "dismiss": "Verwerfen"
+    },
+    "status": {
+      "healthy": "Gesund",
+      "warning": "Warnung",
+      "critical": "Kritisch",
+      "offline": "Offline"
+    },
+    "severity": {
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "critical": "Kritisch"
+    }
+  },
+
+  "auth_error_handler": {
+    "title": "Anmeldefehler",
+    "subtitle": "Es gab ein Problem beim Anmelden",
+    "messages": {
+      "invalid_credentials": "Ungültige Anmeldedaten. Bitte überprüfen Sie E-Mail und Passwort.",
+      "account_locked": "Ihr Konto ist vorübergehend gesperrt. Bitte versuchen Sie es später erneut.",
+      "too_many_attempts": "Zu viele Anmeldeversuche. Ihr Konto wurde für 15 Minuten gesperrt.",
+      "session_expired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+      "network_error": "Netzwerkverbindung fehlgeschlagen. Bitte überprüfen Sie Ihre Internetverbindung.",
+      "server_error": "Serverfehler aufgetreten. Bitte versuchen Sie es später erneut.",
+      "token_invalid": "Ungültiger Authentifizierungstoken. Bitte melden Sie sich erneut an.",
+      "password_expired": "Ihr Passwort ist abgelaufen. Bitte setzen Sie es zurück.",
+      "two_factor_required": "Zweistufige Authentifizierung erforderlich.",
+      "maintenance_mode": "Das System befindet sich im Wartungsmodus. Bitte versuchen Sie es später erneut."
+    },
+    "actions": {
+      "retry": "Erneut versuchen",
+      "reset_password": "Passwort zurücksetzen",
+      "contact_support": "Support kontaktieren",
+      "back_to_login": "Zurück zur Anmeldung",
+      "refresh_page": "Seite aktualisieren"
+    },
+    "session_recovery": {
+      "title": "Sitzung wiederherstellen",
+      "message": "Ihre Sitzung konnte nicht wiederhergestellt werden.",
+      "actions": {
+        "restore": "Sitzung wiederherstellen",
+        "start_new": "Neue Sitzung starten"
+      }
+    },
+    "retry_logic": {
+      "message": "Automatischer Wiederholungsversuch in {{count}} Sekunden...",
+      "cancelled": "Wiederholungsversuch abgebrochen",
+      "manual_retry": "Manuell erneut versuchen"
+    }
+  },
+
+  "security_settings": {
+    "title": "Sicherheitseinstellungen",
+    "subtitle": "Verwalten Sie Ihre Kontosicherheit und Datenschutz",
+    "sections": {
+      "account_security": "Kontosicherheit",
+      "session_management": "Sitzungsverwaltung",
+      "device_management": "Geräteverwaltung",
+      "privacy": "Datenschutz",
+      "notifications": "Benachrichtigungen",
+      "two_factor": "Zweistufige Authentifizierung"
+    },
+    "session_timeout": {
+      "title": "Sitzungs-Timeout",
+      "subtitle": "Automatische Abmeldung nach Inaktivität",
+      "options": {
+        "15min": "15 Minuten",
+        "30min": "30 Minuten", 
+        "1hour": "1 Stunde",
+        "2hours": "2 Stunden",
+        "never": "Nie"
+      },
+      "current": "Aktuell: {{duration}}",
+      "warning": "Aus Sicherheitsgründen empfehlen wir ein Timeout von maximal 30 Minuten."
+    },
+    "device_management": {
+      "title": "Geräteverwaltung",
+      "subtitle": "Verwalten Sie Ihre angemeldeten Geräte",
+      "current_device": "Aktuelles Gerät",
+      "other_devices": "Andere Geräte",
+      "last_activity": "Letzte Aktivität",
+      "location": "Standort",
+      "actions": {
+        "revoke": "Abmelden",
+        "mark_trusted": "Als vertrauenswürdig markieren",
+        "rename": "Umbenennen"
+      },
+      "confirm_revoke": "Sind Sie sicher, dass Sie sich von diesem Gerät abmelden möchten?",
+      "device_name": "Gerätename",
+      "rename_device": "Gerät umbenennen"
+    },
+    "password_security": {
+      "title": "Passwortsicherheit",
+      "current_password": "Aktuelles Passwort",
+      "new_password": "Neues Passwort",
+      "confirm_password": "Passwort bestätigen",
+      "strength": "Passwortstärke",
+      "requirements": {
+        "min_length": "Mindestens 8 Zeichen",
+        "uppercase": "Großbuchstaben",
+        "lowercase": "Kleinbuchstaben", 
+        "numbers": "Zahlen",
+        "special": "Sonderzeichen"
+      },
+      "last_changed": "Zuletzt geändert: {{date}}"
+    },
+    "two_factor": {
+      "title": "Zweistufige Authentifizierung",
+      "subtitle": "Erhöhen Sie die Sicherheit Ihres Kontos",
+      "status": {
+        "enabled": "Aktiviert",
+        "disabled": "Deaktiviert",
+        "setup_required": "Setup erforderlich"
+      },
+      "methods": {
+        "sms": "SMS",
+        "email": "E-Mail",
+        "app": "Authentifizierungs-App"
+      },
+      "setup": {
+        "title": "2FA einrichten",
+        "scan_qr": "Scannen Sie diesen QR-Code mit Ihrer Authentifizierungs-App",
+        "enter_code": "Geben Sie den 6-stelligen Code ein",
+        "backup_codes": "Backup-Codes"
+      },
+      "backup_codes": {
+        "title": "Backup-Codes",
+        "subtitle": "Verwenden Sie diese Codes, wenn Sie keinen Zugang zu Ihrem Hauptgerät haben",
+        "generate": "Neue Codes generieren",
+        "used": "{{used}} von {{total}} verwendet"
+      }
+    },
+    "login_history": {
+      "title": "Anmeldeverlauf",
+      "subtitle": "Überprüfen Sie Ihre letzten Anmeldungen",
+      "filters": {
+        "all": "Alle",
+        "successful": "Erfolgreich",
+        "failed": "Fehlgeschlagen"
+      },
+      "columns": {
+        "date": "Datum",
+        "time": "Zeit",
+        "location": "Standort",
+        "device": "Gerät",
+        "status": "Status"
+      },
+      "unknown_location": "Unbekannter Standort",
+      "current_session": "Aktuelle Sitzung"
+    },
+    "privacy_settings": {
+      "title": "Datenschutzeinstellungen",
+      "profile_visibility": {
+        "title": "Profilsichtbarkeit",
+        "options": {
+          "public": "Öffentlich",
+          "private": "Privat",
+          "contacts": "Nur Kontakte"
+        }
+      },
+      "activity_sharing": {
+        "title": "Aktivitätsfreigabe",
+        "show_activity": "Meine Aktivität anzeigen",
+        "show_location": "Meinen Standort freigeben"
+      },
+      "data_retention": {
+        "title": "Datenspeicherung",
+        "description": "Wie lange wir Ihre Daten aufbewahren",
+        "options": {
+          "1year": "1 Jahr",
+          "2years": "2 Jahre",
+          "5years": "5 Jahre",
+          "indefinite": "Unbefristet"
+        }
+      }
+    },
+    "security_notifications": {
+      "title": "Sicherheitsbenachrichtigungen",
+      "subtitle": "Erhalten Sie Benachrichtigungen über Sicherheitsereignisse",
+      "email_notifications": "E-Mail-Benachrichtigungen",
+      "push_notifications": "Push-Benachrichtigungen",
+      "sms_notifications": "SMS-Benachrichtigungen",
+      "events": {
+        "new_login": "Neue Anmeldung",
+        "password_change": "Passwortänderung",
+        "device_added": "Neues Gerät hinzugefügt",
+        "security_alert": "Sicherheitswarnung",
+        "data_download": "Datendownload",
+        "account_locked": "Konto gesperrt"
+      }
+    },
+    "data_export": {
+      "title": "Datenexport",
+      "subtitle": "Exportieren Sie Ihre Daten",
+      "description": "Laden Sie eine Kopie Ihrer Daten herunter",
+      "formats": {
+        "json": "JSON",
+        "csv": "CSV",
+        "pdf": "PDF"
+      },
+      "include": {
+        "personal_data": "Persönliche Daten",
+        "activity_log": "Aktivitätsprotokoll",
+        "documents": "Dokumente",
+        "messages": "Nachrichten"
+      }
+    },
+    "account_deletion": {
+      "title": "Kontolöschung",
+      "subtitle": "Löschen Sie Ihr Konto dauerhaft",
+      "warning": "Diese Aktion kann nicht rückgängig gemacht werden",
+      "confirm_text": "Geben Sie \"LÖSCHEN\" ein, um zu bestätigen",
+      "retention_period": "Ihre Daten werden {{days}} Tage aufbewahrt, bevor sie endgültig gelöscht werden."
+    },
+    "colors": {
+      "german_flag": "Deutsche Flaggenfarben",
+      "black": "Schwarz",
+      "red": "Rot", 
+      "yellow": "Gelb",
+      "warning": "Warnung",
+      "danger": "Gefahr",
+      "success": "Erfolg"
+    }
+  },
+
+  "auth_validation": {
+    "server_side": {
+      "title": "Serverseitige Authentifizierung",
+      "subtitle": "Überprüfung Ihrer Anmeldedaten auf dem Server",
+      "validating": "Anmeldedaten werden validiert...",
+      "valid": "Anmeldung erfolgreich",
+      "invalid": "Anmeldung fehlgeschlagen",
+      "expired": "Token abgelaufen",
+      "renewing": "Token wird erneuert..."
+    },
+    "jwt_validation": {
+      "title": "JWT-Token-Validierung",
+      "checking": "Token wird überprüft...",
+      "valid": "Token gültig",
+      "invalid": "Token ungültig",
+      "expired": "Token abgelaufen",
+      "renewing": "Token wird erneuert..."
+    },
+    "device_fingerprint": {
+      "title": "Geräte-Fingerprinting",
+      "checking": "Gerät wird überprüft...",
+      "recognized": "Gerät erkannt",
+      "unknown": "Unbekanntes Gerät",
+      "suspicious": "Verdächtiges Gerät"
+    },
+    "ip_verification": {
+      "title": "IP-Adressen-Verifikation",
+      "checking": "IP-Adresse wird überprüft...",
+      "allowed": "IP-Adresse erlaubt",
+      "blocked": "IP-Adresse blockiert",
+      "restricted": "IP-Adresse eingeschränkt"
+    }
+  },
+
+  "security_events": {
+    "title": "Sicherheitsereignisse",
+    "subtitle": "Überwachen Sie alle Sicherheitsaktivitäten",
+    "types": {
+      "login_attempt": "Anmeldeversuch",
+      "failed_login": "Fehlgeschlagene Anmeldung",
+      "successful_login": "Erfolgreiche Anmeldung",
+      "logout": "Abmeldung",
+      "password_change": "Passwortänderung",
+      "account_locked": "Konto gesperrt",
+      "account_unlocked": "Konto entsperrt",
+      "device_added": "Gerät hinzugefügt",
+      "device_removed": "Gerät entfernt",
+      "suspicious_activity": "Verdächtige Aktivität",
+      "security_alert": "Sicherheitswarnung",
+      "data_access": "Datenzugriff",
+      "permission_change": "Berechtigungsänderung"
+    },
+    "severity": {
+      "info": "Information",
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "critical": "Kritisch"
+    },
+    "status": {
+      "open": "Offen",
+      "investigating": "In Untersuchung",
+      "resolved": "Gelöst",
+      "dismissed": "Verworfen"
+    },
+    "actions": {
+      "view_details": "Details anzeigen",
+      "investigate": "Untersuchen",
+      "resolve": "Lösen",
+      "dismiss": "Verwerfen"
+    }
+  },
+
+  "audit_logs": {
+    "title": "Prüfprotokolle",
+    "subtitle": "Detaillierte Aufzeichnungen aller Systemaktivitäten",
+    "filters": {
+      "date_range": "Datumsbereich",
+      "user": "Benutzer",
+      "action": "Aktion",
+      "resource": "Ressource",
+      "severity": "Schweregrad"
+    },
+    "columns": {
+      "timestamp": "Zeitstempel",
+      "user": "Benutzer",
+      "action": "Aktion",
+      "resource": "Ressource",
+      "ip_address": "IP-Adresse",
+      "user_agent": "Browser",
+      "result": "Ergebnis",
+      "details": "Details"
+    },
+    "export": {
+      "title": "Protokoll exportieren",
+      "formats": {
+        "csv": "CSV",
+        "json": "JSON",
+        "pdf": "PDF"
+      },
+      "date_range": "Datumsbereich auswählen"
+    }
+  },
+
+  "security_alerts": {
+    "title": "Sicherheitswarnungen",
+    "subtitle": "Überwachen und reagieren Sie auf Sicherheitsbedrohungen",
+    "priority": {
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "critical": "Kritisch"
+    },
+    "categories": {
+      "authentication": "Authentifizierung",
+      "authorization": "Autorisierung",
+      "data_breach": "Datenschutzverletzung",
+      "malware": "Malware",
+      "intrusion": " Eindringling",
+      "ddos": "DDoS-Angriff",
+      "unauthorized_access": "Unbefugter Zugriff"
+    },
+    "actions": {
+      "acknowledge": "Bestätigen",
+      "investigate": "Untersuchen",
+      "escalate": "Eskalieren",
+      "resolve": "Lösen",
+      "close": "Schließen"
+    },
+    "notifications": {
+      "email": "E-Mail senden",
+      "sms": "SMS senden",
+      "push": "Push-Benachrichtigung",
+      "slack": "An Slack senden",
+      "webhook": "Webhook auslösen"
+    }
+  },
+
+  "session_management": {
+    "title": "Sitzungsverwaltung",
+    "subtitle": "Verwalten Sie Ihre aktiven Sitzungen",
+    "current_session": "Aktuelle Sitzung",
+    "active_sessions": "Aktive Sitzungen",
+    "device_info": "Geräteinformationen",
+    "location_info": "Standortinformationen",
+    "security_info": "Sicherheitsinformationen",
+    "actions": {
+      "terminate": "Beenden",
+      "terminate_others": "Andere beenden",
+      "extend": "Verlängern",
+      "details": "Details anzeigen"
+    },
+    "device_types": {
+      "desktop": "Desktop",
+      "mobile": "Mobil",
+      "tablet": "Tablet",
+      "unknown": "Unbekannt"
+    },
+    "browsers": {
+      "chrome": "Google Chrome",
+      "firefox": "Mozilla Firefox",
+      "safari": "Safari",
+      "edge": "Microsoft Edge",
+      "unknown": "Unbekannt"
+    },
+    "security_status": {
+      "secure": "Sicher",
+      "warning": "Warnung",
+      "danger": "Gefahr"
+    }
+  },
+
+  "token_rotation": {
+    "title": "Token-Rotation",
+    "subtitle": "Automatische Erneuerung von Authentifizierungstokens",
+    "status": {
+      "active": "Aktiv",
+      "scheduled": "Geplant",
+      "expired": "Abgelaufen",
+      "revoked": "Zurückgezogen"
+    },
+    "rotation_schedule": {
+      "title": "Rotationsplan",
+      "automatic": "Automatisch",
+      "manual": "Manuell",
+      "on_demand": "Bei Bedarf"
+    },
+    "security_checks": {
+      "device_validation": "Gerätevalidierung",
+      "ip_verification": "IP-Verifikation",
+      "behavioral_analysis": "Verhaltensanalyse"
+    }
+  },
+
+  "rate_limiting": {
+    "title": "Ratenbegrenzung",
+    "subtitle": "Schutz vor Brute-Force-Angriffen",
+    "limits": {
+      "login_attempts": "Anmeldeversuche",
+      "password_resets": "Passwort-Zurücksetzungen",
+      "api_requests": "API-Anfragen",
+      "file_uploads": "Datei-Uploads"
+    },
+    "timeframes": {
+      "per_minute": "Pro Minute",
+      "per_hour": "Pro Stunde",
+      "per_day": "Pro Tag",
+      "per_month": "Pro Monat"
+    },
+    "status": {
+      "allowed": "Erlaubt",
+      "limited": "Begrenzt",
+      "blocked": "Blockiert"
+    }
+  },
+
+  "ip_whitelisting": {
+    "title": "IP-Whitelist",
+    "subtitle": "Kontrollieren Sie den Zugang über IP-Adressen",
+    "current_ip": "Ihre aktuelle IP-Adresse",
+    "whitelist_status": {
+      "enabled": "Aktiviert",
+      "disabled": "Deaktiviert"
+    },
+    "actions": {
+      "add_current": "Aktuelle IP hinzufügen",
+      "remove": "Entfernen",
+      "configure": "Konfigurieren"
+    },
+    "ip_ranges": {
+      "single": "Einzelne IP",
+      "range": "IP-Bereich",
+      "subnet": "Subnetz"
+    }
+  },
+
+  "local": {
+    "berlin": {
+      "title": "Führerschein Berlin",
+      "subtitle": "Ihr Führerschein-Service in Berlin. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in der Hauptstadt beantragen.",
+      "location_title": "Standort Berlin",
+      "location_address": "Unter den Linden 1, 10117 Berlin, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-30-12345678, E-Mail: berlin@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Berlin",
+      "services_subtitle": "Alle Führerschein Klassen in Berlin verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Berlin?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Berlin mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Berlin",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Berlin.",
+      "faq_title": "Häufige Fragen - Berlin",
+      "faq_q1": "Wie lange dauert Führerschein beantragen in Berlin?",
+      "faq_a1": "In Berlin können Sie mit 4-8 Wochen rechnen, je nach gewünschter Führerschein Klasse.",
+      "faq_q2": "Welche Führerschein Klassen gibt es in Berlin?",
+      "faq_a2": "Alle Klassen verfügbar: B (Auto), A (Motorrad), C (LKW), D (Bus), BE, CE, DE und weitere Spezialklassen.",
+      "faq_q3": "Muss ich in Berlin zur Prüfung?",
+      "faq_a3": "Bei unserem Service können Sie Führerschein ohne Prüfung beantragen. Wir kümmern uns um alle Formalitäten.",
+      "faq_q4": "Wie sind die Preise in Berlin?",
+      "faq_a4": "Faire und transparente Preise: Klasse B ab €1.899, Klasse A ab €1.199, Klasse C ab €2.499.",
+      "faq_q5": "Wo ist der Standort in Berlin?",
+      "faq_a5": "Unser Berlin Standort befindet sich in der Mitte der Stadt: Unter den Linden 1, 10117 Berlin.",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "muenchen": {
+      "title": "Führerschein München",
+      "subtitle": "Ihr Führerschein-Service in München. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in München beantragen.",
+      "location_title": "Standort München",
+      "location_address": "Marienplatz 8, 80331 München, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-89-12345678, E-Mail: muenchen@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services München",
+      "services_subtitle": "Alle Führerschein Klassen in München verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein München?",
+      "advantages_subtitle": "Der führende Führerschein-Service in München mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen München",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus München.",
+      "faq_title": "Häufige Fragen - München",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "hamburg": {
+      "title": "Führerschein Hamburg",
+      "subtitle": "Ihr Führerschein-Service in Hamburg. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Hamburg beantragen.",
+      "location_title": "Standort Hamburg",
+      "location_address": "Rathausmarkt 1, 20095 Hamburg, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-40-12345678, E-Mail: hamburg@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Hamburg",
+      "services_subtitle": "Alle Führerschein Klassen in Hamburg verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Hamburg?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Hamburg mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Hamburg",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Hamburg.",
+      "faq_title": "Häufige Fragen - Hamburg",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "koeln": {
+      "title": "Führerschein Köln",
+      "subtitle": "Ihr Führerschein-Service in Köln. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Köln beantragen.",
+      "location_title": "Standort Köln",
+      "location_address": "Rathausplatz 1, 50667 Köln, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-221-12345678, E-Mail: koeln@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Köln",
+      "services_subtitle": "Alle Führerschein Klassen in Köln verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Köln?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Köln mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Köln",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Köln.",
+      "faq_title": "Häufige Fragen - Köln",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "frankfurt": {
+      "title": "Führerschein Frankfurt",
+      "subtitle": "Ihr Führerschein-Service in Frankfurt. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Frankfurt beantragen.",
+      "location_title": "Standort Frankfurt",
+      "location_address": "Römerberg 23, 60311 Frankfurt am Main, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-69-12345678, E-Mail: frankfurt@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Frankfurt",
+      "services_subtitle": "Alle Führerschein Klassen in Frankfurt verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Frankfurt?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Frankfurt mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Frankfurt",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Frankfurt.",
+      "faq_title": "Häufige Fragen - Frankfurt",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "stuttgart": {
+      "title": "Führerschein Stuttgart",
+      "subtitle": "Ihr Führerschein-Service in Stuttgart. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Stuttgart beantragen.",
+      "location_title": "Standort Stuttgart",
+      "location_address": "Marktplatz 1, 70173 Stuttgart, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-711-12345678, E-Mail: stuttgart@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Stuttgart",
+      "services_subtitle": "Alle Führerschein Klassen in Stuttgart verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Stuttgart?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Stuttgart mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Stuttgart",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Stuttgart.",
+      "faq_title": "Häufige Fragen - Stuttgart",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "duesseldorf": {
+      "title": "Führerschein Düsseldorf",
+      "subtitle": "Ihr Führerschein-Service in Düsseldorf. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Düsseldorf beantragen.",
+      "location_title": "Standort Düsseldorf",
+      "location_address": "Marktplatz 1, 40213 Düsseldorf, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-211-12345678, E-Mail: duesseldorf@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Düsseldorf",
+      "services_subtitle": "Alle Führerschein Klassen in Düsseldorf verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Düsseldorf?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Düsseldorf mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Düsseldorf",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Düsseldorf.",
+      "faq_title": "Häufige Fragen - Düsseldorf",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "dortmund": {
+      "title": "Führerschein Dortmund",
+      "subtitle": "Ihr Führerschein-Service in Dortmund. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Dortmund beantragen.",
+      "location_title": "Standort Dortmund",
+      "location_address": "Alter Markt 1, 44135 Dortmund, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-231-12345678, E-Mail: dortmund@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Dortmund",
+      "services_subtitle": "Alle Führerschein Klassen in Dortmund verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Dortmund?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Dortmund mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Dortmund",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Dortmund.",
+      "faq_title": "Häufige Fragen - Dortmund",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "essen": {
+      "title": "Führerschein Essen",
+      "subtitle": "Ihr Führerschein-Service in Essen. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Essen beantragen.",
+      "location_title": "Standort Essen",
+      "location_address": "Rathausplatz 1, 45127 Essen, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-201-12345678, E-Mail: essen@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Essen",
+      "services_subtitle": "Alle Führerschein Klassen in Essen verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Essen?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Essen mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Essen",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Essen.",
+      "faq_title": "Häufige Fragen - Essen",
+      "cta_secondary": "Beratung anfragen"
+    },
+    "leipzig": {
+      "title": "Führerschein Leipzig",
+      "subtitle": "Ihr Führerschein-Service in Leipzig. Alle Klassen verfügbar, schnelle Bearbeitung, faire Preise. Führerschein ohne Prüfung in Leipzig beantragen.",
+      "location_title": "Standort Leipzig",
+      "location_address": "Marktplatz 1, 04109 Leipzig, Deutschland",
+      "opening_hours_title": "Öffnungszeiten",
+      "opening_hours_content": "Mo-Fr: 08:00-18:00, Sa: 09:00-16:00, So: Geschlossen",
+      "contact_title": "Kontakt",
+      "contact_content": "Tel: +49-341-12345678, E-Mail: leipzig@mullerfuhrerschein.de, WhatsApp: Verfügbar",
+      "cta_primary": "Jetzt Führerschein beantragen",
+      "services_title": "Führerschein Services Leipzig",
+      "services_subtitle": "Alle Führerschein Klassen in Leipzig verfügbar. Faire Preise, schnelle Bearbeitung, deutscher Service.",
+      "advantages_title": "Warum MüllerFührerschein Leipzig?",
+      "advantages_subtitle": "Der führende Führerschein-Service in Leipzig mit über 15.000 zufriedenen Kunden.",
+      "testimonials_title": "Kundenstimmen Leipzig",
+      "testimonials_subtitle": "Echte Bewertungen unserer Kunden aus Leipzig.",
+      "faq_title": "Häufige Fragen - Leipzig",
+      "cta_secondary": "Beratung anfragen"
+    }
+  },
+
+  "common": {
+    "services": {
+      "b": "Führerschein Klasse B",
+      "a": "Führerschein Klasse A",
+      "c": "Führerschein Klasse C", 
+      "d": "Führerschein Klasse D",
+      "be": "Führerschein BE",
+      "ce": "Führerschein CE"
+    },
+    "advantages": {
+      "fast_processing": "Schnelle Bearbeitung in 4-8 Wochen",
+      "no_exam": "Keine theoretische oder praktische Prüfung erforderlich",
+      "all_classes": "Alle Führerschein Klassen verfügbar",
+      "local_service": "Lokaler Service in {{city}}",
+      "fair_prices": "Faire und transparente Preise",
+      "german_support": "Deutscher Kundenservice",
+      "experience": "15+ Jahre Erfahrung",
+      "satisfied_customers": "Über 15.000 zufriedene Kunden"
+    },
+    "testimonials": {
+      "b_class": "Klasse B",
+      "c_class": "Klasse C", 
+      "a_class": "Klasse A"
+    },
+    "anonymous": "Anonym"
+  }
+}
+}

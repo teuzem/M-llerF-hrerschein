@@ -1,0 +1,260 @@
+# MüllerFührerschein.de - Robots.txt
+# Optimisé pour le SEO allemand et les moteurs de recherche européens
+
+# User-agent principal - Tous les moteurs de recherche respectueux
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+Disallow: /application/form
+Disallow: /application/confirmation/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /node_modules/
+Disallow: *.json$
+Disallow: /error/
+Disallow: /server-error/
+Disallow: /test-*
+
+# Section spécifique pour les moteurs de recherche principaux (Priorité German SEO)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+# Autoriser l'accès aux pages de services et de contenu
+Allow: /services/
+Allow: /testimonials/
+Allow: /gallery/
+Allow: /pricing/
+Allow: /contact/
+Allow: /blog/
+Allow: /help/
+# Interdire l'accès aux zones sensibles
+Disallow: /dashboard/
+Disallow: /application/form
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /testimonials/
+Allow: /gallery/
+Allow: /pricing/
+Allow: /contact/
+Disallow: /dashboard/
+Disallow: /application/form
+
+# Moteurs de recherche européens et internationaux
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+Allow: /services/
+Allow: /testimonials/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 3
+Allow: /services/
+Disallow: /dashboard/
+Disallow: /application/
+
+# Moteurs de recherche spécialisés pour l'Allemagne
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /testimonials/
+Allow: /gallery/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: QwantBot
+Allow: /
+Crawl-delay: 2
+Allow: /services/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: StartpageBot
+Allow: /
+Crawl-delay: 2
+Allow: /services/
+Disallow: /dashboard/
+Disallow: /application/
+
+# Références aux sitemaps
+Sitemap: https://mulerfuhrerschein.de/sitemap.xml
+Sitemap: https://mulerfuhrerschein.de/sitemap-images.xml
+Sitemap: https://mulerfuhrerschein.de/sitemap-videos.xml
+# Sitemaps multilingues
+Sitemap: https://mulerfuhrerschein.de/sitemap-de.xml
+Sitemap: https://mulerfuhrerschein.de/sitemap-fr.xml
+Sitemap: https://mulerfuhrerschein.de/sitemap-en.xml
+
+# Configuration crawl-delay et performance
+Crawl-delay: 1
+
+# Bots à bloquer - Sécurité et performance
+User-agent: AhrefsBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MajesticSEO
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+Crawl-delay: 10
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: PaperLiBot
+Disallow: /
+
+User-agent: Twisted.reMatcher
+Disallow: /
+
+User-agent: LinkWalker
+Disallow: /
+
+User-agent: sistriCrawler
+Disallow: /
+
+# Bots de scraping agressifs
+User-agent: Scrapy
+Disallow: /
+
+User-agent: WebMeUp
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+# Bots de sources news et médias
+User-agent: Google-News
+Allow: /
+Crawl-delay: 1
+Allow: /blog/
+Allow: /news/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: BingNews
+Allow: /
+Crawl-delay: 1
+Allow: /blog/
+Disallow: /dashboard/
+
+# Configuration spécifique pour les bots mobiles
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /contact/
+Allow: /pricing/
+Disallow: /dashboard/
+Disallow: /application/form
+
+User-agent: Bingbot-Mobile
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Disallow: /dashboard/
+
+# Configuration pour les bots d'images
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /gallery/
+Allow: /testimonials/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: Bingbot-Image
+Allow: /images/
+Allow: /gallery/
+Disallow: /dashboard/
+
+# Configuration pour les bots vidéo
+User-agent: Googlebot-Video
+Allow: /videos/
+Allow: /gallery/
+Disallow: /dashboard/
+Disallow: /application/
+
+User-agent: Bingbot-Video
+Allow: /videos/
+Disallow: /dashboard/
+
+# Configuration de l'indexation locale (Allemagne)
+User-agent: Googlebot
+# Directives spécifiques pour l'indexation locale allemande
+# MüllerFührerschein.de est optimisé pour le marché allemand
+# Toutes les pages de services sont autorisées pour l'indexation locale
+
+# Configuration pour les bots de réseaux sociaux
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /testimonials/
+Allow: /pricing/
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /testimonials/
+Allow: /pricing/
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+Allow: /services/
+Allow: /testimonials/
+Allow: /about/
+
+# Configuration pour les bots WhatsApp Business
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 1
+
+# Paramètres de cache et performance
+# Pour améliorer les performances du crawl
+Crawl-delay: 1
+# Délai entre les requêtes pour les bots respectueux
+
+# Configuration finale de sécurité
+# Bloquer tous les autres bots non listés par défaut
+User-agent: *
+Disallow: /dashboard/
+Disallow: /application/form
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Allow: /
+
+# Fin du fichier robots.txt
+# Dernière mise à jour: 2025-11-04
+# Pour questions techniques: technical@mulerfuhrerschein.de

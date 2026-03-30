@@ -1,0 +1,199 @@
+{
+  "name": {
+    "de": "MüllerFührerschein - Deutscher Führerschein Service",
+    "fr": "MüllerFührerschein - Service de Permis Allemand",
+    "en": "MüllerFührerschein - German License Service"
+  },
+  "short_name": {
+    "de": "MüllerFührerschein",
+    "fr": "MüllerFührerschein",
+    "en": "MüllerFührerschein"
+  },
+  "description": {
+    "de": "Professioneller Service für alle Arten deutscher Führerscheine. Schnell, sicher und legal. Inklusive Uber Eats Services und Führerschein-Erneuerung.",
+    "fr": "Service professionnel pour tous types de permis de conduire allemand. Rapide, sûr et légal. Inclut les services Uber Eats et renouvellement de permis.",
+    "en": "Professional service for all types of German driving licenses. Fast, safe and legal. Including Uber Eats services and license renewal."
+  },
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": {
+    "light": "#ffffff",
+    "dark": "#0f172a"
+  },
+  "theme_color": {
+    "light": "#3b82f6",
+    "dark": "#60a5fa"
+  },
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": ["education", "government", "utilities", "food"],
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": {
+        "de": "Führerschein Services",
+        "fr": "Services Permis",
+        "en": "License Services"
+      },
+      "short_name": {
+        "de": "Services",
+        "fr": "Services",
+        "en": "Services"
+      },
+      "description": {
+        "de": "Alle unsere Führerschein-Dienstleistungen entdecken",
+        "fr": "Découvrir tous nos services de permis",
+        "en": "Discover all our license services"
+      },
+      "url": "/services",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": {
+        "de": "Uber Eats Services",
+        "fr": "Services Uber Eats",
+        "en": "Uber Eats Services"
+      },
+      "short_name": {
+        "de": "Uber Eats",
+        "fr": "Uber Eats",
+        "en": "Uber Eats"
+      },
+      "description": {
+        "de": "Uber Eats Fahrerkonto erstellen und verwalten",
+        "fr": "Créer et gérer votre compte Uber Eats",
+        "en": "Create and manage your Uber Eats account"
+      },
+      "url": "/services/uber-eats",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": {
+        "de": "Preisrechner",
+        "fr": "Calculateur Prix",
+        "en": "Price Calculator"
+      },
+      "short_name": {
+        "de": "Preise",
+        "fr": "Prix",
+        "en": "Prices"
+      },
+      "description": {
+        "de": "Führerschein-Preise berechnen",
+        "fr": "Calculer les prix des permis",
+        "en": "Calculate license prices"
+      },
+      "url": "/pricing",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": {
+        "de": "Kundenbereich",
+        "fr": "Espace Client",
+        "en": "Client Area"
+      },
+      "short_name": {
+        "de": "Dashboard",
+        "fr": "Dashboard",
+        "en": "Dashboard"
+      },
+      "description": {
+        "de": "Zu Ihrem persönlichen Dashboard",
+        "fr": "Accéder à votre espace personnel",
+        "en": "Access your personal dashboard"
+      },
+      "url": "/dashboard",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": {
+        "de": "Kontakt",
+        "fr": "Contact",
+        "en": "Contact"
+      },
+      "short_name": {
+        "de": "Kontakt",
+        "fr": "Contact",
+        "en": "Contact"
+      },
+      "description": {
+        "de": "Kontaktieren Sie unser Support-Team",
+        "fr": "Contacter notre équipe support",
+        "en": "Contact our support team"
+      },
+      "url": "/contact",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": {
+        "de": "MüllerFührerschein Desktop Interface",
+        "fr": "Interface Bureau MüllerFührerschein",
+        "en": "MüllerFührerschein Desktop Interface"
+      }
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": {
+        "de": "MüllerFührerschein Mobile Interface",
+        "fr": "Interface Mobile MüllerFührerschein",
+        "en": "MüllerFührerschein Mobile Interface"
+      }
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "protocol_handlers": [
+    {
+      "protocol": "web+mullerfuhrerschein",
+      "url": "/?handler=%s"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "iarc_rating_id": "",
+  "capture_links": "existing-client-navigate"
+}

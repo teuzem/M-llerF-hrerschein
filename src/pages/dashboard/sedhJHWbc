@@ -1,0 +1,73 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import StatCard from '../../components/dashboard/StatCard';
+import ActivityChart from '../../components/dashboard/ActivityChart';
+import RecentApplications from '../../components/dashboard/RecentApplications';
+import ProfileSummary from '../../components/dashboard/ProfileSummary';
+import { PlusCircle, FileText, CheckCircle, Euro, LayoutDashboard } from 'lucide-react';
+import Button from '../../components/ui/Button';
+import { DashboardData } from '../../hooks/useDashboardData';
+import { useAuth } from '../../contexts/AuthContext';
+import DashboardHeader from '../../components/dashboard/DashboardHeader';
+import ApplicationStatusChart from '../../components/dashboard/ApplicationStatusChart';
+
+interface DashboardHomeProps {
+  data: DashboardData;
+}
+
+const DashboardHome: React.FC<DashboardHomeProps> = ({ data }) => {
+  const { t } = useTranslation();
+  const { profile } = useAuth();
+  const { applications, stats } = data;
+
+  const statCards = [
+    { title: t('dashboard.home.stats.in_progress'), value: stats.inProgress, icon: FileText, color: 'blue' as const },
+    { title: t('dashboard.home.stats.completed'), value: stats.completed, icon: CheckCircle, color: 'green' as const },
+    { title: t('dashboard.home.stats.total_spent'), value: `${stats.totalSpent.toFixed(2)}€`, icon: Euro, color: 'red' as const },
+  ];
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-8">
+      <DashboardHeader
+        title={t('dashboard.home.header.title', { name: profile?.full_name || 'Utilisateur' })}
+        subtitle={t('dashboard.home.header.subtitle')}
+        icon={LayoutDashboard}
+      >
+        <Button as={Link} to="/services" className="bg-white text-german-red hover:bg-gray-100">
+          <PlusCircle className="w-5 h-5 mr-2" />
+          {t('dashboard.home.new_application')}
+        </Button>
+      </DashboardHeader>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {statCards.map((card, index) => (
+          <motion.div key={card.title} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1 }}>
+            <StatCard {...card} />
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="lg:col-span-3">
+          <ActivityChart applications={applications} />
+        </div>
+        <div className="lg:col-span-2">
+          <ApplicationStatusChart applications={applications} />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-2">
+          <RecentApplications applications={applications} />
+        </div>
+        <div>
+          <ProfileSummary />
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default DashboardHome;
