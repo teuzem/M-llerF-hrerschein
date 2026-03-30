@@ -72,31 +72,41 @@ export const VisitorTracker = () => {
 
     const trackVisit = async () => {
       try {
-        // 1. Get location data from ip-api (free, no API key needed, very reliable)
+        // 1. Get location data from free HTTPS APIs to avoid Mixed Content errors
         let locationData: any = {};
         try {
-          const response = await fetch('http://ip-api.com/json/');
+          // ipapi.co is fully free without API keys and supports HTTPS
+          const response = await fetch('https://ipapi.co/json/');
           if (response.ok) {
             locationData = await response.json();
           }
         } catch (e) {
-          console.warn('Could not fetch geolocation', e);
+          console.warn('Could not fetch geolocation from primary source', e);
+          try {
+            // Fallback just in case
+            const fbResponse = await fetch('https://freeipapi.com/api/json');
+            if (fbResponse.ok) {
+               locationData = await fbResponse.json();
+            }
+          } catch(e2) {
+             console.warn('Fallback geolocation failed as well', e2);
+          }
         }
 
         // 2. Collect local data
         const { data: { session } } = await supabase.auth.getSession();
         
         const visitorData = {
-          // Geolocation & IP
-          ip_address: locationData.query || null,
-          country: locationData.country || null,
-          country_code: locationData.countryCode || null,
-          region: locationData.regionName || null,
-          city: locationData.city || null,
-          latitude: locationData.lat || null,
-          longitude: locationData.lon || null,
-          isp: locationData.isp || null,
-          timezone: locationData.timezone || null,
+          // Geolocation & IP (mapped to handle ipapi.co, freeipapi.com, and previous formats)
+          ip_address: locationData.ip || locationData.ipAddress || locationData.query || null,
+          country: locationData.country_name || locationData.countryName || locationData.country || null,
+          country_code: locationData.country_code || locationData.countryCode || locationData.country || null,
+          region: locationData.region || locationData.regionName || null,
+          city: locationData.city || locationData.cityName || null,
+          latitude: locationData.latitude || locationData.lat || null,
+          longitude: locationData.longitude || locationData.lon || null,
+          isp: locationData.org || locationData.isp || null,
+          timezone: locationData.timezone || locationData.timeZone || null,
           
           // Device & Browser
           user_agent: navigator.userAgent,
