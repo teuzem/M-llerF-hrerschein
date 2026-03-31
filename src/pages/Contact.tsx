@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, User, Type, Clock, Phone } from 'lucide-react';
+import { Mail, User, Type, Clock, Phone } from 'lucide-react';
 import { supabase, ContactMessage } from '../lib/supabase';
-import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_ADDRESS } from '../lib/constants';
+import { CONTACT_EMAIL, CONTACT_PHONE } from '../lib/constants';
 import toast from 'react-hot-toast';
 import SEOHead from '../components/seo/SEOHead';
 import { pageSEO } from '../lib/seoData';
@@ -36,13 +36,15 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: Mail, title: t('contact.info.support'), value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: 'text-german-red' },
-    { icon: Phone, title: t('contact.info.phone'), value: CONTACT_PHONE, href: `tel:${CONTACT_PHONE.replace(/\s/g, '')}`, color: 'text-green-600' },
-    { icon: MapPin, title: t('contact.info.address'), value: CONTACT_ADDRESS, href: '#', color: 'text-gray-600' },
+    { icon: Phone, title: t('contact.info.phone'), value: CONTACT_PHONE, href: `https://wa.me/4915212399096`, color: 'text-green-600' },
   ];
+
+  const currentLang = (i18n.language || 'de') as 'de' | 'fr' | 'en';
+  const seoProps = pageSEO[currentLang]?.contact || pageSEO.de.contact;
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEOHead {...pageSEO.contact} />
+      <SEOHead {...seoProps} />
       <section className="bg-gradient-to-br from-german-black via-german-red to-gray-900 text-white py-20">
         <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl lg:text-6xl font-bold mb-4">{t('contact.title')}</motion.h1>
@@ -100,9 +102,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="rounded-xl shadow-lg w-full overflow-hidden aspect-video">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.7082343824213!2d13.392748476062528!3d52.512408936065105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a54cfbf7d50f5b%3A0x5c9b9c2b8e4b6d7e!2sAlexanderstra%C3%9Fe%2040%2C%2010179%20Berlin%2C%20Deutschland!5e0!3m2!1sde!2sde!4v1759062300000!5m2!1sde!2sde" width="100%" height="100%" style={{ border:0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-              </div>
+              {/* Removed Google Maps Iframe completely as per request */}
             </motion.div>
           </div>
         </div>

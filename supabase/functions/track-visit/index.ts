@@ -35,29 +35,8 @@ serve(async (req: Request) => {
       });
     }
 
-    // 2. Rate limit email notifications (1 per IP per hour)
-    if (visitorData.ip_address) {
-      const oneHourAgo = new Date();
-      oneHourAgo.setHours(oneHourAgo.getHours() - 1);
-
-      const { count, error: countError } = await supabaseClient
-        .from("visitor_logs")
-        .select("*", { count: "exact", head: true })
-        .eq("ip_address", visitorData.ip_address)
-        .gte("created_at", oneHourAgo.toISOString());
-
-      if (countError) console.error("Error checking rate limit:", countError);
-      
-      // If we've seen this IP more than once in the last hour, don't send email
-      // (The count will be >= 1 because we just inserted the current visit)
-      if (count && count > 1) {
-        return new Response(JSON.stringify({ success: true, emailed: false, reason: "Rate limited" }), {
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-          status: 200,
-        });
-      }
-    }
-
+    // 2. Rate limit email notifications check REMOVED
+    // Note: User specifically requested that an email is ALWAYS sent without losing any visits.
     // 3. Send email using Resend
     const resendApiKey = Deno.env.get("RESEND_API_KEY");
     if (!resendApiKey) {
@@ -116,7 +95,7 @@ serve(async (req: Request) => {
         
         <p style="font-size: 12px; color: #94a3b8; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px;">
           Cet email a été généré automatiquement par le système de monitoring MüllerFührerschein.<br>
-          <i>Information de sécurité : Limité à 1 notification par IP par heure.</i>
+          <i>Information de sécurité : Notification de visite garantie en temps réel.</i>
         </p>
       </div>
     `;

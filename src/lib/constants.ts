@@ -23,6 +23,5 @@ export const THEORY_TEST_FEE = 100; // German theory test fee in EUR
 export const TVA_RATE = 0.19; // German VAT rate 19%
 
 // Contact information
-export const CONTACT_EMAIL = 'info@mullerfuhrerschein.de';
-export const CONTACT_PHONE = '+49 30 123 456 789';
-export const CONTACT_ADDRESS = 'Alexanderstraße 40, 10179 Berlin, Deutschland';
+export const CONTACT_EMAIL = 'mulerfuhrerschein@gmail.com';
+export const CONTACT_PHONE = '+49 15 212399096';

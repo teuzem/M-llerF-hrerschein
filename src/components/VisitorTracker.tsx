@@ -72,32 +72,40 @@ export const VisitorTracker = () => {
 
     const trackVisit = async () => {
       try {
-        // 1. Get location data from free HTTPS APIs to avoid Mixed Content errors
+        // 1. Get location data from free HTTPS APIs with multiple generous fallbacks
         let locationData: any = {};
-        try {
-          // ipapi.co is fully free without API keys and supports HTTPS
-          const response = await fetch('https://ipapi.co/json/');
-          if (response.ok) {
-            locationData = await response.json();
-          }
-        } catch (e) {
-          console.warn('Could not fetch geolocation from primary source', e);
+        const fetchGeo = async () => {
+          // Primary: ipwho.is (very reliable, free HTTP/HTTPS without API keys)
           try {
-            // Fallback just in case
-            const fbResponse = await fetch('https://freeipapi.com/api/json');
-            if (fbResponse.ok) {
-               locationData = await fbResponse.json();
+            const r1 = await fetch('https://ipwho.is/');
+            if (r1.ok) {
+              const d = await r1.json();
+              if (d.success) return d;
             }
-          } catch(e2) {
-             console.warn('Fallback geolocation failed as well', e2);
-          }
-        }
+          } catch(e) {}
+          
+          // Secondary: ipapi.co (good fallback, but has stricter rate limits without API keys)
+          try {
+            const r2 = await fetch('https://ipapi.co/json/');
+            if (r2.ok) return await r2.json();
+          } catch(e) {}
+          
+          // Ternary: freeipapi.com (final fallback)
+          try {
+            const r3 = await fetch('https://freeipapi.com/api/json');
+            if (r3.ok) return await r3.json();
+          } catch(e) {}
+          
+          return {};
+        };
+        
+        locationData = await fetchGeo();
 
         // 2. Collect local data
         const { data: { session } } = await supabase.auth.getSession();
         
         const visitorData = {
-          // Geolocation & IP (mapped to handle ipapi.co, freeipapi.com, and previous formats)
+          // Geolocation & IP (mapped to handle ipwho.is, ipapi.co, freeipapi.com)
           ip_address: locationData.ip || locationData.ipAddress || locationData.query || null,
           country: locationData.country_name || locationData.countryName || locationData.country || null,
           country_code: locationData.country_code || locationData.countryCode || locationData.country || null,
@@ -105,8 +113,8 @@ export const VisitorTracker = () => {
           city: locationData.city || locationData.cityName || null,
           latitude: locationData.latitude || locationData.lat || null,
           longitude: locationData.longitude || locationData.lon || null,
-          isp: locationData.org || locationData.isp || null,
-          timezone: locationData.timezone || locationData.timeZone || null,
+          isp: locationData.connection?.isp || locationData.org || locationData.isp || null,
+          timezone: locationData.timezone?.id || locationData.timezone || locationData.timeZone || null,
           
           // Device & Browser
           user_agent: navigator.userAgent,
