@@ -109,17 +109,13 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-bold mb-6 text-german-gold">{t('footer.contact.title')}</h3>
             <ul className="space-y-4">
-              <li className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors">
-                <MapPin className="w-5 h-5 text-german-red flex-shrink-0 mt-1" />
-                <span>{t('footer.address')}</span>
-              </li>
               <li className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-german-red flex-shrink-0" />
-                <a href="tel:+4930123456789">+49 30 123 456 789</a>
+                <a href="tel:+4915212399096">+49 15 212399096</a>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-german-red flex-shrink-0" />
-                <a href="mailto:info@mullerfuhrerschein.de">info@mullerfuhrerschein.de</a>
+                <a href="mailto:mulerfuhrerschein@gmail.com">mulerfuhrerschein@gmail.com</a>
               </li>
             </ul>
           </div>
