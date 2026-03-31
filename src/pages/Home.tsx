@@ -20,22 +20,10 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "MüllerFührerschein",
-    "url": "https://mullerfuhrerschein.de",
+    "url": "https://mulerfuhrerschein.de",
     "description": "Ihr vertrauenswürdiger Partner für die Erlangung aller Arten von deutschen Führerscheinen in Berlin und Deutschland. Schnell, sicher und 100% legal.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Alexanderstraße 40",
-      "addressLocality": "Berlin",
-      "postalCode": "10179",
-      "addressCountry": "DE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 52.5208,
-      "longitude": 13.4095
-    },
-    "telephone": "+49 15212399096",
-    "email": "mulerfurerschein@gmail.com"
+    "telephone": "+49 15 212399096",
+    "email": "mulerfuhrerschein@gmail.com"
   }
 
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';

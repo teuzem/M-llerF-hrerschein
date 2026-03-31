@@ -63,7 +63,7 @@ Deno.serve(async (req) => {
     
     // Send notification to admin (placeholder)
     const adminNotification = {
-      to: 'admin@mullerfuhrerschein.de',
+      to: 'mulerfuhrerschein@gmail.com',
       subject: `Neue Kontaktanfrage: ${subject}`,
       template: 'contact_notification',
       data: {
@@ -90,9 +90,8 @@ Deno.serve(async (req) => {
         contact_id: contactId,
         response_time: '24-48 Stunden',
         contact_info: {
-          phone: '+49 30 123 456 789',
-          email: 'info@mullerfuhrerschein.de',
-          address: 'MüllerFuhrerschein GmbH, Musterstraße 123, 10115 Berlin'
+          phone: '+49 15 212399096',
+          email: 'mulerfuhrerschein@gmail.com'
         }
       }
     };
@@ -120,12 +119,12 @@ Deno.serve(async (req) => {
       message: 'Ihre Nachricht wurde erfolgreich gesendet',
       next_steps: [
         'Sie erhalten in Kürze eine Bestätigungs-E-Mail',
-        'Unser Team wird sich innerhalb von 24-48 Stunden melden',
-        'Bei dringenden Fragen rufen Sie uns an: +49 30 123 456 789'
+        'Unser Team wird sich innerhalb von 12-24 Stunden melden',
+        'Bei dringenden Fragen schreiben Sie uns auf WhatsApp: +49 15 212399096'
       ],
       gdpr_info: {
-        data_controller: 'MüllerFuhrerschein GmbH',
-        data_protection_officer: 'dpo@mullerfuhrerschein.de',
+        data_controller: 'MüllerFührerschein',
+        data_protection_officer: 'mulerfuhrerschein@gmail.com',
         processing_purpose: 'Beantwortung Ihrer Anfrage',
         legal_basis: 'Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)',
         retention_period: '2 Jahre nach letzter Kontaktaufnahme',

@@ -356,10 +356,10 @@ export const faqStructuredData = {
     },
     {
       "@type": "Question",
-      "name": "Où se trouve votre bureau à Munich?",
+      "name": "Où se trouve votre bureau?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Notre bureau est situé au Münchener Straße 123, 80331 München, Bayern. Nous sommes ouverts du lundi au vendredi de 9h à 18h, et le samedi de 10h à 16h."
+        "text": "Nous opérons entièrement en ligne pour vous offrir le service le plus rapide et le plus efficace possible dans toute l'Allemagne."
       }
     },
     {

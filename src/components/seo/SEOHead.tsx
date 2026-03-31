@@ -42,9 +42,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   businessType = 'both',
   locale: propLocale,
   city = 'Berlin',
-  address = 'Alexanderstraße 40, 10179 Berlin, Deutschland',
-  phone = '+49-152-12399096',
-  email = 'info@mulerfuhrerschein.de',
+  address = '',
+  phone = '+49 15 212399096',
+  email = 'mulerfuhrerschein@gmail.com',
 }) => {
   const { t, i18n } = useTranslation();
   const currentLocale = propLocale || (i18n.language.split('-')[0] as 'de' | 'en' | 'fr');
@@ -126,13 +126,6 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       "image": image,
       "telephone": phone,
       "email": email,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Alexanderstraße 40",
-        "addressLocality": city,
-        "postalCode": "10179",
-        "addressCountry": "DE"
-      },
       "areaServed": "Germany",
       "priceRange": "€€",
       "availableLanguage": ["de", "en", "fr"]
