@@ -298,14 +298,22 @@ export default function HeroCarousel() {
 
       {/* Progress bar */}
       <div className="absolute bottom-0 left-0 w-full h-1 z-20 bg-black/20">
-        <motion.div
+        <div
           key={`progress-${activeIndex}`}
           className="h-full bg-gradient-to-r from-german-red via-german-gold to-german-red"
-          initial={{ width: '0%' }}
-          animate={{ width: isPaused ? undefined : '100%' }}
-          transition={{ duration: 6, ease: 'linear' }}
+          style={{
+            animation: 'heroProgress 6s linear forwards',
+            animationPlayState: isPaused ? 'paused' : 'running',
+          }}
         />
       </div>
+
+      <style>{`
+        @keyframes heroProgress {
+          from { width: 0%; }
+          to { width: 100%; }
+        }
+      `}</style>
     </section>
   )
 }
