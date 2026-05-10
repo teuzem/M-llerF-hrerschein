@@ -123,7 +123,7 @@ const MainLayout = () => {
     <div className="flex flex-col min-h-screen bg-white pb-16 md:pb-0">
       {!isAuthPage && <Header />}
       <main className="flex-1">
-        {!isAuthPage && (
+        {!isAuthPage && location.pathname !== '/' && (
           <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-6">
             <Breadcrumbs />
           </div>

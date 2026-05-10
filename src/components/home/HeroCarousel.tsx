@@ -49,7 +49,7 @@ const textVariants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.15, ease: 'easeOut' },
+    transition: { duration: 0.6, delay: i * 0.15, ease: 'easeOut' as const },
   }),
   exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
 }
@@ -108,7 +108,7 @@ export default function HeroCarousel() {
           swiperRef.current = swiper
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="w-full h-[600px] sm:h-[650px] md:h-[700px] lg:h-[750px]"
+        className="w-full h-[450px] sm:h-[480px] md:h-[520px] lg:h-[560px] xl:h-[600px]"
       >
         {SLIDES.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -122,9 +122,9 @@ export default function HeroCarousel() {
                 }}
               />
 
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/30" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+              {/* Overlay gradient — center-focused */}
+              <div className="absolute inset-0 bg-black/55" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
 
               {/* German flag accent line */}
               <div className="absolute top-0 left-0 w-full h-1 flex">
@@ -133,9 +133,9 @@ export default function HeroCarousel() {
                 <div className="flex-1 bg-german-gold" />
               </div>
 
-              {/* Content */}
-              <div className="relative h-full flex items-center">
-                <div className="w-full px-6 sm:px-10 lg:px-20 max-w-7xl mx-auto">
+              {/* Content — centered */}
+              <div className="relative h-full flex items-center justify-center">
+                <div className="w-full px-6 sm:px-10 lg:px-20 max-w-5xl mx-auto text-center">
                   <AnimatePresence mode="wait">
                     {activeIndex === index && (
                       <motion.div
@@ -143,11 +143,11 @@ export default function HeroCarousel() {
                         initial="hidden"
                         animate="visible"
                         exit="exit"
-                        className="max-w-2xl"
+                        className="flex flex-col items-center"
                       >
                         {/* Badge */}
                         <motion.div custom={0} variants={textVariants}>
-                          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-german-red/90 text-white text-sm font-semibold tracking-wide uppercase backdrop-blur-sm mb-6">
+                          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-german-red/90 text-white text-xs sm:text-sm font-semibold tracking-wide uppercase backdrop-blur-sm mb-4 sm:mb-6">
                             <span className="w-2 h-2 rounded-full bg-german-gold animate-pulse" />
                             MüllerFührerschein
                           </span>
@@ -157,7 +157,7 @@ export default function HeroCarousel() {
                         <motion.h1
                           custom={1}
                           variants={textVariants}
-                          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.15] mb-5 drop-shadow-lg max-w-xl"
+                          className="text-[15px] min-[375px]:text-[17px] sm:text-[22px] md:text-[28px] lg:text-[34px] xl:text-[38px] font-extrabold text-white leading-tight mb-3 sm:mb-5 drop-shadow-lg w-full max-w-[98vw] whitespace-nowrap overflow-hidden text-ellipsis tracking-tight mx-auto"
                         >
                           {t(slide.titleKey)}
                         </motion.h1>
@@ -166,7 +166,7 @@ export default function HeroCarousel() {
                         <motion.p
                           custom={2}
                           variants={textVariants}
-                          className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed mb-8 max-w-xl drop-shadow"
+                          className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 leading-relaxed mb-5 sm:mb-8 max-w-2xl mx-auto drop-shadow line-clamp-2 sm:line-clamp-none"
                         >
                           {t(slide.subtitleKey)}
                         </motion.p>
@@ -175,48 +175,48 @@ export default function HeroCarousel() {
                         <motion.div
                           custom={3}
                           variants={textVariants}
-                          className="flex flex-col sm:flex-row gap-4"
+                          className="flex flex-row items-center justify-center gap-3 sm:gap-4"
                         >
                           <Link
-                            to="/application/new"
-                            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-german-red to-red-700 text-white font-bold rounded-xl hover:from-red-700 hover:to-german-red transition-all duration-300 shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 hover:scale-[1.03] text-base sm:text-lg"
+                            to="/services"
+                            className="group inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-german-red to-red-700 text-white font-bold rounded-xl hover:from-red-700 hover:to-german-red transition-all duration-300 shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 hover:scale-[1.03] text-sm sm:text-lg whitespace-nowrap"
                           >
                             {t(slide.ctaKey)}
-                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                           </Link>
                           <Link
                             to="/services"
-                            className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/40 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/70 backdrop-blur-sm transition-all duration-300 text-base sm:text-lg"
+                            className="inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 border-2 border-white/40 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/70 backdrop-blur-sm transition-all duration-300 text-sm sm:text-lg whitespace-nowrap"
                           >
                             {t('home.hero.learn_more')}
                           </Link>
                         </motion.div>
 
-                        {/* Trust indicators */}
+                        {/* Trust indicators — single line */}
                         <motion.div
                           custom={4}
                           variants={textVariants}
-                          className="mt-10 flex flex-wrap items-center gap-6 text-sm text-gray-300"
+                          className="mt-6 sm:mt-10 flex items-center justify-center gap-2 sm:gap-6 text-[10px] sm:text-sm text-gray-300 flex-nowrap w-full"
                         >
-                          <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
-                              <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                          <div className="flex items-center gap-1.5 whitespace-nowrap">
+                            <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                               </svg>
                             </div>
                             <span>{t('heroCarousel.trust.legal')}</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-full bg-german-gold/20 flex items-center justify-center">
-                              <svg className="w-4 h-4 text-german-gold" fill="currentColor" viewBox="0 0 20 20">
+                          <div className="flex items-center gap-1.5 whitespace-nowrap">
+                            <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-german-gold/20 flex items-center justify-center flex-shrink-0">
+                              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-german-gold" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                               </svg>
                             </div>
                             <span>{t('heroCarousel.trust.fast')}</span>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-                              <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                          <div className="flex items-center gap-1.5 whitespace-nowrap">
+                            <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                               </svg>
                             </div>

@@ -14,29 +14,15 @@ const HomeFAQSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
-      <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent leading-tight">
-            {t('home.faq.title')}
-          </h2>
+    <section className="py-14 sm:py-16 bg-white">
+      <div className="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="text-center mb-10 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">{t('home.faq.title')}</h2>
         </motion.div>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Accordion title={faq.q}><p>{faq.a}</p></Accordion>
+        <div className="space-y-2 sm:space-y-3">
+          {faqs.map((faq, i) => (
+            <motion.div key={i} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}>
+              <Accordion title={faq.q}><p className="text-sm sm:text-base">{faq.a}</p></Accordion>
             </motion.div>
           ))}
         </div>
