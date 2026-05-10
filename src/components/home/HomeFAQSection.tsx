@@ -14,7 +14,7 @@ const HomeFAQSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +23,7 @@ const HomeFAQSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent leading-tight">
             {t('home.faq.title')}
           </h2>
         </motion.div>
