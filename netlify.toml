@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm install && pnpm run build"
+  command = "npm install && npm run build"
   publish = "dist"
   functions = "netlify/functions"
 
@@ -54,7 +54,7 @@
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
   NPM_CONFIG_PRODUCTION = "false"
   CI = "false"
 
