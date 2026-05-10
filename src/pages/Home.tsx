@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { ArrowRight, Shield, Clock, Users as UsersIcon } from 'lucide-react'
-import { useAuth } from '../contexts/AuthContext'
 import SEOHead from '../components/seo/SEOHead'
 import { pageSEO } from '../lib/seoData'
 import HeroCarousel from '../components/home/HeroCarousel'
@@ -15,7 +14,6 @@ import HomeFAQSection from '../components/home/HomeFAQSection'
 
 export default function Home() {
   const { t, i18n } = useTranslation()
-  const { user } = useAuth()
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -64,8 +62,8 @@ export default function Home() {
       <HeroCarousel />
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
-        <div className="w-full px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-white">
+        <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +71,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent leading-tight max-w-3xl mx-auto">
               {t('home.features.title')}
             </h2>
           </motion.div>
@@ -85,14 +83,15 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className="relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 overflow-hidden"
               >
-                <div className={`w-16 h-16 ${feature.color} bg-opacity-10 rounded-2xl flex items-center justify-center mb-6`}>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-german-red to-german-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className={`w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500`}>
                   <feature.icon className={`w-8 h-8 ${feature.color}`} />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold mb-4 text-gray-900 leading-snug">{feature.title}</h3>
+                <p className="text-gray-500 leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -107,7 +106,7 @@ export default function Home() {
       <HomeFAQSection />
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-german-black via-german-red to-german-gold text-white">
+      <section className="py-24 bg-gradient-to-br from-gray-900 via-german-red to-german-gold text-white relative overflow-hidden">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -116,14 +115,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+            <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight max-w-3xl mx-auto">
               {t('home.cta.title')}
             </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto text-blue-100">
+            <p className="text-xl mb-10 max-w-2xl mx-auto text-white/80">
               {t('home.cta.subtitle')}
             </p>
             <Link
-              to={user ? "/dashboard" : "/register"}
+              to="/application/new"
               className="inline-flex items-center px-10 py-4 bg-white text-german-red font-bold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg"
             >
               {t('home.cta.button')}

@@ -34,7 +34,7 @@ const LicenseGallerySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -43,15 +43,15 @@ const LicenseGallerySection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-5xl font-bold mb-6 text-gray-900">
+          <h2 className="text-3xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent leading-tight max-w-3xl mx-auto">
             {t('home.gallery.title')}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
             {t('home.gallery.subtitle')}
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {licenses.map((license, index) => (
             <motion.div
               key={index}
@@ -71,7 +71,7 @@ const LicenseGallerySection = () => {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Link to="/services" className="inline-flex items-center px-8 py-3 bg-german-red text-white font-semibold rounded-lg hover:bg-red-700 transition-colors">
+          <Link to="/services" className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-german-red to-red-700 text-white font-bold rounded-xl hover:from-red-700 hover:to-german-red transition-all duration-300 shadow-xl shadow-red-900/20 hover:shadow-red-900/40 hover:scale-[1.03]">
             {t('common.view_more')} <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
         </div>

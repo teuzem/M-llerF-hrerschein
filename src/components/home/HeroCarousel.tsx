@@ -6,7 +6,6 @@ import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules'
 import type { Swiper as SwiperType } from 'swiper'
-import { useAuth } from '../../contexts/AuthContext'
 
 import 'swiper/css'
 import 'swiper/css/effect-fade'
@@ -57,7 +56,6 @@ const textVariants = {
 
 export default function HeroCarousel() {
   const { t } = useTranslation()
-  const { user } = useAuth()
   const swiperRef = useRef<SwiperType | null>(null)
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
@@ -96,7 +94,7 @@ export default function HeroCarousel() {
 
   return (
     <section
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden -mt-[1px]"
       aria-label={t('heroCarousel.ariaLabel', 'Hero Carousel')}
     >
       <Swiper
@@ -159,7 +157,7 @@ export default function HeroCarousel() {
                         <motion.h1
                           custom={1}
                           variants={textVariants}
-                          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5 drop-shadow-lg"
+                          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.15] mb-5 drop-shadow-lg max-w-xl"
                         >
                           {t(slide.titleKey)}
                         </motion.h1>
@@ -180,14 +178,14 @@ export default function HeroCarousel() {
                           className="flex flex-col sm:flex-row gap-4"
                         >
                           <Link
-                            to={user ? '/dashboard' : '/register'}
+                            to="/application/new"
                             className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-german-red to-red-700 text-white font-bold rounded-xl hover:from-red-700 hover:to-german-red transition-all duration-300 shadow-2xl shadow-red-900/30 hover:shadow-red-900/50 hover:scale-[1.03] text-base sm:text-lg"
                           >
                             {t(slide.ctaKey)}
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                           </Link>
                           <Link
-                            to="/about"
+                            to="/services"
                             className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/40 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/70 backdrop-blur-sm transition-all duration-300 text-base sm:text-lg"
                           >
                             {t('home.hero.learn_more')}
