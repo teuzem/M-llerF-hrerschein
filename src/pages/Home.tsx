@@ -5,6 +5,7 @@ import { ArrowRight, Shield, Clock, Users as UsersIcon } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import SEOHead from '../components/seo/SEOHead'
 import { pageSEO } from '../lib/seoData'
+import HeroCarousel from '../components/home/HeroCarousel'
 import HowItWorksSection from '../components/home/HowItWorksSection'
 import HomeTestimonialsSection from '../components/home/HomeTestimonialsSection'
 import HomeClientsSection from '../components/home/HomeClientsSection'
@@ -50,13 +51,6 @@ export default function Home() {
     }
   ]
 
-  const stats = [
-    { number: '15 000+', label: t('home.stats.delivered') },
-    { number: t('home.stats.delay'), label: t('home.stats.delay_label', 'Délai moyen') },
-    { number: '99%', label: t('home.stats.rate') },
-    { number: '24/7', label: t('home.stats.support') }
-  ]
-
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -66,78 +60,8 @@ export default function Home() {
         structuredData={structuredData}
         locale={currentLang}
       />
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-german-black via-german-red to-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10">
-            <div className="grid grid-cols-3 h-full">
-              <div className="bg-german-red"></div>
-              <div className="bg-white"></div>
-              <div className="bg-red-600"></div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="relative w-full px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center lg:text-left"
-            >
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                {t('home.hero.title')}
-              </h1>
-              <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-                {t('home.hero.subtitle')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link
-                  to={user ? "/dashboard" : "/register"}
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-german-black via-german-red to-german-gold text-white font-semibold rounded-lg hover:from-blue-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg"
-                >
-                  {t('home.hero.cta')}
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-all duration-300 text-lg"
-                >
-                  {t('home.hero.learn_more')}
-                </Link>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <div className="grid grid-cols-2 gap-6">
-                  {stats.map((stat, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                      className="text-center"
-                    >
-                      <div className="text-3xl lg:text-4xl font-bold text-blue-300 mb-2">
-                        {stat.number}
-                      </div>
-                      <div className="text-sm text-blue-100">{stat.label}</div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* Features Section */}
       <section className="py-20 bg-white">
