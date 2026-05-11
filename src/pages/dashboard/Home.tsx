@@ -23,21 +23,21 @@ const DashboardHome: React.FC<DashboardHomeProps> = ({ data }) => {
   const { applications, stats } = data;
 
   const statCards = [
-    { title: t('dashboard.home.in_progress', 'En cours'), value: stats.inProgress, icon: FileText, color: 'blue' as const },
-    { title: t('dashboard.home.completed', 'Terminé'), value: stats.completed, icon: CheckCircle, color: 'green' as const },
-    { title: t('dashboard.home.total_spent', 'Dépenses totales'), value: `${stats.totalSpent.toFixed(2)}€`, icon: Euro, color: 'red' as const },
+    { title: t('dashboard.home.in_progress', 'In Bearbeitung'), value: stats.inProgress, icon: FileText, color: 'blue' as const },
+    { title: t('dashboard.home.completed', 'Abgeschlossen'), value: stats.completed, icon: CheckCircle, color: 'green' as const },
+    { title: t('dashboard.home.total_spent', 'Gesamtausgaben'), value: `${stats.totalSpent.toFixed(2)}€`, icon: Euro, color: 'red' as const },
   ];
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-8">
       <DashboardHeader
-        title={`${t('dashboard.home.title', 'Tableau de bord')} - ${profile?.full_name || t('dashboard.home.user', 'Utilisateur')}`}
-        subtitle={t('dashboard.home.subtitle', 'Bienvenue dans votre espace personnel')}
+        title={`${t('dashboard.home.title', 'Benutzer-Dashboard')} - ${profile?.full_name || t('dashboard.home.user', 'Benutzer')}`}
+        subtitle={t('dashboard.home.subtitle', 'Willkommen zurück in Ihrem Führerschein-Arbeitsbereich.')}
         icon={LayoutDashboard}
       >
         <Button as={Link} to="/services" className="bg-white text-german-red hover:bg-gray-100">
           <PlusCircle className="w-5 h-5 mr-2" />
-          {t('dashboard.home.new_application', 'Nouvelle demande')}
+          {t('dashboard.home.new_application', 'Neuer Antrag')}
         </Button>
       </DashboardHeader>
 

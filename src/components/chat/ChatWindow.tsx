@@ -197,18 +197,21 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ conversation, onBack }) => {
     : messages;
 
   const renderPresence = () => {
-    if (isTyping) return <span className="text-sm text-blue-500 animate-pulse">tippt...</span>;
-    if (isOnline) return <span className="text-sm text-green-500">Online</span>;
+    if (isTyping) return <span className="text-sm text-blue-500 animate-pulse">{t('chat.tipping', 'tippt...')}</span>;
+    if (isOnline) return <span className="text-sm text-green-500">{t('chat.online', 'Online')}</span>;
     if (participant?.last_seen) {
       const lastSeenDate = new Date(participant.last_seen);
       const now = new Date();
       const diffMinutes = Math.round((now.getTime() - lastSeenDate.getTime()) / 60000);
-      if (diffMinutes < 1) return <span className="text-sm text-gray-400">Gerade gesehen</span>;
-      if (diffMinutes < 60) return <span className="text-sm text-gray-400">Vor {diffMinutes} Min. gesehen</span>;
-      if (diffMinutes < 1440) return <span className="text-sm text-gray-400">Vor {Math.floor(diffMinutes / 60)} Std. gesehen</span>;
-      return <span className="text-sm text-gray-400">Zuletzt {lastSeenDate.toLocaleDateString()}</span>;
+      if (diffMinutes < 1) return <span className="text-sm text-gray-400">{t('chat.just_seen', 'Gerade gesehen')}</span>;
+      if (diffMinutes < 60) return <span className="text-sm text-gray-400">{t('chat.seen_minutes', { count: diffMinutes }, `Vor ${diffMinutes} Min. gesehen`)}</span>;
+      if (diffMinutes < 1440) {
+        const hours = Math.floor(diffMinutes / 60);
+        return <span className="text-sm text-gray-400">{t('chat.seen_hours', { count: hours }, `Vor ${hours} Std. gesehen`)}</span>;
+      }
+      return <span className="text-sm text-gray-400">{t('chat.last_seen_on', { date: lastSeenDate.toLocaleDateString() }, `Zuletzt ${lastSeenDate.toLocaleDateString()} gesehen`)}</span>;
     }
-    return <span className="text-sm text-gray-400">Offline</span>;
+    return <span className="text-sm text-gray-400">{t('chat.offline', 'Offline')}</span>;
   };
 
   if (viewMode === 'profile' && participant) {
@@ -269,8 +272,8 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ conversation, onBack }) => {
           <div className="w-20 h-20 bg-blue-100/80 rounded-full flex items-center justify-center mb-4 animate-bounce">
             <UploadCloud className="w-10 h-10 text-[#0055A4]" />
           </div>
-          <h3 className="text-2xl font-bold text-[#0055A4] drop-shadow-sm">Glissez-déposez vos fichiers ici</h3>
-          <p className="text-gray-500 mt-2 font-medium">Images, Vidéos, Audios ou Documents</p>
+          <h3 className="text-2xl font-bold text-[#0055A4] drop-shadow-sm">{t('chat.drag_drop_title', 'Dateien hierher ziehen')}</h3>
+          <p className="text-gray-500 mt-2 font-medium">{t('chat.drag_drop_subtitle', 'Bilder, Videos, Audios oder Dokumente')}</p>
         </div>
       )}
 

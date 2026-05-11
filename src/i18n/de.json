@@ -1050,7 +1050,167 @@
       "testimonials": "Bewertungen",
       "media": "Medien",
       "documents": "Dokumente",
-      "help": "Hilfe"
+      "help": "Hilfe & Support"
+    },
+    "home": {
+      "title": "Benutzer-Dashboard",
+      "user": "Benutzer",
+      "subtitle": "Willkommen zurück in Ihrem Führerschein-Arbeitsbereich.",
+      "new_application": "Neuer Antrag",
+      "in_progress": "In Bearbeitung",
+      "completed": "Abgeschlossen",
+      "total_spent": "Gesamtausgaben"
+    },
+    "applications": {
+      "subtitle": "Verwalten und verfolgen Sie Ihre Führerscheinanträge.",
+      "new": "Neuen Antrag starten",
+      "no_records": "Keine Anträge gefunden.",
+      "recent": "Aktuelle Anträge",
+      "view_all": "Alle Anträge anzeigen"
+    },
+    "documents": {
+      "title": "Dokumente",
+      "subtitle": "Verwalten Sie Ihre hochgeladenen Dokumente und Zertifikate.",
+      "application": "Antrag",
+      "no_docs_app": "Keine Dokumente für diesen Antrag.",
+      "no_docs": "Keine Dokumente gefunden",
+      "no_docs_desc": "Ihre Dokumente erscheinen hier, sobald Sie einen Antrag gestartet haben.",
+      "error_loading": "Fehler beim Laden der Dokumente: ",
+      "error_download": "Fehler beim Herunterladen der Datei."
+    },
+    "profile": {
+      "title": "Mein Profil",
+      "subtitle": "Verwalten Sie Ihre persönlichen Informationen und Kontoeinstellungen.",
+      "update_success": "Profil erfolgreich aktualisiert.",
+      "password_weak": "Passwort ist zu schwach.",
+      "password_success": "Passwort erfolgreich aktualisiert.",
+      "language_updated": "Sprache erfolgreich aktualisiert.",
+      "privacy_updated": "Datenschutzeinstellungen aktualisiert.",
+      "avatar_updated": "Avatar aktualisiert!",
+      "cover_updated": "Titelbild aktualisiert!",
+      "cover_deleted": "Titelbild entfernt.",
+      "edit_cover": "Titelbild bearbeiten",
+      "upload_cover": "Foto hochladen",
+      "remove_cover": "Titelbild entfernt",
+      "unnamed": "Unbenannter Nutzer",
+      "role_admin": "Administrator",
+      "role_student": "Fahrschüler",
+      "member_since": "Mitglied seit",
+      "not_provided": "Nicht angegeben",
+      "about": "Steckbrief",
+      "no_bio": "Noch keine Biografie.",
+      "settings": "Kontoeinstellungen",
+      "public_profile": "Öffentliches Profil",
+      "language": "Bevorzugte Sprache",
+      "contact_info": "Kontakt & Adresse",
+      "social_media": "Soziale Netzwerke",
+      "no_social_links": "Keine sozialen Netzwerke verlinkt.",
+      "privacy_security": "Sicherheit & 2FA",
+      "change_password": "Passwort ändern",
+      "password_min_length": "Min. 6 Zeichen",
+      "password_mismatch": "Passwörter stimmen nicht überein",
+      "confirm_password": "Passwort bestätigen",
+      "update_password": "Passwort aktualisieren",
+      "two_factor": "Zwei-Faktor-Authentifizierung (2FA)",
+      "danger_zone": "Gefahrenzone",
+      "delete_warning": "Das Löschen Ihres Kontos ist endgültig und kann nicht rückgängig gemacht werden.",
+      "delete_account": "Konto löschen",
+      "delete_confirm_text": "Geben Sie DELETE ein, um die Löschung zu bestätigen:",
+      "deleting": "Löschen...",
+      "delete_permanently": "Unwiderruflich löschen",
+      "validation": {
+        "phone_format": "Ungültiges Telefonformat (+49... oder 0...)",
+        "postal_code": "Postleitzahl muss 5-stellig sein",
+        "neph_format": "NEPH muss 12-stellig sein"
+      },
+      "field": {
+        "bio": "Biografie",
+        "bio_placeholder": "Erzählen Sie uns etwas über sich...",
+        "neph": "NEPH-Nummer",
+        "address": "Adresse",
+        "city": "Stadt",
+        "postal_code": "Postleitzahl",
+        "region": "Region"
+      }
+    },
+    "status": {
+      "draft": "Entwurf",
+      "pending_payment": "Zahlung ausstehend",
+      "submitted": "Eingereicht",
+      "in_review": "In Prüfung",
+      "approved": "Genehmigt",
+      "completed": "Abgeschlossen",
+      "rejected": "Abgelehnt"
+    },
+    "table": {
+      "id": "ID",
+      "type": "Klasse",
+      "date": "Datum",
+      "amount": "Betrag",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "action": {
+      "view": "Details anzeigen",
+      "pay": "Jetzt bezahlen"
+    },
+    "testimonials": {
+      "title": "Bewertungen",
+      "subtitle": "Verwalten Sie Ihre Bewertungen und Ihr Feedback.",
+      "add_new": "Bewertung schreiben",
+      "delete_confirm": "Sind Sie sicher, dass Sie diese Bewertung löschen möchten?",
+      "delete_success": "Bewertung erfolgreich gelöscht",
+      "delete_error": "Fehler beim Löschen der Bewertung",
+      "tab_published": "Veröffentlicht",
+      "tab_draft": "Entwürfe",
+      "tab_pending": "Ausstehend",
+      "tab_rejected": "Abgelehnt",
+      "empty": "Keine Bewertungen vorhanden"
+    },
+    "media": {
+      "title": "Mediathek",
+      "subtitle": "Verwalten Sie Ihre Videos und Fotos.",
+      "add_new": "Neue Medien hochladen",
+      "delete_confirm": "Sind Sie sicher, dass Sie dieses Medium löschen möchten?",
+      "delete_success": "Medium erfolgreich gelöscht",
+      "delete_error": "Fehler beim Löschen des Mediums",
+      "tab_published": "Veröffentlicht",
+      "tab_private": "Privat",
+      "tab_pending": "Ausstehend",
+      "tab_rejected": "Abgelehnt",
+      "type_images": "Bilder",
+      "type_videos": "Videos",
+      "empty": "Keine Medien vorhanden"
+    },
+    "messages": {
+      "title": "Nachrichten",
+      "subtitle": "Direkte Kommunikation mit unserem Support-Team."
+    },
+    "help": {
+      "title": "Hilfe & Support",
+      "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen.",
+      "search_placeholder": "Durchsuchen Sie unsere Hilfe-Artikel...",
+      "no_results": "Keine Ergebnisse gefunden",
+      "article": {
+        "last_update": "Zuletzt aktualisiert: ",
+        "back_help": "Zurück zur Hilfe",
+        "back_kb": "Zurück zur Wissensdatenbank",
+        "not_found": "Artikel nicht gefunden."
+      }
+    },
+    "profile_summary": {
+      "title": "Profilübersicht",
+      "loading": "Profil wird geladen...",
+      "edit": "Profil bearbeiten"
+    },
+    "activity": {
+      "title": "Aktivitätsverlauf",
+      "series_name": "Anträge"
+    },
+    "status_chart": {
+      "title": "Statusübersicht",
+      "series_name": "Antragsstatus",
+      "empty": "Keine Anträge zu analysieren."
     }
   },
   "nav": {
@@ -1425,5 +1585,52 @@
     "requirement2": "Aktuelles Passfoto",
     "requirement3": "Vorhandener Führerschein (falls zutreffend)",
     "requirement4": "Wohnsitznachweis"
+  },
+  "chat": {
+    "select_conversation": "Wählen Sie eine Konversation aus, um zu beginnen",
+    "title": "Nachrichten",
+    "new_message": "Neue Nachricht",
+    "search_placeholder": "Chats oder Kontakte suchen...",
+    "conversations": "Chats",
+    "contacts": "Kontakte",
+    "no_conversations": "Noch keine Chats",
+    "no_conversations_desc": "Ihre Nachrichten werden hier angezeigt.",
+    "no_contacts": "Keine Kontakte gefunden.",
+    "admin_badge": "Support",
+    "online": "Online",
+    "offline": "Offline",
+    "tipping": "tippt...",
+    "just_seen": "Gerade gesehen",
+    "seen_minutes": "Vor {{count}} Min. gesehen",
+    "seen_hours": "Vor {{count}} Std. gesehen",
+    "last_seen": "Zuletzt gesehen",
+    "last_seen_on": "Zuletzt {{date}} gesehen",
+    "today": "Heute",
+    "yesterday": "Gestern",
+    "search_messages": "Nachrichten durchsuchen",
+    "results_count": "{{count}} Ergebnisse",
+    "load_more": "Ältere Nachrichten laden",
+    "encryption_notice": "Nachrichten und Anrufe sind Ende-zu-Ende verschlüsselt.",
+    "reply_to": "Antwort auf",
+    "error_loading": "Fehler beim Laden der Nachrichten.",
+    "error_start_convo": "Fehler beim Starten der Konversation.",
+    "send_error": "Nachricht konnte nicht gesendet werden.",
+    "shared_location": "📍 Standort geteilt",
+    "location_error": "Standortzugriff verweigert.",
+    "voice_upload_error": "Fehler beim Hochladen der Sprachnachricht.",
+    "voice_message": "Sprachnachricht",
+    "mic_access_denied": "Mikrofonzugriff verweigert.",
+    "recording": "Aufnahme...",
+    "cancel": "Abbrechen",
+    "send": "Senden",
+    "document": "Dokument",
+    "photos_videos": "Fotos & Videos",
+    "gif": "GIF",
+    "location": "Standort",
+    "contact": "Kontakt",
+    "replying_placeholder": "Antwort schreiben...",
+    "type_message": "Nachricht schreiben...",
+    "drag_drop_title": "Dateien hierher ziehen",
+    "drag_drop_subtitle": "Bilder, Videos, Audios oder Dokumente"
   }
 }

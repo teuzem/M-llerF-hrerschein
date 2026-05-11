@@ -34,7 +34,7 @@ const ArticlePage: React.FC = () => {
       
       if (error) {
         console.error('Error fetching article:', error);
-        setError("Article non trouvé.");
+        setError(t('dashboard.help.article.not_found', 'Artikel nicht gefunden.'));
       } else {
         setArticle(data);
       }
@@ -51,10 +51,10 @@ const ArticlePage: React.FC = () => {
     return (
       <div className="text-center p-8">
         <AlertTriangle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-        <h2 className="text-xl font-bold text-red-700">{error || "Article non trouvé."}</h2>
+        <h2 className="text-xl font-bold text-red-700">{error || t('dashboard.help.article.not_found', 'Artikel nicht gefunden.')}</h2>
         <Link to="/dashboard/help" className="mt-4 inline-flex items-center text-german-red hover:underline">
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Retour à l'aide
+          {t('dashboard.help.article.back_help', 'Zurück zur Hilfe')}
         </Link>
       </div>
     );
@@ -68,14 +68,14 @@ const ArticlePage: React.FC = () => {
       <div className="mb-6">
         <Link to="/dashboard/help" className="inline-flex items-center text-sm text-german-red hover:underline">
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Retour à la base de connaissances
+          {t('dashboard.help.article.back_kb', 'Zurück zur Wissensdatenbank')}
         </Link>
       </div>
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <p className="text-sm font-semibold text-red-600 mb-2">{article.category}</p>
         <h1 className="text-3xl font-bold text-gray-900 mb-4">{title}</h1>
         <p className="text-xs text-gray-500 mb-6">
-          Dernière mise à jour: {new Date(article.created_at).toLocaleDateString(i18n.language, { year: 'numeric', month: 'long', day: 'numeric' })}
+          {t('dashboard.help.article.last_update', 'Zuletzt aktualisiert: ')} {new Date(article.created_at).toLocaleDateString(i18n.language, { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
         <div className="prose lg:prose-lg max-w-none">
           {content.split('\n').map((paragraph, index) => (

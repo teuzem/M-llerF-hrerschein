@@ -35,12 +35,12 @@ const Highlight: React.FC<{ text: string; highlight: string }> = ({ text, highli
   );
 };
 
-const formatTime = (dateStr: string) => {
+const formatTime = (dateStr: string, t: any) => {
   const date = new Date(dateStr);
   const now = new Date();
   const diffDays = Math.floor((now.getTime() - date.getTime()) / 86400000);
   if (diffDays === 0) return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-  if (diffDays === 1) return 'Yesterday';
+  if (diffDays === 1) return t('chat.yesterday', 'Gestern');
   if (diffDays < 7) return date.toLocaleDateString([], { weekday: 'short' });
   return date.toLocaleDateString([], { day: '2-digit', month: '2-digit' });
 };
@@ -258,7 +258,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
                         </h4>
                         {convo.last_message_time && (
                           <span className={`text-[11px] flex-shrink-0 ${convo.unread_count > 0 ? 'text-[#0055A4] font-semibold' : 'text-gray-400'}`}>
-                            {formatTime(convo.last_message_time)}
+                            {formatTime(convo.last_message_time, t)}
                           </span>
                         )}
                       </div>
@@ -323,11 +323,11 @@ const ConversationList: React.FC<ConversationListProps> = ({
                       </h4>
                       <p className="text-xs text-gray-500 mt-0.5">
                         {isOnline ? (
-                          <span className="text-green-600 font-medium">{t('chat.online')}</span>
+                          <span className="text-green-600 font-medium">{t('chat.online', 'Online')}</span>
                         ) : profile.last_seen ? (
-                          <span>{t('chat.last_seen')} {formatTime(profile.last_seen)}</span>
+                          <span>{t('chat.last_seen', 'Zuletzt gesehen')} {formatTime(profile.last_seen, t)}</span>
                         ) : (
-                          <span className="text-gray-400">{t('chat.offline')}</span>
+                          <span className="text-gray-400">{t('chat.offline', 'Offline')}</span>
                         )}
                       </p>
                     </div>

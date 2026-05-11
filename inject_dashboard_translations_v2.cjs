@@ -1,0 +1,497 @@
+const fs = require('fs');
+const path = require('path');
+
+const localesDir = 'c:\\Users\\DELL\\Downloads\\mulerfuhrerschein-website\\mulerfuhrerschein-main\\src\\i18n';
+
+const textData = {
+  en: {
+    dashboard: {
+      nav: {
+        dashboard: "Dashboard",
+        applications: "Applications",
+        documents: "Documents",
+        profile: "Profile",
+        testimonials: "Testimonials",
+        media: "Media",
+        messages: "Messages",
+        help: "Help & Support"
+      },
+      home: {
+        title: "User Dashboard",
+        user: "User",
+        subtitle: "Welcome back to your driving license workspace.",
+        new_application: "New Application",
+        in_progress: "In Progress",
+        completed: "Completed",
+        total_spent: "Total Expenses"
+      },
+      applications: {
+        subtitle: "Manage and track your license applications.",
+        new: "Start New Application",
+        no_records: "No applications found."
+      },
+      documents: {
+        title: "Documents",
+        subtitle: "Manage your uploaded documents and certificates.",
+        application: "Application",
+        no_docs_app: "No documents for this application.",
+        no_docs: "No documents found",
+        no_docs_desc: "Your documents will appear here once you start an application.",
+        error_loading: "Error loading documents: ",
+        error_download: "Error downloading file."
+      },
+      profile: {
+        title: "My Profile",
+        subtitle: "Manage your personal information and account settings.",
+        update_success: "Profile updated successfully.",
+        password_weak: "Password is too weak.",
+        password_success: "Password updated successfully.",
+        language_updated: "Language updated successfully.",
+        privacy_updated: "Privacy settings updated.",
+        avatar_updated: "Avatar updated!",
+        cover_updated: "Cover image updated!",
+        cover_deleted: "Cover image removed.",
+        edit_cover: "Edit Cover",
+        upload_cover: "Upload Photo",
+        remove_cover: "Remove Cover",
+        unnamed: "Unnamed User",
+        role_admin: "Administrator",
+        role_student: "Student",
+        member_since: "Member since",
+        not_provided: "Not provided",
+        about: "About Me",
+        no_bio: "No biography yet.",
+        settings: "Account Settings",
+        public_profile: "Public Profile",
+        language: "Preferred Language",
+        contact_info: "Contact & Address",
+        social_media: "Social Networks",
+        no_social_links: "No social links added.",
+        privacy_security: "Security & 2FA",
+        change_password: "Change Password",
+        password_min_length: "Min. 6 characters",
+        password_mismatch: "Passwords do not match",
+        confirm_password: "Confirm Password",
+        update_password: "Update Password",
+        two_factor: "Two-Factor Authentication (2FA)",
+        danger_zone: "Danger Zone",
+        delete_warning: "Deleting your account is permanent and cannot be undone.",
+        delete_account: "Delete Account",
+        delete_confirm_text: "Type DELETE to confirm account deletion:",
+        deleting: "Deleting...",
+        delete_permanently: "Permanently Delete",
+        validation: {
+          phone_format: "Invalid phone format (must match +49... or 0...)",
+          postal_code: "Postal code must be 5 digits",
+          neph_format: "NEPH must be 12 digits"
+        },
+        field: {
+          bio: "Biography",
+          bio_placeholder: "Tell us a bit about yourself...",
+          neph: "NEPH Number",
+          address: "Address",
+          city: "City",
+          postal_code: "Postal Code",
+          region: "Region"
+        }
+      },
+      status: {
+        draft: "Draft",
+        pending_payment: "Pending Payment",
+        submitted: "Submitted",
+        in_review: "In Review",
+        approved: "Approved",
+        completed: "Completed",
+        rejected: "Rejected"
+      },
+      table: {
+        id: "ID",
+        type: "Category",
+        date: "Date",
+        amount: "Amount",
+        status: "Status",
+        actions: "Actions"
+      },
+      action: {
+        view: "View Details",
+        pay: "Pay Now"
+      },
+      testimonials: {
+        title: "Testimonials",
+        subtitle: "Manage your reviews and feedback.",
+        add_new: "Write a Review",
+        delete_confirm: "Are you sure you want to delete this review?",
+        delete_success: "Review deleted successfully",
+        delete_error: "Error deleting review",
+        tab_published: "Published",
+        tab_draft: "Drafts"
+      },
+      media: {
+        title: "Media Gallery",
+        subtitle: "Manage your videos and photos.",
+        add_new: "Upload New Media",
+        delete_confirm: "Are you sure you want to delete this media?",
+        delete_success: "Media deleted successfully",
+        delete_error: "Error deleting media",
+        tab_published: "Published",
+        tab_private: "Private"
+      },
+      messages: {
+        title: "Messages",
+        subtitle: "Direct communication with our support team."
+      },
+      help: {
+        title: "Help & Support",
+        subtitle: "Find answers to frequently asked questions.",
+        search_placeholder: "Search our help articles...",
+        no_results: "No results found",
+        article: {
+          last_update: "Last updated: ",
+          back_help: "Back to Help",
+          back_kb: "Back to Knowledge Base",
+          not_found: "Article not found."
+        }
+      }
+    },
+    chat: {
+      select_conversation: "Select a conversation to start messaging"
+    }
+  },
+  de: {
+    dashboard: {
+      nav: {
+        dashboard: "Dashboard",
+        applications: "Anträge",
+        documents: "Dokumente",
+        profile: "Profil",
+        testimonials: "Bewertungen",
+        media: "Medien",
+        messages: "Nachrichten",
+        help: "Hilfe & Support"
+      },
+      home: {
+        title: "Benutzer-Dashboard",
+        user: "Benutzer",
+        subtitle: "Willkommen zurück in Ihrem Führerschein-Arbeitsbereich.",
+        new_application: "Neuer Antrag",
+        in_progress: "In Bearbeitung",
+        completed: "Abgeschlossen",
+        total_spent: "Gesamtausgaben"
+      },
+      applications: {
+        subtitle: "Verwalten und verfolgen Sie Ihre Führerscheinanträge.",
+        new: "Neuen Antrag starten",
+        no_records: "Keine Anträge gefunden."
+      },
+      documents: {
+        title: "Dokumente",
+        subtitle: "Verwalten Sie Ihre hochgeladenen Dokumente und Zertifikate.",
+        application: "Antrag",
+        no_docs_app: "Keine Dokumente für diesen Antrag.",
+        no_docs: "Keine Dokumente gefunden",
+        no_docs_desc: "Ihre Dokumente erscheinen hier, sobald Sie einen Antrag gestartet haben.",
+        error_loading: "Fehler beim Laden der Dokumente: ",
+        error_download: "Fehler beim Herunterladen der Datei."
+      },
+      profile: {
+        title: "Mein Profil",
+        subtitle: "Verwalten Sie Ihre persönlichen Informationen und Kontoeinstellungen.",
+        update_success: "Profil erfolgreich aktualisiert.",
+        password_weak: "Passwort ist zu schwach.",
+        password_success: "Passwort erfolgreich aktualisiert.",
+        language_updated: "Sprache erfolgreich aktualisiert.",
+        privacy_updated: "Datenschutzeinstellungen aktualisiert.",
+        avatar_updated: "Avatar aktualisiert!",
+        cover_updated: "Titelbild aktualisiert!",
+        cover_deleted: "Titelbild entfernt.",
+        edit_cover: "Titelbild bearbeiten",
+        upload_cover: "Foto hochladen",
+        remove_cover: "Titelbild entfernen",
+        unnamed: "Unbenannter Nutzer",
+        role_admin: "Administrator",
+        role_student: "Fahrschüler",
+        member_since: "Mitglied seit",
+        not_provided: "Nicht angegeben",
+        about: "Steckbrief",
+        no_bio: "Noch keine Biografie.",
+        settings: "Kontoeinstellungen",
+        public_profile: "Öffentliches Profil",
+        language: "Bevorzugte Sprache",
+        contact_info: "Kontakt & Adresse",
+        social_media: "Soziale Netzwerke",
+        no_social_links: "Keine sozialen Netzwerke verlinkt.",
+        privacy_security: "Sicherheit & 2FA",
+        change_password: "Passwort ändern",
+        password_min_length: "Min. 6 Zeichen",
+        password_mismatch: "Passwörter stimmen nicht überein",
+        confirm_password: "Passwort bestätigen",
+        update_password: "Passwort aktualisieren",
+        two_factor: "Zwei-Faktor-Authentifizierung (2FA)",
+        danger_zone: "Gefahrenzone",
+        delete_warning: "Das Löschen Ihres Kontos ist endgültig und kann nicht rückgängig gemacht werden.",
+        delete_account: "Konto löschen",
+        delete_confirm_text: "Geben Sie DELETE ein, um die Löschung zu bestätigen:",
+        deleting: "Löschen...",
+        delete_permanently: "Unwiderruflich löschen",
+        validation: {
+          phone_format: "Ungültiges Telefonformat (+49... oder 0...)",
+          postal_code: "Postleitzahl muss 5-stellig sein",
+          neph_format: "NEPH muss 12-stellig sein"
+        },
+        field: {
+          bio: "Biografie",
+          bio_placeholder: "Erzählen Sie uns etwas über sich...",
+          neph: "NEPH-Nummer",
+          address: "Adresse",
+          city: "Stadt",
+          postal_code: "Postleitzahl",
+          region: "Region"
+        }
+      },
+      status: {
+        draft: "Entwurf",
+        pending_payment: "Zahlung ausstehend",
+        submitted: "Eingereicht",
+        in_review: "In Prüfung",
+        approved: "Genehmigt",
+        completed: "Abgeschlossen",
+        rejected: "Abgelehnt"
+      },
+      table: {
+        id: "ID",
+        type: "Klasse",
+        date: "Datum",
+        amount: "Betrag",
+        status: "Status",
+        actions: "Aktionen"
+      },
+      action: {
+        view: "Details anzeigen",
+        pay: "Jetzt bezahlen"
+      },
+      testimonials: {
+        title: "Bewertungen",
+        subtitle: "Verwalten Sie Ihre Bewertungen und Ihr Feedback.",
+        add_new: "Bewertung schreiben",
+        delete_confirm: "Sind Sie sicher, dass Sie diese Bewertung löschen möchten?",
+        delete_success: "Bewertung erfolgreich gelöscht",
+        delete_error: "Fehler beim Löschen der Bewertung",
+        tab_published: "Veröffentlicht",
+        tab_draft: "Entwürfe"
+      },
+      media: {
+        title: "Mediathek",
+        subtitle: "Verwalten Sie Ihre Videos und Fotos.",
+        add_new: "Neue Medien hochladen",
+        delete_confirm: "Sind Sie sicher, dass Sie dieses Medium löschen möchten?",
+        delete_success: "Medium erfolgreich gelöscht",
+        delete_error: "Fehler beim Löschen des Mediums",
+        tab_published: "Veröffentlicht",
+        tab_private: "Privat"
+      },
+      messages: {
+        title: "Nachrichten",
+        subtitle: "Direkte Kommunikation mit unserem Support-Team."
+      },
+      help: {
+        title: "Hilfe & Support",
+        subtitle: "Finden Sie Antworten auf häufig gestellte Fragen.",
+        search_placeholder: "Durchsuchen Sie unsere Hilfe-Artikel...",
+        no_results: "Keine Ergebnisse gefunden",
+        article: {
+          last_update: "Zuletzt aktualisiert: ",
+          back_help: "Zurück zur Hilfe",
+          back_kb: "Zurück zur Wissensdatenbank",
+          not_found: "Artikel nicht gefunden."
+        }
+      }
+    },
+    chat: {
+      select_conversation: "Wählen Sie eine Konversation aus, um zu beginnen"
+    }
+  },
+  fr: {
+    dashboard: {
+      nav: {
+        dashboard: "Tableau de bord",
+        applications: "Demandes",
+        documents: "Documents",
+        profile: "Profil",
+        testimonials: "Témoignages",
+        media: "Médias",
+        messages: "Messages",
+        help: "Aide & Support"
+      },
+      home: {
+        title: "Tableau de bord utilisateur",
+        user: "Utilisateur",
+        subtitle: "Bon retour dans votre espace de permis de conduire.",
+        new_application: "Nouvelle demande",
+        in_progress: "En cours",
+        completed: "Terminé",
+        total_spent: "Dépenses totales"
+      },
+      applications: {
+        subtitle: "Gérez et suivez vos demandes de permis.",
+        new: "Démarrer une nouvelle demande",
+        no_records: "Aucune demande trouvée."
+      },
+      documents: {
+        title: "Documents",
+        subtitle: "Gérez vos documents et certificats téléchargés.",
+        application: "Demande",
+        no_docs_app: "Aucun document pour cette demande.",
+        no_docs: "Aucun document trouvé",
+        no_docs_desc: "Vos documents apparaîtront ici une fois que vous aurez commencé une demande.",
+        error_loading: "Erreur lors du chargement des documents : ",
+        error_download: "Erreur lors du téléchargement du fichier."
+      },
+      profile: {
+        title: "Mon Profil",
+        subtitle: "Gérez vos informations personnelles et vos paramètres de compte.",
+        update_success: "Profil mis à jour avec succès.",
+        password_weak: "Le mot de passe est trop faible.",
+        password_success: "Mot de passe mis à jour avec succès.",
+        language_updated: "Langue mise à jour avec succès.",
+        privacy_updated: "Paramètres de confidentialité mis à jour.",
+        avatar_updated: "Avatar mis à jour !",
+        cover_updated: "Image de couverture mise à jour !",
+        cover_deleted: "Image de couverture supprimée.",
+        edit_cover: "Modifier la couverture",
+        upload_cover: "Télécharger une photo",
+        remove_cover: "Supprimer la couverture",
+        unnamed: "Utilisateur sans nom",
+        role_admin: "Administrateur",
+        role_student: "Étudiant",
+        member_since: "Membre depuis",
+        not_provided: "Non fourni",
+        about: "À propos de moi",
+        no_bio: "Aucune biographie pour le moment.",
+        settings: "Paramètres du compte",
+        public_profile: "Profil public",
+        language: "Langue préférée",
+        contact_info: "Contact & Adresse",
+        social_media: "Réseaux sociaux",
+        no_social_links: "Aucun lien social ajouté.",
+        privacy_security: "Sécurité & 2FA",
+        change_password: "Changer le mot de passe",
+        password_min_length: "Min. 6 caractères",
+        password_mismatch: "Les mots de passe ne correspondent pas",
+        confirm_password: "Confirmer le mot de passe",
+        update_password: "Mettre à jour le mot de passe",
+        two_factor: "Authentification à deux facteurs (2FA)",
+        danger_zone: "Zone de danger",
+        delete_warning: "La suppression de votre compte est définitive et irréversible.",
+        delete_account: "Supprimer le compte",
+        delete_confirm_text: "Tapez DELETE pour confirmer la suppression du compte :",
+        deleting: "Suppression...",
+        delete_permanently: "Supprimer définitivement",
+        validation: {
+          phone_format: "Format de téléphone invalide (+49... ou 0...)",
+          postal_code: "Le code postal doit comporter 5 chiffres",
+          neph_format: "Le NEPH doit comporter 12 chiffres"
+        },
+        field: {
+          bio: "Biographie",
+          bio_placeholder: "Dites-nous en un peu plus sur vous...",
+          neph: "Numéro NEPH",
+          address: "Adresse",
+          city: "Ville",
+          postal_code: "Code Postal",
+          region: "Région"
+        }
+      },
+      status: {
+        draft: "Brouillon",
+        pending_payment: "Paiement en attente",
+        submitted: "Soumis",
+        in_review: "En cours d'examen",
+        approved: "Approuvé",
+        completed: "Terminé",
+        rejected: "Rejeté"
+      },
+      table: {
+        id: "ID",
+        type: "Catégorie",
+        date: "Date",
+        amount: "Montant",
+        status: "Statut",
+        actions: "Actions"
+      },
+      action: {
+        view: "Voir les détails",
+        pay: "Payer maintenant"
+      },
+      testimonials: {
+        title: "Témoignages",
+        subtitle: "Gérez vos avis et vos commentaires.",
+        add_new: "Rédiger un avis",
+        delete_confirm: "Êtes-vous sûr de vouloir supprimer cet avis ?",
+        delete_success: "Avis supprimé avec succès",
+        delete_error: "Erreur lors de la suppression de l'avis",
+        tab_published: "Publié",
+        tab_draft: "Brouillons"
+      },
+      media: {
+        title: "Médiathèque",
+        subtitle: "Gérez vos vidéos et vos photos.",
+        add_new: "Télécharger de nouveaux médias",
+        delete_confirm: "Êtes-vous sûr de vouloir supprimer ce média ?",
+        delete_success: "Média supprimé avec succès",
+        delete_error: "Erreur lors de la suppression du média",
+        tab_published: "Publié",
+        tab_private: "Privé"
+      },
+      messages: {
+        title: "Messages",
+        subtitle: "Communication directe avec notre équipe de support."
+      },
+      help: {
+        title: "Aide & Support",
+        subtitle: "Trouvez des réponses aux questions fréquemment posées.",
+        search_placeholder: "Rechercher dans nos articles d'aide...",
+        no_results: "Aucun résultat trouvé",
+        article: {
+          last_update: "Dernière mise à jour : ",
+          back_help: "Retour à l'aide",
+          back_kb: "Retour à la base de connaissances",
+          not_found: "Article non trouvé."
+        }
+      }
+    },
+    chat: {
+      select_conversation: "Sélectionnez une conversation pour commencer à envoyer des messages"
+    }
+  }
+};
+
+function deepMerge(target, source) {
+  for (const key in source) {
+    if (source[key] instanceof Object && key in target && target[key] instanceof Object) {
+      if (Array.isArray(source[key])) {
+        target[key] = source[key];
+      } else {
+        target[key] = deepMerge(target[key], source[key]);
+      }
+    } else {
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+
+['en', 'de', 'fr'].forEach(lang => {
+  const filePath = path.join(localesDir, `${lang}.json`);
+  if (fs.existsSync(filePath)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (textData[lang]) {
+        const updatedData = deepMerge(data, textData[lang]);
+        fs.writeFileSync(filePath, JSON.stringify(updatedData, null, 2), 'utf8');
+        console.log(`Updated dashboard texts for ${lang}.json`);
+      }
+    } catch(err) {
+      console.error(`Error updating ${lang}.json:`, err);
+    }
+  }
+});

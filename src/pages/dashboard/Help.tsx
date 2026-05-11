@@ -55,8 +55,8 @@ const Help: React.FC = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-8">
       <DashboardHeader
-        title="Hilfe & Support"
-        subtitle="Finden Sie Antworten auf häufig gestellte Fragen"
+        title={t('dashboard.help.title', 'Hilfe & Support')}
+        subtitle={t('dashboard.help.subtitle', 'Finden Sie Antworten auf häufig gestellte Fragen')}
         icon={LifeBuoy}
       />
       
@@ -64,7 +64,7 @@ const Help: React.FC = () => {
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
         <input
           type="text"
-          placeholder="Durchsuchen Sie unsere Hilfe-Artikel..."
+          placeholder={t('dashboard.help.search_placeholder', 'Durchsuchen Sie unsere Hilfe-Artikel...')}
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
           className="w-full pl-12 p-4 border border-gray-300 rounded-full shadow-sm"
@@ -99,7 +99,7 @@ const Help: React.FC = () => {
           ) : (
             <div className="text-center py-16 bg-white rounded-lg shadow-md">
               <AlertTriangle className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-              <p className="text-gray-600">Keine Ergebnisse gefunden</p>
+              <p className="text-gray-600">{t('dashboard.help.no_results', 'Keine Ergebnisse gefunden')}</p>
             </div>
           )}
         </div>

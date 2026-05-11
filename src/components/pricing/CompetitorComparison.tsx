@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, Check, X, Star, Headphones as HeadphonesIcon, CreditCard, FileText, Award, ChevronDown, Sparkles } from 'lucide-react';
+import { Trophy, Check, X, Star, Headphones as HeadphonesIcon, CreditCard, FileText, Award, ChevronDown, Sparkles, Building2, Store, Building } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const CompetitorComparison: React.FC = () => {
@@ -8,10 +8,10 @@ const CompetitorComparison: React.FC = () => {
   const [expandedCategory, setExpandedCategory] = useState<string | null>('main');
 
   const competitors = [
-    { name: t('footer.company'), logo: '🏆', color: 'from-german-black via-german-red to-german-gold', highlight: true },
-    { name: t('pricing.comparison.competitor1', 'Führerschein Express'), logo: '🏢', color: 'from-gray-400 to-gray-500' },
-    { name: t('pricing.comparison.competitor2', 'Deutsche Fahrschule'), logo: '🏪', color: 'from-gray-400 to-gray-500' },
-    { name: t('pricing.comparison.competitor3', 'AutoMobil Service'), logo: '🏬', color: 'from-gray-400 to-gray-500' },
+    { name: t('footer.company'), icon: Trophy, color: 'text-yellow-500', bgColor: 'bg-yellow-50', highlight: true },
+    { name: t('pricing.comparison.competitor1', 'Führerschein Express'), icon: Building2, color: 'text-gray-500', bgColor: 'bg-gray-50' },
+    { name: t('pricing.comparison.competitor2', 'Deutsche Fahrschule'), icon: Store, color: 'text-gray-500', bgColor: 'bg-gray-50' },
+    { name: t('pricing.comparison.competitor3', 'AutoMobil Service'), icon: Building, color: 'text-gray-500', bgColor: 'bg-gray-50' },
   ];
 
   const categories = [
@@ -187,50 +187,58 @@ const CompetitorComparison: React.FC = () => {
     >
       <div className="text-center mb-8">
         <motion.div
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
+          initial={{ scale: 0, rotate: -10 }}
+          whileInView={{ scale: 1, rotate: 0 }}
           viewport={{ once: true }}
           transition={{ type: 'spring', stiffness: 200, delay: 0.2 }}
-          className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl mb-4 shadow-lg"
+          className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-tr from-yellow-100 to-yellow-50 rounded-3xl mb-6 shadow-sm border border-yellow-200"
         >
-          <Trophy className="w-8 h-8 text-white" />
+          <Trophy className="w-10 h-10 text-yellow-600" />
         </motion.div>
-        <h3 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-german-black via-german-red to-german-gold bg-clip-text text-transparent mb-3">
+        <h3 className="text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-4">
           {t('pricing.comparison.title')}
         </h3>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
           {t('pricing.comparison.subtitle')}
         </p>
       </div>
 
-      <div className="mb-8 bg-gradient-to-r from-german-black via-german-red to-german-gold p-4 sm:p-6 rounded-2xl shadow-lg">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {competitors.map((competitor, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`text-center ${competitor.highlight ? 'transform scale-110' : ''}`}
-            >
-              <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${competitor.color} rounded-xl mb-3 shadow-lg ${competitor.highlight ? 'ring-4 ring-yellow-400' : ''}`}>
-                <span className="text-3xl">{competitor.logo}</span>
-              </div>
-              <h4 className={`font-bold leading-tight ${competitor.highlight ? 'text-white text-sm sm:text-lg' : 'text-white/80 text-[10px] sm:text-sm'}`}>
-                {competitor.name}
-              </h4>
-              {competitor.highlight && (
-                <div className="flex items-center justify-center mt-2 space-x-1">
-                  <Sparkles className="w-4 h-4 text-yellow-300" />
-                  <span className="text-xs text-yellow-300 font-semibold">
+      <div className="mb-12 bg-white/50 backdrop-blur-sm p-8 rounded-3xl shadow-inner border border-white/50">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          {competitors.map((competitor, index) => {
+            const Icon = competitor.icon;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`relative group flex flex-col items-center justify-center p-6 rounded-2xl transition-all duration-300 ${
+                  competitor.highlight 
+                    ? 'bg-white shadow-xl ring-1 ring-yellow-400/50 scale-105 z-10' 
+                    : 'bg-transparent hover:bg-white/30'
+                }`}
+              >
+                {competitor.highlight && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+                    <Sparkles className="w-3 h-3" />
                     {t('pricing.comparison.best_choice')}
-                  </span>
-                  <Sparkles className="w-4 h-4 text-yellow-300" />
+                  </div>
+                )}
+                
+                <div className={`flex items-center justify-center w-16 h-16 rounded-2xl mb-4 transition-transform duration-500 group-hover:scale-110 ${competitor.bgColor}`}>
+                  <Icon className={`w-8 h-8 ${competitor.color}`} />
                 </div>
-              )}
-            </motion.div>
-          ))}
+                
+                <h4 className={`font-bold text-center leading-tight transition-colors duration-300 ${
+                  competitor.highlight ? 'text-gray-900 text-base' : 'text-gray-500 text-sm'
+                }`}>
+                  {competitor.name}
+                </h4>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
@@ -275,7 +283,19 @@ const CompetitorComparison: React.FC = () => {
                   className="border-t border-gray-100"
                 >
                   <div className="overflow-x-auto">
-                    <table className="w-full">
+                    <table className="w-full border-collapse">
+                      <thead>
+                        <tr className="bg-gray-50/50">
+                          <th className="px-6 py-4 text-left text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100">
+                            {t('pricing.comparator.critere')}
+                          </th>
+                          {competitors.map((comp, idx) => (
+                            <th key={idx} className={`px-4 py-4 text-center text-xs font-black uppercase tracking-widest border-b border-gray-100 ${comp.highlight ? 'text-german-red bg-red-50/30' : 'text-gray-400'}`}>
+                              {comp.name}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
                       <tbody>
                         {category.features.map((feature, featureIndex) => (
                           <motion.tr
@@ -284,27 +304,27 @@ const CompetitorComparison: React.FC = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: featureIndex * 0.05 }}
                             className={`${
-                              featureIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'
-                            } ${feature.highlight ? 'ring-2 ring-yellow-200 ring-inset' : ''}`}
+                              featureIndex % 2 === 0 ? 'bg-gray-50/30' : 'bg-white'
+                            } group hover:bg-blue-50/50 transition-colors duration-200`}
                           >
-                            <td className="px-6 py-4 text-sm font-medium text-gray-900 w-1/4">
+                            <td className="px-6 py-5 text-sm font-bold text-gray-700 border-b border-gray-100/50">
                               <div className="flex items-center">
                                 {feature.highlight && (
-                                  <Star className="w-4 h-4 text-yellow-500 mr-2 flex-shrink-0" fill="currentColor" />
+                                  <Sparkles className="w-4 h-4 text-yellow-500 mr-2 flex-shrink-0 animate-pulse" />
                                 )}
                                 {feature.key}
                               </div>
                             </td>
-                            <td className={`px-4 py-4 text-center ${feature.highlight ? 'bg-gradient-to-r from-green-50 to-emerald-50' : ''}`}>
-                              {renderValue(feature.permisCode)}
+                            <td className={`px-4 py-5 text-center border-b border-gray-100/50 ${feature.highlight ? 'bg-green-50/20' : 'bg-german-red/5'}`}>
+                              <div className="scale-110">{renderValue(feature.permisCode)}</div>
                             </td>
-                            <td className="px-4 py-4 text-center">
+                            <td className="px-4 py-5 text-center border-b border-gray-100/50 opacity-80 group-hover:opacity-100 transition-opacity">
                               {renderValue(feature.competitor1)}
                             </td>
-                            <td className="px-4 py-4 text-center">
+                            <td className="px-4 py-5 text-center border-b border-gray-100/50 opacity-80 group-hover:opacity-100 transition-opacity">
                               {renderValue(feature.competitor2)}
                             </td>
-                            <td className="px-4 py-4 text-center">
+                            <td className="px-4 py-5 text-center border-b border-gray-100/50 opacity-80 group-hover:opacity-100 transition-opacity">
                               {renderValue(feature.competitor3)}
                             </td>
                           </motion.tr>
@@ -324,14 +344,20 @@ const CompetitorComparison: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5 }}
-        className="mt-8 bg-gradient-to-r from-german-black via-german-red to-german-gold p-6 rounded-2xl text-center shadow-xl"
+        className="mt-12 bg-white p-10 rounded-3xl text-center shadow-xl border border-gray-100 relative overflow-hidden"
       >
-        <div className="flex items-center justify-center mb-4 space-x-2">
-          <Award className="w-8 h-8 text-yellow-300" />
-          <h4 className="text-2xl font-bold text-white">{t('pricing.comparison.why_us')}</h4>
-          <Award className="w-8 h-8 text-yellow-300" />
+        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-german-black via-german-red to-german-gold"></div>
+        
+        <div className="flex items-center justify-center mb-6 space-x-3">
+          <div className="p-3 bg-yellow-50 rounded-xl">
+            <Award className="w-10 h-10 text-yellow-600" />
+          </div>
+          <h4 className="text-3xl font-black text-gray-900 tracking-tight">{t('pricing.comparison.why_us')}</h4>
+          <div className="p-3 bg-yellow-50 rounded-xl">
+            <Award className="w-10 h-10 text-yellow-600" />
+          </div>
         </div>
-        <p className="text-white/90 text-lg max-w-3xl mx-auto">
+        <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium">
           {t('pricing.comparison.p1')}
         </p>
       </motion.div>

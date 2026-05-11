@@ -47,7 +47,7 @@ const RecentApplications: React.FC<RecentApplicationsProps> = ({ applications })
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-      <h2 className="text-lg font-bold text-gray-800 mb-4">{t('dashboard.applications.recent')}</h2>
+      <h2 className="text-lg font-bold text-gray-800 mb-4">{t('dashboard.applications.recent', 'Aktuelle Anträge')}</h2>
       {recentApps.length > 0 ? (
         <ul className="space-y-4">
           {recentApps.map(app => (
@@ -63,10 +63,10 @@ const RecentApplications: React.FC<RecentApplicationsProps> = ({ applications })
           ))}
         </ul>
       ) : (
-        <p className="text-sm text-gray-500 italic text-center py-4">{t('dashboard.applications.no_records')}</p>
+        <p className="text-sm text-gray-500 italic text-center py-4">{t('dashboard.applications.no_records', 'Keine Anträge gefunden.')}</p>
       )}
       <Link to="/dashboard/applications" className="mt-6 text-sm font-bold text-german-red hover:text-red-800 flex items-center justify-center bg-gray-50 py-2 rounded-lg transition-colors">
-        {t('dashboard.applications.view_all')}
+        {t('dashboard.applications.view_all', 'Alle Anträge anzeigen')}
         <ArrowRight className="w-4 h-4 ml-1" />
       </Link>
     </div>
