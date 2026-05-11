@@ -1012,5 +1012,418 @@
   "heroCarousel.slide5.cta": "Kontakt aufnehmen",
   "heroCarousel.trust.legal": "100% Legal",
   "heroCarousel.trust.fast": "In 7 Tagen",
-  "heroCarousel.trust.secure": "Behördlich registriert"
+  "heroCarousel.trust.secure": "Behördlich registriert",
+  "error": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "description": "Die von Ihnen gesuchte Seite konnte nicht gefunden werden.",
+      "heading": "Diese Seite existiert nicht",
+      "message": "Entschuldigung, die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben, gelöscht oder hat nie existiert.",
+      "back": "Zurück",
+      "home": "Zurück zur Startseite",
+      "popular_pages": "Beliebte Links",
+      "our_services": "Unsere Dienstleistungen",
+      "new_application": "Neuer Antrag",
+      "contact": "Kontakt",
+      "contact_us": "Kontaktieren Sie uns",
+      "footer_message": "Brauchen Sie Hilfe?",
+      "pricing": "Preise"
+    },
+    "500": {
+      "title": "Serverfehler",
+      "description": "Ein unerwarteter Fehler ist aufgetreten.",
+      "heading": "Interner Serverfehler",
+      "message": "Auf unserer Seite ist etwas schiefgelaufen. Wir entschuldigen uns für die Unannehmlichkeiten und arbeiten an einer Lösung.",
+      "refresh": "Seite neu laden",
+      "home": "Zurück zur Startseite",
+      "need_help": "Benötigen Sie dringend Hilfe?",
+      "team_notified": "Unser technisches Team wurde benachrichtigt.",
+      "contact_support": "Support kontaktieren"
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "applications": "Anträge",
+      "messages": "Nachrichten",
+      "profile": "Profil",
+      "testimonials": "Bewertungen",
+      "media": "Medien",
+      "documents": "Dokumente",
+      "help": "Hilfe"
+    }
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "gallery": "Galerie",
+    "clients": "Kunden",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "logout": "Abmelden"
+  },
+  "clients": {
+    "title": "Unsere Vertrauten Kunden",
+    "subtitle": "Entdecken Sie die großartigen Menschen, die mit uns erfolgreich ihren Führerschein gemacht haben.",
+    "search_placeholder": "Kunden nach Namen suchen...",
+    "no_results": "Keine Kunden gefunden, die Ihrer Suche entsprechen.",
+    "view_profile": "Profil ansehen"
+  },
+  "public_profile": {
+    "member_since": "Mitglied seit",
+    "not_found": "Profil nicht gefunden oder existiert nicht.",
+    "private": "Dieses Profil ist privat.",
+    "bio": "Über mich",
+    "no_bio": "Keine Biografie angegeben.",
+    "testimonials": "Meine Bewertungen",
+    "no_testimonials": "Noch keine Bewertungen veröffentlicht.",
+    "verified_customer": "Verifizierter Kunde",
+    "back_to_clients": "Zurück zum Verzeichnis",
+    "location": "Standort",
+    "my_videos": "Meine Fahrvideos"
+  },
+  "legal": {
+    "title": "Impressum",
+    "last_updated": "Zuletzt aktualisiert: Mai 2026",
+    "disclaimer_title": "Angaben gemäß § 5 TMG",
+    "disclaimer_text": "Die folgenden Informationen werden in Übereinstimmung mit dem deutschen Telemediengesetz bereitgestellt.",
+    "sections": [
+      {
+        "title": "Diensteanbieter",
+        "content": [
+          "MüllerFührerschein GmbH",
+          "Musterstraße 123",
+          "10115 Berlin",
+          "Deutschland"
+        ]
+      },
+      {
+        "title": "Kontakt",
+        "content": [
+          "Telefon: +49 (0) 30 1234567",
+          "E-Mail: contact@mullerfuhrerschein.com"
+        ]
+      },
+      {
+        "title": "Vertreten durch",
+        "content": [
+          "Geschäftsführer: Max Mustermann"
+        ]
+      },
+      {
+        "title": "Handelsregister",
+        "content": [
+          "Eintragung im Handelsregister",
+          "Registergericht: Amtsgericht Charlottenburg (Berlin)",
+          "Registernummer: HRB 123456 B"
+        ]
+      },
+      {
+        "title": "Umsatzsteuer-ID",
+        "content": [
+          "Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE 123456789"
+        ]
+      },
+      {
+        "title": "Streitschlichtung",
+        "content": [
+          "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr.",
+          "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+        ]
+      },
+      {
+        "title": "Haftung für Inhalte",
+        "content": [
+          "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "last_updated": "Zuletzt aktualisiert: Mai 2026",
+    "sections": [
+      {
+        "title": "1. Datenschutz auf einen Blick",
+        "content": [
+          "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+          "Die Datenverfassung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen."
+        ]
+      },
+      {
+        "title": "2. Datenerfassung auf unserer Website",
+        "content": [
+          "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+          "Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs)."
+        ]
+      },
+      {
+        "title": "3. Wofür nutzen wir Ihre Daten?",
+        "content": [
+          "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten.",
+          "Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.",
+          "Wir verarbeiten Ihre Daten in erster Linie, um den Bewerbungsprozess für den Führerschein zu erleichtern, Identitäten zu prüfen und Zahlungen sicher abzuwickeln."
+        ]
+      },
+      {
+        "title": "4. Welche Rechte haben Sie bezüglich Ihrer Daten?",
+        "content": [
+          "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.",
+          "Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.",
+          "Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen.",
+          "Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu."
+        ]
+      },
+      {
+        "title": "5. Analyse-Tools und Tools von Drittanbietern",
+        "content": [
+          "Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen.",
+          "Ihre Daten werden sicher bei Supabase (unserem Backend-Infrastrukturanbieter) gespeichert, der vollständig DSGVO-konform ist."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "last_updated": "Zuletzt aktualisiert: Mai 2026",
+    "sections": [
+      {
+        "title": "§1 Geltungsbereich",
+        "content": [
+          "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge, die zwischen der MüllerFührerschein GmbH und Ihnen als unserem Kunden über unsere Website geschlossen werden.",
+          "Abweichende Bedingungen des Kunden werden nicht anerkannt."
+        ]
+      },
+      {
+        "title": "§2 Vertragsschluss",
+        "content": [
+          "Die Darstellung der Dienstleistungen auf unserer Website stellt kein rechtlich bindendes Angebot, sondern eine Aufforderung zur Bestellung dar.",
+          "Durch Anklicken des Buttons 'Antrag einreichen' geben Sie eine verbindliche Bestellung der im Warenkorb/Antrag enthaltenen Dienstleistungen ab."
+        ]
+      },
+      {
+        "title": "§3 Leistungsumfang",
+        "content": [
+          "Wir agieren als Vermittler und Berater für den Erwerb von Führerscheinen in der Europäischen Union.",
+          "Wir garantieren die Bearbeitung Ihres Antrags bei den zuständigen Behörden, die endgültige Ausstellung des Dokuments obliegt jedoch der Entscheidung der staatlichen Behörden."
+        ]
+      },
+      {
+        "title": "§4 Preise und Zahlung",
+        "content": [
+          "Alle auf der Website angegebenen Preise verstehen sich einschließlich der jeweils gültigen gesetzlichen Mehrwertsteuer.",
+          "Die Zahlung kann mit den während des Bestellvorgangs angegebenen Zahlungsmethoden erfolgen."
+        ]
+      },
+      {
+        "title": "§5 Widerrufsrecht",
+        "content": [
+          "Verbrauchern steht ein gesetzliches Widerrufsrecht zu.",
+          "Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.",
+          "Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.",
+          "Um Ihr Widerrufsrecht auszuüben, müssen Sie uns mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren."
+        ]
+      },
+      {
+        "title": "§6 Anwendbares Recht und Gerichtsstand",
+        "content": [
+          "Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.",
+          "Wenn Sie Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen sind, ist der Gerichtsstand für alle Streitigkeiten aus Vertragsverhältnissen zwischen Ihnen und uns unser Sitz in Berlin."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Finden Sie Antworten auf häufige Fragen zu unseren Führerscheindienstleistungen.",
+    "categories": {
+      "general": "Allgemeines",
+      "process": "Antragsprozess",
+      "security": "Sicherheit & Rechtliches"
+    },
+    "questions": [
+      {
+        "category": "general",
+        "q": "Ist der Führerschein rechtlich gültig?",
+        "a": "Ja, absolut. Wir arbeiten mit registrierten Fahrschulen und Behörden in der gesamten EU zusammen. Der Führerschein, den Sie erhalten, ist zu 100% legal, in offiziellen Datenbanken registriert und in der gesamten Europäischen Union gültig."
+      },
+      {
+        "category": "general",
+        "q": "Welche Länder werden unterstützt?",
+        "a": "Wir unterstützen derzeit hauptsächlich Anträge für Deutschland, Frankreich und ausgewählte andere EU-Mitgliedstaaten. Ihr EU-Führerschein ist in allen EU- und EWR-Ländern gültig."
+      },
+      {
+        "category": "process",
+        "q": "Wie lange dauert der Prozess?",
+        "a": "Die Standardbearbeitungszeit liegt zwischen 14 und 21 Werktagen, abhängig von den Behörden. Wir bieten auch einen Express-Service an, der diese Zeit auf 5 bis 7 Werktage verkürzen kann."
+      },
+      {
+        "category": "process",
+        "q": "Muss ich eine Prüfung ablegen?",
+        "a": "Abhängig von den spezifischen EU-Länderrichtlinien, unter denen wir den Antrag stellen, kann die physische Anwesenheit bei Prüfungen oft durch unsere registrierten Partnerschaften und rechtliche Möglichkeiten beim Führerscheinumtausch ersetzt werden. Dies hängt jedoch stark von Ihrem individuellen Fall ab. Wir kümmern uns um die gesamte Bürokratie."
+      },
+      {
+        "category": "security",
+        "q": "Sind meine persönlichen Daten sicher?",
+        "a": "Ja. Wir verwenden fortschrittliche Verschlüsselung und DSGVO-konforme Datenbanken (Supabase), um Ihre Informationen zu speichern. Ihre Daten werden niemals an Dritte verkauft und ausschließlich für den Führerscheinantrag verwendet."
+      },
+      {
+        "category": "security",
+        "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "a": "Wir akzeptieren sichere Zahlungen per Banküberweisung, Kreditkarte und ausgewählte Kryptowährungen für maximale Privatsphäre. Zahlungen werden normalerweise aufgeteilt: eine Vorabgebühr und eine Abschlusszahlung nach erfolgreicher Registrierung."
+      }
+    ]
+  },
+  "pricing": {
+    "hero": {
+      "title": "Transparente Preise",
+      "subtitle": "Vergleichen Sie Preise, finden Sie das perfekte Paket und kalkulieren Sie Kosten ohne versteckte Gebühren."
+    },
+    "all_classes": "Alle Führerscheinklassen",
+    "select_class": "Wählen Sie eine Klasse für detaillierte Informationen",
+    "details": "Details",
+    "comparison": {
+      "title": "Vergleich",
+      "subtitle": "Vergleichen Sie unseren Service mit anderen Fahrschulen.",
+      "best_choice": "Beste Wahl",
+      "competitor1": "Führerschein Express",
+      "competitor2": "Deutsche Fahrschule",
+      "competitor3": "AutoMobil Service",
+      "why_us": "Warum uns wählen?",
+      "p1": "Wir bieten den transparentesten und schnellsten Service in der EU, mit einer Erfolgsquote von 98% und digitaler Bürokratieabwicklung.",
+      "main_features": "Hauptmerkmale",
+      "service": "Service & Support",
+      "payment": "Zahlung & Finanzen",
+      "admin": "Administration & Dokumente",
+      "feature": {
+        "price_transparency": "Preistransparenz",
+        "processing_time": "Bearbeitungszeit",
+        "success_rate": "Erfolgsquote",
+        "online_platform": "Online-Plattform",
+        "customer_support": "Kundenservice",
+        "multilingual": "Mehrsprachig",
+        "live_tracking": "Live-Tracking",
+        "dedicated_advisor": "Persönlicher Berater",
+        "payment_methods": "Zahlungsmethoden",
+        "installments": "Ratenzahlung",
+        "money_back": "Geld-zurück-Garantie",
+        "no_hidden_fees": "Keine versteckten Gebühren",
+        "document_verification": "Dokumentenprüfung",
+        "digital_delivery": "Digitale Lieferung",
+        "secure_storage": "Sichere Speicherung",
+        "auto_reminders": "Automatische Erinnerungen"
+      },
+      "value": {
+        "7_15_days": "7-15 Tage",
+        "30_45_days": "30-45 Tage",
+        "20_30_days": "20-30 Tage",
+        "25_40_days": "25-40 Tage",
+        "24_7": "24/7",
+        "business_hours": "Geschäftszeiten",
+        "limited": "Begrenzt",
+        "all_methods": "Alle Methoden",
+        "card_only": "Nur Karte",
+        "instant": "Sofort",
+        "manual": "Manuell",
+        "slow": "Langsam"
+      }
+    },
+    "faq": {
+      "title": "Häufige Fragen zu Preisen",
+      "q1": {
+        "title": "Gibt es versteckte Kosten?",
+        "desc": "Nein, alle Preise beinhalten die gesetzliche Mehrwertsteuer. Zusätzliche Kosten fallen nur an, wenn Sie Extra-Leistungen buchen."
+      },
+      "q2": {
+        "title": "Kann ich in Raten zahlen?",
+        "desc": "Ja, wir bieten flexible Ratenzahlungen an. Kontaktieren Sie unseren Support für Details."
+      },
+      "q3": {
+        "title": "Was passiert, wenn ich durchfalle?",
+        "desc": "Da wir den bürokratischen Prozess meist über direkte Registrierung abwickeln, ist Ihr Erfolg im Wesentlichen garantiert. Standard-Nachprüfungsgebühren entfallen hier."
+      },
+      "q4": {
+        "title": "Welche Zahlungsmethoden werden akzeptiert?",
+        "desc": "Wir akzeptieren Banküberweisung, Kreditkarten und ausgewählte Kryptowährungen."
+      },
+      "q5": {
+        "title": "Ist die Erstberatung kostenlos?",
+        "desc": "Ja, die anfängliche Einschätzung Ihres individuellen Falles ist 100% kostenlos."
+      }
+    },
+    "calculator": {
+      "title": "Preisrechner",
+      "subtitle": "Berechnen Sie die Gesamtkosten Ihres Führerscheins inklusive Steuern und regionaler Gebühren.",
+      "step1": "1. Führerscheinklasse wählen",
+      "step2": "2. Ihre Region wählen",
+      "step3": "3. Zusätzliche Optionen",
+      "select_prompt": "Führerschein wählen",
+      "theory_test": "Theorie-Vorbereitung inkludieren",
+      "total_estimate": "Gesamtschätzung",
+      "base_price_label": "Grundpreis",
+      "theory_fee_label": "Theoriegebühr",
+      "tva_label": "MwSt.",
+      "regional_tax_label": "Regionalsteuer",
+      "total_label": "Gesamtpreis",
+      "disclaimer": "Dies ist eine unverbindliche Schätzung. Endpreise können je nach individuellen Anforderungen variieren.",
+      "cta": "Antrag mit diesem Preis starten"
+    },
+    "comparator": {
+      "title": "Führerschein-Vergleich",
+      "subtitle": "Vergleichen Sie verschiedene Führerscheinklassen direkt miteinander.",
+      "select_slot": "Platz {{num}}",
+      "critere": "Kriterium",
+      "use_case": {
+        "title": "Anwendungsfall",
+        "moped": "Moped/Roller (Stadtverkehr)",
+        "moto": "Motorräder (Sport/Reisen)",
+        "car": "PKW (Standard)",
+        "car_trailer": "PKW mit schwerem Anhänger",
+        "goods": "Güterverkehr (LKW)",
+        "people": "Personenverkehr (Bus)",
+        "specific": "Spezialfahrzeuge"
+      }
+    },
+    "package": {
+      "title": "Paket-Konfigurator",
+      "subtitle": "Erstellen Sie ein individuelles Paket nach Ihren Bedürfnissen.",
+      "step1": "1. Wählen Sie Ihre Führerscheinklassen",
+      "step2": "2. Ihr individuelles Paket",
+      "summary": "Paket-Zusammenfassung",
+      "no_selection": "Noch keine Klassen gewählt.",
+      "base_total": "Zwischensumme",
+      "discount": "Paket-Rabatt",
+      "cta": "Dieses Paket beantragen",
+      "total": "Paketpreis"
+    },
+    "included": {
+      "title": "In jedem Paket enthalten",
+      "item1": {
+        "title": "Offizielle Registrierung"
+      },
+      "item2": {
+        "title": "Dokumentenmanagement"
+      },
+      "item3": {
+        "title": "Bearbeitungsgebühren"
+      },
+      "item4": {
+        "title": "Digitales Dashboard"
+      }
+    }
+  },
+  "common": {
+    "details_for": "Details für",
+    "select_prompt": "Option wählen",
+    "application": "Klasse"
+  },
+  "services": {
+    "processing_time": "Bearbeitungszeit",
+    "days": "Tage",
+    "requirements_title": "Erforderliche Dokumente",
+    "requirement1": "Kopie des Personalausweises oder Reisepasses",
+    "requirement2": "Aktuelles Passfoto",
+    "requirement3": "Vorhandener Führerschein (falls zutreffend)",
+    "requirement4": "Wohnsitznachweis"
+  }
 }

@@ -9,9 +9,9 @@ const CompetitorComparison: React.FC = () => {
 
   const competitors = [
     { name: t('footer.company'), logo: '🏆', color: 'from-german-black via-german-red to-german-gold', highlight: true },
-    { name: 'Führerschein Express', logo: '🏢', color: 'from-gray-400 to-gray-500' },
-    { name: 'Deutsche Fahrschule', logo: '🏪', color: 'from-gray-400 to-gray-500' },
-    { name: 'AutoMobil Service', logo: '🏬', color: 'from-gray-400 to-gray-500' },
+    { name: t('pricing.comparison.competitor1', 'Führerschein Express'), logo: '🏢', color: 'from-gray-400 to-gray-500' },
+    { name: t('pricing.comparison.competitor2', 'Deutsche Fahrschule'), logo: '🏪', color: 'from-gray-400 to-gray-500' },
+    { name: t('pricing.comparison.competitor3', 'AutoMobil Service'), logo: '🏬', color: 'from-gray-400 to-gray-500' },
   ];
 
   const categories = [
@@ -203,8 +203,8 @@ const CompetitorComparison: React.FC = () => {
         </p>
       </div>
 
-      <div className="mb-8 bg-gradient-to-r from-german-black via-german-red to-german-gold p-6 rounded-2xl shadow-lg">
-        <div className="grid grid-cols-4 gap-4">
+      <div className="mb-8 bg-gradient-to-r from-german-black via-german-red to-german-gold p-4 sm:p-6 rounded-2xl shadow-lg">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {competitors.map((competitor, index) => (
             <motion.div
               key={index}
@@ -217,7 +217,7 @@ const CompetitorComparison: React.FC = () => {
               <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${competitor.color} rounded-xl mb-3 shadow-lg ${competitor.highlight ? 'ring-4 ring-yellow-400' : ''}`}>
                 <span className="text-3xl">{competitor.logo}</span>
               </div>
-              <h4 className={`font-bold ${competitor.highlight ? 'text-white text-lg' : 'text-white/80 text-sm'}`}>
+              <h4 className={`font-bold leading-tight ${competitor.highlight ? 'text-white text-sm sm:text-lg' : 'text-white/80 text-[10px] sm:text-sm'}`}>
                 {competitor.name}
               </h4>
               {competitor.highlight && (

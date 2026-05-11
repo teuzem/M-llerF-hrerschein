@@ -1012,5 +1012,420 @@
   "heroCarousel.slide5.cta": "Nous contacter",
   "heroCarousel.trust.legal": "100% Légal",
   "heroCarousel.trust.fast": "En 7 jours",
-  "heroCarousel.trust.secure": "Enregistré officiellement"
+  "heroCarousel.trust.secure": "Enregistré officiellement",
+  "error": {
+    "404": {
+      "title": "Page Non Trouvée",
+      "description": "La page que vous recherchez n'a pas pu être trouvée.",
+      "heading": "Cette Page N'existe Pas",
+      "message": "Désolé, la page que vous recherchez est introuvable. Elle a peut-être été déplacée, supprimée ou n'a jamais existé.",
+      "back": "Retour",
+      "home": "Retour à l'accueil",
+      "popular_pages": "Liens Populaires",
+      "our_services": "Nos Services",
+      "new_application": "Nouvelle Demande",
+      "contact": "Contact",
+      "contact_us": "Contactez-nous",
+      "footer_message": "Besoin d'aide ?",
+      "pricing": "Tarifs"
+    },
+    "500": {
+      "title": "Erreur Serveur",
+      "description": "Une erreur inattendue s'est produite.",
+      "heading": "Erreur Interne du Serveur",
+      "message": "Un problème est survenu de notre côté. Nous nous excusons pour la gêne occasionnée et travaillons à le résoudre.",
+      "refresh": "Rafraîchir la Page",
+      "home": "Retour à l'accueil",
+      "need_help": "Besoin d'aide urgente ?",
+      "team_notified": "Notre équipe technique a été informée.",
+      "contact_support": "Contacter le Support"
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "dashboard": "Tableau de Bord",
+      "applications": "Demandes",
+      "messages": "Messages",
+      "profile": "Profil",
+      "testimonials": "Avis",
+      "media": "Médias",
+      "documents": "Documents",
+      "help": "Aide"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "gallery": "Galerie",
+    "clients": "Clients",
+    "contact": "Contact",
+    "menu": "Menu",
+    "logout": "Déconnexion"
+  },
+  "clients": {
+    "title": "Nos Clients de Confiance",
+    "subtitle": "Découvrez les personnes formidables qui ont obtenu leur permis de conduire avec nous.",
+    "search_placeholder": "Rechercher des clients par nom...",
+    "no_results": "Aucun client trouvé pour votre recherche.",
+    "view_profile": "Voir le Profil"
+  },
+  "public_profile": {
+    "member_since": "Membre depuis",
+    "not_found": "Profil introuvable ou inexistant.",
+    "private": "Ce profil est privé.",
+    "bio": "À propos de moi",
+    "no_bio": "Aucune biographie fournie.",
+    "testimonials": "Mes Avis",
+    "no_testimonials": "Aucun avis publié pour le moment.",
+    "verified_customer": "Client Vérifié",
+    "back_to_clients": "Retour à l'Annuaire",
+    "location": "Emplacement",
+    "my_videos": "Mes Vidéos de Conduite"
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "last_updated": "Dernière mise à jour : Mai 2026",
+    "disclaimer_title": "Informations conformément au § 5 TMG",
+    "disclaimer_text": "Les informations suivantes sont fournies conformément à la loi allemande sur les télémédias.",
+    "sections": [
+      {
+        "title": "Prestataire de services",
+        "content": [
+          "MüllerFührerschein GmbH",
+          "Musterstraße 123",
+          "10115 Berlin",
+          "Allemagne"
+        ]
+      },
+      {
+        "title": "Contact",
+        "content": [
+          "Téléphone : +49 (0) 30 1234567",
+          "E-Mail : contact@mullerfuhrerschein.com"
+        ]
+      },
+      {
+        "title": "Représenté par",
+        "content": [
+          "Directeur Général : Max Mustermann"
+        ]
+      },
+      {
+        "title": "Registre du Commerce",
+        "content": [
+          "Inscrit au Registre du Commerce",
+          "Tribunal d'enregistrement : Amtsgericht Charlottenburg (Berlin)",
+          "Numéro d'enregistrement : HRB 123456 B"
+        ]
+      },
+      {
+        "title": "Numéro de TVA",
+        "content": [
+          "Numéro d'identification à la taxe sur la valeur ajoutée conformément au § 27a de la loi sur la taxe sur la valeur ajoutée : DE 123456789"
+        ]
+      },
+      {
+        "title": "Règlement des litiges",
+        "content": [
+          "La Commission européenne fournit une plateforme pour le règlement en ligne des litiges (OS) : https://ec.europa.eu/consumers/odr.",
+          "Nous ne sommes pas disposés ni obligés de participer à des procédures de règlement des litiges devant un conseil d'arbitrage de la consommation."
+        ]
+      },
+      {
+        "title": "Responsabilité pour le contenu",
+        "content": [
+          "En tant que prestataire de services, nous sommes responsables de nos propres contenus sur ces pages conformément au § 7 Abs.1 TMG selon les lois générales. Cependant, selon les §§ 8 à 10 TMG, nous ne sommes pas obligés de surveiller les informations tierces transmises ou stockées ou d'enquêter sur les circonstances indiquant une activité illégale."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "last_updated": "Dernière mise à jour : Mai 2026",
+    "sections": [
+      {
+        "title": "1. La protection des données en un coup d'œil",
+        "content": [
+          "Les remarques suivantes donnent un aperçu simple de ce qui arrive à vos données personnelles lorsque vous visitez notre site web.",
+          "La collecte des données sur ce site est effectuée par l'exploitant du site web. Vous trouverez ses coordonnées dans les mentions légales de ce site web."
+        ]
+      },
+      {
+        "title": "2. Collecte de données sur notre site web",
+        "content": [
+          "Vos données sont collectées, d'une part, lorsque vous nous les communiquez. Il peut s'agir par exemple des données que vous saisissez dans un formulaire de contact.",
+          "D'autres données sont collectées automatiquement ou après votre consentement lors de votre visite sur le site web par nos systèmes informatiques. Il s'agit principalement de données techniques."
+        ]
+      },
+      {
+        "title": "3. Comment nous utilisons vos données",
+        "content": [
+          "Une partie des données est collectée pour garantir la fourniture sans erreur du site web.",
+          "D'autres données peuvent être utilisées pour analyser votre comportement d'utilisateur.",
+          "Nous traitons vos données principalement pour faciliter le processus de demande de permis de conduire, vérifier les identités et gérer les paiements en toute sécurité."
+        ]
+      },
+      {
+        "title": "4. Vos droits",
+        "content": [
+          "Vous avez le droit de recevoir gratuitement des informations sur l'origine, le destinataire et le but de vos données personnelles stockées à tout moment.",
+          "Vous avez également le droit de demander la correction ou la suppression de ces données.",
+          "Si vous avez donné votre consentement au traitement des données, vous pouvez révoquer ce consentement à tout moment pour l'avenir.",
+          "Vous avez le droit de déposer une plainte auprès de l'autorité de contrôle compétente."
+        ]
+      },
+      {
+        "title": "5. Outils d'analyse et outils fournis par des tiers",
+        "content": [
+          "Lorsque vous visitez ce site web, votre comportement de navigation peut être évalué statistiquement. Cela se fait principalement avec des cookies et des programmes d'analyse.",
+          "Vos données sont stockées en toute sécurité avec Supabase (notre fournisseur d'infrastructure backend), qui est entièrement conforme au RGPD."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "last_updated": "Dernière mise à jour : Mai 2026",
+    "sections": [
+      {
+        "title": "§1 Champ d'application",
+        "content": [
+          "Les présentes Conditions Générales (CGV) s'appliquent à tous les contrats conclus entre MüllerFührerschein GmbH et vous en tant que client via notre site web.",
+          "Les conditions divergentes du client ne sont pas reconnues."
+        ]
+      },
+      {
+        "title": "§2 Conclusion du contrat",
+        "content": [
+          "La présentation des services sur notre site web ne constitue pas une offre juridiquement contraignante, mais une invitation à passer commande.",
+          "En cliquant sur le bouton 'Soumettre la demande', vous passez une commande contraignante pour les services contenus dans le panier/la demande."
+        ]
+      },
+      {
+        "title": "§3 Services fournis",
+        "content": [
+          "Nous agissons en tant qu'intermédiaire et consultant pour l'acquisition de permis de conduire dans l'Union Européenne.",
+          "Nous garantissons le traitement de votre demande auprès des autorités compétentes, mais la délivrance finale du document dépend de la décision des autorités de l'État."
+        ]
+      },
+      {
+        "title": "§4 Prix et paiement",
+        "content": [
+          "Tous les prix indiqués sur le site web incluent la taxe sur la valeur ajoutée (TVA) légale applicable.",
+          "Le paiement peut être effectué en utilisant les méthodes de paiement spécifiées lors du processus de commande."
+        ]
+      },
+      {
+        "title": "§5 Droit de rétractation",
+        "content": [
+          "Les consommateurs disposent d'un droit de rétractation légal.",
+          "Vous avez le droit de vous rétracter de ce contrat dans un délai de 14 jours sans donner de motif.",
+          "Le délai de rétractation expire après 14 jours à compter de la date de conclusion du contrat.",
+          "Pour exercer le droit de rétractation, vous devez nous informer de votre décision de vous rétracter de ce contrat au moyen d'une déclaration claire (par exemple, une lettre envoyée par la poste ou un e-mail)."
+        ]
+      },
+      {
+        "title": "§6 Droit applicable et juridiction",
+        "content": [
+          "Le droit allemand s'applique, à l'exclusion de la Convention des Nations Unies sur les contrats de vente internationale de marchandises.",
+          "Si vous êtes un commerçant, une personne morale de droit public ou un fonds spécial de droit public, le lieu de juridiction pour tous les litiges découlant des relations contractuelles entre vous et nous est notre siège social à Berlin."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Foire Aux Questions",
+    "description": "Trouvez des réponses aux questions courantes concernant nos services de permis de conduire.",
+    "categories": {
+      "general": "Général",
+      "process": "Processus de demande",
+      "security": "Sécurité et Légalité"
+    },
+    "questions": [
+      {
+        "category": "general",
+        "q": "Le permis de conduire est-il légalement valide ?",
+        "a": "Oui, absolument. Nous travaillons avec des auto-écoles enregistrées et des autorités dans toute l'UE. Le permis de conduire que vous recevez est 100% légal, enregistré dans les bases de données officielles et valide dans toute l'Union Européenne."
+      },
+      {
+        "category": "general",
+        "q": "Quels pays sont pris en charge ?",
+        "a": "Nous prenons actuellement en charge principalement les demandes pour l'Allemagne, la France et d'autres États membres de l'UE sélectionnés. Votre permis de conduire européen est valide dans tous les pays de l'UE et de l'EEE."
+      },
+      {
+        "category": "process",
+        "q": "Combien de temps dure le processus ?",
+        "a": "Le délai de traitement standard se situe entre 14 et 21 jours ouvrables, selon les autorités. Nous proposons également un service express qui peut réduire ce délai à 5 à 7 jours ouvrables."
+      },
+      {
+        "category": "process",
+        "q": "Dois-je passer un examen ?",
+        "a": "Selon les directives spécifiques du pays de l'UE dans lequel nous postulons, la présence physique aux examens peut souvent être remplacée par nos partenariats enregistrés et les possibilités légales concernant l'échange de permis. Cependant, cela dépend fortement de votre cas individuel. Nous gérons toute la bureaucratie."
+      },
+      {
+        "category": "security",
+        "q": "Mes données personnelles sont-elles en sécurité ?",
+        "a": "Oui. Nous utilisons un cryptage avancé et des bases de données conformes au RGPD (Supabase) pour stocker vos informations. Vos données ne sont jamais vendues à des tiers et sont utilisées exclusivement pour la demande de permis de conduire."
+      },
+      {
+        "category": "security",
+        "q": "Quelles méthodes de paiement acceptez-vous ?",
+        "a": "Nous acceptons les paiements sécurisés par virement bancaire, carte de crédit et crypto-monnaies sélectionnées pour une confidentialité maximale. Les paiements sont généralement divisés : des frais initiaux et un paiement final après une inscription réussie."
+      }
+    ]
+  },
+  "pricing": {
+    "hero": {
+      "title": "Tarifs Transparents",
+      "subtitle": "Comparez les prix, trouvez le forfait idéal et calculez les coûts sans frais cachés."
+    },
+    "all_classes": "Toutes les Catégories",
+    "select_class": "Sélectionnez une catégorie pour plus d'informations",
+    "details": "Détails",
+    "comparison": {
+      "title": "Comparaison",
+      "subtitle": "Comparez nos services avec d'autres auto-écoles.",
+      "best_choice": "Meilleur Choix",
+      "competitor1": "Permis Express",
+      "competitor2": "Auto-École Allemande",
+      "competitor3": "Service AutoMobil",
+      "why_us": "Pourquoi nous choisir ?",
+      "p1": "Nous offrons le service le plus transparent et le plus rapide de toute l'UE, avec un taux de réussite de 98% et une gestion bureaucratique numérique.",
+      "main_features": "Caractéristiques Principales",
+      "service": "Service et Assistance",
+      "payment": "Paiement et Finances",
+      "admin": "Administration et Documents",
+      "feature": {
+        "price_transparency": "Transparence des Prix",
+        "processing_time": "Délai de Traitement",
+        "success_rate": "Taux de Réussite",
+        "online_platform": "Plateforme en Ligne",
+        "customer_support": "Support Client",
+        "multilingual": "Multilingue",
+        "live_tracking": "Suivi en Direct",
+        "dedicated_advisor": "Conseiller Dédié",
+        "payment_methods": "Méthodes de Paiement",
+        "installments": "Paiements Échelonnés",
+        "money_back": "Garantie de Remboursement",
+        "no_hidden_fees": "Aucun Frais Caché",
+        "document_verification": "Vérification des Documents",
+        "digital_delivery": "Livraison Numérique",
+        "secure_storage": "Stockage Sécurisé",
+        "auto_reminders": "Rappels Automatiques"
+      },
+      "value": {
+        "7_15_days": "7-15 Jours",
+        "30_45_days": "30-45 Jours",
+        "20_30_days": "20-30 Jours",
+        "25_40_days": "25-40 Jours",
+        "24_7": "24h/24 7j/7",
+        "business_hours": "Heures de Bureau",
+        "limited": "Limité",
+        "all_methods": "Toutes Méthodes",
+        "card_only": "Carte Uniquement",
+        "instant": "Instantané",
+        "manual": "Manuel",
+        "slow": "Lent"
+      }
+    },
+    "faq": {
+      "title": "FAQ Tarifs",
+      "q1": {
+        "title": "Y a-t-il des frais cachés ?",
+        "desc": "Non, tous nos prix incluent la TVA légale. Des frais supplémentaires n'apparaissent que si vous réservez des services additionnels."
+      },
+      "q2": {
+        "title": "Puis-je payer en plusieurs fois ?",
+        "desc": "Oui, nous proposons des options de paiement flexibles. Veuillez contacter notre support pour plus de détails."
+      },
+      "q3": {
+        "title": "Que se passe-t-il si j'échoue à l'examen ?",
+        "desc": "Comme nous gérons le processus via l'enregistrement direct, votre réussite est garantie. Les frais de rattrapage standard ne s'appliquent pas."
+      },
+      "q4": {
+        "title": "Quels modes de paiement sont acceptés ?",
+        "desc": "Nous acceptons les virements, les cartes de crédit et certaines crypto-monnaies."
+      },
+      "q5": {
+        "title": "La consultation initiale est-elle gratuite ?",
+        "desc": "Oui, l'évaluation initiale de votre cas est 100% gratuite."
+      }
+    },
+    "calculator": {
+      "title": "Calculateur de Prix",
+      "subtitle": "Calculez le coût total de votre permis de conduire, taxes et frais régionaux inclus.",
+      "step1": "1. Choisir la Catégorie",
+      "step2": "2. Choisir votre Région",
+      "step3": "3. Options Supplémentaires",
+      "select_prompt": "Choisissez un permis",
+      "theory_test": "Inclure la préparation à l'examen théorique",
+      "total_estimate": "Estimation Totale",
+      "base_price_label": "Prix de Base",
+      "theory_fee_label": "Frais d'Examen Théorique",
+      "tva_label": "TVA",
+      "regional_tax_label": "Taxe Régionale",
+      "total_label": "Prix Total",
+      "disclaimer": "Ceci est une estimation non contractuelle. Les prix finaux peuvent varier selon les besoins individuels.",
+      "cta": "Commencer la demande avec ce prix"
+    },
+    "comparator": {
+      "title": "Comparaison de Permis",
+      "subtitle": "Comparez différentes catégories de permis côte à côte.",
+      "select_slot": "Emplacement {{num}}",
+      "critere": "Critère",
+      "use_case": {
+        "title": "Cas d'Utilisation",
+        "moped": "Cyclomoteur/Scooter (urbain)",
+        "moto": "Motos (sport/voyage)",
+        "car": "Voiture Particulière (standard)",
+        "car_trailer": "Voiture avec remorque lourde",
+        "goods": "Transport de marchandises (poids lourd)",
+        "people": "Transport de personnes (bus)",
+        "specific": "Véhicules spéciaux"
+      }
+    },
+    "package": {
+      "title": "Créateur de Forfait",
+      "subtitle": "Créez un forfait personnalisé adapté à vos besoins.",
+      "add_license": "Ajouter une Catégorie",
+      "remove": "Supprimer",
+      "total": "Total du Forfait",
+      "step1": "1. Choisissez Vos Catégories de Permis",
+      "step2": "2. Votre Forfait Personnalisé",
+      "summary": "Résumé du Forfait",
+      "no_selection": "Aucune catégorie sélectionnée.",
+      "base_total": "Sous-total",
+      "discount": "Remise Forfait",
+      "cta": "Demander ce Forfait"
+    },
+    "included": {
+      "title": "Inclus dans chaque forfait",
+      "item1": {
+        "title": "Enregistrement Officiel"
+      },
+      "item2": {
+        "title": "Gestion de Documentation"
+      },
+      "item3": {
+        "title": "Frais de Traitement"
+      },
+      "item4": {
+        "title": "Accès au Tableau de Bord Numérique"
+      }
+    }
+  },
+  "common": {
+    "details_for": "Détails pour",
+    "select_prompt": "Choisir une option",
+    "application": "Catégorie"
+  },
+  "services": {
+    "processing_time": "Délai de Traitement",
+    "days": "Jours",
+    "requirements_title": "Documents Requis",
+    "requirement1": "Copie de la carte d'identité ou du passeport",
+    "requirement2": "Photo d'identité actuelle",
+    "requirement3": "Permis de conduire actuel (le cas échéant)",
+    "requirement4": "Justificatif de domicile"
+  }
 }

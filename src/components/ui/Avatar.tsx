@@ -5,6 +5,7 @@ interface AvatarProps {
   name: string;
   avatarUrl?: string | null;
   size?: 'sm' | 'md' | 'lg';
+  className?: string;
 }
 
 const getInitials = (name: string) => {
@@ -15,7 +16,7 @@ const getInitials = (name: string) => {
   return name.substring(0, 2).toUpperCase();
 };
 
-const Avatar: React.FC<AvatarProps> = ({ name, avatarUrl, size = 'md' }) => {
+const Avatar: React.FC<AvatarProps> = ({ name, avatarUrl, size = 'md', className = '' }) => {
   const [url, setUrl] = React.useState<string | null>(null);
 
   React.useEffect(() => {
@@ -38,14 +39,14 @@ const Avatar: React.FC<AvatarProps> = ({ name, avatarUrl, size = 'md' }) => {
       <img
         src={url}
         alt={name}
-        className={`${sizeClasses[size]} rounded-full object-cover`}
+        className={`${sizeClasses[size]} rounded-full object-cover ${className}`}
       />
     );
   }
 
   return (
     <div
-      className={`${sizeClasses[size]} rounded-full bg-gradient-to-br from-blue-500 to-red-500 flex items-center justify-center font-bold text-white`}
+      className={`${sizeClasses[size]} rounded-full bg-gradient-to-br from-blue-500 to-red-500 flex items-center justify-center font-bold text-white ${className}`}
     >
       {getInitials(name)}
     </div>

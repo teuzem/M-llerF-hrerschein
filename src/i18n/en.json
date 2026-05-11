@@ -1011,5 +1011,420 @@
   "heroCarousel.slide5.cta": "Contact Us",
   "heroCarousel.trust.legal": "100% Legal",
   "heroCarousel.trust.fast": "In 7 Days",
-  "heroCarousel.trust.secure": "Officially Registered"
+  "heroCarousel.trust.secure": "Officially Registered",
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "The page you are looking for could not be found.",
+      "heading": "This Page Does Not Exist",
+      "message": "Sorry, the page you are looking for could not be found. It might have been moved, deleted, or never existed.",
+      "back": "Go Back",
+      "home": "Back to Home",
+      "popular_pages": "Popular Links",
+      "our_services": "Our Services",
+      "new_application": "New Application",
+      "contact": "Contact",
+      "contact_us": "Contact Us",
+      "footer_message": "Need help?",
+      "pricing": "Pricing"
+    },
+    "500": {
+      "title": "Server Error",
+      "description": "An unexpected error occurred.",
+      "heading": "Internal Server Error",
+      "message": "Something went wrong on our end. We apologize for the inconvenience and are working to fix it.",
+      "refresh": "Refresh Page",
+      "home": "Back to Home",
+      "need_help": "Need urgent assistance?",
+      "team_notified": "Our technical team has been notified.",
+      "contact_support": "Contact Support"
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "applications": "Applications",
+      "messages": "Messages",
+      "profile": "Profile",
+      "testimonials": "Testimonials",
+      "media": "Media",
+      "documents": "Documents",
+      "help": "Help"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "clients": "Clients",
+    "contact": "Contact",
+    "menu": "Menu",
+    "logout": "Logout"
+  },
+  "clients": {
+    "title": "Our Trusted Clients",
+    "subtitle": "Discover the amazing people who have successfully obtained their driving license with us.",
+    "search_placeholder": "Search clients by name...",
+    "no_results": "No clients found matching your search.",
+    "view_profile": "View Profile"
+  },
+  "public_profile": {
+    "member_since": "Member since",
+    "not_found": "Profile not found or does not exist.",
+    "private": "This profile is private.",
+    "bio": "About me",
+    "no_bio": "No biography provided.",
+    "testimonials": "My Reviews",
+    "no_testimonials": "No reviews published yet.",
+    "verified_customer": "Verified Customer",
+    "back_to_clients": "Back to Directory",
+    "location": "Location",
+    "my_videos": "My Driving Videos"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "last_updated": "Last updated: May 2026",
+    "disclaimer_title": "Information according to § 5 TMG",
+    "disclaimer_text": "The following information is provided in accordance with German telemedia law.",
+    "sections": [
+      {
+        "title": "Service Provider",
+        "content": [
+          "MüllerFührerschein GmbH",
+          "Musterstraße 123",
+          "10115 Berlin",
+          "Germany"
+        ]
+      },
+      {
+        "title": "Contact",
+        "content": [
+          "Phone: +49 (0) 30 1234567",
+          "Email: contact@mullerfuhrerschein.com"
+        ]
+      },
+      {
+        "title": "Represented by",
+        "content": [
+          "Managing Director: Max Mustermann"
+        ]
+      },
+      {
+        "title": "Commercial Register",
+        "content": [
+          "Registered in the Commercial Register",
+          "Registration Court: Amtsgericht Charlottenburg (Berlin)",
+          "Registration Number: HRB 123456 B"
+        ]
+      },
+      {
+        "title": "VAT ID",
+        "content": [
+          "Value Added Tax Identification Number according to § 27a of the Value Added Tax Act: DE 123456789"
+        ]
+      },
+      {
+        "title": "Dispute Resolution",
+        "content": [
+          "The European Commission provides a platform for online dispute resolution (OS): https://ec.europa.eu/consumers/odr.",
+          "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+        ]
+      },
+      {
+        "title": "Liability for Content",
+        "content": [
+          "As a service provider, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG under general law. According to §§ 8 to 10 TMG, however, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: May 2026",
+    "sections": [
+      {
+        "title": "1. Data Protection at a Glance",
+        "content": [
+          "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you could be personally identified.",
+          "Data collection on this website is carried out by the website operator. You can find their contact details in the Legal Notice of this website."
+        ]
+      },
+      {
+        "title": "2. Data Collection on Our Website",
+        "content": [
+          "We collect data when you provide it to us, for example by filling out a contact form or applying for a service.",
+          "Other data is collected automatically by our IT systems when you visit the website. This data is primarily technical data (e.g., internet browser, operating system, or time of the page request)."
+        ]
+      },
+      {
+        "title": "3. How We Use Your Data",
+        "content": [
+          "Part of the data is collected to ensure the flawless provision of the website.",
+          "Other data may be used to analyze your user behavior.",
+          "We process your data primarily to facilitate the application process for driving licenses, verify identities, and manage payments securely."
+        ]
+      },
+      {
+        "title": "4. Your Rights",
+        "content": [
+          "You have the right to receive information about the origin, recipient, and purpose of your stored personal data at any time free of charge.",
+          "You also have the right to request the correction or deletion of this data.",
+          "If you have given your consent to data processing, you can revoke this consent at any time for the future.",
+          "You have the right to lodge a complaint with the competent supervisory authority."
+        ]
+      },
+      {
+        "title": "5. Analysis Tools and Tools Provided by Third Parties",
+        "content": [
+          "When you visit this website, your surfing behavior can be statistically evaluated. This happens primarily using cookies and so-called analysis programs.",
+          "Your data is stored securely using Supabase (our backend infrastructure provider), which is fully compliant with GDPR regulations."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "last_updated": "Last updated: May 2026",
+    "sections": [
+      {
+        "title": "§1 Scope of Application",
+        "content": [
+          "These General Terms and Conditions (AGB) apply to all contracts concluded between MüllerFührerschein GmbH and you as our customer through our website.",
+          "Deviating conditions of the customer are not recognized."
+        ]
+      },
+      {
+        "title": "§2 Conclusion of Contract",
+        "content": [
+          "The presentation of services on our website does not constitute a legally binding offer, but an invitation to place an order.",
+          "By clicking the 'Submit Application' button, you are placing a binding order for the services contained in the shopping cart/application."
+        ]
+      },
+      {
+        "title": "§3 Services Provided",
+        "content": [
+          "We act as an intermediary and consultant for the acquisition of driving licenses in the European Union.",
+          "We guarantee the processing of your application with the relevant authorities, but the final issuance of the document is subject to the decision of the official state authorities."
+        ]
+      },
+      {
+        "title": "§4 Prices and Payment",
+        "content": [
+          "All prices indicated on the website are inclusive of applicable statutory value-added tax (VAT).",
+          "Payment can be made using the payment methods specified during the checkout process."
+        ]
+      },
+      {
+        "title": "§5 Right of Withdrawal",
+        "content": [
+          "Consumers have a statutory right of withdrawal.",
+          "You have the right to withdraw from this contract within 14 days without giving any reason.",
+          "The withdrawal period will expire after 14 days from the day of the conclusion of the contract.",
+          "To exercise the right of withdrawal, you must inform us of your decision to withdraw from this contract by an unequivocal statement (e.g. a letter sent by post or e-mail)."
+        ]
+      },
+      {
+        "title": "§6 Applicable Law and Jurisdiction",
+        "content": [
+          "German law applies, excluding the UN Convention on Contracts for the International Sale of Goods.",
+          "If you are a merchant, a legal entity under public law, or a special fund under public law, the place of jurisdiction for all disputes arising from contractual relationships between you and us is our registered office in Berlin."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our driving license services.",
+    "categories": {
+      "general": "General",
+      "process": "Application Process",
+      "security": "Security & Legal"
+    },
+    "questions": [
+      {
+        "category": "general",
+        "q": "Is the driving license legally valid?",
+        "a": "Yes, absolutely. We work with registered driving schools and authorities across the EU. The driving license you receive is 100% legal, registered in official databases, and valid throughout the European Union."
+      },
+      {
+        "category": "general",
+        "q": "Which countries are supported?",
+        "a": "We currently support applications primarily for Germany, France, and other select EU member states. Your EU driving license is valid in all EU and EEA countries."
+      },
+      {
+        "category": "process",
+        "q": "How long does the process take?",
+        "a": "The standard processing time is between 14 to 21 working days, depending on the authorities. We also offer an express service that can shorten this to 5 to 7 working days."
+      },
+      {
+        "category": "process",
+        "q": "Do I have to take an exam?",
+        "a": "Depending on the specific EU country guidelines we apply under, physical presence for exams can often be substituted by our registered partnerships and legal loopholes regarding license exchange. However, this depends heavily on your individual case. We handle all bureaucracy."
+      },
+      {
+        "category": "security",
+        "q": "Is my personal data safe?",
+        "a": "Yes. We use advanced encryption and GDPR-compliant databases (Supabase) to store your information. Your data is never sold to third parties and is used exclusively for the license application."
+      },
+      {
+        "category": "security",
+        "q": "What payment methods do you accept?",
+        "a": "We accept secure payments via Bank Transfer, Credit Card, and selected Cryptocurrencies for maximum privacy. Payments are typically split: an upfront fee and a final payment upon successful registration."
+      }
+    ]
+  },
+  "pricing": {
+    "hero": {
+      "title": "Transparent Pricing",
+      "subtitle": "Compare prices, find the perfect package, and calculate costs without hidden fees."
+    },
+    "all_classes": "All License Classes",
+    "select_class": "Select a license class for detailed information",
+    "details": "Details",
+    "comparison": {
+      "title": "Comparison",
+      "subtitle": "Compare our services with other driving schools.",
+      "best_choice": "Best Choice",
+      "competitor1": "License Express",
+      "competitor2": "German Driving School",
+      "competitor3": "AutoMobil Service",
+      "why_us": "Why choose us?",
+      "p1": "We offer the most transparent and fastest service across the EU, with a 98% success rate and digital-first bureaucracy handling.",
+      "main_features": "Main Features",
+      "service": "Service & Support",
+      "payment": "Payment & Finance",
+      "admin": "Administration & Docs",
+      "feature": {
+        "price_transparency": "Price Transparency",
+        "processing_time": "Processing Time",
+        "success_rate": "Success Rate",
+        "online_platform": "Online Platform",
+        "customer_support": "Customer Support",
+        "multilingual": "Multilingual",
+        "live_tracking": "Live Tracking",
+        "dedicated_advisor": "Dedicated Advisor",
+        "payment_methods": "Payment Methods",
+        "installments": "Installments",
+        "money_back": "Money Back Guarantee",
+        "no_hidden_fees": "No Hidden Fees",
+        "document_verification": "Document Verification",
+        "digital_delivery": "Digital Delivery",
+        "secure_storage": "Secure Storage",
+        "auto_reminders": "Auto Reminders"
+      },
+      "value": {
+        "7_15_days": "7-15 Days",
+        "30_45_days": "30-45 Days",
+        "20_30_days": "20-30 Days",
+        "25_40_days": "25-40 Days",
+        "24_7": "24/7",
+        "business_hours": "Business Hours",
+        "limited": "Limited",
+        "all_methods": "All Methods",
+        "card_only": "Card Only",
+        "instant": "Instant",
+        "manual": "Manual",
+        "slow": "Slow"
+      }
+    },
+    "faq": {
+      "title": "Pricing FAQ",
+      "q1": {
+        "title": "Are there hidden costs?",
+        "desc": "No, all prices include the legal VAT. Additional costs only arise if you book extra services."
+      },
+      "q2": {
+        "title": "Can I pay in installments?",
+        "desc": "Yes, we offer flexible installment options. Please contact our support team for details."
+      },
+      "q3": {
+        "title": "What happens if I fail the exam?",
+        "desc": "Since we handle the bureaucratic process mostly via direct registration, your success is essentially guaranteed. Standard exam retake fees do not apply here."
+      },
+      "q4": {
+        "title": "Which payment methods are accepted?",
+        "desc": "We accept bank transfer, credit cards, and certain cryptocurrencies."
+      },
+      "q5": {
+        "title": "Is the initial consultation free?",
+        "desc": "Yes, the initial evaluation of your individual case is 100% free."
+      }
+    },
+    "calculator": {
+      "title": "Price Calculator",
+      "subtitle": "Calculate the total cost of your driving license including taxes and regional fees.",
+      "step1": "1. Select License Class",
+      "step2": "2. Select Your Region",
+      "step3": "3. Additional Options",
+      "select_prompt": "Choose a license",
+      "theory_test": "Include Theory Test Preparation",
+      "total_estimate": "Total Estimate",
+      "base_price_label": "Base Price",
+      "theory_fee_label": "Theory Test Fee",
+      "tva_label": "VAT",
+      "regional_tax_label": "Regional Tax",
+      "total_label": "Total Price",
+      "disclaimer": "This is a non-binding estimate. Final prices may vary based on individual requirements.",
+      "cta": "Start Application with this Price"
+    },
+    "comparator": {
+      "title": "License Comparison",
+      "subtitle": "Compare different license categories side-by-side.",
+      "select_slot": "Slot {{num}}",
+      "critere": "Criterion",
+      "use_case": {
+        "title": "Use Case",
+        "moped": "Moped/Scooter (urban)",
+        "moto": "Motorcycles (sport/travel)",
+        "car": "Passenger Car (standard)",
+        "car_trailer": "Car with heavy trailer",
+        "goods": "Goods transport (truck)",
+        "people": "Passenger transport (bus)",
+        "specific": "Special vehicles"
+      }
+    },
+    "package": {
+      "title": "Package Builder",
+      "subtitle": "Build a custom package tailored to your needs.",
+      "add_license": "Add a License Class",
+      "remove": "Remove",
+      "total": "Package Total",
+      "step1": "1. Choose Your License Classes",
+      "step2": "2. Your Custom Package",
+      "summary": "Package Summary",
+      "no_selection": "No classes selected yet.",
+      "base_total": "Subtotal",
+      "discount": "Package Discount",
+      "cta": "Apply for this Package"
+    },
+    "included": {
+      "title": "Included in every package",
+      "item1": {
+        "title": "Official Registration"
+      },
+      "item2": {
+        "title": "Documentation Handling"
+      },
+      "item3": {
+        "title": "Processing Fees"
+      },
+      "item4": {
+        "title": "Digital Dashboard Access"
+      }
+    }
+  },
+  "common": {
+    "details_for": "Details for",
+    "select_prompt": "Select an option",
+    "application": "Class"
+  },
+  "services": {
+    "processing_time": "Processing Time",
+    "days": "Days",
+    "requirements_title": "Required Documents",
+    "requirement1": "Copy of ID card or Passport",
+    "requirement2": "Current passport photo",
+    "requirement3": "Previous driving license (if any)",
+    "requirement4": "Proof of residence"
+  }
 }

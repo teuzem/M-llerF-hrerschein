@@ -29,6 +29,7 @@ import Terms from './pages/Terms'
 import Clients from './pages/Clients'
 import PublicProfile from './pages/PublicProfile'
 import Gallery from './pages/Gallery'
+import FAQ from './pages/FAQ'
 import NotFound from './pages/NotFound'
 import ServerError from './pages/ServerError'
 
@@ -142,6 +143,7 @@ const MainLayout = () => {
           <Route path="/legal" element={<Legal />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/application/new" element={<NewApplication />} />
           
           {/* Uber Eats Routes */}

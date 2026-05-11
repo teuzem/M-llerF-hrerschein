@@ -22,14 +22,14 @@ const MobileOffCanvas: React.FC<MobileOffCanvasProps> = ({ isOpen, onClose }) =>
   };
 
   const navItems = [
-    { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-    { to: '/dashboard/applications', icon: FileText, label: 'Anträge' },
-    { to: '/dashboard/messages', icon: MessageIcon, label: 'Nachrichten' },
-    { to: '/dashboard/profile', icon: User, label: 'Profil' },
-    { to: '/dashboard/testimonials', icon: MessageSquare, label: 'Bewertungen' },
-    { to: '/dashboard/media', icon: ImageIcon, label: 'Medien' },
-    { to: '/dashboard/documents', icon: FolderOpen, label: 'Dokumente' },
-    { to: '/dashboard/help', icon: HelpCircle, label: 'Hilfe' },
+    { to: '/dashboard', icon: LayoutDashboard, label: t('dashboard.nav.dashboard', 'Dashboard') },
+    { to: '/dashboard/applications', icon: FileText, label: t('dashboard.nav.applications', 'Anträge') },
+    { to: '/dashboard/messages', icon: MessageIcon, label: t('dashboard.nav.messages', 'Nachrichten') },
+    { to: '/dashboard/profile', icon: User, label: t('dashboard.nav.profile', 'Profil') },
+    { to: '/dashboard/testimonials', icon: MessageSquare, label: t('dashboard.nav.testimonials', 'Bewertungen') },
+    { to: '/dashboard/media', icon: ImageIcon, label: t('dashboard.nav.media', 'Medien') },
+    { to: '/dashboard/documents', icon: FolderOpen, label: t('dashboard.nav.documents', 'Dokumente') },
+    { to: '/dashboard/help', icon: HelpCircle, label: t('dashboard.nav.help', 'Hilfe') },
   ];
 
   if (!isOpen) return null;
@@ -43,7 +43,7 @@ const MobileOffCanvas: React.FC<MobileOffCanvasProps> = ({ isOpen, onClose }) =>
       <div className="fixed left-0 top-0 bottom-0 w-80 bg-white shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out">
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-4 border-b">
-            <h2 className="text-lg font-bold text-gray-900">Menü</h2>
+            <h2 className="text-lg font-bold text-gray-900">{t('nav.menu', 'Menü')}</h2>
             <button
               onClick={onClose}
               className="p-2 rounded-lg hover:bg-gray-100 transition-colors"

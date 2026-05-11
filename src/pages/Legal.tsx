@@ -1,62 +1,40 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 
-const LegalPageLayout: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-br from-german-black via-german-red to-gray-900 text-white py-20">
-        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl lg:text-5xl font-bold">
-            {title}
-          </motion.h1>
-        </div>
-      </section>
-      <section className="py-16">
-        <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ delay: 0.2 }}
-            className="bg-white p-8 md:p-12 rounded-lg shadow-lg prose lg:prose-xl max-w-none"
-          >
-            {children}
-          </motion.div>
-        </div>
-      </section>
-    </div>
-  );
-};
+import { useTranslation } from 'react-i18next';
+import LegalPageLayout from '../components/layout/LegalPageLayout';
+import SEOHead from '../components/seo/SEOHead';
 
 export default function Legal() {
   const { t } = useTranslation();
 
+  // Get the sections array, default to empty array if not found
+  const sections = t('legal.sections', { returnObjects: true }) as { title: string, content: string[] }[];
+
   return (
-    <LegalPageLayout title={t('legal.title')}>
-      <p className="text-sm text-gray-500">{t('legal.last_updated')}</p>
-      
-      <div className="p-4 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800">
-        <p className="font-bold">{t('legal.disclaimer_title')}</p>
-        <p>{t('legal.disclaimer_text')}</p>
-      </div>
+    <>
+      <SEOHead 
+        title={`${t('legal.title')} | MüllerFührerschein`} 
+        description={t('legal.disclaimer_text')} 
+      />
+      <LegalPageLayout 
+        title={t('legal.title', 'Impressum')} 
+        icon="scale" 
+        lastUpdated={t('legal.last_updated')}
+      >
+        <div className="p-5 bg-gray-50 border-l-4 border-german-red rounded-r-xl mb-10">
+          <p className="font-bold text-gray-900 m-0 text-lg">{t('legal.disclaimer_title')}</p>
+          <p className="text-gray-600 m-0 mt-2">{t('legal.disclaimer_text')}</p>
+        </div>
 
-      <h2>{t('legal.content.editor_title')}</h2>
-      <p>{t('legal.content.editor_name')}</p>
-      <p>{t('legal.content.editor_address')}</p>
-      <p>{t('legal.content.editor_contact')}</p>
-      
-      <h2>{t('legal.content.publication_director_title')}</h2>
-      <p>{t('legal.content.publication_director_name')}</p>
-
-      <h2>{t('legal.content.hosting_title')}</h2>
-      <p>{t('legal.content.hosting_name')}</p>
-      <p>{t('legal.content.hosting_address')}</p>
-      
-      <h2>{t('legal.content.ip_title')}</h2>
-      <p>{t('legal.content.ip_desc')}</p>
-      
-      <h2>{t('legal.content.liability_title')}</h2>
-      <p>{t('legal.content.liability_desc')}</p>
-    </LegalPageLayout>
+        {Array.isArray(sections) && sections.map((section, index) => (
+          <div key={index} className="mb-10">
+            <h2>{section.title}</h2>
+            {section.content.map((paragraph, pIndex) => (
+              <p key={pIndex}>{paragraph}</p>
+            ))}
+          </div>
+        ))}
+        
+      </LegalPageLayout>
+    </>
   );
 }
