@@ -32,7 +32,7 @@ const PriceComparator: React.FC<PriceComparatorProps> = ({ licenseTypes }) => {
     { key: 'price', label: t('pricing.calculator.base_price'), icon: Euro, format: (val: LicenseType) => `${val.price_gross_euros}€` },
     { key: 'time', label: t('services.processing_time'), icon: Clock, format: (val: LicenseType) => `${val.processing_days} ${t('services.days')}` },
     { key: 'theory', label: t('pricing.comparator.theory_test'), icon: BookOpen, format: (val: LicenseType) => val.requires_theory_test ? <Check className="w-5 h-5 text-green-500 mx-auto"/> : <X className="w-5 h-5 text-red-500 mx-auto"/> },
-    { key: 'use_case', label: t('pricing.comparator.use_case'), icon: Briefcase, format: (val: LicenseType) => getUseCase(val.category) },
+    { key: 'use_case', label: t('pricing.comparator.use_case.title'), icon: Briefcase, format: (val: LicenseType) => getUseCase(val.category) },
   ];
 
   return (

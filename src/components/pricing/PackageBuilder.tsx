@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Package, ArrowRight } from 'lucide-react';
+import { Package, ArrowRight, ShoppingCart } from 'lucide-react';
 import { LicenseType } from '../../lib/supabase';
-import Button from '../ui/Button';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
+import { useCart } from '../../contexts/CartContext';
+import toast from 'react-hot-toast';
 
 interface PackageBuilderProps {
   licenseTypes: LicenseType[];
 }
 
 const PackageBuilder: React.FC<PackageBuilderProps> = ({ licenseTypes }) => {
-  const { user } = useAuth();
   const { t, i18n } = useTranslation();
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [totalPrice, setTotalPrice] = useState(0);
@@ -21,6 +19,8 @@ const PackageBuilder: React.FC<PackageBuilderProps> = ({ licenseTypes }) => {
   const [selectedLicenses, setSelectedLicenses] = useState<LicenseType[]>([]);
 
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const { addToCart, isInCart, openOrderModal } = useCart();
+  const bundleId = `bundle-${Array.from(selectedIds).sort().join('-')}`;
 
   useEffect(() => {
     const licensesInPackage = licenseTypes.filter(lt => selectedIds.has(lt.id));
@@ -122,9 +122,40 @@ const PackageBuilder: React.FC<PackageBuilderProps> = ({ licenseTypes }) => {
         )}
       </div>
 
-      <Button as={Link} to={user ? `/application/form?package=${Array.from(selectedIds).join(',')}` : '/register'} disabled={selectedIds.size === 0} className="w-full mt-6 shadow-lg transform hover:scale-[1.01] transition-transform">
-        {t('pricing.package.cta')} <ArrowRight className="ml-2 w-4 h-4" />
-      </Button>
+      <div className="mt-6 flex gap-3">
+        {isInCart(bundleId) ? (
+          <button
+            onClick={() => openOrderModal()}
+            className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-base shadow-xl shadow-green-500/20"
+          >
+            <ArrowRight className="w-5 h-5" />
+            <span>{t('cart.proceed_purchase') || 'Checkout'}</span>
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              if (selectedIds.size === 0) return;
+              const bundleName = `${t('pricing.package.title')} (${selectedLicenses.length} items)`;
+              const desc = selectedLicenses.map(l => getLocalizedName(l)).join(', ');
+              addToCart({
+                id: bundleId,
+                category: 'BUNDLE',
+                name: bundleName,
+                description: desc,
+                price: finalPrice,
+                processingDays: Math.max(...selectedLicenses.map(l => l.processing_days || 0)),
+                imageUrl: selectedLicenses[0]?.image_url,
+              });
+              toast.success(t('cart.added') || 'Added to cart!');
+            }}
+            disabled={selectedIds.size === 0}
+            className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-base shadow-xl shadow-blue-500/20"
+          >
+            <ShoppingCart className="w-5 h-5" />
+            <span>{t('cart.add') || 'Add Bundle to Cart'}</span>
+          </button>
+        )}
+      </div>
     </motion.div>
   );
 };

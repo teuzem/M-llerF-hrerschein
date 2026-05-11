@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Calculator, ArrowRight, MapPin, AlertTriangle } from 'lucide-react';
+import { Calculator, ArrowRight, MapPin, AlertTriangle, ShoppingCart } from 'lucide-react';
 import { LicenseType } from '../../lib/supabase';
-import Button from '../ui/Button';
-import { useAuth } from '../../contexts/AuthContext';
 import { regions, THEORY_TEST_FEE, TVA_RATE } from '../../lib/constants';
+import { useCart } from '../../contexts/CartContext';
+import toast from 'react-hot-toast';
 
 interface AdvancedPriceCalculatorProps {
   licenseTypes: LicenseType[];
@@ -14,7 +13,7 @@ interface AdvancedPriceCalculatorProps {
 
 const AdvancedPriceCalculator: React.FC<AdvancedPriceCalculatorProps> = ({ licenseTypes }) => {
   const { t, i18n } = useTranslation();
-  const { user } = useAuth();
+  const { addToCart, isInCart, openOrderModal } = useCart();
   const [selectedLicenseId, setSelectedLicenseId] = useState<string>('');
   const [selectedRegion, setSelectedRegion] = useState<string>(regions[0].value); // Default to Baden-Württemberg
   const [includeTheoryTest, setIncludeTheoryTest] = useState(false);
@@ -119,10 +118,40 @@ const AdvancedPriceCalculator: React.FC<AdvancedPriceCalculatorProps> = ({ licen
         </div>
       </div>
       
-      <div className="mt-6">
-        <Button as={Link} to={user ? `/application/form?license=${selectedLicenseId}&theory=${includeTheoryTest}` : '/register'} disabled={!selectedLicenseId} className="w-full">
-          {t('pricing.calculator.cta')} <ArrowRight className="ml-2 w-4 h-4" />
-        </Button>
+      <div className="mt-6 flex gap-3">
+        {isInCart(selectedLicenseId) ? (
+          <button
+            onClick={() => openOrderModal()}
+            className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-base shadow-xl shadow-green-500/20"
+          >
+            <ArrowRight className="w-5 h-5" />
+            <span>{t('cart.proceed_purchase') || 'Checkout'}</span>
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              if (!selectedLicenseId) return;
+              const selectedLicense = licenseTypes.find(lt => lt.id === selectedLicenseId);
+              if (!selectedLicense) return;
+              
+              addToCart({
+                id: selectedLicense.id,
+                category: selectedLicense.category,
+                name: getLocalizedName(selectedLicense),
+                description: `${includeTheoryTest ? t('pricing.calculator.theory_test') + ' included. ' : ''}Region: ${selectedRegion}`,
+                price: totalPrice,
+                processingDays: selectedLicense.processing_days,
+                imageUrl: selectedLicense.image_url,
+              });
+              toast.success(t('cart.added') || 'Added to cart!');
+            }}
+            disabled={!selectedLicenseId}
+            className="w-full flex items-center justify-center gap-2 py-3.5 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-bold rounded-xl hover:from-red-700 hover:to-red-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-base shadow-xl shadow-german-red/20"
+          >
+            <ShoppingCart className="w-5 h-5" />
+            <span>{t('cart.add') || 'Add to Cart'}</span>
+          </button>
+        )}
       </div>
     </motion.div>
   );

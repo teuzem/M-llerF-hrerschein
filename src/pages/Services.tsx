@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import { Clock, Search, FileText, Camera, Edit, Mail, CreditCard, Award, UserPlus, Wifi, WifiOff, ArrowRight } from 'lucide-react'
+import { Clock, Search, FileText, Camera, Edit, Mail, CreditCard, Award, UserPlus, Wifi, WifiOff, ArrowRight, ShoppingCart, Heart } from 'lucide-react'
 import { supabase, LicenseType } from '../lib/supabase'
+import { useCart } from '../contexts/CartContext'
 import { useAuth } from '../contexts/AuthContext'
 import LoadingSpinner from '../components/ui/LoadingSpinner'
-import Button from '../components/ui/Button'
 import SEOHead from '../components/seo/SEOHead'
 import { pageSEO } from '../lib/seoData'
 import toast from 'react-hot-toast'
@@ -443,6 +443,21 @@ export default function Services() {
     { icon: Mail, text: t('services.requirement4') },
   ];
 
+  const handleAddToCart = (item: any) => {
+    const name = (item as any)[`name_${currentLang}`] || item.name_de;
+    const desc = (item as any)[`description_${currentLang}`] || item.description_de || '';
+    addToCart({
+      id: item.id,
+      category: item.category,
+      name,
+      description: desc,
+      price: item.price_euros || item.price_gross_euros,
+      processingDays: item.processing_days,
+      imageUrl: item.image_url || item.image,
+    });
+    toast.success(t('cart.added') || 'Added to cart!');
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center font-sans">
@@ -456,8 +471,9 @@ export default function Services() {
     )
   }
 
-  const currentSEO = pageSEO[i18n.language as 'de' | 'fr' | 'en']?.services;
+  const { addToCart, isInCart, toggleWishlist, isWishlisted, openOrderModal } = useCart()
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const currentSEO = pageSEO[i18n.language as 'de' | 'fr' | 'en']?.services;
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
@@ -567,6 +583,16 @@ export default function Services() {
                       <span className="text-white font-black text-xl">{license.category}</span>
                     </div>
                   </div>
+                  <button
+                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleWishlist(license.id); }}
+                    className={`absolute top-6 right-6 p-2 rounded-full backdrop-blur-sm transition-all duration-300 z-10 ${
+                      isWishlisted(license.id)
+                        ? 'bg-red-500 text-white shadow-lg shadow-red-500/30 scale-110'
+                        : 'bg-white/20 text-white hover:bg-white/40'
+                    }`}
+                  >
+                    <Heart className={`w-5 h-5 ${isWishlisted(license.id) ? 'fill-current' : ''}`} />
+                  </button>
                   <div className="absolute bottom-4 left-6 right-6">
                     <h3 className="text-white font-bold text-xl drop-shadow-lg">
                       {(license as any)[`name_${currentLang}`] || license.name_de}
@@ -591,14 +617,25 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <Button
-                    as={Link}
-                    to={user ? `/application/form?license=${license.id}` : "/register"}
-                    className="w-full py-3 text-base font-bold shadow-german-red/20"
-                  >
-                    {t('services.select')}
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
+                  <div className="flex gap-2">
+                    {isInCart(license.id) ? (
+                      <button
+                        onClick={() => openOrderModal()}
+                        className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-sm shadow-lg shadow-green-500/20"
+                      >
+                        <ArrowRight className="w-4 h-4" />
+                        <span>{t('cart.proceed_purchase') || 'Checkout'}</span>
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleAddToCart(license)}
+                        className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all text-sm shadow-lg shadow-german-red/20"
+                      >
+                        <ShoppingCart className="w-4 h-4" />
+                        <span>{t('cart.add') || 'Add to Cart'}</span>
+                      </button>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -629,6 +666,16 @@ export default function Services() {
                         <ServiceIcon className="w-8 h-8 text-white" />
                       </div>
                     </div>
+                    <button
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleWishlist(service.id); }}
+                      className={`absolute top-6 right-6 p-2 rounded-full backdrop-blur-sm transition-all duration-300 z-10 ${
+                        isWishlisted(service.id)
+                          ? 'bg-red-500 text-white shadow-lg shadow-red-500/30 scale-110'
+                          : 'bg-white/20 text-white hover:bg-white/40'
+                      }`}
+                    >
+                      <Heart className={`w-5 h-5 ${isWishlisted(service.id) ? 'fill-current' : ''}`} />
+                    </button>
                     <div className="absolute bottom-4 left-6 right-6">
                       <h3 className="text-white font-bold text-xl drop-shadow-lg">
                         {(service as any)[`name_${currentLang}`] || service.name_de}
@@ -653,10 +700,25 @@ export default function Services() {
                       </div>
                     </div>
 
-                    <Button as={Link} to="/contact" className="w-full py-3 text-base font-bold">
-                      {t('services.select')}
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
+                    <div className="flex gap-2">
+                      {isInCart(service.id) ? (
+                        <button
+                          onClick={() => openOrderModal()}
+                          className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-sm shadow-lg shadow-green-500/20"
+                        >
+                          <ArrowRight className="w-4 h-4" />
+                          <span>{t('cart.proceed_purchase') || 'Checkout'}</span>
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => handleAddToCart(service)}
+                          className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all text-sm shadow-lg shadow-german-red/20"
+                        >
+                          <ShoppingCart className="w-4 h-4" />
+                          <span>{t('cart.add') || 'Add to Cart'}</span>
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </motion.div>
               );

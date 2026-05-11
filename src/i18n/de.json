@@ -551,7 +551,7 @@
   "payment.card.info": "payment.card.info",
   "payment.card.pay_button": "payment.card.pay_button",
   "pricing.comparison.feature.price_transparency": "Preistransparenz",
-  "pricing.comparison.feature.processing_time": "pricing.comparison.feature.processing_time",
+  "pricing.comparison.feature.processing_time": "Bearbeitungszeit",
   "pricing.comparison.value.7_15_days": "7-15 Tage",
   "pricing.comparison.value.30_45_days": "30-45 Tage",
   "pricing.comparison.value.20_30_days": "20-30 Tage",
@@ -1707,7 +1707,11 @@
   "common": {
     "details_for": "Details für",
     "select_prompt": "Option wählen",
-    "application": "Klasse"
+    "application": "Klasse",
+    "back": "Zurück",
+    "delete": "Löschen",
+    "select_placeholder": "Bitte wählen...",
+    "continue": "Weiter"
   },
   "services": {
     "processing_time": "Bearbeitungszeit",
@@ -1764,5 +1768,111 @@
     "type_message": "Nachricht schreiben...",
     "drag_drop_title": "Dateien hierher ziehen",
     "drag_drop_subtitle": "Bilder, Videos, Audios oder Dokumente"
+  },
+  "cart": {
+    "title": "Warenkorb",
+    "add": "In den Warenkorb",
+    "added": "Zum Warenkorb hinzugefügt!",
+    "remove": "Entfernen",
+    "empty": "Ihr Warenkorb ist leer",
+    "proceed_purchase": "Zum Kauf",
+    "checkout": "Zur Kasse",
+    "total": "Gesamt"
+  },
+  "carousel": {
+    "title": "Unsere Führerschein-Dienstleistungen",
+    "subtitle": "Entdecken Sie unser komplettes Angebot – von Moped bis Omnibus. Wählen Sie Ihren Führerschein und starten Sie sofort.",
+    "pause": "Pause",
+    "play": "Abspielen"
+  },
+  "order": {
+    "title": "Bestellung aufgeben",
+    "subtitle": "Füllen Sie das Formular aus, um Ihre Bestellung abzuschließen",
+    "personal_info": "Persönliche Daten",
+    "summary": "Bestellübersicht",
+    "total": "Gesamtbetrag",
+    "payment_method": "Zahlungsmethode",
+    "submit_order": "Bestellung absenden",
+    "submitting": "Wird gesendet...",
+    "success": "Bestellung erfolgreich aufgegeben!",
+    "success_title": "Bestellung eingegangen!",
+    "success_message": "Vielen Dank für Ihre Bestellung! Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.",
+    "success_email_sent": "Bestätigung per E-Mail gesendet",
+    "success_processing": "Ihr Auftrag wird bearbeitet",
+    "order_number": "Bestellnummer",
+    "secure_notice": "Sichere und verschlüsselte Datenübertragung",
+    "terms_text": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und die Datenschutzerklärung. Meine Daten werden gemäß DSGVO verarbeitet.",
+    "documents_label": "Dokumente hochladen",
+    "drag_files": "Dateien hierher ziehen oder klicken zum Auswählen",
+    "drop_files": "Dateien hier ablegen!",
+    "accepted_formats": "JPG, PNG, WebP, PDF, DOC, DOCX",
+    "max_size": "Max. 10 MB pro Datei",
+    "preview": "Vorschau",
+    "preview_unavailable": "Vorschau nicht verfügbar",
+    "field": {
+      "full_name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "date_of_birth": "Geburtsdatum",
+      "place_of_birth": "Geburtsort",
+      "nationality": "Staatsangehörigkeit",
+      "address": "Adresse",
+      "city": "Stadt",
+      "postal_code": "Postleitzahl",
+      "region": "Bundesland",
+      "notes": "Anmerkungen"
+    },
+    "placeholder": {
+      "full_name": "Max Mustermann",
+      "email": "ihre@email.de",
+      "notes": "Besondere Wünsche oder Anmerkungen..."
+    },
+    "payment": {
+      "bank_transfer": "Überweisung",
+      "paypal": "PayPal",
+      "credit_card": "Kreditkarte",
+      "crypto": "Krypto (BTC, ETH, USDT...)"
+    },
+    "doc_type": {
+      "id_passport": "Ausweis / Reisepass",
+      "photo": "Passfoto",
+      "signature": "Unterschrift",
+      "proof_of_address": "Adressnachweis",
+      "medical": "Ärztliches Attest",
+      "other": "Sonstiges"
+    },
+    "doc_error": {
+      "too_large": "Datei ist zu groß (max. 10 MB)",
+      "invalid": "Dateiformat nicht unterstützt"
+    },
+    "error": {
+      "required": "Pflichtfeld",
+      "name_too_short": "Name ist zu kurz",
+      "invalid_email": "Ungültige E-Mail-Adresse",
+      "invalid_phone": "Ungültige Telefonnummer",
+      "invalid_postal": "PLZ muss 5 Ziffern haben",
+      "terms_required": "Bitte akzeptieren Sie die AGB",
+      "fix_errors": "Bitte korrigieren Sie die markierten Felder",
+      "cart_empty": "Ihr Warenkorb ist leer",
+      "submission_failed": "Bestellung konnte nicht aufgegeben werden"
+    }
+  },
+  "thank_you": {
+    "title": "Vielen Dank für Ihre Bestellung!",
+    "subtitle": "Ihre Bestellung wurde erfolgreich übermittelt. Bitte überprüfen Sie Ihr Postfach.",
+    "check_email": {
+      "title": "E-Mail überprüfen",
+      "desc": "Wir haben Ihnen eine Bestätigungs-E-Mail gesendet. Bitte prüfen Sie auch Ihren Spam-Ordner, falls Sie diese nicht finden können."
+    },
+    "payment_info": {
+      "title": "Zahlungsinformationen & Nächste Schritte",
+      "desc": "Sie erhalten in Kürze eine weitere E-Mail mit den Zahlungsinformationen und, falls erforderlich, einem Link für einen Online-Termin mit unserem Team."
+    },
+    "processing": {
+      "title": "Schnelle Bearbeitung",
+      "desc": "Sobald wir Ihre Zahlung erhalten haben, beginnen wir sofort mit der Bearbeitung Ihrer Dokumente. Der Vorgang dauert weniger als 7 Tage, bis Sie Ihren Führerschein erhalten."
+    },
+    "additional_services": "Könnte Sie auch interessieren",
+    "back_home": "Zurück zur Startseite"
   }
 }

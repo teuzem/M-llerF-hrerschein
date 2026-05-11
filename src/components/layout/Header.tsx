@@ -1,8 +1,9 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, User, LogOut, Car, LayoutDashboard, FileText, FolderOpen, HelpCircle, MessageSquare, Image as ImageIcon, MessageCircle as MessageIcon } from 'lucide-react'
+import { Menu, X, User, LogOut, Car, LayoutDashboard, FileText, FolderOpen, HelpCircle, MessageSquare, Image as ImageIcon, MessageCircle as MessageIcon, ShoppingCart, Trash2 } from 'lucide-react'
 import { useAuth, Profile } from '../../contexts/AuthContext'
+import { useCart } from '../../contexts/CartContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import Avatar from '../ui/Avatar'
 
@@ -23,9 +24,24 @@ const getProfileCompletion = (profile: Profile | null): number => {
 export default function Header() {
   const { t, i18n } = useTranslation()
   const { user, profile, signOut } = useAuth()
+  const { items, getCartCount, getTotal, removeFromCart, openOrderModal } = useCart()
   const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const cartRef = useRef<HTMLDivElement>(null)
+  const cartCount = getCartCount()
+
+  // Close cart dropdown on outside click
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (cartRef.current && !cartRef.current.contains(e.target as Node)) {
+        setIsCartOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
 
   const toggleLanguage = () => {
     const langs = ['de', 'en', 'fr'];
@@ -102,6 +118,83 @@ export default function Header() {
               <span className="text-lg">{currentFlag}</span>
               <span className="text-sm font-medium">{currentLangCode}</span>
             </button>
+
+            {/* Cart Button */}
+            <div className="relative" ref={cartRef}>
+              <button
+                onClick={() => setIsCartOpen(!isCartOpen)}
+                className="relative p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors duration-200"
+              >
+                <ShoppingCart className="w-5 h-5" />
+                {cartCount > 0 && (
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="absolute -top-1 -right-1 w-5 h-5 bg-german-red text-white text-xs font-bold rounded-full flex items-center justify-center shadow-sm"
+                  >
+                    {cartCount}
+                  </motion.span>
+                )}
+              </button>
+
+              <AnimatePresence>
+                {isCartOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-200 z-50 overflow-hidden"
+                  >
+                    <div className="p-4 border-b bg-gray-50">
+                      <h3 className="font-bold text-gray-900 text-sm flex items-center gap-2">
+                        <ShoppingCart className="w-4 h-4 text-german-red" />
+                        {t('cart.title')} ({cartCount})
+                      </h3>
+                    </div>
+                    {items.length === 0 ? (
+                      <div className="p-6 text-center">
+                        <ShoppingCart className="w-10 h-10 mx-auto text-gray-200 mb-2" />
+                        <p className="text-sm text-gray-400">{t('cart.empty')}</p>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="max-h-56 overflow-y-auto p-3 space-y-2">
+                          {items.map(item => (
+                            <div key={item.id} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50 group">
+                              <div className="w-8 h-8 bg-german-red/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span className="text-xs font-black text-german-red">{item.category}</span>
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <p className="text-sm font-medium text-gray-800 truncate">{item.name}</p>
+                                <p className="text-xs text-german-red font-bold">{item.price.toLocaleString()}€</p>
+                              </div>
+                              <button
+                                onClick={() => removeFromCart(item.id)}
+                                className="p-1 rounded-md opacity-0 group-hover:opacity-100 hover:bg-red-50 text-red-400 hover:text-red-600 transition-all"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="p-4 border-t bg-gray-50">
+                          <div className="flex justify-between items-center mb-3">
+                            <span className="text-sm font-semibold text-gray-600">{t('order.total')}</span>
+                            <span className="text-lg font-black text-german-red">{getTotal().toLocaleString()}€</span>
+                          </div>
+                          <button
+                            onClick={() => { setIsCartOpen(false); openOrderModal(); }}
+                            className="w-full py-2.5 bg-gradient-to-r from-german-red to-red-600 text-white font-semibold rounded-xl text-sm hover:from-red-600 hover:to-red-700 transition-all shadow-md"
+                          >
+                            {t('cart.checkout')}
+                          </button>
+                        </div>
+                      </>
+                    )}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
 
             {user && profile ? (
               <div className="relative">

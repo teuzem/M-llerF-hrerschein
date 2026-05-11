@@ -5,6 +5,7 @@ import { ArrowRight, Zap, ShieldCheck, Headphones } from 'lucide-react'
 import SEOHead from '../components/seo/SEOHead'
 import { pageSEO } from '../lib/seoData'
 import HeroCarousel from '../components/home/HeroCarousel'
+import ServiceCarousel from '../components/home/ServiceCarousel'
 import HowItWorksSection from '../components/home/HowItWorksSection'
 import HomeTestimonialsSection from '../components/home/HomeTestimonialsSection'
 import HomeClientsSection from '../components/home/HomeClientsSection'
@@ -63,6 +64,9 @@ export default function Home() {
       />
       {/* Hero Carousel */}
       <HeroCarousel />
+
+      {/* Service Carousel */}
+      <ServiceCarousel />
 
       {/* Features Section — "Why MüllerFührerschein?" */}
       <section className="py-14 sm:py-16 bg-white">

@@ -551,7 +551,7 @@
   "payment.card.info": "payment.card.info",
   "payment.card.pay_button": "payment.card.pay_button",
   "pricing.comparison.feature.price_transparency": "Transparence des prix",
-  "pricing.comparison.feature.processing_time": "pricing.comparison.feature.processing_time",
+  "pricing.comparison.feature.processing_time": "Délai de Traitement",
   "pricing.comparison.value.7_15_days": "7-15 jours",
   "pricing.comparison.value.30_45_days": "30-45 jours",
   "pricing.comparison.value.20_30_days": "20-30 jours",
@@ -1709,7 +1709,11 @@
   "common": {
     "details_for": "Détails pour",
     "select_prompt": "Choisir une option",
-    "application": "Catégorie"
+    "application": "Catégorie",
+    "back": "Retour",
+    "delete": "Supprimer",
+    "select_placeholder": "Veuillez choisir...",
+    "continue": "Continuer"
   },
   "services": {
     "processing_time": "Délai de Traitement",
@@ -1766,5 +1770,111 @@
     "type_message": "Écrire un message...",
     "drag_drop_title": "Déposez vos fichiers ici",
     "drag_drop_subtitle": "Images, Vidéos, Audios ou Documents"
+  },
+  "cart": {
+    "title": "Panier",
+    "add": "Ajouter au panier",
+    "added": "Ajouté au panier !",
+    "remove": "Supprimer",
+    "empty": "Votre panier est vide",
+    "proceed_purchase": "Commander",
+    "checkout": "Passer la commande",
+    "total": "Total"
+  },
+  "carousel": {
+    "title": "Nos Services de Permis de Conduire",
+    "subtitle": "Découvrez notre gamme complète – du cyclomoteur au bus. Choisissez votre permis et commencez immédiatement.",
+    "pause": "Pause",
+    "play": "Lecture"
+  },
+  "order": {
+    "title": "Passer votre commande",
+    "subtitle": "Remplissez le formulaire pour finaliser votre commande",
+    "personal_info": "Informations Personnelles",
+    "summary": "Résumé de la Commande",
+    "total": "Montant Total",
+    "payment_method": "Mode de Paiement",
+    "submit_order": "Envoyer la Commande",
+    "submitting": "Envoi en cours...",
+    "success": "Commande passée avec succès !",
+    "success_title": "Commande Reçue !",
+    "success_message": "Merci pour votre commande ! Nous avons bien reçu votre demande et nous vous contacterons sous peu.",
+    "success_email_sent": "E-mail de confirmation envoyé",
+    "success_processing": "Votre commande est en cours de traitement",
+    "order_number": "Numéro de commande",
+    "secure_notice": "Transmission sécurisée et cryptée des données",
+    "terms_text": "J'accepte les Conditions Générales et la Politique de Confidentialité. Mes données seront traitées conformément au RGPD.",
+    "documents_label": "Télécharger des Documents",
+    "drag_files": "Glissez vos fichiers ici ou cliquez pour sélectionner",
+    "drop_files": "Déposez vos fichiers ici !",
+    "accepted_formats": "JPG, PNG, WebP, PDF, DOC, DOCX",
+    "max_size": "Max 10 Mo par fichier",
+    "preview": "Aperçu",
+    "preview_unavailable": "Aperçu non disponible",
+    "field": {
+      "full_name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "date_of_birth": "Date de Naissance",
+      "place_of_birth": "Lieu de Naissance",
+      "nationality": "Nationalité",
+      "address": "Adresse",
+      "city": "Ville",
+      "postal_code": "Code Postal",
+      "region": "Région",
+      "notes": "Remarques"
+    },
+    "placeholder": {
+      "full_name": "Jean Dupont",
+      "email": "votre@email.fr",
+      "notes": "Demandes spéciales ou remarques..."
+    },
+    "payment": {
+      "bank_transfer": "Virement Bancaire",
+      "paypal": "PayPal",
+      "credit_card": "Carte de Crédit",
+      "crypto": "Crypto (BTC, ETH, USDT...)"
+    },
+    "doc_type": {
+      "id_passport": "Carte d'Identité / Passeport",
+      "photo": "Photo d'Identité",
+      "signature": "Signature",
+      "proof_of_address": "Justificatif de Domicile",
+      "medical": "Certificat Médical",
+      "other": "Autre"
+    },
+    "doc_error": {
+      "too_large": "Fichier trop volumineux (max 10 Mo)",
+      "invalid": "Format de fichier non pris en charge"
+    },
+    "error": {
+      "required": "Champ obligatoire",
+      "name_too_short": "Nom trop court",
+      "invalid_email": "Adresse e-mail invalide",
+      "invalid_phone": "Numéro de téléphone invalide",
+      "invalid_postal": "Le code postal doit comporter 5 chiffres",
+      "terms_required": "Veuillez accepter les conditions",
+      "fix_errors": "Veuillez corriger les champs en surbrillance",
+      "cart_empty": "Votre panier est vide",
+      "submission_failed": "La commande n'a pas pu être passée"
+    }
+  },
+  "thank_you": {
+    "title": "Merci pour votre commande !",
+    "subtitle": "Votre commande a été soumise avec succès. Veuillez vérifier votre boîte de réception.",
+    "check_email": {
+      "title": "Vérifiez votre e-mail",
+      "desc": "Nous vous avons envoyé un e-mail de confirmation. Veuillez également vérifier votre dossier Spam si vous ne le trouvez pas."
+    },
+    "payment_info": {
+      "title": "Infos de Paiement & Prochaines Étapes",
+      "desc": "Vous recevrez sous peu un autre e-mail contenant les informations de paiement et, si nécessaire, un lien pour prendre un rendez-vous en ligne avec notre équipe."
+    },
+    "processing": {
+      "title": "Traitement Rapide",
+      "desc": "Dès réception de votre paiement, nous commencerons instantanément le traitement de vos documents. Le processus prend moins de 7 jours jusqu'à la réception de votre permis."
+    },
+    "additional_services": "Vous pourriez aussi être intéressé par",
+    "back_home": "Retour à l'accueil"
   }
 }

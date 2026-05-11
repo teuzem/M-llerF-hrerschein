@@ -551,7 +551,7 @@
   "payment.card.info": "payment.card.info",
   "payment.card.pay_button": "payment.card.pay_button",
   "pricing.comparison.feature.price_transparency": "Price Transparency",
-  "pricing.comparison.feature.processing_time": "pricing.comparison.feature.processing_time",
+  "pricing.comparison.feature.processing_time": "Processing Time",
   "pricing.comparison.value.7_15_days": "7-15 days",
   "pricing.comparison.value.30_45_days": "30-45 days",
   "pricing.comparison.value.20_30_days": "20-30 days",
@@ -1708,7 +1708,11 @@
   "common": {
     "details_for": "Details for",
     "select_prompt": "Select an option",
-    "application": "Class"
+    "application": "Class",
+    "back": "Back",
+    "delete": "Delete",
+    "select_placeholder": "Please select...",
+    "continue": "Continue"
   },
   "services": {
     "processing_time": "Processing Time",
@@ -1765,5 +1769,111 @@
     "type_message": "Type a message...",
     "drag_drop_title": "Drop files here",
     "drag_drop_subtitle": "Images, Videos, Audios or Documents"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "add": "Add to Cart",
+    "added": "Added to cart!",
+    "remove": "Remove",
+    "empty": "Your cart is empty",
+    "proceed_purchase": "Checkout",
+    "checkout": "Proceed to Checkout",
+    "total": "Total"
+  },
+  "carousel": {
+    "title": "Our Driving License Services",
+    "subtitle": "Explore our complete range – from moped to bus. Choose your license and get started right away.",
+    "pause": "Pause",
+    "play": "Play"
+  },
+  "order": {
+    "title": "Place Your Order",
+    "subtitle": "Fill out the form to complete your order",
+    "personal_info": "Personal Information",
+    "summary": "Order Summary",
+    "total": "Total Amount",
+    "payment_method": "Payment Method",
+    "submit_order": "Submit Order",
+    "submitting": "Submitting...",
+    "success": "Order placed successfully!",
+    "success_title": "Order Received!",
+    "success_message": "Thank you for your order! We have received your request and will contact you shortly.",
+    "success_email_sent": "Confirmation email sent",
+    "success_processing": "Your order is being processed",
+    "order_number": "Order Number",
+    "secure_notice": "Secure and encrypted data transmission",
+    "terms_text": "I accept the Terms and Conditions and Privacy Policy. My data will be processed in accordance with GDPR.",
+    "documents_label": "Upload Documents",
+    "drag_files": "Drag files here or click to select",
+    "drop_files": "Drop files here!",
+    "accepted_formats": "JPG, PNG, WebP, PDF, DOC, DOCX",
+    "max_size": "Max 10 MB per file",
+    "preview": "Preview",
+    "preview_unavailable": "Preview not available",
+    "field": {
+      "full_name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "date_of_birth": "Date of Birth",
+      "place_of_birth": "Place of Birth",
+      "nationality": "Nationality",
+      "address": "Address",
+      "city": "City",
+      "postal_code": "Postal Code",
+      "region": "Region",
+      "notes": "Notes"
+    },
+    "placeholder": {
+      "full_name": "John Doe",
+      "email": "your@email.com",
+      "notes": "Special requests or notes..."
+    },
+    "payment": {
+      "bank_transfer": "Bank Transfer",
+      "paypal": "PayPal",
+      "credit_card": "Credit Card",
+      "crypto": "Crypto (BTC, ETH, USDT...)"
+    },
+    "doc_type": {
+      "id_passport": "ID / Passport",
+      "photo": "Passport Photo",
+      "signature": "Signature",
+      "proof_of_address": "Proof of Address",
+      "medical": "Medical Certificate",
+      "other": "Other"
+    },
+    "doc_error": {
+      "too_large": "File is too large (max 10 MB)",
+      "invalid": "File format not supported"
+    },
+    "error": {
+      "required": "Required field",
+      "name_too_short": "Name is too short",
+      "invalid_email": "Invalid email address",
+      "invalid_phone": "Invalid phone number",
+      "invalid_postal": "Postal code must be 5 digits",
+      "terms_required": "Please accept the terms",
+      "fix_errors": "Please fix the highlighted fields",
+      "cart_empty": "Your cart is empty",
+      "submission_failed": "Order could not be placed"
+    }
+  },
+  "thank_you": {
+    "title": "Thank You For Your Order!",
+    "subtitle": "Your order has been successfully submitted. Please check your inbox.",
+    "check_email": {
+      "title": "Check Your Email",
+      "desc": "We have sent you a confirmation email. Please also check your spam folder if you cannot find it."
+    },
+    "payment_info": {
+      "title": "Payment Info & Next Steps",
+      "desc": "You will receive another email shortly with payment information for you to pay and, if required, a link to book an online 1-on-1 appointment with our team."
+    },
+    "processing": {
+      "title": "Fast Processing",
+      "desc": "As soon as we receive your payment, we will instantly begin processing your documents. The process takes less than 7 days until you receive your license."
+    },
+    "additional_services": "You might also be interested in",
+    "back_home": "Back to Home"
   }
 }

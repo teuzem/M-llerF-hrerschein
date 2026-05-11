@@ -2,7 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { LicenseType } from '../../lib/supabase';
 import Modal from '../ui/Modal';
-import { Clock, Euro, FileText, CheckCircle } from 'lucide-react';
+import { Clock, Euro, FileText, CheckCircle, ShoppingCart, ArrowRight } from 'lucide-react';
+import { useCart } from '../../contexts/CartContext';
+import toast from 'react-hot-toast';
 
 interface LicenseDetailModalProps {
   license: LicenseType | null;
@@ -16,6 +18,7 @@ const LicenseDetailModal: React.FC<LicenseDetailModalProps> = ({ license, isOpen
   if (!license) return null;
 
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const { addToCart, isInCart, openOrderModal } = useCart();
   const licenseName = (license as any)[`name_${currentLang}`] || license.name_de;
   const licenseDesc = (license as any)[`description_${currentLang}`] || license.description_de;
 
@@ -84,6 +87,40 @@ const LicenseDetailModal: React.FC<LicenseDetailModalProps> = ({ license, isOpen
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="pt-6 border-t border-gray-100 flex gap-3">
+          {isInCart(license.id) ? (
+            <button
+              onClick={() => {
+                onClose();
+                openOrderModal();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-sm shadow-lg shadow-green-500/20"
+            >
+              <ArrowRight className="w-4 h-4" />
+              <span>{t('cart.proceed_purchase') || 'Checkout'}</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                addToCart({
+                  id: license.id,
+                  category: license.category,
+                  name: licenseName,
+                  description: licenseDesc,
+                  price: license.price_gross_euros,
+                  processingDays: license.processing_days,
+                  imageUrl: license.image_url,
+                });
+                toast.success(t('cart.added') || 'Added to cart!');
+              }}
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-bold rounded-xl hover:from-red-600 hover:to-red-700 transition-all text-sm shadow-lg shadow-german-red/20"
+            >
+              <ShoppingCart className="w-4 h-4" />
+              <span>{t('cart.add') || 'Add to Cart'}</span>
+            </button>
+          )}
         </div>
       </div>
     </Modal>

@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from './contexts/AuthContext'
+import { CartProvider } from './contexts/CartContext'
 import { useDashboardData } from './hooks/useDashboardData'
 import { useTranslation } from 'react-i18next'
 
@@ -30,6 +31,7 @@ import Clients from './pages/Clients'
 import PublicProfile from './pages/PublicProfile'
 import Gallery from './pages/Gallery'
 import FAQ from './pages/FAQ'
+import ThankYou from './pages/ThankYou'
 import NotFound from './pages/NotFound'
 import ServerError from './pages/ServerError'
 
@@ -55,6 +57,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute'
 import LoadingSpinner from './components/ui/LoadingSpinner'
 import Breadcrumbs from './components/ui/Breadcrumbs'
 import WhatsAppButton from './components/ui/WhatsAppButton'
+import OrderModal from './components/home/OrderModal'
 
 import { VisitorTracker } from './components/VisitorTracker'
 
@@ -64,6 +67,7 @@ function App() {
   return (
     <Suspense fallback={<div className="flex items-center justify-center h-screen"><LoadingSpinner size="lg"/></div>}>
       <AuthProvider>
+        <CartProvider>
         <VisitorTracker />
         <Router>
           <Routes>
@@ -98,7 +102,9 @@ function App() {
               error: { style: { background: '#EF4444' } },
             }}
           />
+          <OrderModal />
         </Router>
+        </CartProvider>
       </AuthProvider>
     </Suspense>
   )
@@ -144,6 +150,7 @@ const MainLayout = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/application/new" element={<NewApplication />} />
           
           {/* Uber Eats Routes */}
