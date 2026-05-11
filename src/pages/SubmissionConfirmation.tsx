@@ -12,9 +12,10 @@ import Button from '../components/ui/Button';
 import PDFSummary from '../components/application/PDFSummary';
 import { CheckCircle, Download, CreditCard } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEOHead from '../components/seo/SEOHead';
 
 const SubmissionConfirmation: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { user, profile } = useAuth();
@@ -72,8 +73,16 @@ const SubmissionConfirmation: React.FC = () => {
 
   const statusUrl = `${window.location.origin}/application/status/${application.id}`;
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <SEOHead 
+        title={`${t('confirmation.title')} | MüllerFührerschein`}
+        description={t('confirmation.subtitle')}
+        noindex={true}
+        locale={currentLang}
+      />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -112,7 +121,7 @@ const SubmissionConfirmation: React.FC = () => {
       {/* Hidden element for PDF generation */}
       <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
         <div ref={pdfSummaryRef}>
-          <PDFSummary application={application} profile={profile} />
+          <PDFSummary application={application as any} profile={profile || undefined} />
         </div>
       </div>
     </div>

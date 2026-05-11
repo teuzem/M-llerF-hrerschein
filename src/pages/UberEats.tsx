@@ -1,12 +1,12 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { UserPlus, CreditCard, Shield, Clock, Euro, CheckCircle, ArrowRight, Star, Phone, Mail } from 'lucide-react'
-import SEOHead from '../components/seo/SEOHead'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 const UberEats = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation('ubereats');
 
   const services = [
     {
@@ -88,14 +88,17 @@ const UberEats = () => {
     }
   ]
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.uberEats || pageSEO.de.uberEats;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead 
-        title="Uber Eats Fahrerdienste | MüllerFührerschein Berlin"
-        description="Professionelle Uber Eats Fahrerdienste in Berlin: Konto erstellen, aktivieren und entsperren. Schnell, legal und zuverlässig."
-        keywords="Uber Eats Fahrer, Uber Eats Konto, Uber Eats Berlin, Fahrerdienst"
-        url="https://mulerfuhrerschein.de/uber-eats"
-        businessType="foodEstablishment"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        url="https://mulerfuhrerschein.de/ubereats"
+        locale={currentLang}
       />
 
       {/* Hero Section */}

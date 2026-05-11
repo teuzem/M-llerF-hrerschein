@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import SEOHead from '../components/seo/SEOHead';
 import UberEatsServices from '../components/ubereats/UberEatsServices';
+import { pageSEO } from '../lib/seoData';
 
 const UberEatsUnlock = () => {
-  const { t } = useTranslation('ubereats');
+  const { t, i18n } = useTranslation('ubereats');
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -25,14 +26,18 @@ const UberEatsUnlock = () => {
     }
   };
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.uberEatsUnlock || pageSEO.de.uberEatsUnlock;
+
   return (
     <>
       <SEOHead 
-        title="Déblocage Compte Uber Eats | Service Professionnel en Allemagne"
-        description="Débloquez votre compte Uber Eats professionnel en Allemagne. Service rapide, sécurisé et légal avec accompagnement complet. Prix : 200€ - Délai : 5-7 jours."
-        keywords="débloquer compte uber eats, déblocage uber eats, uber eats unlock account germany, uber eats account unlock"
-        canonicalUrl="https://permiscode.fr/ubereats/unlock"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl="https://mulerfuhrerschein.de/ubereats/unlock"
         structuredData={structuredData}
+        locale={currentLang}
       />
 
       <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50">

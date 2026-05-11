@@ -23,6 +23,7 @@
   "common.home": "Home",
   "common.contact": "Contact",
   "common.about": "About",
+  "common.ubereats": "Uber Eats",
   "common.services": "Services",
   "common.pricing": "Pricing",
   "common.gallery": "Gallery",
@@ -925,42 +926,133 @@
   "terms.content.liability_desc": "terms.content.liability_desc",
   "terms.content.law_title": "terms.content.law_title",
   "terms.content.law_desc": "terms.content.law_desc",
-  "uber_eats.account_creation.title": "uber_eats.account_creation.title",
-  "uber_eats.account_creation.desc": "uber_eats.account_creation.desc",
-  "uber_eats.account_activation.title": "uber_eats.account_activation.title",
-  "uber_eats.account_activation.desc": "uber_eats.account_activation.desc",
-  "uber_eats.account_unblock.title": "uber_eats.account_unblock.title",
-  "uber_eats.account_unblock.desc": "uber_eats.account_unblock.desc",
-  "uber_eats.benefit.experience": "uber_eats.benefit.experience",
-  "uber_eats.benefit.experience_desc": "uber_eats.benefit.experience_desc",
-  "uber_eats.benefit.speed": "uber_eats.benefit.speed",
-  "uber_eats.benefit.speed_desc": "uber_eats.benefit.speed_desc",
-  "uber_eats.benefit.guarantee": "uber_eats.benefit.guarantee",
-  "uber_eats.benefit.guarantee_desc": "uber_eats.benefit.guarantee_desc",
-  "uber_eats.benefit.support": "uber_eats.benefit.support",
-  "uber_eats.benefit.support_desc": "uber_eats.benefit.support_desc",
-  "uber_eats.hero.title": "uber_eats.hero.title",
-  "uber_eats.hero.subtitle": "uber_eats.hero.subtitle",
-  "uber_eats.hero.cta_services": "uber_eats.hero.cta_services",
-  "uber_eats.hero.cta_consultation": "uber_eats.hero.cta_consultation",
-  "uber_eats.services_title": "uber_eats.services_title",
-  "uber_eats.services_subtitle": "uber_eats.services_subtitle",
-  "uber_eats.service.book": "uber_eats.service.book",
-  "uber_eats.benefits_title": "uber_eats.benefits_title",
-  "uber_eats.benefits_subtitle": "uber_eats.benefits_subtitle",
-  "uber_eats.faq_title": "uber_eats.faq_title",
-  "uber_eats.faq.q1.question": "uber_eats.faq.q1.question",
-  "uber_eats.faq.q1.answer": "uber_eats.faq.q1.answer",
-  "uber_eats.faq.q2.question": "uber_eats.faq.q2.question",
-  "uber_eats.faq.q2.answer": "uber_eats.faq.q2.answer",
-  "uber_eats.faq.q3.question": "uber_eats.faq.q3.question",
-  "uber_eats.faq.q3.answer": "uber_eats.faq.q3.answer",
-  "uber_eats.faq.q4.question": "uber_eats.faq.q4.question",
-  "uber_eats.faq.q4.answer": "uber_eats.faq.q4.answer",
-  "uber_eats.cta.title": "uber_eats.cta.title",
-  "uber_eats.cta.subtitle": "uber_eats.cta.subtitle",
-  "uber_eats.cta.contact": "uber_eats.cta.contact",
-  "uber_eats.cta.all_services": "uber_eats.cta.all_services",
+  "uber_eats.account_creation.title": "Uber Eats Account Creation",
+  "uber_eats.account_creation.desc": "We create your professional Uber Eats driver account quickly and securely.",
+  "uber_eats.account_activation.title": "Uber Eats Account Activation",
+  "uber_eats.account_activation.desc": "Fast activation of your account to start as a delivery driver immediately.",
+  "uber_eats.account_unblock.title": "Uber Eats Account Unlocking",
+  "uber_eats.account_unblock.desc": "We help you regain access to your blocked account.",
+  "uber_eats.benefit.experience": "Years of Experience",
+  "uber_eats.benefit.experience_desc": "Thousands of successful registrations across Germany.",
+  "uber_eats.benefit.speed": "Maximum Speed",
+  "uber_eats.benefit.speed_desc": "We know the fastest ways through the bureaucratic process.",
+  "uber_eats.benefit.guarantee": "Success Guarantee",
+  "uber_eats.benefit.guarantee_desc": "Professional guidance until full activation.",
+  "uber_eats.benefit.support": "Personal Support",
+  "uber_eats.benefit.support_desc": "Direct contact person for all questions and problems.",
+  "uber_eats.hero.title": "Your Partner for Uber Eats in Germany",
+  "uber_eats.hero.subtitle": "Start your delivery driver career with professional support for registration, activation, and account management.",
+  "uber_eats.hero.cta_services": "Our Services",
+  "uber_eats.hero.cta_consultation": "Free Consultation",
+  "uber_eats.services_title": "Our Uber Eats Services",
+  "uber_eats.services_subtitle": "Choose the right service for your success with Uber Eats.",
+  "uber_eats.service.book": "Book Now",
+  "uber_eats.benefits_title": "Your Advantages with Us",
+  "uber_eats.benefits_subtitle": "Why you should choose MüllerFührerschein.",
+  "uber_eats.faq_title": "Frequently Asked Questions about Uber Eats",
+  "uber_eats.faq.q1.question": "How long does account creation take?",
+  "uber_eats.faq.q1.answer": "Typically, the entire process takes between 24 and 48 hours, provided all documents are complete.",
+  "uber_eats.faq.q2.question": "Which documents are required?",
+  "uber_eats.faq.q2.answer": "You need a valid ID card or passport, a German driver's license, and a current residence certificate.",
+  "uber_eats.faq.q3.question": "Do you also help with blocked accounts?",
+  "uber_eats.faq.q3.answer": "Yes, we have a specialized team for account unlocking that assists you with the appeal process.",
+  "uber_eats.faq.q4.question": "Is there a success guarantee?",
+  "uber_eats.faq.q4.answer": "We guide you professionally through the process. For account creation, our success rate is nearly 100%.",
+  "uber_eats.cta.title": "Ready to start with Uber Eats?",
+  "uber_eats.cta.subtitle": "Contact us today for a non-binding initial consultation.",
+  "uber_eats.cta.contact": "Contact Support",
+  "uber_eats.cta.all_services": "View All Services",
+  "ubereats": {
+    "create_account": {
+      "title": "Uber Eats Account Creation",
+      "subtitle": "Start your delivery driver career in a few steps.",
+      "steps": {
+        "documents": "Submit Documents",
+        "documents_desc": "Upload your ID and driver's license.",
+        "verification": "Verification",
+        "verification_desc": "We check your data for completeness.",
+        "approval": "Activation",
+        "approval_desc": "Your account will be activated for use."
+      },
+      "form": {
+        "full_name": "Full Name",
+        "full_name_placeholder": "John Doe",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "license_type": "License Category",
+        "password": "Choose Password",
+        "confirm_password": "Confirm Password",
+        "license_number": "License Number",
+        "license_number_placeholder": "G0123456789",
+        "submit": "Submit Application"
+      },
+      "disclaimer": "Your data is transmitted securely encrypted and only used for account creation.",
+      "success": "Your application has been successfully submitted!",
+      "error": "Error sending application. Please try again."
+    },
+    "activation": {
+      "title": "Uber Eats Activation",
+      "subtitle": "We get you on the road in record time.",
+      "status": {
+        "pending": "Pending",
+        "pending_desc": "Your documents are currently being reviewed.",
+        "in_progress": "In Progress",
+        "in_progress_desc": "Final activation is being performed.",
+        "approved": "Activated",
+        "approved_desc": "You can now start deliveries!",
+        "rejected": "Rejected",
+        "rejected_desc": "Please check your email for details."
+      },
+      "requirements": {
+        "documents": "Proof of Identity",
+        "documents_desc": "Upload ID card or passport.",
+        "background_check": "Background Check",
+        "background_check_desc": "Verification of your police clearance certificate.",
+        "bank_info": "Bank Account",
+        "bank_info_desc": "Provide IBAN for your payouts.",
+        "training": "Safety Training",
+        "training_desc": "Short introduction to the Uber app."
+      },
+      "progress": {
+        "title": "Your Progress"
+      },
+      "contact_support": "Call Support",
+      "send_documents": "Send Documents"
+    },
+    "unlock": {
+      "title": "Uber Eats Account Unlocking",
+      "subtitle": "Professional help with account blocks and deactivations.",
+      "requirements": {
+        "title": "Required Proofs",
+        "license": "Valid Driver's License",
+        "license_desc": "Current copy of your driver's license.",
+        "insurance": "Proof of Insurance",
+        "insurance_desc": "Proof of commercial liability insurance.",
+        "background_check": "Current Clearance Certificate",
+        "background_check_desc": "Not older than 3 months.",
+        "app_download": "App Installation",
+        "app_download_desc": "Latest version of the Uber Driver app.",
+        "bank_details": "IBAN Verification",
+        "bank_details_desc": "Confirmation of your bank account."
+      },
+      "process": {
+        "title": "The Unlocking Process",
+        "step1": "Analysis",
+        "step1_desc": "We analyze the reason for the block.",
+        "step2": "Documentation",
+        "step2_desc": "We prepare the necessary documents.",
+        "step3": "Appeal",
+        "step3_desc": "We officially file an appeal with Uber.",
+        "step4": "Activation",
+        "step4_desc": "Your account will be released for trips again."
+      },
+      "ready_title": "Ready for a Fresh Start?",
+      "ready_description": "Click below to officially start the unlocking process.",
+      "cta": "Unlock Account Now",
+      "success": "Unlocking process successfully started!",
+      "error": "Error starting the process. Please contact us directly."
+    }
+  },
   "dashboard.activity.series_name": "Applications",
   "dashboard.activity.title": "Activity History",
   "dashboard.status_chart.series_name": "Application Status",
@@ -1412,6 +1504,11 @@
         "a": "We currently support applications primarily for Germany, France, and other select EU member states. Your EU driving license is valid in all EU and EEA countries."
       },
       {
+        "category": "general",
+        "q": "What happens during a police check?",
+        "a": "Since your license is officially registered and recorded in the government databases, any police check will be successful. The document is authentic and legally acquired."
+      },
+      {
         "category": "process",
         "q": "How long does the process take?",
         "a": "The standard processing time is between 14 to 21 working days, depending on the authorities. We also offer an express service that can shorten this to 5 to 7 working days."
@@ -1419,7 +1516,17 @@
       {
         "category": "process",
         "q": "Do I have to take an exam?",
-        "a": "Depending on the specific EU country guidelines we apply under, physical presence for exams can often be substituted by our registered partnerships and legal loopholes regarding license exchange. However, this depends heavily on your individual case. We handle all bureaucracy."
+        "a": "In most cases, we can structure the process so that no new theoretical or practical exam is required, especially if it's an exchange or an extension. We utilize legal frameworks within EU directives."
+      },
+      {
+        "category": "process",
+        "q": "Which documents do I need to submit?",
+        "a": "Normally, we need a copy of your current ID (ID card or passport), a biometric passport photo, and a digital signature. In special cases, proof of residence may be required."
+      },
+      {
+        "category": "process",
+        "q": "Can I exchange my foreign license?",
+        "a": "Yes, we specialize in exchanging non-EU driving licenses for a full German or EU license without the usual bureaucratic hassle."
       },
       {
         "category": "security",
@@ -1428,8 +1535,33 @@
       },
       {
         "category": "security",
+        "q": "What if I have points in the driving register?",
+        "a": "We can also advise you in cases where your point account is high or a driving ban is imminent. There are often legal ways to restore mobility through an EU driving license."
+      },
+      {
+        "category": "security",
+        "q": "Does your service help with an MPU order?",
+        "a": "Yes, we have strategies for customers who have been ordered to undergo a Medical-Psychological Assessment (MPU). We help you get back behind the wheel legally without having to take the MPU in Germany."
+      },
+      {
+        "category": "security",
         "q": "What payment methods do you accept?",
         "a": "We accept secure payments via Bank Transfer, Credit Card, and selected Cryptocurrencies for maximum privacy. Payments are typically split: an upfront fee and a final payment upon successful registration."
+      },
+      {
+        "category": "general",
+        "q": "What is the advantage of an EU license?",
+        "a": "An EU license must be recognized in every member state without exchange. It offers maximum flexibility and protection against arbitrary withdrawal measures in individual countries."
+      },
+      {
+        "category": "process",
+        "q": "How is the license delivered?",
+        "a": "Delivery is handled discreetly and securely via registered mail or courier service directly to your specified address. You will receive a tracking number."
+      },
+      {
+        "category": "general",
+        "q": "Can I also obtain truck or bus licenses?",
+        "a": "Yes, we support all classes from A (motorcycle) to B (car) to C (truck) and D (bus), including the necessary modules like Code 95 for commercial drivers."
       }
     ]
   },

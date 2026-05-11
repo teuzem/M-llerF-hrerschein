@@ -45,6 +45,46 @@ export const pageSEO = {
       title: "Unsere zufriedenen Kunden - Öffentliche Profile",
       description: "Entdecken Sie Profile unserer Kunden, die erfolgreich ihren deutschen Führerschein erhalten haben. Erfolgsgeschichten, authentische Wege und verifizierte Testimonials.",
       keywords: "Führerschein Kunden, Kundenprofile München, Führerschein Erfolge, Kundenwege, verifizierte Testimonials, deutsche Führerschein Kunden"
+    },
+    legal: {
+      title: "Impressum - MüllerFührerschein",
+      description: "Rechtliche Informationen und Impressum von MüllerFührerschein. Kontaktinformationen, Verantwortlichkeiten und rechtliche Hinweise.",
+      keywords: "Impressum, rechtliche Hinweise, Kontakt MüllerFührerschein, Verantwortung, Deutschland Führerschein Service"
+    },
+    privacy: {
+      title: "Datenschutz - Ihre Sicherheit ist uns wichtig",
+      description: "Informationen darüber, wie wir Ihre persönlichen Daten schützen und verarbeiten. Transparente Datenschutzerklärung nach DSGVO.",
+      keywords: "Datenschutz, DSGVO, Privatsphäre, Datensicherheit, MüllerFührerschein Datenschutz"
+    },
+    terms: {
+      title: "AGB - Allgemeine Geschäftsbedingungen",
+      description: "Unsere Geschäftsbedingungen für die Nutzung unserer Dienstleistungen. Transparente Regeln für eine faire Zusammenarbeit.",
+      keywords: "AGB, Geschäftsbedingungen, Vertrag, Nutzungsbedingungen, MüllerFührerschein AGB"
+    },
+    faq: {
+      title: "FAQ - Häufig gestellte Fragen | Führerschein Hilfe",
+      description: "Antworten auf die am häufigsten gestellten Fragen zum deutschen Führerschein, Uber Eats Service und unserem Prozess.",
+      keywords: "FAQ Führerschein, Hilfe Führerschein, Fragen Uber Eats, Prozess Führerschein, München Führerschein FAQ"
+    },
+    uberEatsCreateAccount: {
+      title: "Uber Eats Konto Erstellung - Professioneller Service",
+      description: "Wir erstellen Ihr Uber Eats Fahrerkonto schnell und professionell. Alle Dokumente und Verifizierungen inklusive.",
+      keywords: "Uber Eats Konto erstellen, Uber Eats Fahrer werden, Registrierung Uber Eats, München Uber Eats Service"
+    },
+    uberEatsActivation: {
+      title: "Uber Eats Aktivierung - Starten Sie sofort",
+      description: "Schnelle Aktivierung Ihres Uber Eats Kontos durch unsere Experten. Keine langen Wartezeiten, sofortiger Start möglich.",
+      keywords: "Uber Eats Aktivierung, Konto freischalten, Uber Eats Start, München Lieferdienst Aktivierung"
+    },
+    uberEatsUnlock: {
+      title: "Uber Eats Entsperrung - Wir helfen Ihnen",
+      description: "Ist Ihr Uber Eats Konto gesperrt? Wir helfen Ihnen bei der professionellen Entsperrung und Wiederherstellung Ihres Zugangs.",
+      keywords: "Uber Eats entsperren, Konto gesperrt Hilfe, Uber Eats Wiederherstellung, München Uber Eats Support"
+    },
+    applicationNew: {
+      title: "Neuer Antrag - Starten Sie jetzt Ihren Führerschein",
+      description: "Beginnen Sie Ihren Weg zum deutschen Führerschein. Einfaches Antragsformular für alle Führerscheinklassen.",
+      keywords: "Führerschein Antrag, online beantragen, Führerschein Start, München Führerschein Prozess"
     }
   },
   fr: {
@@ -92,6 +132,46 @@ export const pageSEO = {
       title: "Nos Clients Satisfaits - Profils Publics",
       description: "Découvrez les profils de nos clients ayant réussi l'obtention de leur permis de conduire allemand. Histoires de réussite, parcours authentiques et témoignages vérifiés.",
       keywords: "clients permis, profils clients Munich, succès permis, parcours clients, témoignages vérifiés, clients permis allemand"
+    },
+    legal: {
+      title: "Mentions Légales - MüllerFührerschein",
+      description: "Informations légales et mentions de MüllerFührerschein. Coordonnées, responsabilités et avis juridiques.",
+      keywords: "mentions légales, avis juridique, contact MüllerFührerschein, responsabilité, service permis Allemagne"
+    },
+    privacy: {
+      title: "Confidentialité - Votre sécurité est importante",
+      description: "Informations sur la manière dont nous protégeons et traitons vos données personnelles. Politique de confidentialité transparente conforme au RGPD.",
+      keywords: "confidentialité, RGPD, vie privée, sécurité des données, protection des données MüllerFührerschein"
+    },
+    terms: {
+      title: "CGV - Conditions Générales de Vente",
+      description: "Nos conditions d'utilisation de nos services. Des règles transparentes pour une collaboration équitable.",
+      keywords: "CGV, conditions de vente, contrat, conditions d'utilisation, MüllerFührerschein CGV"
+    },
+    faq: {
+      title: "FAQ - Questions Fréquemment Posées | Aide Permis",
+      description: "Réponses aux questions les plus fréquentes sur le permis allemand, le service Uber Eats et notre processus.",
+      keywords: "FAQ permis, aide permis, questions Uber Eats, processus permis, FAQ permis Munich"
+    },
+    uberEatsCreateAccount: {
+      title: "Création de compte Uber Eats - Service Professionnel",
+      description: "Nous créons votre compte chauffeur Uber Eats rapidement et professionnellement. Tous documents et vérifications inclus.",
+      keywords: "créer compte Uber Eats, devenir chauffeur Uber Eats, inscription Uber Eats, service Uber Eats Munich"
+    },
+    uberEatsActivation: {
+      title: "Activation Uber Eats - Commencez immédiatement",
+      description: "Activation rapide de votre compte Uber Eats par nos experts. Pas de longs délais, démarrage immédiat possible.",
+      keywords: "activation Uber Eats, débloquer compte, démarrage Uber Eats, activation service livraison Munich"
+    },
+    uberEatsUnlock: {
+      title: "Déblocage Uber Eats - Nous vous aidons",
+      description: "Votre compte Uber Eats est bloqué ? Nous vous aidons pour le déblocage professionnel et la récupération de votre accès.",
+      keywords: "débloquer Uber Eats, aide compte bloqué, récupération Uber Eats, support Uber Eats Munich"
+    },
+    applicationNew: {
+      title: "Nouvelle demande - Commencez votre permis maintenant",
+      description: "Commencez votre parcours pour obtenir le permis allemand. Formulaire de demande simple pour toutes les catégories.",
+      keywords: "demande permis, s'inscrire en ligne, début permis, processus permis Munich"
     }
   },
   en: {
@@ -139,6 +219,46 @@ export const pageSEO = {
       title: "Our Satisfied Customers - Public Profiles",
       description: "Discover profiles of our customers who successfully obtained their German driving license. Success stories, authentic journeys and verified testimonials.",
       keywords: "license customers, Munich customer profiles, license successes, customer journeys, verified testimonials, German license customers"
+    },
+    legal: {
+      title: "Legal Notice - MüllerFührerschein",
+      description: "Legal information and imprint of MüllerFührerschein. Contact info, responsibilities and legal notices.",
+      keywords: "legal notice, imprint, contact MüllerFührerschein, responsibility, Germany license service"
+    },
+    privacy: {
+      title: "Privacy Policy - Your Security is Important",
+      description: "Information on how we protect and process your personal data. Transparent privacy policy compliant with GDPR.",
+      keywords: "privacy policy, GDPR, privacy, data security, MüllerFührerschein data protection"
+    },
+    terms: {
+      title: "T&C - General Terms and Conditions",
+      description: "Our terms of service for using our services. Transparent rules for fair cooperation.",
+      keywords: "T&C, terms and conditions, contract, terms of use, MüllerFührerschein T&C"
+    },
+    faq: {
+      title: "FAQ - Frequently Asked Questions | License Help",
+      description: "Answers to the most frequently asked questions about the German license, Uber Eats service, and our process.",
+      keywords: "FAQ license, license help, Uber Eats questions, license process, Munich license FAQ"
+    },
+    uberEatsCreateAccount: {
+      title: "Uber Eats Account Creation - Professional Service",
+      description: "We create your Uber Eats driver account quickly and professionally. All documents and verifications included.",
+      keywords: "create Uber Eats account, become Uber Eats driver, Uber Eats registration, Munich Uber Eats service"
+    },
+    uberEatsActivation: {
+      title: "Uber Eats Activation - Start Immediately",
+      description: "Fast activation of your Uber Eats account by our experts. No long delays, immediate start possible.",
+      keywords: "Uber Eats activation, unlock account, Uber Eats start, Munich delivery service activation"
+    },
+    uberEatsUnlock: {
+      title: "Uber Eats Unlock - We Help You",
+      description: "Is your Uber Eats account blocked? We help you with professional unlocking and recovery of your access.",
+      keywords: "unlock Uber Eats, blocked account help, Uber Eats recovery, Munich Uber Eats support"
+    },
+    applicationNew: {
+      title: "New Application - Start Your License Now",
+      description: "Begin your journey to obtain a German license. Simple application form for all categories.",
+      keywords: "license application, apply online, license start, Munich license process"
     }
   },
   login: {

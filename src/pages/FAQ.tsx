@@ -3,9 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, HelpCircle, MessageCircle } from 'lucide-react';
 import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 export default function FAQ() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   const [activeCategory, setActiveCategory] = useState<string>('general');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -27,11 +28,16 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.faq || pageSEO.de.faq;
+
   return (
     <>
       <SEOHead 
-        title={`${t('faq.title', 'FAQ')} | MüllerFührerschein`} 
-        description={t('faq.description', 'Find answers to common questions about our driving license services.')} 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        locale={currentLang}
       />
       <div className="min-h-screen bg-gray-50 pb-20">
         

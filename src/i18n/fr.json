@@ -23,6 +23,7 @@
   "common.home": "Accueil",
   "common.contact": "Contact",
   "common.about": "À propos",
+  "common.ubereats": "Uber Eats",
   "common.services": "Services",
   "common.pricing": "Tarifs",
   "common.gallery": "Galerie",
@@ -926,42 +927,133 @@
   "terms.content.liability_desc": "terms.content.liability_desc",
   "terms.content.law_title": "terms.content.law_title",
   "terms.content.law_desc": "terms.content.law_desc",
-  "uber_eats.account_creation.title": "uber_eats.account_creation.title",
-  "uber_eats.account_creation.desc": "uber_eats.account_creation.desc",
-  "uber_eats.account_activation.title": "uber_eats.account_activation.title",
-  "uber_eats.account_activation.desc": "uber_eats.account_activation.desc",
-  "uber_eats.account_unblock.title": "uber_eats.account_unblock.title",
-  "uber_eats.account_unblock.desc": "uber_eats.account_unblock.desc",
-  "uber_eats.benefit.experience": "uber_eats.benefit.experience",
-  "uber_eats.benefit.experience_desc": "uber_eats.benefit.experience_desc",
-  "uber_eats.benefit.speed": "uber_eats.benefit.speed",
-  "uber_eats.benefit.speed_desc": "uber_eats.benefit.speed_desc",
-  "uber_eats.benefit.guarantee": "uber_eats.benefit.guarantee",
-  "uber_eats.benefit.guarantee_desc": "uber_eats.benefit.guarantee_desc",
-  "uber_eats.benefit.support": "uber_eats.benefit.support",
-  "uber_eats.benefit.support_desc": "uber_eats.benefit.support_desc",
-  "uber_eats.hero.title": "uber_eats.hero.title",
-  "uber_eats.hero.subtitle": "uber_eats.hero.subtitle",
-  "uber_eats.hero.cta_services": "uber_eats.hero.cta_services",
-  "uber_eats.hero.cta_consultation": "uber_eats.hero.cta_consultation",
-  "uber_eats.services_title": "uber_eats.services_title",
-  "uber_eats.services_subtitle": "uber_eats.services_subtitle",
-  "uber_eats.service.book": "uber_eats.service.book",
-  "uber_eats.benefits_title": "uber_eats.benefits_title",
-  "uber_eats.benefits_subtitle": "uber_eats.benefits_subtitle",
-  "uber_eats.faq_title": "uber_eats.faq_title",
-  "uber_eats.faq.q1.question": "uber_eats.faq.q1.question",
-  "uber_eats.faq.q1.answer": "uber_eats.faq.q1.answer",
-  "uber_eats.faq.q2.question": "uber_eats.faq.q2.question",
-  "uber_eats.faq.q2.answer": "uber_eats.faq.q2.answer",
-  "uber_eats.faq.q3.question": "uber_eats.faq.q3.question",
-  "uber_eats.faq.q3.answer": "uber_eats.faq.q3.answer",
-  "uber_eats.faq.q4.question": "uber_eats.faq.q4.question",
-  "uber_eats.faq.q4.answer": "uber_eats.faq.q4.answer",
-  "uber_eats.cta.title": "uber_eats.cta.title",
-  "uber_eats.cta.subtitle": "uber_eats.cta.subtitle",
-  "uber_eats.cta.contact": "uber_eats.cta.contact",
-  "uber_eats.cta.all_services": "uber_eats.cta.all_services",
+  "uber_eats.account_creation.title": "Création de compte Uber Eats",
+  "uber_eats.account_creation.desc": "Nous créons votre compte chauffeur Uber Eats professionnel rapidement et en toute sécurité.",
+  "uber_eats.account_activation.title": "Activation de compte Uber Eats",
+  "uber_eats.account_activation.desc": "Activation rapide de votre compte pour commencer immédiatement en tant que livreur.",
+  "uber_eats.account_unblock.title": "Déblocage de compte Uber Eats",
+  "uber_eats.account_unblock.desc": "Nous vous aidons à récupérer l'accès à votre compte bloqué.",
+  "uber_eats.benefit.experience": "Années d'expérience",
+  "uber_eats.benefit.experience_desc": "Des milliers d'inscriptions réussies dans toute l'Allemagne.",
+  "uber_eats.benefit.speed": "Vitesse maximale",
+  "uber_eats.benefit.speed_desc": "Nous connaissons les moyens les plus rapides de traverser le processus bureaucratique.",
+  "uber_eats.benefit.guarantee": "Garantie de succès",
+  "uber_eats.benefit.guarantee_desc": "Accompagnement professionnel jusqu'à l'activation complète.",
+  "uber_eats.benefit.support": "Support personnel",
+  "uber_eats.benefit.support_desc": "Interlocuteur direct pour toutes vos questions et problèmes.",
+  "uber_eats.hero.title": "Votre partenaire pour Uber Eats en Allemagne",
+  "uber_eats.hero.subtitle": "Lancez votre carrière de livreur avec un soutien professionnel pour l'inscription, l'activation et la gestion de compte.",
+  "uber_eats.hero.cta_services": "Nos services",
+  "uber_eats.hero.cta_consultation": "Consultation gratuite",
+  "uber_eats.services_title": "Nos services Uber Eats",
+  "uber_eats.services_subtitle": "Choisissez le service adapté à votre réussite avec Uber Eats.",
+  "uber_eats.service.book": "Réserver maintenant",
+  "uber_eats.benefits_title": "Vos avantages avec nous",
+  "uber_eats.benefits_subtitle": "Pourquoi choisir MüllerFührerschein.",
+  "uber_eats.faq_title": "Questions fréquemment posées sur Uber Eats",
+  "uber_eats.faq.q1.question": "Combien de temps prend la création de compte ?",
+  "uber_eats.faq.q1.answer": "En général, l'ensemble du processus prend entre 24 et 48 heures, à condition que tous les documents soient complets.",
+  "uber_eats.faq.q2.question": "Quels sont les documents requis ?",
+  "uber_eats.faq.q2.answer": "Vous avez besoin d'une carte d'identité ou d'un passeport valide, d'un permis de conduire allemand et d'un certificat de résidence actuel.",
+  "uber_eats.faq.q3.question": "Aidez-vous aussi pour les comptes bloqués ?",
+  "uber_eats.faq.q3.answer": "Oui, nous avons une équipe spécialisée pour le déblocage de compte qui vous assiste dans le processus de recours.",
+  "uber_eats.faq.q4.question": "Y a-t-il une garantie de succès ?",
+  "uber_eats.faq.q4.answer": "Nous vous guidons professionnellement à travers le processus. Pour la création de compte, notre taux de réussite est proche de 100%.",
+  "uber_eats.cta.title": "Prêt à commencer avec Uber Eats ?",
+  "uber_eats.cta.subtitle": "Contactez-nous dès aujourd'hui pour une première consultation sans engagement.",
+  "uber_eats.cta.contact": "Contacter le support",
+  "uber_eats.cta.all_services": "Voir tous les services",
+  "ubereats": {
+    "create_account": {
+      "title": "Création de compte Uber Eats",
+      "subtitle": "Lancez votre carrière de livreur en quelques étapes.",
+      "steps": {
+        "documents": "Soumettre les documents",
+        "documents_desc": "Téléchargez votre pièce d'identité et votre permis.",
+        "verification": "Vérification",
+        "verification_desc": "Nous vérifions l'intégralité de vos données.",
+        "approval": "Activation",
+        "approval_desc": "Votre compte sera activé pour l'utilisation."
+      },
+      "form": {
+        "full_name": "Nom complet",
+        "full_name_placeholder": "Jean Dupont",
+        "email": "Adresse e-mail",
+        "phone": "Numéro de téléphone",
+        "license_type": "Catégorie de permis",
+        "password": "Choisir un mot de passe",
+        "confirm_password": "Confirmer le mot de passe",
+        "license_number": "Numéro de permis",
+        "license_number_placeholder": "G0123456789",
+        "submit": "Envoyer la demande"
+      },
+      "disclaimer": "Vos données sont transmises de manière sécurisée et cryptée et ne sont utilisées que pour la création de compte.",
+      "success": "Votre demande a été envoyée avec succès !",
+      "error": "Erreur lors de l'envoi de la demande. Veuillez réessayer."
+    },
+    "activation": {
+      "title": "Activation Uber Eats",
+      "subtitle": "Nous vous mettons sur la route en un temps record.",
+      "status": {
+        "pending": "En attente",
+        "pending_desc": "Vos documents sont en cours d'examen.",
+        "in_progress": "En cours",
+        "in_progress_desc": "L'activation finale est en cours de réalisation.",
+        "approved": "Activé",
+        "approved_desc": "Vous pouvez maintenant commencer les livraisons !",
+        "rejected": "Refusé",
+        "rejected_desc": "Veuillez vérifier vos e-mails pour plus de détails."
+      },
+      "requirements": {
+        "documents": "Preuve d'identité",
+        "documents_desc": "Télécharger carte d'identité ou passeport.",
+        "background_check": "Vérification d'antécédents",
+        "background_check_desc": "Vérification de votre casier judiciaire.",
+        "bank_info": "Compte bancaire",
+        "bank_info_desc": "Fournir l'IBAN pour vos paiements.",
+        "training": "Formation sécurité",
+        "training_desc": "Courte introduction à l'application Uber."
+      },
+      "progress": {
+        "title": "Votre progression"
+      },
+      "contact_support": "Appeler le support",
+      "send_documents": "Envoyer les documents"
+    },
+    "unlock": {
+      "title": "Déblocage de compte Uber Eats",
+      "subtitle": "Aide professionnelle en cas de blocage ou désactivation de compte.",
+      "requirements": {
+        "title": "Preuves requises",
+        "license": "Permis de conduire valide",
+        "license_desc": "Copie actuelle de votre permis de conduire.",
+        "insurance": "Preuve d'assurance",
+        "insurance_desc": "Preuve d'assurance responsabilité civile professionnelle.",
+        "background_check": "Casier judiciaire récent",
+        "background_check_desc": "Pas plus de 3 mois.",
+        "app_download": "Installation de l'application",
+        "app_download_desc": "Dernière version de l'application Uber Driver.",
+        "bank_details": "Vérification IBAN",
+        "bank_details_desc": "Confirmation de votre compte bancaire."
+      },
+      "process": {
+        "title": "Le processus de déblocage",
+        "step1": "Analyse",
+        "step1_desc": "Nous analysons la raison du blocage.",
+        "step2": "Documentation",
+        "step2_desc": "Nous préparons les documents nécessaires.",
+        "step3": "Recours",
+        "step3_desc": "Nous déposons officiellement un recours auprès d'Uber.",
+        "step4": "Activation",
+        "step4_desc": "Votre compte sera à nouveau autorisé pour les courses."
+      },
+      "ready_title": "Prêt pour un nouveau départ ?",
+      "ready_description": "Cliquez ci-dessous pour lancer officiellement le processus de déblocage.",
+      "cta": "Débloquer le compte maintenant",
+      "success": "Processus de déblocage lancé avec succès !",
+      "error": "Erreur lors du lancement du processus. Veuillez nous contacter directement."
+    }
+  },
   "dashboard.activity.series_name": "Demandes",
   "dashboard.activity.title": "Historique d'activité",
   "dashboard.status_chart.series_name": "Statut de la demande",
@@ -1413,6 +1505,11 @@
         "a": "Nous prenons actuellement en charge principalement les demandes pour l'Allemagne, la France et d'autres États membres de l'UE sélectionnés. Votre permis de conduire européen est valide dans tous les pays de l'UE et de l'EEE."
       },
       {
+        "category": "general",
+        "q": "Que se passe-t-il lors d'un contrôle de police ?",
+        "a": "Comme votre permis est officiellement enregistré et inscrit dans les bases de données gouvernementales, tout contrôle de police sera couronné de succès. Le document est authentique et acquis légalement."
+      },
+      {
         "category": "process",
         "q": "Combien de temps dure le processus ?",
         "a": "Le délai de traitement standard se situe entre 14 et 21 jours ouvrables, selon les autorités. Nous proposons également un service express qui peut réduire ce délai à 5 à 7 jours ouvrables."
@@ -1420,7 +1517,17 @@
       {
         "category": "process",
         "q": "Dois-je passer un examen ?",
-        "a": "Selon les directives spécifiques du pays de l'UE dans lequel nous postulons, la présence physique aux examens peut souvent être remplacée par nos partenariats enregistrés et les possibilités légales concernant l'échange de permis. Cependant, cela dépend fortement de votre cas individuel. Nous gérons toute la bureaucratie."
+        "a": "Dans la plupart des cas, nous pouvons structurer le processus de manière à ce qu'aucun nouvel examen théorique ou pratique ne soit requis, en particulier s'il s'agit d'un échange ou d'une extension. Nous utilisons les cadres légaux des directives de l'UE."
+      },
+      {
+        "category": "process",
+        "q": "Quels documents dois-je soumettre ?",
+        "a": "Normalement, nous avons besoin d'une copie de votre pièce d'identité actuelle (carte d'identité ou passeport), d'une photo d'identité biométrique et d'une signature numérique. Dans des cas particuliers, un justificatif de domicile peut être requis."
+      },
+      {
+        "category": "process",
+        "q": "Puis-je échanger mon permis étranger ?",
+        "a": "Oui, nous sommes spécialisés dans l'échange de permis de conduire non européens contre un permis allemand ou européen complet, sans les tracas bureaucratiques habituels."
       },
       {
         "category": "security",
@@ -1429,8 +1536,33 @@
       },
       {
         "category": "security",
+        "q": "Que faire si j'ai des points sur mon permis ?",
+        "a": "Nous pouvons également vous conseiller dans les cas où votre compte de points est élevé ou si une suspension de permis est imminente. Il existe souvent des moyens légaux de restaurer la mobilité via un permis de conduire européen."
+      },
+      {
+        "category": "security",
+        "q": "Votre service aide-t-il en cas d'ordonnance MPU ?",
+        "a": "Oui, nous avons des stratégies pour les clients qui ont reçu l'ordre de passer un examen médico-psychologique (MPU). Nous vous aidons à reprendre le volant légalement sans avoir à passer le MPU en Allemagne."
+      },
+      {
+        "category": "security",
         "q": "Quelles méthodes de paiement acceptez-vous ?",
         "a": "Nous acceptons les paiements sécurisés par virement bancaire, carte de crédit et crypto-monnaies sélectionnées pour une confidentialité maximale. Les paiements sont généralement divisés : des frais initiaux et un paiement final après une inscription réussie."
+      },
+      {
+        "category": "general",
+        "q": "Quel est l'avantage d'un permis européen ?",
+        "a": "Un permis européen doit être reconnu dans chaque État membre sans échange. Il offre une flexibilité maximale et une protection contre les mesures de retrait arbitraires dans certains pays."
+      },
+      {
+        "category": "process",
+        "q": "Comment le permis est-il livré ?",
+        "a": "La livraison est effectuée de manière discrète et sécurisée par courrier recommandé ou service de messagerie directement à l'adresse que vous avez indiquée. Vous recevrez un numéro de suivi."
+      },
+      {
+        "category": "general",
+        "q": "Puis-je également obtenir des permis poids lourds ou bus ?",
+        "a": "Oui, nous prenons en charge toutes les catégories, de A (moto) à B (voiture) en passant par C (poids lourd) et D (bus), y compris les modules nécessaires comme le Code 95 pour les conducteurs professionnels."
       }
     ]
   },

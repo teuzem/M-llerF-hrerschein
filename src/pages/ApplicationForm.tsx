@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Select from 'react-select';
-import { supabase, LicenseType, Profile } from '../lib/supabase';
+import { supabase, LicenseType } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import toast from 'react-hot-toast';
 import { User, Hash, MapPin, Home, Building } from 'lucide-react';
@@ -17,6 +17,8 @@ import ApplicationFormSteps from '../components/application/ApplicationFormSteps
 import AdvancedDropzone from '../components/application/AdvancedDropzone';
 import PDFSummary from '../components/application/PDFSummary';
 import { regions, THEORY_TEST_FEE } from '../lib/constants';
+import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 type FormValues = {
   neph: string;
@@ -30,7 +32,7 @@ type FormValues = {
 };
 
 export default function ApplicationForm() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const { user, profile } = useAuth();
@@ -180,8 +182,17 @@ export default function ApplicationForm() {
     return <div className="flex items-center justify-center h-screen"><LoadingSpinner size="lg" /></div>;
   }
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.applicationNew || pageSEO.de.applicationNew;
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <SEOHead 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        locale={currentLang}
+      />
       <div className="max-w-5xl mx-auto">
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
           <h1 className="text-3xl font-bold text-gray-900 text-center">{t('application.form.title')} pour Permis {licenseType?.category}</h1>
@@ -196,7 +207,18 @@ export default function ApplicationForm() {
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
                 <h2 className="text-xl font-semibold text-gray-800">{t('application.form.step1')}</h2>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Input label={t('auth.full_name')} registration={{ name: 'fullName' }} value={profile?.full_name || ''} disabled icon={<User className="w-5 h-5 text-gray-400" />} />
+                  <Input 
+                    label={t('auth.full_name')} 
+                    registration={{ 
+                      name: 'fullName',
+                      onChange: () => {},
+                      onBlur: () => {},
+                      ref: null
+                    }} 
+                    value={profile?.full_name || ''} 
+                    disabled 
+                    icon={<User className="w-5 h-5 text-gray-400" />} 
+                  />
                   <Controller name="neph" control={control} render={({ field }) => <Input label={t('application.form.neph')} registration={field} error={errors.neph?.message} icon={<Hash className="w-5 h-5 text-gray-400" />} />} />
                 </div>
                 <Controller name="address" control={control} rules={{ required: 'Adresse requise' }} render={({ field }) => <Input label={t('application.form.address')} registration={field} error={errors.address?.message} icon={<Home className="w-5 h-5 text-gray-400" />} />} />
@@ -233,7 +255,7 @@ export default function ApplicationForm() {
                 <h2 className="text-xl font-semibold text-gray-800">{t('application.form.step3')}</h2>
                 <div className="p-6 bg-gray-50 rounded-lg border overflow-hidden">
                   <div ref={pdfSummaryRef}>
-                    <PDFSummary application={{ ...watch(), license_type: licenseType, total_amount: (licenseType?.price_gross_euros || 0) + (includeTheoryTest ? THEORY_TEST_FEE : 0), theory_test_needed: includeTheoryTest, form_data: { neph: watch('neph') } }} profile={profile} />
+                    <PDFSummary application={{ ...watch(), license_type: licenseType, total_amount: (licenseType?.price_gross_euros || 0) + (includeTheoryTest ? THEORY_TEST_FEE : 0), theory_test_needed: includeTheoryTest, form_data: { neph: watch('neph') } } as any} profile={profile as any} />
                   </div>
                 </div>
                 <div className="flex justify-between">

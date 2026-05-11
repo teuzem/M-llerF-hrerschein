@@ -1,11 +1,10 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import SEOHead from '../components/seo/SEOHead';
 import UberEatsServices from '../components/ubereats/UberEatsServices';
+import { pageSEO } from '../lib/seoData';
 
 const UberEatsActivation = () => {
-  const { t } = useTranslation('ubereats');
+  const { t, i18n } = useTranslation('ubereats');
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -27,14 +26,18 @@ const UberEatsActivation = () => {
     }
   };
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.uberEatsActivation || pageSEO.de.uberEatsActivation;
+
   return (
     <>
       <SEOHead 
-        title="Uber Eats Konto Aktivierung | Professioneller Service in Deutschland"
-        description="Aktivieren Sie Ihr professionelles Uber Eats Konto in Deutschland. Schneller, sicherer und legaler Service mit vollständiger Begleitung. Preis: 100€ - Frist: 48-72h."
-        keywords="uber eats konto aktivieren, uber eats aktivierung, uber eats aktivierung deutschland, uber eats konto aktivierung"
-        canonicalUrl="https://mullerfuhrerschein.de/ubereats/activation"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl="https://mulerfuhrerschein.de/ubereats/activation"
         structuredData={structuredData}
+        locale={currentLang}
       />
 
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">

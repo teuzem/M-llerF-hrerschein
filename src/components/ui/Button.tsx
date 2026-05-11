@@ -9,7 +9,7 @@ type AsProp<C extends React.ElementType> = {
 };
 
 // Combine the 'as' prop with the props of the component it will render
-type PolymorphicComponentProps<C extends React.ElementType, Props = {}> = 
+type PolymorphicComponentProps<C extends React.ElementType, Props = {}> =
   AsProp<C> & Props & Omit<React.ComponentPropsWithoutRef<C>, keyof (AsProp<C> & Props)>;
 
 // Define the specific props for our Button component

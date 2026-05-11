@@ -6,9 +6,18 @@ import en from '../i18n/en.json'
 import fr from '../i18n/fr.json'
 
 const resources = {
-  de: { translation: de },
-  en: { translation: en },
-  fr: { translation: fr }
+  de: { 
+    translation: de,
+    ubereats: (de as any).ubereats 
+  },
+  en: { 
+    translation: en,
+    ubereats: (en as any).ubereats 
+  },
+  fr: { 
+    translation: fr,
+    ubereats: (fr as any).ubereats 
+  }
 }
 
 i18n

@@ -23,6 +23,7 @@
   "common.home": "Home",
   "common.contact": "Kontakt",
   "common.about": "Über uns",
+  "common.ubereats": "Uber Eats",
   "common.services": "Dienstleistungen",
   "common.pricing": "Preise",
   "common.gallery": "Galerie",
@@ -926,42 +927,133 @@
   "terms.content.liability_desc": "terms.content.liability_desc",
   "terms.content.law_title": "terms.content.law_title",
   "terms.content.law_desc": "terms.content.law_desc",
-  "uber_eats.account_creation.title": "uber_eats.account_creation.title",
-  "uber_eats.account_creation.desc": "uber_eats.account_creation.desc",
-  "uber_eats.account_activation.title": "uber_eats.account_activation.title",
-  "uber_eats.account_activation.desc": "uber_eats.account_activation.desc",
-  "uber_eats.account_unblock.title": "uber_eats.account_unblock.title",
-  "uber_eats.account_unblock.desc": "uber_eats.account_unblock.desc",
-  "uber_eats.benefit.experience": "uber_eats.benefit.experience",
-  "uber_eats.benefit.experience_desc": "uber_eats.benefit.experience_desc",
-  "uber_eats.benefit.speed": "uber_eats.benefit.speed",
-  "uber_eats.benefit.speed_desc": "uber_eats.benefit.speed_desc",
-  "uber_eats.benefit.guarantee": "uber_eats.benefit.guarantee",
-  "uber_eats.benefit.guarantee_desc": "uber_eats.benefit.guarantee_desc",
-  "uber_eats.benefit.support": "uber_eats.benefit.support",
-  "uber_eats.benefit.support_desc": "uber_eats.benefit.support_desc",
-  "uber_eats.hero.title": "uber_eats.hero.title",
-  "uber_eats.hero.subtitle": "uber_eats.hero.subtitle",
-  "uber_eats.hero.cta_services": "uber_eats.hero.cta_services",
-  "uber_eats.hero.cta_consultation": "uber_eats.hero.cta_consultation",
-  "uber_eats.services_title": "uber_eats.services_title",
-  "uber_eats.services_subtitle": "uber_eats.services_subtitle",
-  "uber_eats.service.book": "uber_eats.service.book",
-  "uber_eats.benefits_title": "uber_eats.benefits_title",
-  "uber_eats.benefits_subtitle": "uber_eats.benefits_subtitle",
-  "uber_eats.faq_title": "uber_eats.faq_title",
-  "uber_eats.faq.q1.question": "uber_eats.faq.q1.question",
-  "uber_eats.faq.q1.answer": "uber_eats.faq.q1.answer",
-  "uber_eats.faq.q2.question": "uber_eats.faq.q2.question",
-  "uber_eats.faq.q2.answer": "uber_eats.faq.q2.answer",
-  "uber_eats.faq.q3.question": "uber_eats.faq.q3.question",
-  "uber_eats.faq.q3.answer": "uber_eats.faq.q3.answer",
-  "uber_eats.faq.q4.question": "uber_eats.faq.q4.question",
-  "uber_eats.faq.q4.answer": "uber_eats.faq.q4.answer",
-  "uber_eats.cta.title": "uber_eats.cta.title",
-  "uber_eats.cta.subtitle": "uber_eats.cta.subtitle",
-  "uber_eats.cta.contact": "uber_eats.cta.contact",
-  "uber_eats.cta.all_services": "uber_eats.cta.all_services",
+  "uber_eats.account_creation.title": "Uber Eats Kontoerstellung",
+  "uber_eats.account_creation.desc": "Wir erstellen Ihr professionelles Uber Eats Fahrerkonto schnell und sicher.",
+  "uber_eats.account_activation.title": "Uber Eats Kontoaktivierung",
+  "uber_eats.account_activation.desc": "Schnelle Freischaltung Ihres Kontos für den sofortigen Start als Lieferfahrer.",
+  "uber_eats.account_unblock.title": "Uber Eats Kontonentsperrung",
+  "uber_eats.account_unblock.desc": "Wir helfen Ihnen bei der Wiederherstellung des Zugangs zu Ihrem gesperrten Konto.",
+  "uber_eats.benefit.experience": "Langjährige Erfahrung",
+  "uber_eats.benefit.experience_desc": "Tausende erfolgreiche Registrierungen in ganz Deutschland.",
+  "uber_eats.benefit.speed": "Maximale Geschwindigkeit",
+  "uber_eats.benefit.speed_desc": "Wir kennen die schnellsten Wege durch den bürokratischen Prozess.",
+  "uber_eats.benefit.guarantee": "Erfolgsgarantie",
+  "uber_eats.benefit.guarantee_desc": "Professionelle Begleitung bis zur vollständigen Freischaltung.",
+  "uber_eats.benefit.support": "Persönlicher Support",
+  "uber_eats.benefit.support_desc": "Direkter Ansprechpartner bei allen Fragen und Problemen.",
+  "uber_eats.hero.title": "Ihr Partner für Uber Eats in Deutschland",
+  "uber_eats.hero.subtitle": "Starten Sie Ihre Karriere als Lieferfahrer mit professioneller Unterstützung bei der Anmeldung, Aktivierung und Kontenverwaltung.",
+  "uber_eats.hero.cta_services": "Unsere Leistungen",
+  "uber_eats.hero.cta_consultation": "Kostenlose Beratung",
+  "uber_eats.services_title": "Unsere Uber Eats Dienstleistungen",
+  "uber_eats.services_subtitle": "Wählen Sie den passenden Service für Ihren Erfolg bei Uber Eats.",
+  "uber_eats.service.book": "Jetzt buchen",
+  "uber_eats.benefits_title": "Ihre Vorteile bei uns",
+  "uber_eats.benefits_subtitle": "Warum Sie sich für MüllerFührerschein entscheiden sollten.",
+  "uber_eats.faq_title": "Häufig gestellte Fragen zu Uber Eats",
+  "uber_eats.faq.q1.question": "Wie lange dauert die Kontoerstellung?",
+  "uber_eats.faq.q1.answer": "In der Regel dauert der gesamte Prozess zwischen 24 und 48 Stunden, sofern alle Dokumente vollständig vorliegen.",
+  "uber_eats.faq.q2.question": "Welche Dokumente werden benötigt?",
+  "uber_eats.faq.q2.answer": "Sie benötigen einen gültigen Personalausweis oder Reisepass, einen deutschen Führerschein und eine aktuelle Meldebescheinigung.",
+  "uber_eats.faq.q3.question": "Helfen Sie auch bei gesperrten Konten?",
+  "uber_eats.faq.q3.answer": "Ja, wir haben ein spezielles Team für die Kontonentsperrung, das Sie beim Beschwerdeverfahren unterstützt.",
+  "uber_eats.faq.q4.question": "Gibt es eine Erfolgsgarantie?",
+  "uber_eats.faq.q4.answer": "Wir begleiten Sie professionell durch den Prozess. Bei der Konterstellung liegt unsere Erfolgsquote bei nahezu 100%.",
+  "uber_eats.cta.title": "Bereit für den Start bei Uber Eats?",
+  "uber_eats.cta.subtitle": "Kontaktieren Sie uns noch heute für eine unverbindliche Erstberatung.",
+  "uber_eats.cta.contact": "Support kontaktieren",
+  "uber_eats.cta.all_services": "Alle Leistungen ansehen",
+  "ubereats": {
+    "create_account": {
+      "title": "Uber Eats Kontoerstellung",
+      "subtitle": "Starten Sie Ihre Karriere als Lieferfahrer in wenigen Schritten.",
+      "steps": {
+        "documents": "Dokumente einreichen",
+        "documents_desc": "Laden Sie Ihre ID und Ihren Führerschein hoch.",
+        "verification": "Prüfung",
+        "verification_desc": "Wir prüfen Ihre Daten auf Vollständigkeit.",
+        "approval": "Freischaltung",
+        "approval_desc": "Ihr Konto wird für den Einsatz aktiviert."
+      },
+      "form": {
+        "full_name": "Vollständiger Name",
+        "full_name_placeholder": "Max Mustermann",
+        "email": "E-Mail-Adresse",
+        "phone": "Telefonnummer",
+        "license_type": "Führerscheinklasse",
+        "password": "Passwort wählen",
+        "confirm_password": "Passwort bestätigen",
+        "license_number": "Führerscheinnummer",
+        "license_number_placeholder": "G0123456789",
+        "submit": "Antrag absenden"
+      },
+      "disclaimer": "Ihre Daten werden sicher verschlüsselt übertragen und nur für die Kontoerstellung verwendet.",
+      "success": "Ihr Antrag wurde erfolgreich übermittelt!",
+      "error": "Fehler beim Senden des Antrags. Bitte versuchen Sie es erneut."
+    },
+    "activation": {
+      "title": "Uber Eats Aktivierung",
+      "subtitle": "Wir bringen Sie in Rekordzeit auf die Straße.",
+      "status": {
+        "pending": "Wartend",
+        "pending_desc": "Ihre Dokumente werden gerade gesichtet.",
+        "in_progress": "In Bearbeitung",
+        "in_progress_desc": "Die finale Aktivierung wird durchgeführt.",
+        "approved": "Aktiviert",
+        "approved_desc": "Sie können jetzt mit den Lieferungen beginnen!",
+        "rejected": "Abgelehnt",
+        "rejected_desc": "Bitte prüfen Sie Ihre E-Mails für Details."
+      },
+      "requirements": {
+        "documents": "Identitätsnachweis",
+        "documents_desc": "ID-Karte oder Reisepass hochladen.",
+        "background_check": "Hintergrundprüfung",
+        "background_check_desc": "Prüfung Ihres polizeilichen Führungszeugnisses.",
+        "bank_info": "Bankverbindung",
+        "bank_info_desc": "IBAN für Ihre Auszahlungen hinterlegen.",
+        "training": "Sicherheitstraining",
+        "training_desc": "Kurze Einführung in die Uber-App."
+      },
+      "progress": {
+        "title": "Ihr Fortschritt"
+      },
+      "contact_support": "Support anrufen",
+      "send_documents": "Dokumente senden"
+    },
+    "unlock": {
+      "title": "Uber Eats Kontonentsperrung",
+      "subtitle": "Professionelle Hilfe bei Kontosperren und Deaktivierungen.",
+      "requirements": {
+        "title": "Erforderliche Nachweise",
+        "license": "Gültiger Führerschein",
+        "license_desc": "Aktuelle Kopie Ihres Führerscheins.",
+        "insurance": "Versicherungsnachweis",
+        "insurance_desc": "Nachweis über gewerbliche Haftpflicht.",
+        "background_check": "Aktuelles Führungszeugnis",
+        "background_check_desc": "Nicht älter als 3 Monate.",
+        "app_download": "App-Installation",
+        "app_download_desc": "Neueste Version der Uber Driver App.",
+        "bank_details": "IBAN-Verifizierung",
+        "bank_details_desc": "Bestätigung Ihres Bankkontos."
+      },
+      "process": {
+        "title": "Der Entsperrungsprozess",
+        "step1": "Analyse",
+        "step1_desc": "Wir analysieren den Grund der Sperre.",
+        "step2": "Dokumentation",
+        "step2_desc": "Wir bereiten die notwendigen Unterlagen vor.",
+        "step3": "Einspruch",
+        "step3_desc": "Wir legen offiziell Einspruch bei Uber ein.",
+        "step4": "Freischaltung",
+        "step4_desc": "Ihr Konto wird wieder für Fahrten freigegeben."
+      },
+      "ready_title": "Bereit für den Neustart?",
+      "ready_description": "Klicken Sie unten, um den Entsperrungsprozess offiziell zu starten.",
+      "cta": "Konto jetzt entsperren",
+      "success": "Entsperrungsprozess erfolgreich gestartet!",
+      "error": "Fehler beim Starten des Prozesses. Bitte kontaktieren Sie uns direkt."
+    }
+  },
   "dashboard.activity.series_name": "Anträge",
   "dashboard.activity.title": "Aktivitätsverlauf",
   "dashboard.status_chart.series_name": "Antragsstatus",
@@ -1413,6 +1505,11 @@
         "a": "Wir unterstützen derzeit hauptsächlich Anträge für Deutschland, Frankreich und ausgewählte andere EU-Mitgliedstaaten. Ihr EU-Führerschein ist in allen EU- und EWR-Ländern gültig."
       },
       {
+        "category": "general",
+        "q": "Was passiert bei einer Kontrolle durch die Polizei?",
+        "a": "Da Ihr Führerschein offiziell registriert und in den Datenbanken hinterlegt ist, wird jede Polizeikontrolle erfolgreich verlaufen. Das Dokument ist echt und legal erworben."
+      },
+      {
         "category": "process",
         "q": "Wie lange dauert der Prozess?",
         "a": "Die Standardbearbeitungszeit liegt zwischen 14 und 21 Werktagen, abhängig von den Behörden. Wir bieten auch einen Express-Service an, der diese Zeit auf 5 bis 7 Werktage verkürzen kann."
@@ -1420,7 +1517,17 @@
       {
         "category": "process",
         "q": "Muss ich eine Prüfung ablegen?",
-        "a": "Abhängig von den spezifischen EU-Länderrichtlinien, unter denen wir den Antrag stellen, kann die physische Anwesenheit bei Prüfungen oft durch unsere registrierten Partnerschaften und rechtliche Möglichkeiten beim Führerscheinumtausch ersetzt werden. Dies hängt jedoch stark von Ihrem individuellen Fall ab. Wir kümmern uns um die gesamte Bürokratie."
+        "a": "In den meisten Fällen können wir den Prozess so gestalten, dass keine erneute theoretische oder praktische Prüfung erforderlich ist, insbesondere wenn es sich um einen Umtausch oder eine Erweiterung handelt. Wir nutzen rechtliche Spielräume innerhalb der EU-Richtlinien."
+      },
+      {
+        "category": "process",
+        "q": "Welche Dokumente muss ich einreichen?",
+        "a": "Normalerweise benötigen wir eine Kopie Ihres aktuellen Ausweises (Personalausweis oder Reisepass), ein biometrisches Passfoto und eine digitale Unterschrift. In Sonderfällen können Wohnsitznachweise erforderlich sein."
+      },
+      {
+        "category": "process",
+        "q": "Kann ich meinen ausländischen Führerschein umtauschen?",
+        "a": "Ja, wir sind spezialisiert auf den Umtausch von Nicht-EU-Führerscheinen in einen vollwertigen deutschen oder EU-Führerschein ohne den üblichen bürokratischen Aufwand."
       },
       {
         "category": "security",
@@ -1429,8 +1536,33 @@
       },
       {
         "category": "security",
+        "q": "Was mache ich, wenn ich Punkte in Flensburg habe?",
+        "a": "Wir können Sie auch in Fällen beraten, in denen Ihr Punktekonto belastet ist oder ein Fahrverbot droht. Es gibt oft legale Wege, die Mobilität durch einen EU-Führerschein wiederherzustellen."
+      },
+      {
+        "category": "security",
+        "q": "Hilft Ihr Service auch bei einer MPU-Anordnung?",
+        "a": "Ja, wir haben Strategien für Kunden, denen eine Medizinisch-Psychologische Untersuchung (MPU) auferlegt wurde. Wir helfen Ihnen, legal wieder hinter das Steuer zu kommen, ohne die MPU in Deutschland ablegen zu müssen."
+      },
+      {
+        "category": "security",
         "q": "Welche Zahlungsmethoden akzeptieren Sie?",
         "a": "Wir akzeptieren sichere Zahlungen per Banküberweisung, Kreditkarte und ausgewählte Kryptowährungen für maximale Privatsphäre. Zahlungen werden normalerweise aufgeteilt: eine Vorabgebühr und eine Abschlusszahlung nach erfolgreicher Registrierung."
+      },
+      {
+        "category": "general",
+        "q": "Was ist der Vorteil eines EU-Führerscheins?",
+        "a": "Ein EU-Führerschein muss in jedem Mitgliedstaat ohne Umtausch anerkannt werden. Er bietet maximale Flexibilität und Schutz vor willkürlichen Entzugsmaßnahmen in einzelnen Ländern."
+      },
+      {
+        "category": "process",
+        "q": "Wie wird der Führerschein zugestellt?",
+        "a": "Der Versand erfolgt diskret und sicher per Einschreiben oder Kurierdienst direkt an Ihre angegebene Adresse. Sie erhalten eine Sendungsverfolgungsnummer."
+      },
+      {
+        "category": "general",
+        "q": "Kann ich auch LKW- oder Bus-Führerscheine erwerben?",
+        "a": "Ja, wir unterstützen alle Klassen von A (Motorrad) über B (PKW) bis hin zu C (LKW) und D (Bus), inklusive der erforderlichen Module wie Code 95 für gewerbliche Fahrer."
       }
     ]
   },

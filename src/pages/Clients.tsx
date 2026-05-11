@@ -8,6 +8,7 @@ import Avatar from '../components/ui/Avatar';
 import { Search, Users, ShieldCheck, MapPin } from 'lucide-react';
 import toast from 'react-hot-toast';
 import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 const ClientCard: React.FC<{ profile: Profile }> = ({ profile }) => {
   const { t } = useTranslation();
@@ -55,7 +56,7 @@ const ClientCard: React.FC<{ profile: Profile }> = ({ profile }) => {
 };
 
 const Clients: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
@@ -88,11 +89,16 @@ const Clients: React.FC = () => {
     );
   }, [profiles, searchTerm]);
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.clients || pageSEO.de.clients;
+
   return (
     <>
       <SEOHead
-        title={`${t('clients.title', 'Our Trusted Clients')} | MüllerFührerschein`}
-        description={t('clients.subtitle', 'Discover the amazing people who have successfully obtained their driving license with us.')}
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        locale={currentLang}
       />
       <div className="min-h-screen bg-gray-50">
         <section className="bg-white border-b border-gray-100 py-16 sm:py-24 relative overflow-hidden">

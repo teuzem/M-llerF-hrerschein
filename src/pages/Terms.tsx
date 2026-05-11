@@ -2,18 +2,24 @@
 import { useTranslation } from 'react-i18next';
 import LegalPageLayout from '../components/layout/LegalPageLayout';
 import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 export default function Terms() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Get the sections array, default to empty array if not found
   const sections = t('terms.sections', { returnObjects: true }) as { title: string, content: string[] }[];
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.terms || pageSEO.de.terms;
+
   return (
     <>
       <SEOHead 
-        title={`${t('terms.title')} | MüllerFührerschein`} 
-        description={t('terms.title')} 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        locale={currentLang}
       />
       <LegalPageLayout 
         title={t('terms.title', 'AGB')} 

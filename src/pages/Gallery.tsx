@@ -11,9 +11,11 @@ import MediaUploader from '../components/gallery/MediaUploader';
 import ImageGrid from '../components/gallery/ImageGrid';
 import VideoFeed from '../components/gallery/VideoFeed';
 import { useTranslation } from 'react-i18next';
+import SEOHead from '../components/seo/SEOHead';
+import { pageSEO } from '../lib/seoData';
 
 const Gallery: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { user } = useAuth();
   const [media, setMedia] = useState<GalleryMedia[]>([]);
   const [loading, setLoading] = useState(true);
@@ -46,8 +48,17 @@ const Gallery: React.FC = () => {
   const images = media.filter(m => m.media_type === 'image');
   const videos = media.filter(m => m.media_type === 'video');
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.gallery || pageSEO.de.gallery;
+
   return (
     <div className="min-h-screen bg-gray-100">
+      <SEOHead 
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        locale={currentLang}
+      />
       <Modal isOpen={isUploaderOpen} onClose={() => setIsUploaderOpen(false)} title={t('gallery.add_media')}>
         <MediaUploader onUploadSuccess={() => {
           setIsUploaderOpen(false);

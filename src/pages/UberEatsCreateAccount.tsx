@@ -1,11 +1,10 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import SEOHead from '../components/seo/SEOHead';
 import UberEatsServices from '../components/ubereats/UberEatsServices';
+import { pageSEO } from '../lib/seoData';
 
 const UberEatsCreateAccount = () => {
-  const { t } = useTranslation('ubereats');
+  const { t, i18n } = useTranslation('ubereats');
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -27,14 +26,18 @@ const UberEatsCreateAccount = () => {
     }
   };
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+  const seoData = (pageSEO as any)[currentLang]?.uberEatsCreateAccount || pageSEO.de.uberEatsCreateAccount;
+
   return (
     <>
       <SEOHead 
-        title="Uber Eats Konto Erstellung | Professioneller Service in Deutschland"
-        description="Erstellen Sie Ihr professionelles Uber Eats Konto in Deutschland. Schneller, sicherer und legaler Service mit vollständiger Begleitung. Preis: 150€ - Frist: 24h."
-        keywords="uber eats konto erstellen, uber eats konto deutschland, uber eats registrierung lieferant, uber eats konto erstellen"
-        canonicalUrl="https://mullerfuhrerschein.de/ubereats/create-account"
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalUrl="https://mulerfuhrerschein.de/ubereats/create-account"
         structuredData={structuredData}
+        locale={currentLang}
       />
 
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">

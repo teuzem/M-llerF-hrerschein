@@ -5,9 +5,10 @@ import { motion } from 'framer-motion';
 import { supabase, LicenseApplication } from '../lib/supabase';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
 import { CheckCircle, Clock, FileText, Loader, AlertCircle } from 'lucide-react';
+import SEOHead from '../components/seo/SEOHead';
 
 const ApplicationStatus: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
@@ -67,8 +68,16 @@ const ApplicationStatus: React.FC = () => {
     return <div className="flex items-center justify-center h-screen"><LoadingSpinner size="lg" /></div>;
   }
 
+  const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <SEOHead 
+        title={`${t('status.title')} | MüllerFührerschein`}
+        description={t('status.subtitle')}
+        noindex={true}
+        locale={currentLang}
+      />
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

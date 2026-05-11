@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { 
-  CheckCircle, 
-  Clock, 
-  Shield, 
-  Users, 
-  CreditCard, 
-  FileText, 
+import {
+  CheckCircle,
+  Clock,
+  Shield,
+  Users,
+  CreditCard,
+  FileText,
   AlertCircle,
   ArrowRight,
   Phone,
@@ -45,7 +45,7 @@ const CreateAccountService: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     try {
       // Simulation d'appel API
       await new Promise(resolve => setTimeout(resolve, 2000));
@@ -126,12 +126,12 @@ const CreateAccountService: React.FC = () => {
                 type="text"
                 required
                 value={formData.fullName}
-                onChange={(e) => setFormData({...formData, fullName: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 placeholder={t('create_account.form.full_name_placeholder')}
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 {t('create_account.form.email')} *
@@ -140,7 +140,7 @@ const CreateAccountService: React.FC = () => {
                 type="email"
                 required
                 value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 placeholder="exemple@email.com"
               />
@@ -154,7 +154,7 @@ const CreateAccountService: React.FC = () => {
                 type="tel"
                 required
                 value={formData.phone}
-                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 placeholder="+49 xxx xxx xxx"
               />
@@ -167,7 +167,7 @@ const CreateAccountService: React.FC = () => {
               <select
                 required
                 value={formData.licenseType}
-                onChange={(e) => setFormData({...formData, licenseType: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, licenseType: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               >
                 <option value="">{t('common.select_prompt')}</option>
@@ -187,7 +187,7 @@ const CreateAccountService: React.FC = () => {
                 type="password"
                 required
                 value={formData.password}
-                onChange={(e) => setFormData({...formData, password: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               />
             </div>
@@ -200,7 +200,7 @@ const CreateAccountService: React.FC = () => {
                 type="password"
                 required
                 value={formData.confirmPassword}
-                onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               />
             </div>
@@ -213,7 +213,7 @@ const CreateAccountService: React.FC = () => {
             <input
               type="text"
               value={formData.licenseNumber}
-              onChange={(e) => setFormData({...formData, licenseNumber: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, licenseNumber: e.target.value })}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               placeholder={t('create_account.form.license_number_placeholder')}
             />
@@ -229,8 +229,8 @@ const CreateAccountService: React.FC = () => {
             </div>
           </div>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             disabled={isLoading}
             className="w-full bg-green-600 hover:bg-green-700 py-4 text-lg"
           >
@@ -353,13 +353,11 @@ const ActivationService: React.FC = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className={`flex items-center p-4 rounded-lg border-2 ${
-                  req.completed ? 'border-green-200 bg-green-50' : 'border-gray-200 bg-gray-50'
-                }`}
+                className={`flex items-center p-4 rounded-lg border-2 ${req.completed ? 'border-green-200 bg-green-50' : 'border-gray-200 bg-gray-50'
+                  }`}
               >
-                <div className={`flex items-center justify-center w-10 h-10 rounded-full mr-4 ${
-                  req.completed ? 'bg-green-100' : 'bg-gray-100'
-                }`}>
+                <div className={`flex items-center justify-center w-10 h-10 rounded-full mr-4 ${req.completed ? 'bg-green-100' : 'bg-gray-100'
+                  }`}>
                   {req.completed ? (
                     <CheckCircle className="h-5 w-5 text-green-600" />
                   ) : (
@@ -370,9 +368,8 @@ const ActivationService: React.FC = () => {
                   <h4 className="font-semibold text-gray-900">{req.title}</h4>
                   <p className="text-sm text-gray-600">{req.description}</p>
                 </div>
-                <div className={`text-sm font-medium ${
-                  req.completed ? 'text-green-600' : 'text-gray-400'
-                }`}>
+                <div className={`text-sm font-medium ${req.completed ? 'text-green-600' : 'text-gray-400'
+                  }`}>
                   {req.completed ? t('common.completed') : t('common.in_progress')}
                 </div>
               </motion.div>
@@ -502,25 +499,22 @@ const UnlockService: React.FC = () => {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-center p-4 rounded-lg border border-gray-200"
               >
-                <div className={`flex items-center justify-center w-10 h-10 rounded-full mr-4 ${
-                  req.status === 'completed' ? 'bg-green-100' : 
+                <div className={`flex items-center justify-center w-10 h-10 rounded-full mr-4 ${req.status === 'completed' ? 'bg-green-100' :
                   req.status === 'in_progress' ? 'bg-blue-100' : 'bg-gray-100'
-                }`}>
-                  <req.icon className={`h-5 w-5 ${
-                    req.status === 'completed' ? 'text-green-600' : 
+                  }`}>
+                  <req.icon className={`h-5 w-5 ${req.status === 'completed' ? 'text-green-600' :
                     req.status === 'in_progress' ? 'text-blue-600' : 'text-gray-400'
-                  }`} />
+                    }`} />
                 </div>
                 <div className="flex-1">
                   <h4 className="font-semibold text-gray-900">{req.title}</h4>
                   <p className="text-sm text-gray-600">{req.description}</p>
                 </div>
-                <div className={`text-sm font-medium ${
-                  req.status === 'completed' ? 'text-green-600' : 
+                <div className={`text-sm font-medium ${req.status === 'completed' ? 'text-green-600' :
                   req.status === 'in_progress' ? 'text-blue-600' : 'text-gray-400'
-                }`}>
-                  {req.status === 'completed' ? t('common.completed') : 
-                   req.status === 'in_progress' ? t('common.in_progress') : t('common.pending')}
+                  }`}>
+                  {req.status === 'completed' ? t('common.completed') :
+                    req.status === 'in_progress' ? t('common.in_progress') : t('common.pending')}
                 </div>
               </motion.div>
             ))}
@@ -566,8 +560,8 @@ const UnlockService: React.FC = () => {
               {t('unlock.ready_description')}
             </p>
           </div>
-          
-          <Button 
+
+          <Button
             onClick={handleUnlock}
             disabled={isUnlocking}
             className="bg-green-600 hover:bg-green-700 py-4 px-8 text-lg"
@@ -586,9 +580,9 @@ const UnlockService: React.FC = () => {
 };
 
 // Composant principal
-const UberEatsServices: React.FC<UberEatsServicesProps> = ({ 
+const UberEatsServices: React.FC<UberEatsServicesProps> = ({
   serviceType = 'creation',
-  className = '' 
+  className = ''
 }) => {
   const { t } = useTranslation();
 
@@ -607,7 +601,7 @@ const UberEatsServices: React.FC<UberEatsServicesProps> = ({
     <div className={`min-h-screen bg-gray-50 py-12 ${className}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation breadcrumbs */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
@@ -629,7 +623,7 @@ const UberEatsServices: React.FC<UberEatsServicesProps> = ({
         {renderService()}
 
         {/* Navigation footer */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
