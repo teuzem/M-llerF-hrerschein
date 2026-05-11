@@ -1,7 +1,7 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ShoppingCart, Heart, Clock, ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
+import { ShoppingCart, Heart, Clock, ArrowRight } from 'lucide-react';
 import { supabase, LicenseType } from '../../lib/supabase';
 import { useCart } from '../../contexts/CartContext';
 import toast from 'react-hot-toast';
@@ -88,11 +88,6 @@ export default function ServiceCarousel() {
   const { t, i18n } = useTranslation();
   const { addToCart, isInCart, toggleWishlist, isWishlisted, openOrderModal } = useCart();
   const [services, setServices] = useState<LicenseType[]>(fallbackLicenseTypes);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [slidesPerView, setSlidesPerView] = useState(3);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
 
@@ -115,38 +110,6 @@ export default function ServiceCarousel() {
     fetchServices();
   }, []);
 
-  // Responsive slides per view
-  useEffect(() => {
-    const updateSlidesPerView = () => {
-      const w = window.innerWidth;
-      if (w < 640) setSlidesPerView(1);
-      else if (w < 1024) setSlidesPerView(2);
-      else if (w < 1280) setSlidesPerView(3);
-      else setSlidesPerView(4);
-    };
-    updateSlidesPerView();
-    window.addEventListener('resize', updateSlidesPerView);
-    return () => window.removeEventListener('resize', updateSlidesPerView);
-  }, []);
-
-  const maxIndex = Math.max(0, services.length - slidesPerView);
-
-  // Auto-slide
-  useEffect(() => {
-    if (isPaused) {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-      return;
-    }
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
-    }, 4000);
-    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
-  }, [isPaused, maxIndex]);
-
-  const goTo = (index: number) => {
-    setCurrentIndex(Math.max(0, Math.min(index, maxIndex)));
-  };
-
   const handleAddToCart = (license: LicenseType) => {
     const name = (license as any)[`name_${currentLang}`] || license.name_de;
     const desc = (license as any)[`description_${currentLang}`] || license.description_de || '';
@@ -162,11 +125,8 @@ export default function ServiceCarousel() {
     toast.success(t('cart.added'));
   };
 
-  const slideWidth = 100 / slidesPerView;
-  const progressPercentage = maxIndex > 0 ? (currentIndex / maxIndex) * 100 : 0;
-
   return (
-    <section className="py-14 sm:py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="py-14 sm:py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Section header */}
         <motion.div
@@ -184,165 +144,102 @@ export default function ServiceCarousel() {
           </p>
         </motion.div>
 
-        {/* Controls */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => goTo(currentIndex - 1)}
-              disabled={currentIndex === 0}
-              className="p-2 rounded-xl bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-german-red/30 disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-sm"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => goTo(currentIndex + 1)}
-              disabled={currentIndex >= maxIndex}
-              className="p-2 rounded-xl bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-german-red/30 disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-sm"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
-          <button
-            onClick={() => setIsPaused(!isPaused)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-gray-200 text-xs font-medium text-gray-600 hover:border-german-red/30 transition-all shadow-sm"
-          >
-            {isPaused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
-            <span>{isPaused ? t('carousel.play') : t('carousel.pause')}</span>
-          </button>
-        </div>
+        {/* Services Grid — 4 cards per row on large screens */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+          {services.map((license, index) => {
+            const inCart = isInCart(license.id);
+            const wishlisted = isWishlisted(license.id);
+            const name = (license as any)[`name_${currentLang}`] || license.name_de;
+            const desc = (license as any)[`description_${currentLang}`] || license.description_de || '';
 
-        {/* Progress bar */}
-        <div className="w-full h-1 bg-gray-100 rounded-full mb-6 overflow-hidden">
-          <motion.div
-            className="h-full bg-gradient-to-r from-german-red to-german-gold rounded-full"
-            animate={{ width: `${progressPercentage}%` }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
-          />
-        </div>
+            return (
+              <motion.div
+                key={license.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.04 }}
+                whileHover={{ y: -6 }}
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col transition-shadow duration-300"
+              >
+                {/* Image */}
+                <div className="relative h-44 sm:h-48 overflow-hidden group">
+                  <img
+                    src={license.image_url || '/images/default-license.jpg'}
+                    alt={name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    onError={(e) => { (e.target as HTMLImageElement).src = '/images/default-license.jpg'; }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
-        {/* Carousel */}
-        <div
-          ref={containerRef}
-          className="overflow-hidden"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          <motion.div
-            className="flex"
-            animate={{ x: `-${currentIndex * slideWidth}%` }}
-            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          >
-            {services.map((license) => {
-              const inCart = isInCart(license.id);
-              const wishlisted = isWishlisted(license.id);
-              const name = (license as any)[`name_${currentLang}`] || license.name_de;
-              const desc = (license as any)[`description_${currentLang}`] || license.description_de || '';
+                  {/* Category badge */}
+                  <div className="absolute top-4 left-4">
+                    <div className={`px-3 py-1.5 bg-gradient-to-r ${getCategoryColor(license.category)} rounded-lg shadow-lg`}>
+                      <span className="text-white font-black text-sm">{license.category}</span>
+                    </div>
+                  </div>
 
-              return (
-                <div
-                  key={license.id}
-                  className="flex-shrink-0 px-2 sm:px-3"
-                  style={{ width: `${slideWidth}%` }}
-                >
-                  <motion.div
-                    whileHover={{ y: -6 }}
-                    className="bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 overflow-hidden flex flex-col h-full transition-shadow duration-300"
+                  {/* Wishlist button */}
+                  <button
+                    onClick={(e) => { e.stopPropagation(); toggleWishlist(license.id); }}
+                    className={`absolute top-4 right-4 p-2 rounded-full backdrop-blur-sm transition-all duration-300 ${
+                      wishlisted
+                        ? 'bg-red-500 text-white shadow-lg shadow-red-500/30 scale-110'
+                        : 'bg-white/20 text-white hover:bg-white/40'
+                    }`}
                   >
-                    {/* Image */}
-                    <div className="relative h-44 sm:h-48 overflow-hidden group">
-                      <img
-                        src={license.image_url || '/images/default-license.jpg'}
-                        alt={name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        onError={(e) => { (e.target as HTMLImageElement).src = '/images/default-license.jpg'; }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                    <Heart className={`w-4 h-4 ${wishlisted ? 'fill-current' : ''}`} />
+                  </button>
 
-                      {/* Category badge */}
-                      <div className="absolute top-4 left-4">
-                        <div className={`px-3 py-1.5 bg-gradient-to-r ${getCategoryColor(license.category)} rounded-lg shadow-lg`}>
-                          <span className="text-white font-black text-sm">{license.category}</span>
-                        </div>
-                      </div>
-
-                      {/* Wishlist button */}
-                      <button
-                        onClick={(e) => { e.stopPropagation(); toggleWishlist(license.id); }}
-                        className={`absolute top-4 right-4 p-2 rounded-full backdrop-blur-sm transition-all duration-300 ${
-                          wishlisted
-                            ? 'bg-red-500 text-white shadow-lg shadow-red-500/30 scale-110'
-                            : 'bg-white/20 text-white hover:bg-white/40'
-                        }`}
-                      >
-                        <Heart className={`w-4 h-4 ${wishlisted ? 'fill-current' : ''}`} />
-                      </button>
-
-                      {/* Name overlay */}
-                      <div className="absolute bottom-3 left-4 right-4">
-                        <h3 className="text-white font-bold text-base sm:text-lg drop-shadow-lg line-clamp-1">
-                          {name}
-                        </h3>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-4 sm:p-5 flex flex-col flex-grow">
-                      <p className="text-gray-500 text-xs sm:text-sm line-clamp-2 flex-grow mb-3 leading-relaxed">
-                        {desc}
-                      </p>
-
-                      {/* Price & Processing */}
-                      <div className="flex items-center justify-between mb-4 p-3 bg-gray-50 rounded-xl">
-                        <div className="flex items-center gap-1.5 text-german-red">
-                          <Clock className="w-3.5 h-3.5" />
-                          <span className="text-xs font-bold">{license.processing_days} {t('services.days')}</span>
-                        </div>
-                        <span className="text-gray-900 font-bold text-lg">
-                          {license.price_gross_euros.toLocaleString(currentLang === 'de' ? 'de-DE' : currentLang === 'fr' ? 'fr-FR' : 'en-US')}€
-                        </span>
-                      </div>
-
-                      {/* Action buttons */}
-                      <div className="flex gap-2">
-                        {inCart ? (
-                          <button
-                            onClick={() => openOrderModal()}
-                            className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-sm shadow-lg shadow-green-500/20"
-                          >
-                            <ArrowRight className="w-4 h-4" />
-                            <span>{t('cart.proceed_purchase')}</span>
-                          </button>
-                        ) : (
-                          <button
-                            onClick={() => handleAddToCart(license)}
-                            className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all text-sm shadow-lg shadow-german-red/20"
-                          >
-                            <ShoppingCart className="w-4 h-4" />
-                            <span>{t('cart.add')}</span>
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </motion.div>
+                  {/* Name overlay */}
+                  <div className="absolute bottom-3 left-4 right-4">
+                    <h3 className="text-white font-bold text-base sm:text-lg drop-shadow-lg line-clamp-1">
+                      {name}
+                    </h3>
+                  </div>
                 </div>
-              );
-            })}
-          </motion.div>
-        </div>
 
-        {/* Dot indicators */}
-        <div className="flex justify-center gap-1.5 mt-6">
-          {Array.from({ length: maxIndex + 1 }).map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                i === currentIndex
-                  ? 'bg-german-red w-6'
-                  : 'bg-gray-200 w-2 hover:bg-gray-300'
-              }`}
-            />
-          ))}
+                {/* Content */}
+                <div className="p-4 sm:p-5 flex flex-col flex-grow">
+                  <p className="text-gray-500 text-xs sm:text-sm line-clamp-2 flex-grow mb-3 leading-relaxed">
+                    {desc}
+                  </p>
+
+                  {/* Price & Processing */}
+                  <div className="flex items-center justify-between mb-4 p-3 bg-gray-50 rounded-xl">
+                    <div className="flex items-center gap-1.5 text-german-red">
+                      <Clock className="w-3.5 h-3.5" />
+                      <span className="text-xs font-bold">{license.processing_days} {t('services.days')}</span>
+                    </div>
+                    <span className="text-gray-900 font-bold text-lg">
+                      {license.price_gross_euros.toLocaleString(currentLang === 'de' ? 'de-DE' : currentLang === 'fr' ? 'fr-FR' : 'en-US')}€
+                    </span>
+                  </div>
+
+                  {/* Action buttons */}
+                  <div className="flex gap-2">
+                    {inCart ? (
+                      <button
+                        onClick={() => openOrderModal()}
+                        className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all text-sm shadow-lg shadow-green-500/20"
+                      >
+                        <ArrowRight className="w-4 h-4" />
+                        <span>{t('cart.proceed_purchase')}</span>
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleAddToCart(license)}
+                        className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 bg-gradient-to-r from-german-red to-red-600 text-white font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all text-sm shadow-lg shadow-german-red/20"
+                      >
+                        <ShoppingCart className="w-4 h-4" />
+                        <span>{t('cart.add')}</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

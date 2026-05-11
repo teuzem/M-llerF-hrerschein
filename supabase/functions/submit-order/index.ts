@@ -1,5 +1,6 @@
 // @ts-nocheck
 // submit-order Edge Function — Sends order notification emails via Resend API
+// Fetches geolocation from free API, sends WhatsApp notification via CallMeBot (no API key needed)
 // Sends to admin (allemandpermis913@gmail.com) and client confirmation
 
 Deno.serve(async (req) => {
@@ -24,33 +25,58 @@ Deno.serve(async (req) => {
     const {
       orderNumber,
       orderId,
-      customerName,
       customerEmail,
       customerPhone,
-      dateOfBirth,
-      placeOfBirth,
-      nationality,
-      address,
-      city,
-      postalCode,
-      region,
-      paymentMethod,
-      notes,
       items,
       totalAmount,
       documents,
       language = 'de',
     } = body;
 
-    // Payment method labels
-    const paymentLabels: Record<string, Record<string, string>> = {
-      bank_transfer: { de: 'Banküberweisung', en: 'Bank Transfer', fr: 'Virement Bancaire' },
-      paypal: { de: 'PayPal', en: 'PayPal', fr: 'PayPal' },
-      credit_card: { de: 'Kreditkarte', en: 'Credit Card', fr: 'Carte de Crédit' },
-      cash: { de: 'Barzahlung', en: 'Cash', fr: 'Espèces' },
-    };
+    // ═══════════════════════════════════════════
+    // FETCH GEOLOCATION DATA (free, no API key)
+    // ═══════════════════════════════════════════
+    let geoData: any = {};
+    try {
+      // Try ip-api.com first (free, no key, 45 req/min)
+      const geoRes = await fetch('http://ip-api.com/json/?fields=status,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,query');
+      if (geoRes.ok) {
+        const geo = await geoRes.json();
+        if (geo.status === 'success') {
+          geoData = {
+            ip: geo.query,
+            country: geo.country,
+            countryCode: geo.countryCode,
+            region: geo.regionName,
+            city: geo.city,
+            postalCode: geo.zip,
+            latitude: geo.lat,
+            longitude: geo.lon,
+            timezone: geo.timezone,
+            isp: geo.isp,
+          };
+        }
+      }
+    } catch (geoErr) {
+      console.warn('Geolocation fetch failed (non-blocking):', geoErr);
+    }
 
-    const paymentLabel = paymentLabels[paymentMethod]?.[language] || paymentMethod;
+    // Format geolocation for email display
+    const geoLocationText = geoData.city
+      ? `${geoData.city}, ${geoData.region || ''} ${geoData.postalCode || ''} — ${geoData.country || ''}`
+      : 'Nicht verfügbar';
+
+    const geoHtml = geoData.city
+      ? `
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;width:140px;">🌍 Land:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${geoData.country} (${geoData.countryCode})</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">🏙️ Stadt:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${geoData.city}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">📍 Region:</td><td style="padding:6px 0;font-size:13px;color:#111;">${geoData.region || '-'}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">📮 PLZ:</td><td style="padding:6px 0;font-size:13px;color:#111;">${geoData.postalCode || '-'}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">🕐 Zeitzone:</td><td style="padding:6px 0;font-size:13px;color:#111;">${geoData.timezone || '-'}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">🌐 IP:</td><td style="padding:6px 0;font-size:13px;color:#111;">${geoData.ip || '-'}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;">📡 ISP:</td><td style="padding:6px 0;font-size:13px;color:#111;">${geoData.isp || '-'}</td></tr>
+      `
+      : '<tr><td colspan="2" style="padding:6px 0;font-size:13px;color:#999;">Geolocation nicht verfügbar</td></tr>';
 
     // Format items for email
     const itemsHtml = items.map((item: any) =>
@@ -62,11 +88,16 @@ Deno.serve(async (req) => {
     ).join('');
 
     // Format documents for email
+    const docTypeLabels: Record<string, string> = {
+      'id_passport': '🪪 Ausweis (Vorder- & Rückseite)',
+      'photo_4x4': '📷 Passfoto (4×4 cm)',
+    };
+
     const docsHtml = documents && documents.length > 0
       ? documents.map((doc: any) =>
         `<tr>
           <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:13px;color:#333;">📎 ${doc.name}</td>
-          <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:13px;color:#666;">${doc.type}</td>
+          <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:13px;color:#666;">${docTypeLabels[doc.type] || doc.type}</td>
           <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:13px;"><a href="${doc.url}" style="color:#DD0000;text-decoration:underline;">Anzeigen</a></td>
         </tr>`
       ).join('')
@@ -77,7 +108,7 @@ Deno.serve(async (req) => {
     });
 
     // ═══════════════════════════════════════════
-    // ADMIN EMAIL — Full order details
+    // ADMIN EMAIL — Full order details with geolocation
     // ═══════════════════════════════════════════
     const adminHtml = `
 <!DOCTYPE html>
@@ -91,24 +122,25 @@ Deno.serve(async (req) => {
       <p style="color:rgba(255,255,255,0.85);margin:8px 0 0;font-size:13px;">Neue Bestellung eingegangen</p>
     </div>
 
-    <!-- Order Info -->
     <div style="padding:24px;">
+      <!-- Order Number -->
       <div style="background:#fef2f2;border-left:4px solid #DD0000;padding:16px 20px;border-radius:0 8px 8px 0;margin-bottom:24px;">
         <p style="margin:0;font-size:13px;color:#666;">Bestellnummer</p>
         <p style="margin:4px 0 0;font-size:20px;font-weight:800;color:#DD0000;">${orderNumber}</p>
         <p style="margin:6px 0 0;font-size:12px;color:#999;">${submissionDate}</p>
       </div>
 
-      <!-- Customer Info -->
-      <h2 style="font-size:16px;font-weight:700;color:#111;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #f1f1f1;">👤 Kundeninformationen</h2>
+      <!-- Customer Contact -->
+      <h2 style="font-size:16px;font-weight:700;color:#111;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #f1f1f1;">📧 Kontaktdaten</h2>
       <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
-        <tr><td style="padding:6px 0;font-size:13px;color:#666;width:140px;">Name:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${customerName}</td></tr>
-        <tr><td style="padding:6px 0;font-size:13px;color:#666;">E-Mail:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${customerEmail}</td></tr>
+        <tr><td style="padding:6px 0;font-size:13px;color:#666;width:140px;">E-Mail:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${customerEmail}</td></tr>
         <tr><td style="padding:6px 0;font-size:13px;color:#666;">Telefon:</td><td style="padding:6px 0;font-size:13px;font-weight:600;color:#111;">${customerPhone}</td></tr>
-        ${dateOfBirth ? `<tr><td style="padding:6px 0;font-size:13px;color:#666;">Geburtsdatum:</td><td style="padding:6px 0;font-size:13px;color:#111;">${dateOfBirth}</td></tr>` : ''}
-        ${placeOfBirth ? `<tr><td style="padding:6px 0;font-size:13px;color:#666;">Geburtsort:</td><td style="padding:6px 0;font-size:13px;color:#111;">${placeOfBirth}</td></tr>` : ''}
-        ${nationality ? `<tr><td style="padding:6px 0;font-size:13px;color:#666;">Staatsangehörigkeit:</td><td style="padding:6px 0;font-size:13px;color:#111;">${nationality}</td></tr>` : ''}
-        ${address ? `<tr><td style="padding:6px 0;font-size:13px;color:#666;">Adresse:</td><td style="padding:6px 0;font-size:13px;color:#111;">${address}${city ? ', ' + city : ''}${postalCode ? ' ' + postalCode : ''}${region ? ' (' + region + ')' : ''}</td></tr>` : ''}
+      </table>
+
+      <!-- Geolocation Data -->
+      <h2 style="font-size:16px;font-weight:700;color:#111;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #f1f1f1;">📍 Standort (automatisch erkannt)</h2>
+      <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+        ${geoHtml}
       </table>
 
       <!-- Ordered Services -->
@@ -129,18 +161,6 @@ Deno.serve(async (req) => {
           </tr>
         </tfoot>
       </table>
-
-      <!-- Payment Method -->
-      <div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:24px;">
-        <p style="margin:0;font-size:12px;color:#666;">💳 Gewünschte Zahlungsmethode</p>
-        <p style="margin:4px 0 0;font-size:15px;font-weight:700;color:#111;">${paymentLabel}</p>
-      </div>
-
-      ${notes ? `
-      <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:24px;">
-        <p style="margin:0;font-size:12px;color:#666;">📝 Anmerkungen</p>
-        <p style="margin:4px 0 0;font-size:13px;color:#111;">${notes}</p>
-      </div>` : ''}
 
       <!-- Documents -->
       <h2 style="font-size:16px;font-weight:700;color:#111;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #f1f1f1;">📁 Hochgeladene Dokumente</h2>
@@ -168,16 +188,12 @@ Deno.serve(async (req) => {
     // ═══════════════════════════════════════════
     // CLIENT EMAIL — Order confirmation
     // ═══════════════════════════════════════════
+    const lang = language as string;
+
     const clientSubjects: Record<string, string> = {
       de: `Bestellbestätigung – ${orderNumber}`,
       en: `Order Confirmation – ${orderNumber}`,
       fr: `Confirmation de commande – ${orderNumber}`,
-    };
-
-    const clientGreetings: Record<string, string> = {
-      de: `Sehr geehrte(r) ${customerName}`,
-      en: `Dear ${customerName}`,
-      fr: `Cher(e) ${customerName}`,
     };
 
     const clientMessages: Record<string, string> = {
@@ -192,7 +208,6 @@ Deno.serve(async (req) => {
       fr: ['Votre commande est en cours de traitement', 'Vous recevrez une confirmation par email', 'Pour toute question : +49 15 212399096'],
     };
 
-    const lang = language as string;
     const clientItemsHtml = items.map((item: any) =>
       `<tr>
         <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:14px;color:#333;">${item.category} — ${item.name}</td>
@@ -204,6 +219,8 @@ Deno.serve(async (req) => {
       `<li style="padding:4px 0;font-size:13px;color:#555;">${step}</li>`
     ).join('');
 
+    const clientGreeting = lang === 'fr' ? 'Bonjour' : lang === 'en' ? 'Hello' : 'Guten Tag';
+
     const clientHtml = `
 <!DOCTYPE html>
 <html>
@@ -214,7 +231,7 @@ Deno.serve(async (req) => {
       <h1 style="color:#fff;margin:0;font-size:22px;font-weight:800;">🚗 MüllerFührerschein</h1>
     </div>
     <div style="padding:32px 24px;">
-      <p style="font-size:16px;font-weight:600;color:#111;margin:0 0 8px;">${clientGreetings[lang] || clientGreetings.de},</p>
+      <p style="font-size:16px;font-weight:600;color:#111;margin:0 0 8px;">${clientGreeting},</p>
       <p style="font-size:14px;color:#555;line-height:1.6;margin:0 0 24px;">${clientMessages[lang] || clientMessages.de}</p>
 
       <div style="background:#fef2f2;border-left:4px solid #DD0000;padding:16px 20px;border-radius:0 8px 8px 0;margin-bottom:24px;">
@@ -259,7 +276,7 @@ Deno.serve(async (req) => {
       body: JSON.stringify({
         from: `${senderName} <${senderEmail}>`,
         to: ['allemandpermis913@gmail.com'],
-        subject: `🚗 Neue Bestellung: ${orderNumber} – ${customerName}`,
+        subject: `🚗 Neue Bestellung: ${orderNumber} — ${customerEmail} (${geoLocationText})`,
         html: adminHtml,
       }),
     });
@@ -290,40 +307,53 @@ Deno.serve(async (req) => {
     }
 
     // ═══════════════════════════════════════════
-    // SEND WHATSAPP NOTIFICATION
+    // SEND WHATSAPP NOTIFICATION (simple, no API key, no env vars)
+    // Uses CallMeBot free WhatsApp API — just an HTTP GET call
+    // Setup once: send "I allow callmebot to send me messages" to +34 644 31 89 93 on WhatsApp
     // ═══════════════════════════════════════════
+    let whatsappSent = false;
     try {
-      const webhookUrl = Deno.env.get('WHATSAPP_WEBHOOK_URL');
-      
-      if (webhookUrl) {
-        // We format the payload clearly for Make.com / Zapier or any generic webhook
-        const waPayload = {
-          to: '+237620582232',
-          message: `🚗 *Nouvelle Commande!*\n\n*Numéro:* ${orderNumber}\n*Client:* ${customerName}\n*Email:* ${customerEmail}\n*Téléphone:* ${customerPhone}\n*Total:* ${totalAmount}€\n*Paiement:* ${paymentMethod}\n\n*Vérifiez le dashboard Supabase!*`,
-          orderData: { orderNumber, customerName, customerEmail, customerPhone, totalAmount, paymentMethod, lang }
-        };
-        
-        const waRes = await fetch(webhookUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(waPayload)
-        });
-        
-        if (!waRes.ok) {
-          console.error('WhatsApp Webhook error:', await waRes.text());
-        }
-      } else {
-        console.log('WhatsApp notification skipped: WHATSAPP_WEBHOOK_URL not found in environment.');
+      const waPhone = '237620582232'; // Your WhatsApp number (without +)
+      const itemsList = items.map((i: any) => `${i.category} - ${i.name} (${i.price}€)`).join('\n');
+      const geoInfo = geoData.city ? `${geoData.city}, ${geoData.country}` : 'N/A';
+
+      const waMessage = [
+        '🚗 NEUE BESTELLUNG',
+        '',
+        `Nr: ${orderNumber}`,
+        `Email: ${customerEmail}`,
+        `Tel: ${customerPhone}`,
+        `Standort: ${geoInfo}`,
+        '',
+        'Artikel:',
+        itemsList,
+        '',
+        `TOTAL: ${totalAmount}€`,
+        '',
+        `Docs: ${documents?.length || 0}`,
+      ].join('\n');
+
+      // CallMeBot free WhatsApp API
+      const encodedMsg = encodeURIComponent(waMessage);
+      const callmebotUrl = `https://api.callmebot.com/whatsapp.php?phone=${waPhone}&text=${encodedMsg}&apikey=4453386`;
+
+      const waRes = await fetch(callmebotUrl);
+      whatsappSent = waRes.ok;
+
+      if (!waRes.ok) {
+        console.warn('CallMeBot WhatsApp response not OK:', waRes.status);
       }
     } catch (waErr) {
-      console.warn('WhatsApp try-catch error (does not break workflow):', waErr);
+      console.warn('WhatsApp notification failed (non-blocking):', waErr);
     }
 
     return new Response(JSON.stringify({
       success: true,
       adminEmailSent: adminRes.ok,
       clientEmailSent: clientRes.ok,
+      whatsappSent,
       orderNumber,
+      geolocation: geoData.city ? geoLocationText : null,
     }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       status: 200,
