@@ -10,6 +10,7 @@ import HowItWorksSection from '../components/home/HowItWorksSection'
 import HomeTestimonialsSection from '../components/home/HomeTestimonialsSection'
 import HomeClientsSection from '../components/home/HomeClientsSection'
 import GuaranteesSection from '../components/home/GuaranteesSection'
+import VideoTestimonialsCarousel from '../components/home/VideoTestimonialsCarousel'
 import LicenseGallerySection from '../components/home/LicenseGallerySection'
 import HomeFAQSection from '../components/home/HomeFAQSection'
 
@@ -106,6 +107,7 @@ export default function Home() {
 
       <HowItWorksSection />
       <GuaranteesSection />
+      <VideoTestimonialsCarousel />
       <LicenseGallerySection />
       <HomeTestimonialsSection />
       <HomeClientsSection />
