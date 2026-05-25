@@ -76,6 +76,8 @@ const VideoTestimonialsCarousel: React.FC = () => {
       setLoading(true);
       setError(null);
 
+      console.log('[v0] Fetching videos from bucket:', BUCKET_NAME, 'folder:', VIDEO_FOLDER);
+
       const { data: files, error: listError } = await supabase.storage
         .from(BUCKET_NAME)
         .list(VIDEO_FOLDER, {
@@ -83,9 +85,15 @@ const VideoTestimonialsCarousel: React.FC = () => {
           sortBy: { column: 'created_at', order: 'desc' },
         });
 
-      if (listError) throw listError;
+      console.log('[v0] Storage list response:', { files, listError });
+
+      if (listError) {
+        console.error('[v0] Storage list error:', listError);
+        throw listError;
+      }
 
       if (!files || files.length === 0) {
+        console.log('[v0] No files found in videos folder');
         setVideos([]);
         setLoading(false);
         return;
@@ -96,10 +104,14 @@ const VideoTestimonialsCarousel: React.FC = () => {
         file.name.match(/\.(mp4|webm|mov|avi|mkv|m4v)$/i)
       );
 
+      console.log('[v0] Found video files:', videoFiles.length);
+
       const videosWithUrls: StorageVideo[] = videoFiles.map(file => {
         const { data: urlData } = supabase.storage
           .from(BUCKET_NAME)
           .getPublicUrl(`${VIDEO_FOLDER}/${file.name}`);
+
+        console.log('[v0] Generated URL for', file.name, ':', urlData.publicUrl);
 
         return {
           id: file.id || file.name,
