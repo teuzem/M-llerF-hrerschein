@@ -85,15 +85,15 @@ const VideoTestimonialsCarousel: React.FC = () => {
           sortBy: { column: 'created_at', order: 'desc' },
         });
 
-      console.log('[v0] Storage list response:', { files, listError });
+      console.log('Storage list response:', { files, listError });
 
       if (listError) {
-        console.error('[v0] Storage list error:', listError);
+        console.error('Storage list error:', listError);
         throw listError;
       }
 
       if (!files || files.length === 0) {
-        console.log('[v0] No files found in videos folder');
+        console.log('No files found in videos folder');
         setVideos([]);
         setLoading(false);
         return;
@@ -104,7 +104,7 @@ const VideoTestimonialsCarousel: React.FC = () => {
         file.name.match(/\.(mp4|webm|mov|avi|mkv|m4v)$/i)
       );
 
-      console.log('[v0] Found video files:', videoFiles.length);
+      console.log('Found video files:', videoFiles.length);
 
       const videosWithUrls: StorageVideo[] = videoFiles.map(file => {
         const { data: urlData } = supabase.storage
