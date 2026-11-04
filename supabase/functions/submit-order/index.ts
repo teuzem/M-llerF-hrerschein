@@ -203,9 +203,9 @@ Deno.serve(async (req) => {
     };
 
     const clientNextSteps: Record<string, string[]> = {
-      de: ['Ihre Bestellung wird von unserem Team bearbeitet', 'Sie erhalten eine Bestätigung per E-Mail', 'Bei Fragen kontaktieren Sie uns: +49 152 123 99096'],
-      en: ['Your order is being processed by our team', 'You will receive a confirmation by email', 'For questions contact us: +49 152 123 99096'],
-      fr: ['Votre commande est en cours de traitement', 'Vous recevrez une confirmation par email', 'Pour toute question : +49 152 123 99096'],
+      de: ['Ihre Bestellung wird von unserem Team bearbeitet', 'Sie erhalten eine Bestätigung per E-Mail', 'Bei Fragen kontaktieren Sie uns: +49 15510 626077'],
+      en: ['Your order is being processed by our team', 'You will receive a confirmation by email', 'For questions contact us: +49 15510 626077'],
+      fr: ['Votre commande est en cours de traitement', 'Vous recevrez une confirmation par email', 'Pour toute question : +49 15510 626077'],
     };
 
     const clientItemsHtml = items.map((item: any) =>
@@ -254,7 +254,7 @@ Deno.serve(async (req) => {
     </div>
     <div style="background:#f8f8f8;padding:20px 24px;text-align:center;border-top:1px solid #e5e5e5;">
       <p style="margin:0;font-size:12px;color:#999;">MüllerFührerschein • Berlin, Deutschland</p>
-      <p style="margin:4px 0 0;font-size:11px;color:#bbb;">+49 152 123 99096 • mulerfuhrerschein@gmail.com</p>
+      <p style="margin:4px 0 0;font-size:11px;color:#bbb;">+49 15510 626077 • mulerfuhrerschein@gmail.com</p>
     </div>
   </div>
 </body>
@@ -313,7 +313,7 @@ Deno.serve(async (req) => {
     // ═══════════════════════════════════════════
     let whatsappSent = false;
     try {
-      const waPhone = '237620582232'; // Your WhatsApp number (without +)
+      const waPhone = '4915510626077'; // Numero WhatsApp de l'entreprise (chiffres uniquement, sans +)
       const itemsList = items.map((i: any) => `${i.category} - ${i.name} (${i.price}€)`).join('\n');
       const geoInfo = geoData.city ? `${geoData.city}, ${geoData.country}` : 'N/A';
 

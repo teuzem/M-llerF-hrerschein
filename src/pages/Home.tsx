@@ -22,7 +22,7 @@ export default function Home() {
     "name": "MüllerFührerschein",
     "url": "https://mulerfuhrerschein.de",
     "description": "Ihr vertrauenswürdiger Partner für die Erlangung aller Arten von deutschen Führerscheinen in Berlin und Deutschland. Schnell, sicher und 100% legal.",
-    "telephone": "+49 152 123 99096",
+    "telephone": "+49 15510 626077",
     "email": "mulerfuhrerschein@gmail.com"
   }
 

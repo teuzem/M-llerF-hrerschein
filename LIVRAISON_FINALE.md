@@ -77,7 +77,7 @@ ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ## 📞 Coordonnées Configurées
 
 - **Email** : info@mullerfuhrerschein.de
-- **Téléphone** : +49 152 123 99096
+- **Téléphone** : +49 15510 626077
 - **Adresse** : Alexanderstraße 40, 10179 Berlin, Deutschland
 
 ---
