@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
           </p>
         </motion.div>
 
-        {/* Steps — 1 col mobile, 2 cols tablet+ */}
+        {/* Steps: 1 col mobile, 2 cols tablet+ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8 sm:mb-10">
           {steps.map((step, index) => (
             <motion.div
@@ -39,7 +39,7 @@ const HowItWorksSection = () => {
               transition={{ duration: 0.35, delay: index * 0.06 }}
               className="flex items-start gap-4 bg-white border border-gray-100 rounded-xl p-5 sm:p-6 hover:border-gray-200 hover:shadow-md transition-all duration-300 group"
             >
-              {/* Step number — large, bold, styled */}
+              {/* Step number: large, bold, styled */}
               <div className="flex flex-col items-center flex-shrink-0">
                 <span className="text-2xl sm:text-3xl font-black text-german-red tabular-nums leading-none">
                   {step.step}

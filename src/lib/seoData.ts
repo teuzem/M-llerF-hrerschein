@@ -286,7 +286,7 @@ export const organizationStructuredData = {
   "description": "Professional service for German driving license acquisition, Uber Eats registration, and bureaucratic assistance in Munich. Fast, secure and reliable service.",
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+49-15-212399096",
+    "telephone": "+49 152 123 99096",
     "contactType": "customer service",
     "email": "mulerfuhrerschein@gmail.com",
     "availableLanguage": ["German", "French", "English", "Russian"],
@@ -412,7 +412,7 @@ export const localBusinessSchema = {
   "image": "https://mulerfuhrerschein.de/office-munich.jpg",
   "description": "Professional driving license and Uber Eats service office in Munich",
   "url": "https://mulerfuhrerschein.de",
-  "telephone": "+49-15-212399096",
+  "telephone": "+49 152 123 99096",
   "email": "mulerfuhrerschein@gmail.com",
   "openingHours": [
     "Mo-Fr 09:00-18:00",
@@ -536,7 +536,7 @@ export const personSchema = {
     "name": "MullerFuhrerschein.de"
   },
   "email": "mulerfuhrerschein@gmail.com",
-  "telephone": "+49-15-212399096",
+  "telephone": "+49 152 123 99096",
   "knowsLanguage": ["German", "French", "English", "Russian"]
 };
 
@@ -606,7 +606,7 @@ export const contactPageSchema = {
   "mainEntity": {
     "@type": "LocalBusiness",
     "name": "MullerFuhrerschein.de Munich Office",
-    "telephone": "+49-15-212399096",
+    "telephone": "+49 152 123 99096",
     "email": "mulerfuhrerschein@gmail.com",
     "openingHours": [
       "Mo-Fr 09:00-18:00",

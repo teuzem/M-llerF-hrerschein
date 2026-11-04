@@ -24,4 +24,5 @@ export const TVA_RATE = 0.19; // German VAT rate 19%
 
 // Contact information
 export const CONTACT_EMAIL = 'mulerfuhrerschein@gmail.com';
-export const CONTACT_PHONE = '+49 15 212399096';
+export const CONTACT_PHONE = '+49 152 123 99096';
+export const CONTACT_PHONE_DIGITS = CONTACT_PHONE.replace(/\D/g, ''); // 4915212399096 (format lien wa.me / tel:)

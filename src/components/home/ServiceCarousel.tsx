@@ -144,7 +144,7 @@ export default function ServiceCarousel() {
           </p>
         </motion.div>
 
-        {/* Services Grid — 4 cards per row on large screens */}
+        {/* Services Grid: 4 cards per row on large screens */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
           {services.map((license, index) => {
             const inCart = isInCart(license.id);

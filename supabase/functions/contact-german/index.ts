@@ -90,7 +90,7 @@ Deno.serve(async (req) => {
         contact_id: contactId,
         response_time: '24-48 Stunden',
         contact_info: {
-          phone: '+49 15 212399096',
+          phone: '+49 152 123 99096',
           email: 'mulerfuhrerschein@gmail.com'
         }
       }
@@ -120,7 +120,7 @@ Deno.serve(async (req) => {
       next_steps: [
         'Sie erhalten in Kürze eine Bestätigungs-E-Mail',
         'Unser Team wird sich innerhalb von 12-24 Stunden melden',
-        'Bei dringenden Fragen schreiben Sie uns auf WhatsApp: +49 15 212399096'
+        'Bei dringenden Fragen schreiben Sie uns auf WhatsApp: +49 152 123 99096'
       ],
       gdpr_info: {
         data_controller: 'MüllerFührerschein',

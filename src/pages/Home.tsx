@@ -22,7 +22,7 @@ export default function Home() {
     "name": "MüllerFührerschein",
     "url": "https://mulerfuhrerschein.de",
     "description": "Ihr vertrauenswürdiger Partner für die Erlangung aller Arten von deutschen Führerscheinen in Berlin und Deutschland. Schnell, sicher und 100% legal.",
-    "telephone": "+49 15 212399096",
+    "telephone": "+49 152 123 99096",
     "email": "mulerfuhrerschein@gmail.com"
   }
 
@@ -68,7 +68,7 @@ export default function Home() {
       {/* Service Carousel */}
       <ServiceCarousel />
 
-      {/* Features Section — "Why MüllerFührerschein?" */}
+      {/* Features Section: "Why MüllerFührerschein?" */}
       <section className="py-14 sm:py-16 bg-white">
         <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
           <motion.div

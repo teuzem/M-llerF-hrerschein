@@ -2,11 +2,12 @@ import React from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { MessageSquare } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { CONTACT_PHONE } from '../../lib/constants';
 
 const WhatsAppButton: React.FC = () => {
   const { user, profile } = useAuth();
   const { t } = useTranslation();
-  const phoneNumber = '4915212399096'; // Format for wa.me link
+  const phoneNumber = CONTACT_PHONE.replace(/\D/g, ''); // Format for wa.me link (chiffres uniquement)
 
   let message = t('support.whatsapp.message_default');
   if (user && profile?.full_name) {

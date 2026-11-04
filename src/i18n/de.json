@@ -1087,19 +1087,19 @@
   "gallery.uploader.image_editor_title": "Bild-Editor",
   "gallery.uploader.video_editing_unavailable": "Video-Bearbeitung ist derzeit nicht verfügbar.",
   "heroCarousel.ariaLabel": "Hero-Karussell",
-  "heroCarousel.slide1.title": "Ihr deutscher Führerschein — in nur 7 Tagen",
-  "heroCarousel.slide1.subtitle": "Kein Verkehrsrecht, kein Stress. MüllerFührerschein übernimmt alle Behördengänge für Sie — schnell, sicher und 100 % legal.",
+  "heroCarousel.slide1.title": "Ihr deutscher Führerschein in nur 7 Tagen",
+  "heroCarousel.slide1.subtitle": "Kein Verkehrsrecht, kein Stress. MüllerFührerschein übernimmt alle Behördengänge für Sie: schnell, sicher und 100 % legal.",
   "heroCarousel.slide1.cta": "Jetzt Führerschein sichern",
-  "heroCarousel.slide2.title": "Offiziell registriert — sofort einsatzbereit",
+  "heroCarousel.slide2.title": "Offiziell registriert, sofort einsatzbereit",
   "heroCarousel.slide2.subtitle": "Jeder Führerschein wird bei den Berliner Behörden registriert und in der offiziellen Datenbank eingetragen. Garantierte Echtheit.",
   "heroCarousel.slide2.cta": "Antrag starten",
   "heroCarousel.slide3.title": "Über 15.000 zufriedene Kunden",
-  "heroCarousel.slide3.subtitle": "Schließen Sie sich Tausenden an, die bereits ihren Führerschein mit MüllerFührerschein erhalten haben — mit 99 % Erfolgsquote.",
+  "heroCarousel.slide3.subtitle": "Schließen Sie sich Tausenden an, die bereits ihren Führerschein mit MüllerFührerschein erhalten haben, mit 99 % Erfolgsquote.",
   "heroCarousel.slide3.cta": "Kostenlose Beratung",
-  "heroCarousel.slide4.title": "Alle Führerscheinklassen — ein Partner",
-  "heroCarousel.slide4.subtitle": "Auto, Motorrad, LKW oder Bus — wir bearbeiten alle Klassen. Wählen Sie Ihren Führerschein und wir erledigen den Rest.",
+  "heroCarousel.slide4.title": "Alle Führerscheinklassen, ein Partner",
+  "heroCarousel.slide4.subtitle": "Auto, Motorrad, LKW oder Bus: wir bearbeiten alle Klassen. Wählen Sie Ihren Führerschein und wir erledigen den Rest.",
   "heroCarousel.slide4.cta": "Klasse wählen",
-  "heroCarousel.slide5.title": "24/7 Betreuung — von Anfang bis Ende",
+  "heroCarousel.slide5.title": "24/7 Betreuung von Anfang bis Ende",
   "heroCarousel.slide5.subtitle": "Unser engagiertes Team begleitet Sie persönlich durch den gesamten Prozess. Rund um die Uhr erreichbar.",
   "heroCarousel.slide5.cta": "Kontakt aufnehmen",
   "heroCarousel.trust.legal": "100% Legal",
@@ -1352,7 +1352,7 @@
       {
         "title": "Kontakt",
         "content": [
-          "Telefon: +49 (0) 30 1234567",
+          "Telefon: +49 152 123 99096",
           "E-Mail: contact@mullerfuhrerschein.com"
         ]
       },
@@ -1781,7 +1781,7 @@
   },
   "carousel": {
     "title": "Unsere Führerschein-Dienstleistungen",
-    "subtitle": "Entdecken Sie unser komplettes Angebot – von Moped bis Omnibus. Wählen Sie Ihren Führerschein und starten Sie sofort.",
+    "subtitle": "Entdecken Sie unser komplettes Angebot: von Moped bis Omnibus. Wählen Sie Ihren Führerschein und starten Sie sofort.",
     "pause": "Pause",
     "play": "Abspielen"
   },
@@ -1804,7 +1804,7 @@
     "terms_text": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und die Datenschutzerklärung. Meine Daten werden gemäß DSGVO verarbeitet.",
     "documents_label": "Dokumente hochladen",
     "required_documents": "Erforderliche Dokumente",
-    "doc_id_label": "Ausweis (Vorder- & Rückseite) — CNI, Reisepass usw.",
+    "doc_id_label": "Ausweis (Vorder- & Rückseite), CNI, Reisepass usw.",
     "doc_photo_label": "Passfoto (4×4 cm)",
     "click_to_upload": "Klicken zum Hochladen",
     "drag_files": "Dateien hierher ziehen oder klicken zum Auswählen",

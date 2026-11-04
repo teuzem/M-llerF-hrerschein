@@ -1,5 +1,5 @@
 // @ts-nocheck
-// submit-order Edge Function — Sends order notification emails via Resend API
+// submit-order Edge Function: Sends order notification emails via Resend API
 // Fetches geolocation from free API, sends WhatsApp notification via CallMeBot (no API key needed)
 // Sends to admin (allemandpermis913@gmail.com) and client confirmation
 
@@ -63,7 +63,7 @@ Deno.serve(async (req) => {
 
     // Format geolocation for email display
     const geoLocationText = geoData.city
-      ? `${geoData.city}, ${geoData.region || ''} ${geoData.postalCode || ''} — ${geoData.country || ''}`
+      ? `${geoData.city}, ${geoData.region || ''} ${geoData.postalCode || ''}, ${geoData.country || ''}`
       : 'Nicht verfügbar';
 
     const geoHtml = geoData.city
@@ -108,7 +108,7 @@ Deno.serve(async (req) => {
     });
 
     // ═══════════════════════════════════════════
-    // ADMIN EMAIL — Full order details with geolocation
+    // ADMIN EMAIL: Full order details with geolocation
     // ═══════════════════════════════════════════
     const adminHtml = `
 <!DOCTYPE html>
@@ -186,14 +186,14 @@ Deno.serve(async (req) => {
 </html>`;
 
     // ═══════════════════════════════════════════
-    // CLIENT EMAIL — Order confirmation
+    // CLIENT EMAIL: Order confirmation
     // ═══════════════════════════════════════════
     const lang = language as string;
 
     const clientSubjects: Record<string, string> = {
-      de: `Bestellbestätigung – ${orderNumber}`,
-      en: `Order Confirmation – ${orderNumber}`,
-      fr: `Confirmation de commande – ${orderNumber}`,
+      de: `Bestellbestätigung: ${orderNumber}`,
+      en: `Order Confirmation: ${orderNumber}`,
+      fr: `Confirmation de commande: ${orderNumber}`,
     };
 
     const clientMessages: Record<string, string> = {
@@ -203,14 +203,14 @@ Deno.serve(async (req) => {
     };
 
     const clientNextSteps: Record<string, string[]> = {
-      de: ['Ihre Bestellung wird von unserem Team bearbeitet', 'Sie erhalten eine Bestätigung per E-Mail', 'Bei Fragen kontaktieren Sie uns: +49 15 212399096'],
-      en: ['Your order is being processed by our team', 'You will receive a confirmation by email', 'For questions contact us: +49 15 212399096'],
-      fr: ['Votre commande est en cours de traitement', 'Vous recevrez une confirmation par email', 'Pour toute question : +49 15 212399096'],
+      de: ['Ihre Bestellung wird von unserem Team bearbeitet', 'Sie erhalten eine Bestätigung per E-Mail', 'Bei Fragen kontaktieren Sie uns: +49 152 123 99096'],
+      en: ['Your order is being processed by our team', 'You will receive a confirmation by email', 'For questions contact us: +49 152 123 99096'],
+      fr: ['Votre commande est en cours de traitement', 'Vous recevrez une confirmation par email', 'Pour toute question : +49 152 123 99096'],
     };
 
     const clientItemsHtml = items.map((item: any) =>
       `<tr>
-        <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:14px;color:#333;">${item.category} — ${item.name}</td>
+        <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:14px;color:#333;">${item.category}: ${item.name}</td>
         <td style="padding:8px 16px;border-bottom:1px solid #f1f1f1;font-size:14px;color:#333;text-align:right;font-weight:700;">${item.price.toLocaleString()}€</td>
       </tr>`
     ).join('');
@@ -254,7 +254,7 @@ Deno.serve(async (req) => {
     </div>
     <div style="background:#f8f8f8;padding:20px 24px;text-align:center;border-top:1px solid #e5e5e5;">
       <p style="margin:0;font-size:12px;color:#999;">MüllerFührerschein • Berlin, Deutschland</p>
-      <p style="margin:4px 0 0;font-size:11px;color:#bbb;">+49 15 212399096 • mulerfuhrerschein@gmail.com</p>
+      <p style="margin:4px 0 0;font-size:11px;color:#bbb;">+49 152 123 99096 • mulerfuhrerschein@gmail.com</p>
     </div>
   </div>
 </body>
@@ -276,7 +276,7 @@ Deno.serve(async (req) => {
       body: JSON.stringify({
         from: `${senderName} <${senderEmail}>`,
         to: ['allemandpermis913@gmail.com'],
-        subject: `🚗 Neue Bestellung: ${orderNumber} — ${customerEmail} (${geoLocationText})`,
+        subject: `🚗 Neue Bestellung: ${orderNumber} | ${customerEmail} (${geoLocationText})`,
         html: adminHtml,
       }),
     });
@@ -308,7 +308,7 @@ Deno.serve(async (req) => {
 
     // ═══════════════════════════════════════════
     // SEND WHATSAPP NOTIFICATION (simple, no API key, no env vars)
-    // Uses CallMeBot free WhatsApp API — just an HTTP GET call
+    // Uses CallMeBot free WhatsApp API: just an HTTP GET call
     // Setup once: send "I allow callmebot to send me messages" to +34 644 31 89 93 on WhatsApp
     // ═══════════════════════════════════════════
     let whatsappSent = false;

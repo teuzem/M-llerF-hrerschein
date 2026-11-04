@@ -122,7 +122,7 @@ export default function HeroCarousel() {
                 }}
               />
 
-              {/* Overlay gradient — center-focused */}
+              {/* Overlay gradient: center-focused */}
               <div className="absolute inset-0 bg-black/55" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
 
@@ -133,7 +133,7 @@ export default function HeroCarousel() {
                 <div className="flex-1 bg-german-gold" />
               </div>
 
-              {/* Content — centered */}
+              {/* Content: centered */}
               <div className="relative h-full flex items-center justify-center">
                 <div className="w-full px-6 sm:px-10 lg:px-20 max-w-5xl mx-auto text-center">
                   <AnimatePresence mode="wait">
@@ -192,7 +192,7 @@ export default function HeroCarousel() {
                           </Link>
                         </motion.div>
 
-                        {/* Trust indicators — single line */}
+                        {/* Trust indicators: single line */}
                         <motion.div
                           custom={4}
                           variants={textVariants}

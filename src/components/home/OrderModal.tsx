@@ -326,7 +326,7 @@ export default function OrderModal() {
           </div>
           <div>
             <p className="text-xs font-medium text-gray-600">{t('order.click_to_upload')}</p>
-            <p className="text-[10px] text-gray-400">JPG, PNG, PDF — max 10 MB</p>
+            <p className="text-[10px] text-gray-400">JPG, PNG, PDF (max. 10 MB)</p>
           </div>
         </button>
       )}
@@ -410,7 +410,7 @@ export default function OrderModal() {
             <form onSubmit={handleSubmit} className="p-5 sm:p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
 
-                {/* LEFT COLUMN — Order Summary + Contact */}
+                {/* LEFT COLUMN: Order Summary + Contact */}
                 <div className="space-y-4">
                   {/* Order Summary */}
                   <div>
@@ -486,7 +486,7 @@ export default function OrderModal() {
                   </div>
                 </div>
 
-                {/* RIGHT COLUMN — Documents + Terms + Submit */}
+                {/* RIGHT COLUMN: Documents + Terms + Submit */}
                 <div className="space-y-4">
                   {/* Documents Section */}
                   <div className="space-y-3">

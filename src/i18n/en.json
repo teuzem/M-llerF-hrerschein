@@ -1086,19 +1086,19 @@
   "gallery.uploader.image_editor_title": "Image Editor",
   "gallery.uploader.video_editing_unavailable": "Video editing is currently unavailable.",
   "heroCarousel.ariaLabel": "Hero Carousel",
-  "heroCarousel.slide1.title": "Your German License — in Just 7 Days",
-  "heroCarousel.slide1.subtitle": "No traffic code exam, no stress. MüllerFührerschein handles every step with the authorities — fast, secure, and 100% legal.",
+  "heroCarousel.slide1.title": "Your German License in Just 7 Days",
+  "heroCarousel.slide1.subtitle": "No traffic code exam, no stress. MüllerFührerschein handles every step with the authorities: fast, secure, and 100% legal.",
   "heroCarousel.slide1.cta": "Get Your License Now",
-  "heroCarousel.slide2.title": "Officially Registered — Ready to Drive",
+  "heroCarousel.slide2.title": "Officially Registered, Ready to Drive",
   "heroCarousel.slide2.subtitle": "Every license is registered with Berlin authorities and entered into the official database. Guaranteed authenticity.",
   "heroCarousel.slide2.cta": "Start Application",
   "heroCarousel.slide3.title": "Over 15,000 Satisfied Customers",
-  "heroCarousel.slide3.subtitle": "Join thousands who already received their license through MüllerFührerschein — with a 99% success rate.",
+  "heroCarousel.slide3.subtitle": "Join thousands who already received their license through MüllerFührerschein, with a 99% success rate.",
   "heroCarousel.slide3.cta": "Free Consultation",
-  "heroCarousel.slide4.title": "All License Classes — One Partner",
-  "heroCarousel.slide4.subtitle": "Car, motorcycle, truck, or bus — we process all classes. Choose your license and we'll handle the rest.",
+  "heroCarousel.slide4.title": "All License Classes, One Partner",
+  "heroCarousel.slide4.subtitle": "Car, motorcycle, truck, or bus: we process all classes. Choose your license and we'll handle the rest.",
   "heroCarousel.slide4.cta": "Choose Your Class",
-  "heroCarousel.slide5.title": "24/7 Support — From Start to Finish",
+  "heroCarousel.slide5.title": "24/7 Support From Start to Finish",
   "heroCarousel.slide5.subtitle": "Our dedicated team guides you personally through the entire process. Available around the clock.",
   "heroCarousel.slide5.cta": "Contact Us",
   "heroCarousel.trust.legal": "100% Legal",
@@ -1351,7 +1351,7 @@
       {
         "title": "Contact",
         "content": [
-          "Phone: +49 (0) 30 1234567",
+          "Phone: +49 152 123 99096",
           "Email: contact@mullerfuhrerschein.com"
         ]
       },
@@ -1782,7 +1782,7 @@
   },
   "carousel": {
     "title": "Our Driving License Services",
-    "subtitle": "Explore our complete range – from moped to bus. Choose your license and get started right away.",
+    "subtitle": "Explore our complete range: from moped to bus. Choose your license and get started right away.",
     "pause": "Pause",
     "play": "Play"
   },
@@ -1805,7 +1805,7 @@
     "terms_text": "I accept the Terms and Conditions and Privacy Policy. My data will be processed in accordance with GDPR.",
     "documents_label": "Upload Documents",
     "required_documents": "Required Documents",
-    "doc_id_label": "ID (Front & Back) — National ID, Passport, etc.",
+    "doc_id_label": "ID (Front & Back), National ID, Passport, etc.",
     "doc_photo_label": "Passport Photo (4×4 cm)",
     "click_to_upload": "Click to upload",
     "drag_files": "Drag files here or click to select",

@@ -43,7 +43,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   locale: propLocale,
   city = 'Berlin',
   address = '',
-  phone = '+49 15 212399096',
+  phone = '+49 152 123 99096',
   email = 'mulerfuhrerschein@gmail.com',
 }) => {
   const { t, i18n } = useTranslation();

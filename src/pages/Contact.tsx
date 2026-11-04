@@ -36,7 +36,7 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: Mail, title: t('contact.info.support'), value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: 'text-german-red' },
-    { icon: Phone, title: t('contact.info.phone'), value: CONTACT_PHONE, href: `https://wa.me/4915212399096`, color: 'text-green-600' },
+    { icon: Phone, title: t('contact.info.phone'), value: CONTACT_PHONE, href: `https://wa.me/${CONTACT_PHONE.replace(/\D/g, '')}`, color: 'text-green-600' },
   ];
 
   const currentLang = (i18n.language || 'de') as 'de' | 'fr' | 'en';

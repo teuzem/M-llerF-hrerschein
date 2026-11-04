@@ -10,6 +10,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { CONTACT_PHONE, CONTACT_PHONE_DIGITS } from '../../lib/constants';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -110,7 +111,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-german-red flex-shrink-0" />
-                <a href="https://wa.me/‬4915510626077">+49 15510 626077‬‬</a>
+                <a href={`https://wa.me/${CONTACT_PHONE_DIGITS}`}>{CONTACT_PHONE}</a>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-german-red flex-shrink-0" />
