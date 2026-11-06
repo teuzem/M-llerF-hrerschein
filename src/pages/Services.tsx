@@ -289,6 +289,7 @@ export default function Services() {
     }
   ])
   const [filteredAdditionalServices, setFilteredAdditionalServices] = useState<AdditionalService[]>([])
+  const { addToCart, isInCart, toggleWishlist, isWishlisted, openOrderModal } = useCart()
 
   useEffect(() => {
     fetchLicenseTypes()
@@ -471,7 +472,6 @@ export default function Services() {
     )
   }
 
-  const { addToCart, isInCart, toggleWishlist, isWishlisted, openOrderModal } = useCart()
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
   const currentSEO = pageSEO[i18n.language as 'de' | 'fr' | 'en']?.services;
 

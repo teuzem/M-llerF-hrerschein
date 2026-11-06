@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { QRCodeCanvas as QRCode } from 'qrcode.react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
-import { supabase, LicenseApplication, Profile } from '../lib/supabase';
+import { supabase, LicenseApplication } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
 import Button from '../components/ui/Button';
@@ -121,7 +121,7 @@ const SubmissionConfirmation: React.FC = () => {
       {/* Hidden element for PDF generation */}
       <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
         <div ref={pdfSummaryRef}>
-          <PDFSummary application={application as any} profile={profile || undefined} />
+          <PDFSummary application={application as any} profile={profile ?? null} />
         </div>
       </div>
     </div>

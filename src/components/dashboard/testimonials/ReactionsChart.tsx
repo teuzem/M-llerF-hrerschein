@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { useTranslation } from 'react-i18next';
+
 import { Testimonial, ReactionType } from '../../../lib/supabase';
 
 interface ReactionsChartProps {
@@ -16,7 +16,6 @@ const reactionEmojis: Record<ReactionType, string> = {
 };
 
 const ReactionsChart: React.FC<ReactionsChartProps> = ({ testimonials }) => {
-  const { t } = useTranslation();
 
   const chartData = useMemo(() => {
     const reactionCounts: Record<ReactionType, number> = {
@@ -30,7 +29,7 @@ const ReactionsChart: React.FC<ReactionsChartProps> = ({ testimonials }) => {
     testimonials.forEach(testimonial => {
       for (const key in testimonial.reactions) {
         const reaction = key as ReactionType;
-        if (reactionCounts.hasOwnProperty(reaction)) {
+        if (Object.prototype.hasOwnProperty.call(reactionCounts, reaction)) {
           reactionCounts[reaction] += testimonial.reactions[reaction];
         }
       }

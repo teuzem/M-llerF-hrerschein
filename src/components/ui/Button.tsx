@@ -9,13 +9,13 @@ type AsProp<C extends React.ElementType> = {
 };
 
 // Combine the 'as' prop with the props of the component it will render
-type PolymorphicComponentProps<C extends React.ElementType, Props = {}> =
+type PolymorphicComponentProps<C extends React.ElementType, Props = Record<string, never>> =
   AsProp<C> & Props & Omit<React.ComponentPropsWithoutRef<C>, keyof (AsProp<C> & Props)>;
 
 // Define the specific props for our Button component
 type ButtonOwnProps = {
   isLoading?: boolean;
-  variant?: 'primary' | 'secondary' | 'danger';
+  variant?: 'primary' | 'secondary' | 'danger' | 'outline';
   children: React.ReactNode;
   className?: string;
   disabled?: boolean;
@@ -44,6 +44,7 @@ const Button = <C extends React.ElementType = typeof DEFAULT_ELEMENT>({
     primary: 'bg-gradient-to-r from-german-black via-german-red to-german-gold text-white hover:from-blue-700 hover:to-red-700 focus:ring-blue-500',
     secondary: 'bg-white text-german-red border-german-red hover:bg-blue-50 focus:ring-blue-500',
     danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
+    outline: 'bg-transparent text-german-red border border-german-red hover:bg-red-50 focus:ring-german-red',
   };
 
   const MotionComponent = motion(Component as React.ElementType);

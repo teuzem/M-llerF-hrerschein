@@ -1,7 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+
 import { GalleryMedia } from '../../../lib/supabase';
-import { Edit, Trash2, Heart, MessageCircle, Share2, Video as VideoIcon } from 'lucide-react';
+import { Edit, Trash2, Heart, MessageCircle, Share2 } from 'lucide-react';
 import ReactPlayer from 'react-player/lazy';
 
 interface UserMediaCardProps {
@@ -11,15 +11,14 @@ interface UserMediaCardProps {
 }
 
 const StatusBadge: React.FC<{ status: 'approved' | 'pending' | 'rejected' }> = ({ status }) => {
-  const { t } = useTranslation();
-  const statusMap = {
+  const statusMap: Record<'approved' | 'pending' | 'rejected', { label: string; color: 'green' | 'yellow' | 'red' }> = {
     approved: { label: 'Veröffentlicht', color: 'green' },
     pending: { label: 'Ausstehend', color: 'yellow' },
     rejected: { label: 'Abgelehnt', color: 'red' },
   };
 
   const { label, color } = statusMap[status];
-  const colorClasses = {
+  const colorClasses: Record<'green' | 'yellow' | 'red', string> = {
     green: 'bg-green-100 text-green-800',
     yellow: 'bg-yellow-100 text-yellow-800',
     red: 'bg-red-100 text-red-800',
@@ -29,7 +28,6 @@ const StatusBadge: React.FC<{ status: 'approved' | 'pending' | 'rejected' }> = (
 };
 
 const UserMediaCard: React.FC<UserMediaCardProps> = ({ media, onDelete, onEdit }) => {
-  const { t } = useTranslation();
   const totalLikes = 0; // Temporairement désactivé pour éviter les erreurs de relation
   const totalComments = 0; // Temporairement désactivé pour éviter les erreurs de relation
   const totalShares = media.share_counts ? Object.values(media.share_counts).reduce((a: number, b: any) => a + b, 0) as number : 0;
@@ -45,7 +43,7 @@ const UserMediaCard: React.FC<UserMediaCardProps> = ({ media, onDelete, onEdit }
           </div>
         )}
         <div className="absolute top-2 left-2">
-          <StatusBadge status={media.status || 'pending'} />
+          <StatusBadge status={media.is_approved ? 'approved' : 'pending'} />
         </div>
       </div>
       <div className="p-4">

@@ -82,20 +82,20 @@ export const VisitorTracker = () => {
               const d = await r1.json();
               if (d.success) return d;
             }
-          } catch(e) {}
-          
+          } catch { /* geolocalisation indisponible */ }
+
           // Secondary: ipapi.co (good fallback, but has stricter rate limits without API keys)
           try {
             const r2 = await fetch('https://ipapi.co/json/');
             if (r2.ok) return await r2.json();
-          } catch(e) {}
-          
+          } catch { /* geolocalisation indisponible */ }
+
           // Ternary: freeipapi.com (final fallback)
           try {
             const r3 = await fetch('https://freeipapi.com/api/json');
             if (r3.ok) return await r3.json();
-          } catch(e) {}
-          
+          } catch { /* geolocalisation indisponible */ }
+
           return {};
         };
         

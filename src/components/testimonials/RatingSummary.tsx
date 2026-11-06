@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Star } from 'lucide-react';
-import { Testimonial } from '../../pages/Testimonials';
+import type { Testimonial } from '../../lib/supabase';
 
 interface RatingSummaryProps {
   testimonials: Testimonial[];

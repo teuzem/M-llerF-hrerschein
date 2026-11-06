@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+
 import { Testimonial } from '../../../lib/supabase';
 import { Star, Edit, Trash2, MessageCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import DashboardCommentSection from './DashboardCommentSection';
@@ -11,14 +11,14 @@ interface UserTestimonialCardProps {
 }
 
 const StatusBadge: React.FC<{ status: Testimonial['status'] }> = ({ status }) => {
-  const statusMap = {
+  const statusMap: Record<Testimonial['status'], { label: string; color: 'green' | 'yellow' | 'red' }> = {
     approved: { label: 'Veröffentlicht', color: 'green' },
     pending: { label: 'Ausstehend', color: 'yellow' },
     rejected: { label: 'Abgelehnt', color: 'red' },
   };
 
   const { label, color } = statusMap[status];
-  const colorClasses = {
+  const colorClasses: Record<'green' | 'yellow' | 'red', string> = {
     green: 'bg-green-100 text-green-800',
     yellow: 'bg-yellow-100 text-yellow-800',
     red: 'bg-red-100 text-red-800',
@@ -28,7 +28,6 @@ const StatusBadge: React.FC<{ status: Testimonial['status'] }> = ({ status }) =>
 };
 
 const UserTestimonialCard: React.FC<UserTestimonialCardProps> = ({ testimonial, onDelete, onEdit }) => {
-  const { t } = useTranslation();
   const [showComments, setShowComments] = useState(false);
   const totalReactions = Object.values(testimonial.reactions || {}).reduce((a, b) => a + b, 0);
   const commentCount = testimonial.comments?.[0]?.count || 0;

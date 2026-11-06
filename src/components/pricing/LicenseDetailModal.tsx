@@ -14,11 +14,11 @@ interface LicenseDetailModalProps {
 
 const LicenseDetailModal: React.FC<LicenseDetailModalProps> = ({ license, isOpen, onClose }) => {
   const { t, i18n } = useTranslation();
+  const { addToCart, isInCart, openOrderModal } = useCart();
 
   if (!license) return null;
 
   const currentLang = i18n.language.split('-')[0] as 'de' | 'en' | 'fr';
-  const { addToCart, isInCart, openOrderModal } = useCart();
   const licenseName = (license as any)[`name_${currentLang}`] || license.name_de;
   const licenseDesc = (license as any)[`description_${currentLang}`] || license.description_de;
 

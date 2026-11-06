@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import {
   CheckCircle,
   Clock,
-  Shield,
   Users,
   CreditCard,
   FileText,
@@ -14,7 +13,6 @@ import {
   Phone,
   Mail,
   ArrowLeft,
-  Star,
   Award,
   UserCheck,
   Unlock
@@ -250,7 +248,7 @@ const CreateAccountService: React.FC = () => {
 // Composant pour l'activation de compte
 const ActivationService: React.FC = () => {
   const { t } = useTranslation('ubereats');
-  const [status, setStatus] = useState<'pending' | 'in_progress' | 'approved' | 'rejected'>('pending');
+  const [status] = useState<'pending' | 'in_progress' | 'approved' | 'rejected'>('pending');
 
   const statusConfig = {
     pending: {
@@ -379,11 +377,9 @@ const ActivationService: React.FC = () => {
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="outline" asChild>
-            <Link to="/contact">
-              <Phone className="mr-2 h-4 w-4" />
-              {t('activation.contact_support')}
-            </Link>
+          <Button variant="outline" as={Link} to="/contact">
+            <Phone className="mr-2 h-4 w-4" />
+            {t('activation.contact_support')}
           </Button>
           <Button className="bg-blue-600 hover:bg-blue-700">
             <Mail className="mr-2 h-4 w-4" />
@@ -584,7 +580,6 @@ const UberEatsServices: React.FC<UberEatsServicesProps> = ({
   serviceType = 'creation',
   className = ''
 }) => {
-  const { t } = useTranslation();
 
   const renderService = () => {
     switch (serviceType) {
@@ -629,11 +624,9 @@ const UberEatsServices: React.FC<UberEatsServicesProps> = ({
           transition={{ delay: 0.3 }}
           className="mt-12 text-center"
         >
-          <Button variant="outline" asChild>
-            <Link to="/ubereats">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Retour aux services Uber Eats
-            </Link>
+          <Button variant="outline" as={Link} to="/ubereats">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Retour aux services Uber Eats
           </Button>
         </motion.div>
       </div>

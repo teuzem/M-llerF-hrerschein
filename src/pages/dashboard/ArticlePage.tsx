@@ -18,7 +18,7 @@ interface Article {
 
 const ArticlePage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [article, setArticle] = useState<Article | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

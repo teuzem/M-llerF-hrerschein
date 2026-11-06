@@ -1,5 +1,13 @@
 import React from 'react';
-import { PayPalButtons, OnApproveData, OnApproveActions } from '@paypal/react-paypal-js';
+import { PayPalButtons } from '@paypal/react-paypal-js';
+import type { PayPalButtonsComponentProps as PayPalSDKProps } from '@paypal/react-paypal-js';
+
+// Les types OnApproveData / OnApproveActions sont fournis par le SDK PayPal et
+// exposes via les props du composant. On les derive de celles-ci pour ne pas
+// dependre directement d'un paquet transitif.
+type OnApproveHandler = NonNullable<PayPalSDKProps['onApprove']>;
+type OnApproveData = Parameters<OnApproveHandler>[0];
+type OnApproveActions = Parameters<OnApproveHandler>[1];
 import toast from 'react-hot-toast';
 import { supabase } from '../../lib/supabase';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +35,7 @@ const PayPalButtonsComponent: React.FC<PayPalButtonsComponentProps> = ({ totalAm
     }
   };
 
-  const onApprove = async (data: OnApproveData, actions: OnApproveActions): Promise<void> => {
+  const onApprove = async (data: OnApproveData, _actions: OnApproveActions): Promise<void> => {
     try {
       const { data: captureData, error } = await supabase.functions.invoke('capture-paypal-order', {
         body: { orderID: data.orderID },

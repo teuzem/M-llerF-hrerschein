@@ -204,12 +204,12 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ conversation, onBack }) => {
       const now = new Date();
       const diffMinutes = Math.round((now.getTime() - lastSeenDate.getTime()) / 60000);
       if (diffMinutes < 1) return <span className="text-sm text-gray-400">{t('chat.just_seen', 'Gerade gesehen')}</span>;
-      if (diffMinutes < 60) return <span className="text-sm text-gray-400">{t('chat.seen_minutes', { count: diffMinutes }, `Vor ${diffMinutes} Min. gesehen`)}</span>;
+      if (diffMinutes < 60) return <span className="text-sm text-gray-400">{t('chat.seen_minutes', { count: diffMinutes, defaultValue: `Vor ${diffMinutes} Min. gesehen` })}</span>;
       if (diffMinutes < 1440) {
         const hours = Math.floor(diffMinutes / 60);
-        return <span className="text-sm text-gray-400">{t('chat.seen_hours', { count: hours }, `Vor ${hours} Std. gesehen`)}</span>;
+        return <span className="text-sm text-gray-400">{t('chat.seen_hours', { count: hours, defaultValue: `Vor ${hours} Std. gesehen` })}</span>;
       }
-      return <span className="text-sm text-gray-400">{t('chat.last_seen_on', { date: lastSeenDate.toLocaleDateString() }, `Zuletzt ${lastSeenDate.toLocaleDateString()} gesehen`)}</span>;
+      return <span className="text-sm text-gray-400">{t('chat.last_seen_on', { date: lastSeenDate.toLocaleDateString(), defaultValue: `Zuletzt ${lastSeenDate.toLocaleDateString()} gesehen` })}</span>;
     }
     return <span className="text-sm text-gray-400">{t('chat.offline', 'Offline')}</span>;
   };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import TestimonialCard from './TestimonialCard';
-import { Testimonial } from '../../pages/Testimonials';
+import type { Testimonial } from '../../lib/supabase';
 
 interface TestimonialListProps {
   testimonials: Testimonial[];
