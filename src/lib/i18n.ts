@@ -5,18 +5,23 @@ import de from '../i18n/de.json'
 import en from '../i18n/en.json'
 import fr from '../i18n/fr.json'
 
+// Les composants Uber Eats utilisent useTranslation('ubereats') et appellent
+// t('uber_eats.…') ainsi que t('activation.…'). Les fichiers de langue sont
+// plats (cles avec points), sans objet 'ubereats' imbrique : le namespace
+// doit donc pointer vers l'integralite des traductions, sans quoi i18next
+// ne trouve aucune cle et affiche le nom brut de la cle.
 const resources = {
   de: { 
     translation: de,
-    ubereats: (de as any).ubereats 
+    ubereats: de
   },
   en: { 
     translation: en,
-    ubereats: (en as any).ubereats 
+    ubereats: en
   },
   fr: { 
     translation: fr,
-    ubereats: (fr as any).ubereats 
+    ubereats: fr
   }
 }
 
