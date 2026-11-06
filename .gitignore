@@ -48,6 +48,9 @@ Thumbs.db
 /.parcel-cache
 /.eslintcache
 
+# Fichiers de build incrémental TypeScript
+*.tsbuildinfo
+
 # Storybook build output
 /out
 /storybook-static
