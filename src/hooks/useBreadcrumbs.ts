@@ -14,7 +14,6 @@ const routeNameMap: { [key: string]: string } = {
   testimonials: 'nav.testimonials',
   gallery: 'nav.gallery',
   clients: 'nav.clients',
-  about: 'nav.about',
   contact: 'nav.contact',
   legal: 'footer.links.legal',
   privacy: 'footer.links.privacy',
@@ -38,7 +37,7 @@ const useBreadcrumbs = () => {
     const generateBreadcrumbs = async () => {
       setLoading(true);
       const pathnames = location.pathname.split('/').filter(x => x);
-      const crumbs: Breadcrumb[] = [{ label: 'Accueil', path: '/' }];
+      const crumbs: Breadcrumb[] = [{ label: t('nav.home'), path: '/' }];
       
       let currentPath = '';
       for (const segment of pathnames) {
@@ -49,13 +48,13 @@ const useBreadcrumbs = () => {
         if (params.id && currentPath.includes(params.id)) {
           if (currentPath.startsWith('/clients')) {
             const { data } = await supabase.from('profiles').select('full_name').eq('id', params.id).single();
-            label = data?.full_name || 'Profil';
+            label = data?.full_name || t('public_profile.title', 'Profil');
           }
         }
         if (params.slug && currentPath.includes(params.slug)) {
            if (currentPath.startsWith('/dashboard/help')) {
             const { data } = await supabase.from('knowledge_base_articles').select('title_fr').eq('slug', params.slug).single();
-            label = data?.title_fr || 'Article';
+            label = data?.title_fr || t('dashboard.help.article.title', 'Artikel');
           }
         }
 

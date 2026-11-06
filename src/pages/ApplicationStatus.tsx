@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { supabase, LicenseApplication } from '../lib/supabase';
@@ -10,8 +10,6 @@ import SEOHead from '../components/seo/SEOHead';
 const ApplicationStatus: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-
   const [application, setApplication] = useState<LicenseApplication | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -125,7 +123,7 @@ const ApplicationStatus: React.FC = () => {
                     </div>
                     <div className={`pt-1 ${isCompleted ? '' : 'text-gray-500'}`}>
                       <p className="font-semibold">{step.label}</p>
-                      {isCurrent && <p className="text-sm">{t('status.last_update')}: {new Date(application.updated_at).toLocaleString('fr-FR')}</p>}
+                      {isCurrent && <p className="text-sm">{t('status.last_update')}: {new Date(application.updated_at).toLocaleString(currentLang === 'de' ? 'de-DE' : currentLang === 'fr' ? 'fr-FR' : 'en-US')}</p>}
                     </div>
                   </div>
                 )

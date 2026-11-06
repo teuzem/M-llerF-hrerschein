@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calculator, Plus, ArrowRight } from 'lucide-react';
+import { Calculator, ArrowRight } from 'lucide-react';
 import { LicenseType } from '../../lib/supabase';
 import Button from '../ui/Button';
 import { useAuth } from '../../contexts/AuthContext';
@@ -14,12 +14,14 @@ interface PriceCalculatorProps {
 const THEORY_TEST_FEE = 300;
 
 const PriceCalculator: React.FC<PriceCalculatorProps> = ({ licenseTypes }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { user } = useAuth();
   const [selectedLicenseId, setSelectedLicenseId] = useState<string>('');
   const [includeTheoryTest, setIncludeTheoryTest] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
   const [basePrice, setBasePrice] = useState(0);
+
+  const locale = i18n.language?.startsWith('fr') ? 'fr-FR' : i18n.language?.startsWith('en') ? 'en-US' : 'de-DE';
 
   useEffect(() => {
     const selectedLicense = licenseTypes.find(lt => lt.id === selectedLicenseId);
@@ -92,17 +94,17 @@ const PriceCalculator: React.FC<PriceCalculatorProps> = ({ licenseTypes }) => {
           <div className="space-y-3">
             <div className="flex justify-between items-center text-gray-600">
               <span>{t('pricing.calculator.base_price')}</span>
-              <span className="font-medium">{basePrice.toLocaleString('fr-FR')}€</span>
+              <span className="font-medium">{basePrice.toLocaleString(locale)}€</span>
             </div>
             {includeTheoryTest && (
               <div className="flex justify-between items-center text-gray-600">
                 <span>{t('pricing.calculator.theory_test_fee')}</span>
-                <span className="font-medium">{THEORY_TEST_FEE.toLocaleString('fr-FR')}€</span>
+                <span className="font-medium">{THEORY_TEST_FEE.toLocaleString(locale)}€</span>
               </div>
             )}
             <div className="border-t border-gray-200 pt-3 mt-3 flex justify-between items-center text-xl font-bold text-gray-900">
               <span>{t('pricing.calculator.total')}</span>
-              <span>{totalPrice.toLocaleString('fr-FR')}€</span>
+              <span>{totalPrice.toLocaleString(locale)}€</span>
             </div>
           </div>
         </div>

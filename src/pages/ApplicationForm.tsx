@@ -165,7 +165,7 @@ export default function ApplicationForm() {
         await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CLIENT, emailParamsClient, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
       } catch (emailError) {
         console.warn("EmailJS error:", emailError);
-        toast.error("La demande a été soumise, mais l'envoi de l'email de confirmation a échoué.");
+        toast.error(t('application.form.email_error'));
       }
       
       toast.success(t('application.form.success'));
@@ -195,7 +195,7 @@ export default function ApplicationForm() {
       />
       <div className="max-w-5xl mx-auto">
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
-          <h1 className="text-3xl font-bold text-gray-900 text-center">{t('application.form.title')} pour Permis {licenseType?.category}</h1>
+          <h1 className="text-3xl font-bold text-gray-900 text-center">{t('application.form.title_with_category', { category: licenseType?.category })}</h1>
           <p className="text-center text-gray-600 mt-2">{t('application.form.subtitle')}</p>
         </motion.div>
 
@@ -221,14 +221,14 @@ export default function ApplicationForm() {
                   />
                   <Controller name="neph" control={control} render={({ field }) => <Input label={t('application.form.neph')} registration={field} error={errors.neph?.message} icon={<Hash className="w-5 h-5 text-gray-400" />} />} />
                 </div>
-                <Controller name="address" control={control} rules={{ required: 'Adresse requise' }} render={({ field }) => <Input label={t('application.form.address')} registration={field} error={errors.address?.message} icon={<Home className="w-5 h-5 text-gray-400" />} />} />
+                <Controller name="address" control={control} rules={{ required: t('application.form.error.address_required') }} render={({ field }) => <Input label={t('application.form.address')} registration={field} error={errors.address?.message} icon={<Home className="w-5 h-5 text-gray-400" />} />} />
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Controller name="city" control={control} rules={{ required: 'Ville requise' }} render={({ field }) => <Input label={t('application.form.city')} registration={field} error={errors.city?.message} icon={<Building className="w-5 h-5 text-gray-400" />} />} />
-                  <Controller name="postalCode" control={control} rules={{ required: 'Code postal requis' }} render={({ field }) => <Input label={t('application.form.postal_code')} registration={field} error={errors.postalCode?.message} icon={<MapPin className="w-5 h-5 text-gray-400" />} />} />
+                  <Controller name="city" control={control} rules={{ required: t('application.form.error.city_required') }} render={({ field }) => <Input label={t('application.form.city')} registration={field} error={errors.city?.message} icon={<Building className="w-5 h-5 text-gray-400" />} />} />
+                  <Controller name="postalCode" control={control} rules={{ required: t('application.form.error.postal_code_required') }} render={({ field }) => <Input label={t('application.form.postal_code')} registration={field} error={errors.postalCode?.message} icon={<MapPin className="w-5 h-5 text-gray-400" />} />} />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">{t('application.form.region')}</label>
-                  <Controller name="region" control={control} rules={{ required: 'Région requise' }} render={({ field }) => <Select {...field} options={regions} placeholder={t('common.select_prompt')} styles={{ control: (base) => ({ ...base, borderColor: errors.region ? 'rgb(239 68 68)' : 'rgb(209 213 219)' }) }} />} />
+                  <Controller name="region" control={control} rules={{ required: t('application.form.error.region_required') }} render={({ field }) => <Select {...field} options={regions} placeholder={t('common.select_prompt')} styles={{ control: (base) => ({ ...base, borderColor: errors.region ? 'rgb(239 68 68)' : 'rgb(209 213 219)' }) }} />} />
                   {errors.region && <p className="mt-1 text-sm text-red-600">{errors.region.message}</p>}
                 </div>
                 <div className="flex justify-end">
@@ -240,9 +240,9 @@ export default function ApplicationForm() {
             {step === 2 && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
                 <h2 className="text-xl font-semibold text-gray-800">{t('application.form.step2')}</h2>
-                <Controller name="cni" control={control} rules={{ validate: v => v.length > 0 || 'Document requis' }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_cni')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
-                <Controller name="photo" control={control} rules={{ validate: v => v.length > 0 || 'Document requis' }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_photo')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
-                <Controller name="signature" control={control} rules={{ validate: v => v.length > 0 || 'Document requis' }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_signature')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
+                <Controller name="cni" control={control} rules={{ validate: v => v.length > 0 || t('application.form.error.document_required') }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_cni')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
+                <Controller name="photo" control={control} rules={{ validate: v => v.length > 0 || t('application.form.error.document_required') }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_photo')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
+                <Controller name="signature" control={control} rules={{ validate: v => v.length > 0 || t('application.form.error.document_required') }} render={({ field, fieldState }) => <div><AdvancedDropzone label={t('application.form.doc_signature')} onFilesChange={field.onChange} files={field.value} /><p className="mt-1 text-sm text-red-600">{fieldState.error?.message}</p></div>} />
                 <div className="flex justify-between">
                   <Button variant="secondary" onClick={prevStep}>{t('application.form.prev_button')}</Button>
                   <Button onClick={nextStep} disabled={!isValid}>{t('application.form.next_button')}</Button>

@@ -26,6 +26,9 @@ interface EnrichedDocument {
 }
 
 const DocumentCard: React.FC<{ doc: EnrichedDocument, onDownload: (path: string, name: string) => void }> = ({ doc, onDownload }) => {
+  const { i18n } = useTranslation();
+  const locale = i18n.language?.startsWith('fr') ? 'fr-FR' : i18n.language?.startsWith('en') ? 'en-US' : 'de-DE';
+
   const getFileIcon = (mimeType?: string) => {
     if (mimeType?.startsWith('image/')) return <ImageIcon className="w-8 h-8 text-blue-500" />;
     if (mimeType === 'application/pdf') return <FileType className="w-8 h-8 text-red-500" />;
@@ -38,7 +41,7 @@ const DocumentCard: React.FC<{ doc: EnrichedDocument, onDownload: (path: string,
         {getFileIcon(doc.mime_type)}
         <div>
           <p className="font-medium text-sm text-gray-800 truncate max-w-xs">{doc.file_name}</p>
-          <p className="text-xs text-gray-500">{new Date(doc.uploaded_at).toLocaleDateString('fr-FR')}</p>
+          <p className="text-xs text-gray-500">{new Date(doc.uploaded_at).toLocaleDateString(locale)}</p>
         </div>
       </div>
       <button onClick={() => onDownload(doc.file_path, doc.file_name)} className="p-2 text-gray-500 hover:text-german-red hover:bg-gray-100 rounded-full">
