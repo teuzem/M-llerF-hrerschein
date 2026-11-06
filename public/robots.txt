@@ -8,10 +8,6 @@ Disallow: /application/form
 Disallow: /application/confirmation/
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
-Disallow: /node_modules/
-Disallow: *.json$
 Disallow: /404
 Disallow: /500
 Disallow: /.htaccess

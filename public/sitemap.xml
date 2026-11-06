@@ -9,7 +9,7 @@
   <!-- Homepage with Rich Media -->
   <url>
     <loc>https://mulerfuhrerschein.de/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -32,14 +32,14 @@
   <!-- Core Services -->
   <url>
     <loc>https://mulerfuhrerschein.de/services</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/pricing</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -47,28 +47,28 @@
   <!-- Uber Eats Special Services -->
   <url>
     <loc>https://mulerfuhrerschein.de/ubereats</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/ubereats/create-account</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/ubereats/activation</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/ubereats/unlock</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -76,29 +76,21 @@
   <!-- Content & Social Proof -->
   <url>
     <loc>https://mulerfuhrerschein.de/testimonials</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/gallery</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-    <!-- Video and Image references for Gallery -->
-    <video:video>
-      <video:thumbnail_loc>https://mulerfuhrerschein.de/images/hero/hero-slide-1.jpg</video:thumbnail_loc>
-      <video:title>Erfolgsgeschichten von MüllerFührerschein</video:title>
-      <video:description>Sehen Sie unsere Kunden, wie sie ihre neuen Führerscheine erhalten und sicher im Straßenverkehr unterwegs sind.</video:description>
-      <video:content_loc>https://mulerfuhrerschein.de/gallery</video:content_loc>
-      <video:player_loc>https://mulerfuhrerschein.de/gallery</video:player_loc>
-    </video:video>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/clients</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
@@ -106,21 +98,21 @@
   <!-- Support & Interaction -->
   <url>
     <loc>https://mulerfuhrerschein.de/contact</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/faq</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/application/new</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -128,21 +120,21 @@
   <!-- Legal Documentation -->
   <url>
     <loc>https://mulerfuhrerschein.de/legal</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/privacy</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://mulerfuhrerschein.de/terms</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -150,7 +142,7 @@
   <!-- Checkout & Success -->
   <url>
     <loc>https://mulerfuhrerschein.de/thank-you</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
