@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+
 import { supabase, TestimonialComment } from '../../../lib/supabase';
 import Avatar from '../../ui/Avatar';
 import LoadingSpinner from '../../ui/LoadingSpinner';
@@ -9,7 +9,6 @@ interface DashboardCommentSectionProps {
 }
 
 const DashboardCommentSection: React.FC<DashboardCommentSectionProps> = ({ testimonialId }) => {
-  const { t } = useTranslation();
   const [comments, setComments] = useState<TestimonialComment[]>([]);
   const [loading, setLoading] = useState(true);
 

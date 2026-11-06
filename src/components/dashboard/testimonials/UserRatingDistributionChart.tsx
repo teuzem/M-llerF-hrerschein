@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { useTranslation } from 'react-i18next';
+
 import { Testimonial } from '../../../lib/supabase';
 import { Star } from 'lucide-react';
 
@@ -9,7 +9,6 @@ interface UserRatingDistributionChartProps {
 }
 
 const UserRatingDistributionChart: React.FC<UserRatingDistributionChartProps> = ({ testimonials }) => {
-  const { t } = useTranslation();
 
   const chartData = useMemo(() => {
     const distribution = [0, 0, 0, 0, 0]; // Index 0 is 1 star, etc.

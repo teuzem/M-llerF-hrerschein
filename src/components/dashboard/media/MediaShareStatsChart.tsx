@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { useTranslation } from 'react-i18next';
+
 import { GalleryMedia } from '../../../lib/supabase';
 import { Share2 } from 'lucide-react';
 
@@ -9,7 +9,6 @@ interface MediaShareStatsChartProps {
 }
 
 const MediaShareStatsChart: React.FC<MediaShareStatsChartProps> = ({ media }) => {
-  const { t } = useTranslation();
 
   const chartData = useMemo(() => {
     const shareCounts: { [key: string]: number } = {};

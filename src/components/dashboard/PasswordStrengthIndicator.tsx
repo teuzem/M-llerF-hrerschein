@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+
 import { motion } from 'framer-motion';
 
 interface PasswordStrengthIndicatorProps {
@@ -7,7 +7,6 @@ interface PasswordStrengthIndicatorProps {
 }
 
 const PasswordStrengthIndicator: React.FC<PasswordStrengthIndicatorProps> = ({ strength }) => {
-  const { t } = useTranslation();
 
   // zxcvbn score is 0-4. We map this to labels and colors.
   const strengthConfig = [

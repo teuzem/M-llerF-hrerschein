@@ -62,7 +62,7 @@ Deno.serve(async (req) => {
     const contactId = `contact_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
     
     // Send notification to admin (placeholder)
-    const adminNotification = {
+    const _adminNotification = {
       to: 'mulerfuhrerschein@gmail.com',
       subject: `Neue Kontaktanfrage: ${subject}`,
       template: 'contact_notification',
@@ -80,7 +80,7 @@ Deno.serve(async (req) => {
     };
 
     // Send confirmation to user
-    const userConfirmation = {
+    const _userConfirmation = {
       to: email,
       subject: 'Ihre Nachricht wurde empfangen - MüllerFuhrerschein',
       template: 'contact_confirmation',

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
 import { supabase } from '../../lib/supabase';
 import toast from 'react-hot-toast';
-import { User, UploadCloud } from 'lucide-react';
+import { User } from 'lucide-react';
 import LoadingSpinner from '../ui/LoadingSpinner';
 
 const AvatarUploader: React.FC = () => {
@@ -45,7 +45,7 @@ const AvatarUploader: React.FC = () => {
       const { error: uploadError } = await supabase.storage.from('avatars').upload(filePath, file);
       if (uploadError) throw uploadError;
 
-      const { data: updateData, error: updateError } = await supabase
+      const { error: updateError } = await supabase
         .from('profiles')
         .update({ avatar_url: filePath })
         .eq('id', user.id);

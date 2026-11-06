@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { X, LayoutDashboard, FileText, FolderOpen, User, CircleHelp as HelpCircle, LogOut, MessageSquare, Image as ImageIcon, MessageCircle as MessageIcon } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';

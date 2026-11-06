@@ -7,9 +7,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react-player'],
     exclude: ['lucide-react'],
-  },
-
-  server: {
     force: true,
   },
 

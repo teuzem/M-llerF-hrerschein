@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Control, useFieldArray, Controller } from 'react-hook-form';
+
+import { Control, Controller } from 'react-hook-form';
 import { Link as LinkIcon, Trash2, PlusCircle, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import Button from '../ui/Button';
 
@@ -28,7 +28,6 @@ const getSocialIcon = (url: string) => {
 };
 
 const SocialLinksInput: React.FC<SocialLinksInputProps> = ({ control, fields, append, remove }) => {
-  const { t } = useTranslation();
 
   return (
     <div className="space-y-4">

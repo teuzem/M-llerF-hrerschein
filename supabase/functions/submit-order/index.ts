@@ -24,7 +24,7 @@ Deno.serve(async (req) => {
     const body = await req.json();
     const {
       orderNumber,
-      orderId,
+      _orderId,
       customerEmail,
       customerPhone,
       items,

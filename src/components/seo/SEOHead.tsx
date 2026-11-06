@@ -55,15 +55,15 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     const defaultDescription = t('seo.default_description');
     const defaultKeywords = 'deutscher Führerschein, driving license Germany, permis allemand, MüllerFührerschein';
 
-    let fullTitle = currentLocale === 'en' ? (titleEn || title || defaultTitle) : 
+    const fullTitle = currentLocale === 'en' ? (titleEn || title || defaultTitle) : 
                     currentLocale === 'fr' ? (titleFr || title || defaultTitle) : 
                     (title || defaultTitle);
     
-    let descriptionToUse = currentLocale === 'en' ? (descriptionEn || description || defaultDescription) : 
+    const descriptionToUse = currentLocale === 'en' ? (descriptionEn || description || defaultDescription) : 
                            currentLocale === 'fr' ? (descriptionFr || description || defaultDescription) : 
                            (description || defaultDescription);
     
-    let keywordsToUse = currentLocale === 'en' ? (keywordsEn || keywords || defaultKeywords) : 
+    const keywordsToUse = currentLocale === 'en' ? (keywordsEn || keywords || defaultKeywords) : 
                         currentLocale === 'fr' ? (keywordsFr || keywords || defaultKeywords) : 
                         (keywords || defaultKeywords);
 
@@ -116,7 +116,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     canonicalLink.href = canonicalUrlToUse;
 
     // Structured Data
-    let schemaData: any = structuredData || {
+    const schemaData: any = structuredData || {
       "@context": "https://schema.org",
       "@type": businessType === 'uberEats' ? "Service" : "DrivingSchool",
       "name": businessType === 'uberEats' ? `${brandName} - Uber Eats Service` : brandName,

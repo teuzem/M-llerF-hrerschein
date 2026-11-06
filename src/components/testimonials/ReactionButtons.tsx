@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Popover, Transition } from '@headlessui/react';
-import { ThumbsUp, Heart, Smile, Frown, Angry } from 'lucide-react';
+import { ThumbsUp } from 'lucide-react';
 import { supabase, Testimonial, ReactionType } from '../../lib/supabase';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTranslation } from 'react-i18next';
@@ -50,7 +50,7 @@ const ReactionButtons: React.FC<ReactionButtonsProps> = ({ testimonial }) => {
     const oldReaction = userReaction;
     const oldReactions = { ...reactions };
     
-    let newReactions = { ...reactions };
+    const newReactions = { ...reactions };
     if (oldReaction) newReactions[oldReaction] = (newReactions[oldReaction] || 1) - 1;
     if (oldReaction !== reaction) {
       newReactions[reaction] = (newReactions[reaction] || 0) + 1;

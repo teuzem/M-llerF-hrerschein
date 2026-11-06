@@ -1,15 +1,14 @@
 import React, { useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+
 import StatCard from '../StatCard';
 import { MessageSquare, Heart, Star } from 'lucide-react';
-import { Testimonial, ReactionType } from '../../../lib/supabase';
+import { Testimonial } from '../../../lib/supabase';
 
 interface TestimonialStatsProps {
   testimonials: Testimonial[];
 }
 
 const TestimonialStats: React.FC<TestimonialStatsProps> = ({ testimonials }) => {
-  const { t } = useTranslation();
 
   const stats = useMemo(() => {
     const totalReviews = testimonials.length;

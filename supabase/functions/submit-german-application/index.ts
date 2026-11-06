@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
       userId, 
       licenseType, 
       personalData, 
-      documents = [],
+      _documents = [],
       gdprConsent = true
     } = requestData;
 
@@ -86,7 +86,7 @@ Deno.serve(async (req) => {
     };
 
     // Send confirmation email (placeholder for email service)
-    const emailData = {
+    const _emailData = {
       to: personalData.email || '',
       subject: `Ihr Führerschein-Antrag wurde eingereicht - ${applicationResponse.application_number}`,
       template: 'application_submitted',

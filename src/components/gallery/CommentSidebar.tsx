@@ -31,7 +31,7 @@ const CommentSidebar: React.FC<CommentSidebarProps> = ({ isOpen, onClose, mediaI
     if (isOpen) {
       const fetchComments = async () => {
         setLoading(true);
-        let query = supabase
+        const query = supabase
           .from('gallery_comments')
           .select('*, profiles(*), gallery_comment_likes(count)')
           .eq('media_id', mediaId)

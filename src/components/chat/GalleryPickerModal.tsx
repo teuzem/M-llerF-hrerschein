@@ -45,7 +45,7 @@ const GalleryPickerModal: React.FC<GalleryPickerModalProps> = ({ isOpen, onClose
         .eq('id', user?.id)
         .single();
 
-      let allMedia: any[] = galleryData || [];
+      const allMedia: any[] = galleryData || [];
 
       if (profileData) {
         if (profileData.avatar_url) {

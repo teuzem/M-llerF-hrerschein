@@ -181,7 +181,7 @@ const DashboardProfile = () => {
   const handleDeleteAccount = async () => {
     if (deleteConfirmText !== 'DELETE') return;
     setIsDeleting(true);
-    try { await deleteAccount(); } catch (error) {} finally { setIsDeleting(false); }
+    try { await deleteAccount(); } catch { /* la suppression a deja ete traitee */ } finally { setIsDeleting(false); }
   };
 
   if (!profile) return null;

@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useDropzone, FileRejection } from 'react-dropzone';
 import { useTranslation } from 'react-i18next';
-import { UploadCloud, File as FileIcon, X, Edit, FileType } from 'lucide-react';
+import { UploadCloud, X, Edit, FileType } from 'lucide-react';
 import ImageCropModal from './ImageCropModal';
 
 interface AdvancedDropzoneProps {

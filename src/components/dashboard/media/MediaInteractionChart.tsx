@@ -1,15 +1,14 @@
 import React, { useMemo } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { useTranslation } from 'react-i18next';
+
 import { GalleryMedia } from '../../../lib/supabase';
-import { Heart, MessageCircle } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 interface MediaInteractionChartProps {
   media: GalleryMedia[];
 }
 
 const MediaInteractionChart: React.FC<MediaInteractionChartProps> = ({ media }) => {
-  const { t } = useTranslation();
 
   const chartData = useMemo(() => {
     const totalLikes = 0; // Temporairement désactivé pour éviter les erreurs de relation

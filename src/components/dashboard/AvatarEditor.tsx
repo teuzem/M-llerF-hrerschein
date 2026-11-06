@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useTranslation } from 'react-i18next';
-import { User, UploadCloud, Edit2 } from 'lucide-react';
+import { User, Edit2 } from 'lucide-react';
 import ImageEditorModal from '../testimonials/ImageEditorModal'; // Reusing the powerful editor
 
 interface AvatarEditorProps {
@@ -27,7 +27,7 @@ const AvatarEditor: React.FC<AvatarEditorProps> = ({ currentAvatarUrl, onAvatarC
     }
   }, []);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({
+  const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     maxFiles: 1,
     accept: { 'image/*': ['.jpeg', '.png', '.webp'] },

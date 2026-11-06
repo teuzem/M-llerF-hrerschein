@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
 interface ModalProps {

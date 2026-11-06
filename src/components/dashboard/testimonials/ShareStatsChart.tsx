@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import ReactECharts from 'echarts-for-react';
-import { useTranslation } from 'react-i18next';
+
 import { Testimonial } from '../../../lib/supabase';
 import { Share2 } from 'lucide-react';
 
@@ -9,7 +9,6 @@ interface ShareStatsChartProps {
 }
 
 const ShareStatsChart: React.FC<ShareStatsChartProps> = ({ testimonials }) => {
-  const { t } = useTranslation();
 
   const chartData = useMemo(() => {
     const shareCounts: { [key: string]: number } = {};

@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import Modal from '../../ui/Modal';
 import Button from '../../ui/Button';
 import { GalleryMedia } from '../../../lib/supabase';
-import { Trash2 } from 'lucide-react';
 
 interface EditUserMediaModalProps {
   isOpen: boolean;
@@ -12,7 +11,7 @@ interface EditUserMediaModalProps {
   onUpdate: () => void;
 }
 
-const EditUserMediaModal: React.FC<EditUserMediaModalProps> = ({ isOpen, onClose, media, onUpdate }) => {
+const EditUserMediaModal: React.FC<EditUserMediaModalProps> = ({ isOpen, onClose, media }) => {
   const { t } = useTranslation();
 
   if (!media) return null;

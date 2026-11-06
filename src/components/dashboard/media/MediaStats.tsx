@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
+
 import StatCard from '../StatCard';
 import { Image, Heart, MessageCircle, Share2 } from 'lucide-react';
 import { GalleryMedia } from '../../../lib/supabase';
@@ -9,7 +9,6 @@ interface MediaStatsProps {
 }
 
 const MediaStats: React.FC<MediaStatsProps> = ({ media }) => {
-  const { t } = useTranslation();
 
   const stats = useMemo(() => {
     const totalMedia = media.length;

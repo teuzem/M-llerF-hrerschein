@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useTranslation } from 'react-i18next';
-import { CloudUpload as UploadCloud, X, LocationEdit as Edit2, Film, Link as LinkIcon, Image as ImageIcon, Eye } from 'lucide-react';
+import { CloudUpload as UploadCloud, X, LocationEdit as Edit2, Film, Link as LinkIcon, Eye } from 'lucide-react';
 import ReactPlayer from 'react-player';
 import ImageEditorModal from './ImageEditorModal';
 import VideoPreviewEditor from './VideoPreviewEditor';
